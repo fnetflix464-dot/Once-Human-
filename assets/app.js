@@ -182,12 +182,12 @@ function renderMods() {
       <div class="section-block">
         <h3>${esc(g.effect)}</h3>
         <p class="intro" style="margin-top:0">${esc(g.description)}</p>
-        <table class="data-table">
+        <div class="table-wrap"><table class="data-table">
           <thead><tr><th>Mod</th><th>Effect</th></tr></thead>
           <tbody>
             ${g.mods.map(x => `<tr><td>${esc(x.name)}</td><td>${esc(x.effect)}</td></tr>`).join("")}
           </tbody>
-        </table>
+        </table></div>
       </div>
     `).join("") || emptyState()}
   `;
@@ -272,10 +272,10 @@ function renderMemetics() {
       return `
         <div class="section-block">
           <h3>${esc(branchLabels[key] || key)} <span class="tag">${filtered.length}</span></h3>
-          <table class="data-table">
+          <div class="table-wrap"><table class="data-table">
             <thead><tr><th>Specialization</th><th>Effect</th></tr></thead>
             <tbody>${filtered.map(x => `<tr><td>${esc(x.name)}</td><td>${esc(x.effect)}</td></tr>`).join("")}</tbody>
-          </table>
+          </table></div>
         </div>
       `;
     }).join("") || emptyState()}
@@ -288,12 +288,12 @@ function renderDeviants() {
   return `
     <h2>Deviants (Animals / Companions)</h2>
     <p class="intro">${esc(d.overview)}</p>
-    <table class="data-table">
+    <div class="table-wrap"><table class="data-table">
       <thead><tr><th>Name</th><th>Category</th><th>Ability</th></tr></thead>
       <tbody>
         ${items.map(x => `<tr><td>${esc(x.name)}</td><td><span class="tag">${esc(x.category)}</span></td><td>${esc(x.ability)}</td></tr>`).join("")}
       </tbody>
-    </table>
+    </table></div>
     ${!items.length ? emptyState() : ""}
   `;
 }
@@ -368,12 +368,12 @@ function renderRegions() {
     <p class="intro">${esc(r.overview)}</p>
     <div class="section-block">
       <h3>${esc(r.manibus.name)}</h3>
-      <table class="data-table">
+      <div class="table-wrap"><table class="data-table">
         <thead><tr><th>Stronghold</th><th>Biome</th><th>Level Range</th><th>Notes</th></tr></thead>
         <tbody>
           ${r.manibus.areas.map(a => `<tr><td>${esc(a.stronghold)}</td><td>${esc(a.biome)}</td><td>${esc(a.levelRange)}</td><td>${esc(a.notes || "")}</td></tr>`).join("")}
         </tbody>
-      </table>
+      </table></div>
     </div>
     <div class="section-block">
       <h3>Other Notable Areas</h3>
