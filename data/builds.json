@@ -1,0 +1,50 @@
+{
+  "builds": [
+    {
+      "id": "shrapnel-crit",
+      "name": "Shrapnel Crit Build",
+      "archetype": "shrapnel",
+      "role": "PvE — Boss Killer",
+      "summary": "Once Human's premier build for destroying the Great Ones and general PvE. Bullets fragment to tear through multiple body parts; can be specced for crit, weakspot hits, or a no-reload playstyle.",
+      "suggestedWeapons": ["compound-bow", "kvd-boom-boom"],
+      "suggestedMods": ["Obliterate", "Shatter Them All", "Shield Breaker", "Shrapnel Smash", "Shrapnel Souvenir"]
+    },
+    {
+      "id": "power-surge",
+      "name": "Power Surge Build",
+      "archetype": "power-surge",
+      "role": "PvE — Sustained DPS",
+      "summary": "Dump full magazines into enemies to trigger bursts of Electric damage. A well-optimized version can top out around 100,000 DPS without external buffs.",
+      "suggestedWeapons": ["kam-abyss-glance"],
+      "suggestedMods": ["Shock Diffusion", "Shock Rampage", "Static Shock", "Surge Amplifier"]
+    },
+    {
+      "id": "frost-vortex",
+      "name": "Frost Vortex Build",
+      "archetype": "frost-vortex",
+      "role": "PvE — Boss Sustain",
+      "summary": "Excellent against big boss enemies — the vortex feeds you health while draining theirs, making it a strong solo/duo boss-clearing build.",
+      "suggestedWeapons": ["aws338-bingo"],
+      "suggestedMods": ["Cryo Blast", "Frosty Blessing", "Shattering Ice", "Vortex Multiplier"]
+    },
+    {
+      "id": "bounce",
+      "name": "Bounce Build",
+      "archetype": "bounce",
+      "role": "PvE — Crowd Damage",
+      "summary": "An underrated build where projectiles ricochet between enemies; damage gets absurd in tight corridors or dense groups of mobs.",
+      "suggestedWeapons": ["kvsbr-little-jaws"],
+      "suggestedMods": ["Bounce Rampage", "Super Bullet", "Targeted Bounce"]
+    },
+    {
+      "id": "fast-gunner-lmg",
+      "name": "Fast Gunner LMG Build",
+      "archetype": "fast-gunner",
+      "role": "PvE/PvP — Sustained Fire",
+      "summary": "Buffs a gun's damage and fire rate the longer you shoot. Best on high-magazine LMGs — a properly built MG4 Predator can unload roughly 200 rounds before needing to reload.",
+      "suggestedWeapons": ["mg4-predator"],
+      "suggestedMods": ["Cowboy", "Double Gunner", "Fast Refurbish", "Lasting Fortification", "Precision Rush", "Shoot Out", "Shooting Blitz"]
+    }
+  ],
+  "note": "Builds combine a weapon effect archetype, weapon(s), mods and memetic specializations into a cohesive loadout. See classes.json for archetype summaries and mods.json for full mod effect details."
+}

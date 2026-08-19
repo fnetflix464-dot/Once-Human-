@@ -1,0 +1,48 @@
+{
+  "overview": "The main story/world bosses in Once Human are known as 'The Great Ones' — massive creatures forged from people mutated by Stardust, each guarding a Monolith in a different region of Nalcott and requiring a team to defeat efficiently. Beyond the Great Ones, seasonal Visional Wheel content adds rotating bosses (e.g. the Riftwalker in the Gravity Abyss season) and events add limited-time bosses (e.g. the Block Wanderer).",
+  "greatOnes": [
+    {
+      "name": "Ravenous Hunter",
+      "level": 10,
+      "location": "Monolith of Greed, Dayton Wetlands",
+      "mechanics": "Destroy its Gatling weapon to disable its shield, then stun it and hit the yellow head weak spot."
+    },
+    {
+      "name": "Treant",
+      "level": 20,
+      "location": "Gaia Cliff Monolith, Broken Delta",
+      "mechanics": "Destroy the surrounding vines first, target the female humanoid figure on its back, and dodge laser beams that telegraph with a red light."
+    },
+    {
+      "name": "Arachsiam",
+      "level": 30,
+      "location": "Mirage Monolith, Iron River",
+      "mechanics": "Avoid web-cocoon and rush attacks; focus the purple pustules on its back for maximum damage."
+    },
+    {
+      "name": "Rabizex",
+      "level": 40,
+      "location": "Monolith of Thirst, Chalk Peak",
+      "mechanics": "Keep distance, use powerful weapons on its weak points, and prioritize evasion since its movements are hard to predict up close."
+    },
+    {
+      "name": "Mensdevoran (The Forsaken Giant)",
+      "level": 60,
+      "location": "Forsaken Monolith, Red Sands",
+      "mechanics": "Jump over hand-slam shockwaves, stay close to its body to dodge sweeping arm attacks, and target glowing weak spots as they appear."
+    }
+  ],
+  "seasonalAndEventBosses": [
+    {
+      "name": "Riftwalker",
+      "type": "Seasonal Aerial Boss",
+      "context": "Visional Wheel S4: Gravity Abyss (patch 2.4.1) — a massive aerial Deviant fought across zero-gravity floating islands."
+    },
+    {
+      "name": "Block Wanderer",
+      "type": "Limited-time Event Boss",
+      "context": "Block Adventure event on Wish Island (patch 3.0.3, Aug 5–23 2026) — defeat blocky creatures and challenge this boss for morphed Deviation rewards."
+    }
+  ],
+  "note": "Great Ones drop core weapon-effect mod sets (e.g. Burn-focused mods drop from the Ravenous Hunter) alongside crafting materials and blueprint fragments."
+}

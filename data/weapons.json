@@ -1,0 +1,122 @@
+{
+  "weaponTypes": [
+    { "id": "pistol", "name": "Pistol", "description": "Sidearm-class weapons; fast swap, moderate damage, common as a backup slot." },
+    { "id": "smg", "name": "Submachine Gun (SMG)", "description": "High fire-rate, close-range weapons with fast reloads." },
+    { "id": "assault-rifle", "name": "Assault Rifle", "description": "Balanced mid-range weapons, the most versatile weapon class." },
+    { "id": "shotgun", "name": "Shotgun", "description": "Multi-pellet, high burst-damage weapons for close range." },
+    { "id": "sniper-rifle", "name": "Sniper Rifle", "description": "High single-shot damage, long range, weakspot-focused." },
+    { "id": "lmg", "name": "Light Machine Gun (LMG)", "description": "Large magazines and sustained fire, pairs well with Fast Gunner effect." },
+    { "id": "bow", "name": "Bow / Crossbow", "description": "Silent, high per-shot damage ranged weapons, often crit-focused." },
+    { "id": "heavy", "name": "Heavy Weapon", "description": "Grenade launchers, gatling guns and other explosive/AoE weapons." },
+    { "id": "melee", "name": "Melee Weapon", "description": "Close-quarters weapons such as batons, blades and hammers." }
+  ],
+  "rarities": [
+    { "id": "standard", "name": "Standard", "color": "Grey/Green" },
+    { "id": "rare", "name": "Rare", "color": "Blue" },
+    { "id": "epic", "name": "Epic", "color": "Purple" },
+    { "id": "legendary", "name": "Legendary", "color": "Gold" }
+  ],
+  "weapons": [
+    {
+      "id": "compound-bow",
+      "name": "Compound Bow",
+      "type": "bow",
+      "rarity": "epic",
+      "tier": "S",
+      "damage": 310,
+      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates."
+    },
+    {
+      "id": "kvd-boom-boom",
+      "name": "KVD — Boom! Boom!",
+      "type": "lmg",
+      "rarity": "legendary",
+      "tier": "S",
+      "damage": 44,
+      "fireRate": 500,
+      "notes": "Legendary LMG variant; sustained explosive-leaning damage, considered a top pick alongside Compound Bow."
+    },
+    {
+      "id": "aws338-bingo",
+      "name": "AWS.338 — Bingo",
+      "type": "sniper-rifle",
+      "rarity": "legendary",
+      "tier": "A",
+      "damage": 316,
+      "notes": "Legendary sniper rifle, very high per-shot damage for weakspot hunting."
+    },
+    {
+      "id": "kam-abyss-glance",
+      "name": "KAM — Abyss Glance",
+      "type": "assault-rifle",
+      "rarity": "legendary",
+      "tier": "A",
+      "damage": 39,
+      "fireRate": 600,
+      "notes": "Legendary assault rifle, balanced damage and fire rate."
+    },
+    {
+      "id": "db12-raining-cash",
+      "name": "DB12 — Raining Cash",
+      "type": "shotgun",
+      "rarity": "legendary",
+      "tier": "A",
+      "damage": "55x5 pellets",
+      "notes": "Legendary shotgun, strong burst close-range damage."
+    },
+    {
+      "id": "r500-memento",
+      "name": "R500 — Memento",
+      "type": "pistol",
+      "rarity": "legendary",
+      "tier": "B",
+      "damage": 170,
+      "notes": "Legendary pistol, solid backup-slot option."
+    },
+    {
+      "id": "kvsbr-little-jaws",
+      "name": "KV-SBR — Little Jaws",
+      "type": "smg",
+      "rarity": "legendary",
+      "tier": "B",
+      "damage": 29,
+      "fireRate": 1000,
+      "notes": "Legendary SMG with very high fire rate for close-range fights."
+    },
+    {
+      "id": "mgl",
+      "name": "MGL",
+      "type": "heavy",
+      "rarity": "epic",
+      "tier": "B",
+      "damage": 277,
+      "notes": "Grenade launcher, strong against grouped enemies and structures."
+    },
+    {
+      "id": "stun-baton",
+      "name": "Stun Baton",
+      "type": "melee",
+      "rarity": "rare",
+      "tier": "C",
+      "damage": 182,
+      "notes": "Melee option with crowd-control utility via stun."
+    },
+    {
+      "id": "mg4-predator",
+      "name": "MG4 — Predator",
+      "type": "lmg",
+      "rarity": "epic",
+      "tier": "A",
+      "notes": "Signature weapon for Fast Gunner builds; large magazine lets players fire roughly 200 rounds before reloading when built around the Fast Gunner weapon effect."
+    },
+    {
+      "id": "sn700-finale",
+      "name": "SN700 — Finale",
+      "type": "sniper-rifle",
+      "rarity": "legendary",
+      "tier": "A",
+      "notes": "Reverb-stacking legendary sniper; rebalanced in patch 3.0.2 (reverb stacks reduced to 4, damage scaling adjusted)."
+    }
+  ],
+  "note": "Once Human's full arsenal spans 126+ weapons across these 9 categories (per oncehumandb.com). The list above covers the current top-tier / legendary picks and community tier-list standouts rather than the full catalog."
+}

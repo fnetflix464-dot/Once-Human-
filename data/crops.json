@@ -1,0 +1,27 @@
+{
+  "overview": "Farming is unlocked via the 'Planting' Memetic Specialization in the Logistics/Management tree. Seeds are obtained by harvesting wild plants (or from growing your own crop). Plant seeds in loamy soil or a Planter Box, water with Boiled or Pure Water (Dirty Water lowers crop Vitality), and provide light — Irrigation Systems and Grow Lights can automate this. Harvest by interacting once growth reaches 100%. Deviated (mutated) Crops can drop from regular ones and are used in special high-value recipes.",
+  "howToFarm": [
+    "Unlock the Planting memetic specialization.",
+    "Gather seeds from wild plants or from harvested crops.",
+    "Plant in loamy soil or a Planter Box.",
+    "Water with Boiled/Pure Water and ensure adequate light.",
+    "Harvest at 100% growth for the crop plus a chance at bonus seeds or a Deviated (mutated) variant."
+  ],
+  "crops": [
+    { "name": "Beets", "uses": "Refined into Sugar for Sanity Pills, Stardust Energy Drink, Shattered Bread, Assorted Canned Fruit.", "foundNear": "Waterways near Deadsville and Meyer's Market" },
+    { "name": "Corn", "uses": "Refined into Corn Oil (Shattered Bread, Canned Seafood in Oil); fermented into Corn Ale.", "foundNear": "Grassy/forested areas and farms like Citrus County" },
+    { "name": "Wheat", "uses": "Brewed into Malt Ale; used in Hug-in-a-Bowl and Croquettes.", "foundNear": "Farms and roadsides, e.g. Citrus County" },
+    { "name": "Mushrooms", "uses": "Crafted into Yield Boost and Mutation Boost fertilizers.", "foundNear": "Wooded underbrush in Iron River" },
+    { "name": "Scarlet Calamus", "uses": "Creates Breeding Boost fertilizer to increase seed yield.", "foundNear": "Shallow waterways" },
+    { "name": "Peppercorn", "uses": "Creates Preserved Deviated Chops and Securement Soup.", "foundNear": "Vendor Lacey at Blackfell (limited 3 seeds/week)" },
+    { "name": "Cucumber", "uses": "Fermented into Pickles; Deviated variant used for Safety Sandwich.", "foundNear": "Vendor Zhao Jintan at Meyer's Market (limited 3 seeds/week)" },
+    { "name": "Onions", "uses": "Croquette ingredient; Deviated variant yields Bacon Burger and can attract the Grumpy Bulb deviation.", "foundNear": "Vendor Emma Potter at Tall Grass Inn (limited 3 seeds/week)" },
+    { "name": "Morel", "uses": "Canned Seafood in Oil, Borscht Deluxe, Yuanbao Dumplings.", "foundNear": "Randomly dropped from containers in level 35+ areas" },
+    { "name": "Aloe Vera", "uses": "Signature Ice Brew, Aloe Vera Ointment, Shattered Bread.", "foundNear": "Rare finds in Red Sands and Blackheart regions" }
+  ],
+  "deviantHelpers": [
+    { "name": "Buzzy Bee", "helps": "Automatically plants crops and boosts mutation probability." },
+    { "name": "Growshroom", "helps": "Auto-plants seeds and accelerates crop growth." },
+    { "name": "Rain Man", "helps": "Enhances crop vitality and provides irrigation water." }
+  ]
+}

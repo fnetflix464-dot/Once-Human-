@@ -1,0 +1,27 @@
+{
+  "overview": "Once Human's world (Nalcott) is divided into major regions, each centered on a Stronghold and gated by recommended enemy level. Later seasons add separate Visional Worlds / Strange Worlds layered on top of the base map.",
+  "manibus": {
+    "name": "Manibus (Evolution's Call)",
+    "areas": [
+      { "stronghold": "Deadsville", "biome": "Swampland & farmland", "levelRange": "1-10", "notes": "Starting area after the prologue." },
+      { "stronghold": "Meyer's Market", "biome": "Fishing town, industrial area, forest", "levelRange": "6-10" },
+      { "stronghold": "Greywater Camp", "biome": "River and cliffs", "levelRange": "20-30" },
+      { "stronghold": "Tall Grass Inn", "biome": "Forest and mountains (bears)", "levelRange": "30-40", "notes": "The largest area." },
+      { "stronghold": "Blackfell", "biome": "Desert city with military bases", "levelRange": "40+", "notes": "Final Stronghold of the region." }
+    ]
+  },
+  "otherNotableAreas": [
+    { "name": "Broken Delta", "notes": "Home to the Gaia Cliff Monolith and the Treant boss." },
+    { "name": "Iron River", "notes": "Home to the Mirage Monolith and the Arachsiam boss." },
+    { "name": "Chalk Peak", "notes": "Home to the Monolith of Thirst and the Rabizex boss; terrain adjusted near here in patch 2.4.1." },
+    { "name": "Red Sands", "notes": "Home to the Forsaken Monolith and Mensdevoran." },
+    { "name": "Blackheart", "notes": "Rare plant-gathering region." }
+  ],
+  "specialWorldsAndScenarios": [
+    { "name": "Way of Winter", "type": "Seasonal Visional World", "notes": "Added winter-themed Deviants (tagged WoT in this database) and mechanics." },
+    { "name": "Gravity Abyss (Visional Wheel S4)", "type": "Seasonal Visional World", "notes": "Zero-gravity combat across floating islands; home of the Riftwalker boss. Added in patch 2.4.1." },
+    { "name": "Pixel-Style Strange World / Block Island / Wish Island", "type": "Strange World event", "notes": "A blocky, pixel-art version of Nalcott; setting for the Block Adventure event in patch 3.0.3." },
+    { "name": "Eternaland", "type": "Endgame Scenario", "notes": "Endgame scenario/mode referenced alongside Endless Dream and Evolution's Call." },
+    { "name": "Endless Dream", "type": "PvE Scenario" }
+  ]
+}

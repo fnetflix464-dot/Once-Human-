@@ -1,0 +1,55 @@
+{
+  "overview": "Blueprints are formulas that must be learned before you can craft a piece of furniture, a structure, or certain gear. Once learned, a blueprint appears under the 'Special' tab of your inventory and its item becomes placeable in Build Mode.",
+  "howToObtain": [
+    "Looting chests, dumpsters and cabinets in the world (lootable containers reset on a global timer, refreshing every 4 hours).",
+    "Disassembling unwanted or duplicate blueprints at the Designer's Workstation (Building tab of the Memetic menu) for Formula Blueprint Fragments, which can be redeemed for new ones.",
+    "Purchasing from the in-game Shop or seasonal Shop rotations.",
+    "Rewarded from Memetic Specializations in the Building and Crafting branches (many specializations directly unlock a blueprint, e.g. turrets, traps, storage crates and workbenches).",
+    "Deviant assistance — e.g. the Logging Beaver deviant can occasionally find furniture items while foraging."
+  ],
+  "categories": [
+    {
+      "id": "furniture-decor",
+      "name": "Furniture & Decor",
+      "description": "Single-use or reusable decorative furniture for territory customization — beds, seating, lighting, storage displays.",
+      "examples": ["Deluxe Storage Crate (64 slots)", "Special Storage Crate (64 slots)", "Bed: A Place to Call Home", "Bed: Heat Preservation"]
+    },
+    {
+      "id": "workstations",
+      "name": "Workstations & Production",
+      "description": "Crafting facility blueprints that unlock or upgrade production buildings.",
+      "examples": ["Gear Workbench: Customization", "Custom Gear Workbench", "Advanced Stove: Gourmand", "Kitchen Set: Gourmand", "Refining Facility: Smelting", "Robotics Facility: Skilled Mechanician", "Synthesis Bench: Recycle & Reuse"]
+    },
+    {
+      "id": "power-utility",
+      "name": "Power & Utility",
+      "description": "Generators and utility structures that support a base.",
+      "examples": ["Generator: Electrical Expert", "Biomass Generator: Sustained Output", "Hydraulic Generator: One with the Tides", "Hydropower Generator", "Deviant Power Generator: Stardust Unleashed", "Water Pump: Underground Pump", "Portable Thermostat"]
+    },
+    {
+      "id": "defense",
+      "name": "Defense — Turrets & Traps",
+      "description": "Territory defense structures unlocked via Building memetics.",
+      "examples": ["Rifle Turret: Two Birds One Stone", "Shotgun Turret: Volley Fire", "Gatling Cannon: Power Blast", "Portable MG Turret: Shadow Shift", "Claymore Mine: Frost Trap", "Claymore Mine: Warrior's Resolve", "Flamethrower Trap: Kebob Party", "Flamethrower Trap: Scorching Blast", "Stardust Barrier: Hold the Line"]
+    },
+    {
+      "id": "farming",
+      "name": "Farming & Agriculture",
+      "description": "Planter and irrigation blueprints for growing crops (see crops.json).",
+      "examples": ["Planter Box: Greenhouse Planting", "Growshroom (Deviant-assisted auto-planting)"]
+    },
+    {
+      "id": "structural",
+      "name": "Structural — Walls, Roofs, Pillars",
+      "description": "Base-building material tiers with durability bonuses from Building memetics.",
+      "examples": ["Wood Structures: Tough Plant", "Stone Structures: Intense Defense", "Basic Defense: Battle-Hardened", "Reinforced Structures"]
+    },
+    {
+      "id": "drones",
+      "name": "Rosetta Drones",
+      "description": "Deployable drone blueprints for gathering, combat, exploration and territory support.",
+      "examples": ["Rosetta Gathering Drone", "Rosetta Firepower Drone", "Rosetta Exploration Drone", "Rosetta Territory Drone"]
+    }
+  ],
+  "notableConstructionUpdate": "Patch 3.0.2 (July 22, 2026) added flexible snap-point switching for walls, ceilings, roofs, stairs and pillars, giving builders finer control when placing blueprints."
+}

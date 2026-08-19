@@ -1,0 +1,21 @@
+{
+  "overview": "Once Human has no fixed 'class' system — instead your playstyle is defined by which Weapon Effect (the combat archetype tied to your weapons/mods) and Memetic Specialization branch you build around. These act as the closest equivalent to classes.",
+  "weaponEffectArchetypes": [
+    { "id": "shrapnel", "name": "Shrapnel", "role": "PvE burst / boss killer", "summary": "Bullets fragment for extra per-part damage; considered a top pick for melting the Great Ones and general PvE." },
+    { "id": "power-surge", "name": "Power Surge", "role": "Sustained DPS", "summary": "Dump full magazines to build stacking Electric/Shock damage; capable of ~100,000 DPS in optimized PvE builds." },
+    { "id": "frost-vortex", "name": "Frost Vortex", "role": "Boss sustain / control", "summary": "Creates damaging vortexes that also return health, excellent against big single targets while keeping you alive." },
+    { "id": "bounce", "name": "Bounce", "role": "Crowd control / AoE", "summary": "Projectiles ricochet between enemies; shines in corridors or dense enemy groups." },
+    { "id": "fast-gunner", "name": "Fast Gunner", "role": "Sustained fire LMG playstyle", "summary": "Rewards continuous firing and weapon-switching with stacking damage/reload buffs; pairs best with high-magazine LMGs like the MG4 Predator." },
+    { "id": "burn", "name": "Burn", "role": "Damage-over-time", "summary": "Stacking burn DoT that snowballs with mods that preserve or extend stacks on kill." },
+    { "id": "unstable-bomber", "name": "Unstable Bomber", "role": "Burst explosive", "summary": "Builds toward bomb-like detonations, scaling well with Crit Rate." },
+    { "id": "fortress-warfare", "name": "Fortress Warfare", "role": "Territory / group defense", "summary": "Buffs tied to structures and holding ground, strengthened by nearby teammates." },
+    { "id": "marked", "name": "Marked / Bull's Eye", "role": "Team support / debuff", "summary": "Marks targets to amplify incoming damage from the whole team." }
+  ],
+  "memeticBranches": [
+    { "id": "gathering", "name": "Gathering", "focus": "Improves the yield of materials collected in the wild (ore, wood, water, crystals)." },
+    { "id": "crafting", "name": "Crafting", "focus": "Upgrades workbenches and unlocks new craftable items, weapons and gadgets." },
+    { "id": "management", "name": "Management", "focus": "Survival-oriented upgrades: generators, cooking, temperature control, farming infrastructure." },
+    { "id": "building", "name": "Building", "focus": "Improves crafting/production facilities, defensive structures, turrets, traps and territory tools." }
+  ],
+  "note": "Every 5 levels starting at level 5, players unlock a Memetic Specialization node offering a choice of 4 randomly generated specializations (one per branch), for up to 10 chosen specializations by level 50. See blueprints.json / builds.json for how these tie into gear and loadouts."
+}

@@ -1,0 +1,101 @@
+{
+  "overview": "Weapon and armor mods grant a core effect plus randomized stat attributes; the number of attributes scales with the mod's rarity tier. Once Human's full mod pool spans 773 combinations (per oncehumandb.com) across weapon effects like Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked (Bull's Eye). Below is a curated list of named mods grouped by the weapon effect / archetype they support.",
+  "totalKnownInGame": 773,
+  "groups": [
+    {
+      "effect": "Shrapnel",
+      "description": "Bullets fragment on impact, dealing extra damage per body part hit.",
+      "mods": [
+        { "name": "Obliterate", "effect": "Shrapnel damage increases 15% per part hit." },
+        { "name": "Shatter Them All", "effect": "Shrapnel damage increases 15% per part hit." },
+        { "name": "Shield Breaker", "effect": "Hitting shielded units increases Shrapnel DMG by 60% for 1 second." },
+        { "name": "Shrapnel Smash", "effect": "Shrapnel triggers increase Crit Rate by 1%, stackable 20x for 2 seconds." },
+        { "name": "Shrapnel Souvenir", "effect": "When Shrapnel hits a Weakspot, reloads 1 bullet from reserves." }
+      ]
+    },
+    {
+      "effect": "Power Surge",
+      "description": "Shots build stacks of Electric/Shock damage, exploding into a burst.",
+      "mods": [
+        { "name": "Shock Diffusion", "effect": "Power Surge spreads Shock to nearby units within 5 meters." },
+        { "name": "Shock Rampage", "effect": "Power Surge damage increases trigger factor by 10%, stackable 3x." },
+        { "name": "Static Shock", "effect": "Shock State time -50%; Power Surge DMG +20%." },
+        { "name": "Surge Amplifier", "effect": "Power Surge damage grants up to 4 stacks of +5% for 3 seconds." }
+      ]
+    },
+    {
+      "effect": "Frost Vortex",
+      "description": "Creates a vortex that deals PSI Intensity as status damage over time and can freeze enemies.",
+      "mods": [
+        { "name": "Cryo Blast", "effect": "Frost Vortex inflicts Frostbite: Vulnerability +4%, Movement Speed -10%." },
+        { "name": "Frosty Blessing", "effect": "When a Frost Vortex disappears, recovers 10% HP." },
+        { "name": "Shattering Ice", "effect": "Defeating frost-trapped enemies deals Frost DMG equal to 50% Psi Intensity." },
+        { "name": "Vortex Multiplier", "effect": "Maximum Frost Vortexes +1, Frost Vortex DMG +10%." }
+      ]
+    },
+    {
+      "effect": "Burn",
+      "description": "Stacking burn damage-over-time status.",
+      "mods": [
+        { "name": "Blaze Blessing", "effect": "Killing an enemy in Burn status recovers 5% HP." },
+        { "name": "Burning Wrath", "effect": "25% chance to apply 1 extra Burn stack on inflicting Burn." },
+        { "name": "Embers", "effect": "When Burn status is removed from an enemy, only 50% of stacks are lost." },
+        { "name": "Flame Resonance", "effect": "Increases maximum Burn stacks by 2 but reduces duration by 20%." }
+      ]
+    },
+    {
+      "effect": "Unstable Bomber",
+      "description": "Shots build to a bomb-like detonation.",
+      "mods": [
+        { "name": "Bombardier Souvenir", "effect": "Triggering Unstable Bomber reloads 15% of the magazine." },
+        { "name": "Decisive Blow", "effect": "After a bullet hits a Weakspot, Unstable Bomber DMG +15% for 3 seconds." },
+        { "name": "Heavy Explosives", "effect": "Unstable Bomber impacts enemies with additional area damage." },
+        { "name": "Reckless Bomber", "effect": "For every 1% Crit Rate, Unstable Bomber DMG +0.5%." },
+        { "name": "Super Charged", "effect": "Unstable Bomber damage increases 5% per trigger, stackable 6x." }
+      ]
+    },
+    {
+      "effect": "Fast Gunner",
+      "description": "Rewards sustained fire and weapon switching with damage/reload buffs.",
+      "mods": [
+        { "name": "Cowboy", "effect": "Reloading boosts Fast Gunner trigger factor by 100% for 5 seconds." },
+        { "name": "Double Gunner", "effect": "Fast Gunner weapon switching increases first 6 bullets' damage by 30%." },
+        { "name": "Fast Refurbish", "effect": "Fast Gunner triggers Reload Speed +30% for 5 seconds, stackable 3x." },
+        { "name": "Lasting Fortification", "effect": "Fast Gunner max stacks increase by 1, each granting 5% Weapon DMG." },
+        { "name": "Precision Rush", "effect": "Fast Gunner rapid firing increases Weakspot DMG up to +45% over 3 seconds." },
+        { "name": "Shoot Out", "effect": "Fast Gunner grants Weapon DMG +1.5% for 10 seconds, stackable 20x." },
+        { "name": "Shooting Blitz", "effect": "Fast Gunner duration +4 seconds, Weapon DMG +15% during activation." }
+      ]
+    },
+    {
+      "effect": "Bounce",
+      "description": "Projectiles ricochet between enemies, excelling against groups.",
+      "mods": [
+        { "name": "Bounce Rampage", "effect": "Bounce damage increases up to 45% based on target count." },
+        { "name": "Not Throw Away Your Shot", "effect": "Bounces hit allies without damage, recovering 1 bullet." },
+        { "name": "Super Bullet", "effect": "Bounce Crit Rate +10%, Bounce Crit DMG +25%." },
+        { "name": "Targeted Bounce", "effect": "Bounce is 300% more likely to hit a Weakspot." }
+      ]
+    },
+    {
+      "effect": "Fortress Warfare",
+      "description": "Territory/turtling-oriented effect tied to structures and sustained fights.",
+      "mods": [
+        { "name": "Durable Territory", "effect": "Defeating enemies extends Fortress Warfare duration, up to 5 times." },
+        { "name": "Final Territory", "effect": "After Fortress Warfare ends: Weapon DMG +10%, Movement Speed +10%." },
+        { "name": "Portable Territory", "effect": "After leaving Fortress Warfare, the status remains for 2 seconds." },
+        { "name": "United We Stand", "effect": "Fortress Warfare damage bonus increases with nearby players, up to 40%." }
+      ]
+    },
+    {
+      "effect": "Marked / Bull's Eye",
+      "description": "Marking enemies for bonus team damage.",
+      "mods": [
+        { "name": "Hunters Perk", "effect": "DMG dealt by Marked enemies against Metas is decreased by 20% (defensive utility)." },
+        { "name": "Recover Mark", "effect": "Defeating marked enemies grants HP +15%, Stamina +25%." },
+        { "name": "Spreading Marks", "effect": "Defeated marked enemies transfer their status to nearby enemies within 15m." },
+        { "name": "Vulnerability Amplifier", "effect": "Increases Bull's Eye Vulnerability effect by 8%." }
+      ]
+    }
+  ]
+}

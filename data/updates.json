@@ -1,0 +1,62 @@
+{
+  "current": {
+    "version": "3.0.3",
+    "date": "2026-08-05",
+    "title": "Block Adventure & Console Launch Prep",
+    "note": "As of compile date 2026-08-19 this is the live version; a 3.0.3 bug-fix pass landed Aug 18, and a Shop-adjustments dev blog + Fair Play ban report (232 accounts, Aug 7-13) were also posted Aug 19. Check the official news page (linked in meta.json) for anything newer."
+  },
+  "history": [
+    {
+      "version": "3.0.3",
+      "date": "2026-08-05",
+      "highlights": [
+        "Limited-time 'Block Adventure' event on Wish Island (Aug 5-23): fight blocky creatures, challenge the Block Wanderer boss, earn morphed Deviations (Zapamander, Nutcracker & Dr. Teddy variants).",
+        "Online Trading overhaul: purchase-order buying requests, reduced bind times, watchlist expanded to 20 items, trading extended to ingots, formulas, cosmetic fish and animals.",
+        "New Permanent Server Monthly Challenges with mod-acquisition rewards via Scenario Honor (30-day reset).",
+        "Console launch support announced for Aug 25 with cross-platform account linking (PC/mobile/console).",
+        "Custom Server territory settings now customizable per user role.",
+        "Lightforge Loot Crate 'Dreamtide' (mythic skins, legendary cosmetics); Block World crossover and Midsummer Fizz shop items.",
+        "First-person mode optimizations, fishing mechanic clarifications, tech interface improvements, misc. bug fixes."
+      ]
+    },
+    {
+      "version": "3.0.2",
+      "date": "2026-07-22",
+      "highlights": [
+        "Territory Construction: flexible snap-point switching for walls, ceilings, roofs, stairs and pillars.",
+        "Account-wide appearance preset sharing across characters/scenarios (12-preset limit per gender).",
+        "New Item Lock system to prevent accidental discard/trade/disassembly of valuable items.",
+        "RaidZone: Mental Pollution — new zones drain mentality over time, offset by gear's Mental Resistance stat; 4 new survival suits trade defense for mental resistance.",
+        "RaidZone farming & breeding enhancements: rare plant harvesting, preferred food rewards for livestock.",
+        "Custom Server overhaul: server recommendations, exclusive gameplay tags, custom dungeon settings, benefit event (Jul 23-Aug 20).",
+        "Lightforge Loot Crate summer return (5 themes); new furniture/facility skin packs (Jul 29).",
+        "Balance: ZapCam duration/range up, cooldown up; Mini Wonder duration down, cooldown up; Pyro Dino fire suppression heavily nerfed; SN700-Finale reverb stacks reduced to 4 with adjusted damage scaling."
+      ]
+    },
+    {
+      "version": "2.4.1",
+      "date": "2026-05-27",
+      "highlights": [
+        "Visional Wheel S4: Gravity Abyss — zero-gravity combat across floating islands; new Riftwalker aerial boss; Gravity Imbalance exploration, Riftwalker Relic collection, Aerial Hunt, Gravity Integrator challenge modes.",
+        "New Wishlist system for shop items with privacy controls; enhanced gifting with friend sorting, personal messages, duplicate-prevention refunds.",
+        "New rewards: Abyssal Cores (epic/legendary/mythic), Abyssal Essence, 3 new Morphed Deviations, Aero & Downstar mods, armor Shiny Mods.",
+        "Balance: AUG-Electron Cloud flexibility changed; Compound Bow-The Burden of Betrayal damage consistency/burst adjusted; Glide Pants stamina consumption changed.",
+        "Terrain adjustments west of Chalk Peak required territory relocation for affected players.",
+        "Meta Pass monthly cosmetic rotations; Custom Server 'Special Drops' mode; wedding-themed and carnival shop packs."
+      ]
+    },
+    {
+      "version": "2.3.8",
+      "date": "2026-05-13",
+      "highlights": [
+        "Weapon Customization system: freely customize weapon stats and mix-and-match dozens of newly designed weapon traits."
+      ]
+    }
+  ],
+  "majorContentEras": [
+    { "name": "Launch / Evolution's Call", "notes": "Base game and the Manibus region." },
+    { "name": "Way of Winter", "notes": "Winter-themed seasonal Visional World." },
+    { "name": "Gravity Abyss (Visional Wheel S4)", "notes": "Zero-gravity seasonal content, patch 2.4.1." },
+    { "name": "Pixel-Style Strange World", "notes": "Block Island / Wish Island blocky pixel-art world, tied to the 3.0.x patch line and the Block Adventure event." }
+  ]
+}
