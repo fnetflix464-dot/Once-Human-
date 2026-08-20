@@ -940,6 +940,21 @@ nav.nav-groups {
   }
   table.data-table td:empty { display: none; }
 
+  /* A td carrying data-label shows that label above its value instead of
+     relying on column position (which the stacked mobile layout loses) —
+     an empty data-label="" (used for a compare table's own row-label
+     column) is deliberately skipped so it doesn't print a blank caption. */
+  table.data-table td[data-label]:not([data-label=""])::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-dim);
+    margin-bottom: 2px;
+  }
+
   .compare-table { font-size: 0.8rem; }
   .compare-table th, .compare-table td { padding: 6px; }
 }
@@ -1398,9 +1413,12 @@ OH.buildSearchCorpus = function buildSearchCorpus() {
     corpus.push({ tab, id, title, subtitle: subtitle || "", haystack: [title, ...fields].filter(Boolean).join(" ␟ ").toLowerCase() });
   };
 
-  idx.weapons.forEach(w => push("weapons", w._key, w.name, [
-    w.type, w.rarity, w.notes, w.acquisition, (w.confirmedArchetype || []).join(" ")
-  ], OH.idx.weaponTypeById[w.type] ? OH.idx.weaponTypeById[w.type].name : w.type));
+  idx.weapons.forEach(w => {
+    const typeLabel = OH.idx.weaponTypeById[w.type] ? OH.idx.weaponTypeById[w.type].name : w.type;
+    push("weapons", w._key, w.name, [
+      w.type, typeLabel, w.rarity, w.notes, w.acquisition, (w.confirmedArchetype || []).join(" ")
+    ], typeLabel);
+  });
 
   idx.armorSets.forEach(s => push("armor", s._key, s.name, [
     s.rarity, s.playstyle, (s.bonusesByPiece || []).map(b => b.effect).join(" ")
@@ -1433,12 +1451,45 @@ OH.buildSearchCorpus = function buildSearchCorpus() {
   return corpus;
 };
 
-// Very small scoring function: exact title match > title starts-with >
-// title contains > body contains. Good enough for a dataset this size
-// without pulling in a fuzzy-search dependency.
+// Small set of common weapon-category shorthand — expanding these lets
+// "AR", "SR", "SMG" etc. match the full type name even though the corpus
+// stores the human-readable label, not the abbreviation.
+OH.SEARCH_ALIASES = {
+  ar: "assault rifle", sr: "sniper rifle", sg: "shotgun",
+  smg: "submachine gun", lmg: "light machine gun", mg: "machine gun"
+};
+
+// Plain Levenshtein edit distance — small dataset, no need for a library.
+function editDistance(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n;
+  if (!n) return m;
+  const row = new Array(n + 1);
+  for (let j = 0; j <= n; j++) row[j] = j;
+  for (let i = 1; i <= m; i++) {
+    let prevDiag = row[0];
+    row[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const tmp = row[j];
+      row[j] = Math.min(
+        row[j] + 1,          // deletion
+        row[j - 1] + 1,      // insertion
+        prevDiag + (a[i - 1] === b[j - 1] ? 0 : 1) // substitution
+      );
+      prevDiag = tmp;
+    }
+  }
+  return row[n];
+}
+
+// Scoring: exact title match > title starts-with > title contains > body
+// contains > (only if nothing above matched anything) a fuzzy title match
+// tolerant of a typo or two, so "Shrapnal"/"Pwoer Surge" still find something
+// instead of the dead-end an exact-substring-only search gives.
 OH.searchCorpus = function searchCorpus(corpus, query) {
   const q = query.trim().toLowerCase();
   if (!q) return [];
+  const qExpanded = OH.SEARCH_ALIASES[q];
   const scored = [];
   for (const entry of corpus) {
     const title = entry.title.toLowerCase();
@@ -1447,10 +1498,31 @@ OH.searchCorpus = function searchCorpus(corpus, query) {
     else if (title.startsWith(q)) score = 80;
     else if (title.includes(q)) score = 60;
     else if (entry.haystack.includes(q)) score = 30;
+    else if (qExpanded && entry.haystack.includes(qExpanded)) score = 30;
     if (score > 0) scored.push({ ...entry, score });
   }
-  scored.sort((a, b) => b.score - a.score);
-  return scored;
+  if (scored.length) {
+    scored.sort((a, b) => b.score - a.score);
+    return scored;
+  }
+  // Nothing matched even loosely — fall back to fuzzy title matching only
+  // (not the whole haystack, which would produce noisy false positives).
+  // Tolerance scales gently with query length so a short query doesn't
+  // fuzzy-match half the database.
+  if (q.length < 3) return [];
+  const maxDistance = q.length <= 5 ? 1 : q.length <= 9 ? 2 : 3;
+  const fuzzy = [];
+  for (const entry of corpus) {
+    const title = entry.title.toLowerCase();
+    // Compare against the whole title and each individual word, since a
+    // typo'd single word inside a multi-word title shouldn't be penalized
+    // by the length of the rest of the title.
+    let best = editDistance(title, q);
+    title.split(/\s+/).forEach(word => { best = Math.min(best, editDistance(word, q)); });
+    if (best <= maxDistance) fuzzy.push({ ...entry, score: 20 - best });
+  }
+  fuzzy.sort((a, b) => b.score - a.score);
+  return fuzzy;
 };
 
 OH.groupSearchResults = function groupSearchResults(results, maxPerCategory) {
@@ -2152,7 +2224,7 @@ OH.renderArchetypeDetail = function renderArchetypeDetail(key) {
         <h3>Mods</h3>
         <div class="table-wrap"><table class="data-table">
           <thead><tr><th>Mod</th><th>Effect</th></tr></thead>
-          <tbody>${group.mods.map(m => `<tr><td>${OH.link("mods", group._key + "--" + OH.slugify(m.name), m.name)}</td><td>${OH.esc(m.effect)}</td></tr>`).join("")}</tbody>
+          <tbody>${group.mods.map(m => `<tr><td data-label="Mod">${OH.link("mods", group._key + "--" + OH.slugify(m.name), m.name)}</td><td data-label="Effect">${OH.esc(m.effect)}</td></tr>`).join("")}</tbody>
         </table></div>
         <p class="intro">${OH.esc(group.obtainedFrom)}</p>
       </div>` : ""}
@@ -2239,7 +2311,7 @@ OH.renderMemetics = function renderMemetics() {
           <h3>${OH.esc(BRANCH_LABELS[bkey] || bkey)} <span class="tag">${filtered.length}</span></h3>
           <div class="table-wrap"><table class="data-table">
             <thead><tr><th>Specialization</th><th>Effect</th></tr></thead>
-            <tbody>${filtered.map(x => `<tr><td>${OH.link("memetics", x._key, x.name)}</td><td>${OH.esc(x.effect)}</td></tr>`).join("")}</tbody>
+            <tbody>${filtered.map(x => `<tr><td data-label="Specialization">${OH.link("memetics", x._key, x.name)}</td><td data-label="Effect">${OH.esc(x.effect)}</td></tr>`).join("")}</tbody>
           </table></div>
         </div>
       `;
@@ -2424,10 +2496,14 @@ OH.renderArmor = function renderArmor() {
     <div class="section-block">
       <h3>Armor Sets <span class="tag">${sets.length}</span></h3>
       ${OH.renderFilterBar("armor", filterConfig, active, null, null)}
+      ${OH.renderCompareBar("armor")}
       <div class="grid">
         ${sets.map(s => `
           ${OH.cardOpen("armor", s._key)}
-            <div class="card-top-row">${OH.favoriteButton("armor", s._key, s.name)}</div>
+            <div class="card-top-row">
+              <input type="checkbox" class="compare-check" data-compare-kind="armor" data-compare-id="${esc11(s._key)}" ${OH.state.compareSelection.some(c => c.kind === "armor" && c.id === s._key) ? "checked" : ""} aria-label="Select ${esc11(s.name)} to compare">
+              ${OH.favoriteButton("armor", s._key, s.name)}
+            </div>
             <h3>${esc11(s.name)}</h3>
             <div class="meta">${OH.rarityDot(s.rarity)}<span class="tag">${esc11(OH.capitalize(s.rarity))}</span><span class="tag">${esc11(s.pieces)}pc</span><span class="tag">${esc11(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
             ${s.bonusesByPiece && s.bonusesByPiece.length ? `<p>${esc11(s.bonusesByPiece[s.bonusesByPiece.length - 1].effect)}</p>` : `<p class="intro mt-xs">Set bonus text not confirmed by available sources — see the note below.</p>`}
@@ -2450,7 +2526,7 @@ OH.renderArmorSetDetail = function renderArmorSetDetail(key) {
     ${s.bonusesByPiece && s.bonusesByPiece.length ? `
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th>Pieces</th><th>Effect</th></tr></thead>
-        <tbody>${s.bonusesByPiece.map(b => `<tr><td>${esc11(b.pieces)}</td><td>${esc11(b.effect)}</td></tr>`).join("")}</tbody>
+        <tbody>${s.bonusesByPiece.map(b => `<tr><td data-label="Pieces">${esc11(b.pieces)}</td><td data-label="Effect">${esc11(b.effect)}</td></tr>`).join("")}</tbody>
       </table></div>
     ` : `<p class="intro">Set bonus text not confirmed by available sources for this set.</p>`}
     ${s.playstyle ? `<div class="section-block"><h3>Best for</h3><p class="intro intro-tight">${esc11(s.playstyle)}</p></div>` : ""}
@@ -2590,17 +2666,37 @@ OH.renderModDetail = function renderModDetail(key) {
 /* Compare                                                                 */
 /* ---------------------------------------------------------------------- */
 
+const COMPARE_FINDERS = { weapons: OH.findWeapon, armor: OH.findArmorSet };
+
 OH.renderCompareBar = function renderCompareBar(kind) {
   const sel = OH.state.compareSelection.filter(c => c.kind === kind);
   if (!sel.length) return "";
+  const finder = COMPARE_FINDERS[kind] || OH.findWeapon;
   return `
     <div class="compare-bar">
-      <span>Comparing: ${sel.map(c => esc11((OH.findWeapon(c.id) || {}).name || c.id)).join(" vs ")}</span>
+      <span>Comparing: ${sel.map(c => esc11((finder(c.id) || {}).name || c.id)).join(" vs ")}</span>
       ${sel.length >= 2 ? `<button type="button" class="btn-primary" data-compare-go="${esc11(kind)}">Compare now</button>` : `<span class="intro">Pick one more to compare.</span>`}
       <button type="button" class="filter-clear" data-compare-clear="${esc11(kind)}">Clear</button>
     </div>
   `;
 };
+
+// Renders a compare table with data-label on every cell so the mobile
+// stacked layout (table.data-table td{display:block}) still shows which
+// value belongs to which column instead of an unlabeled stack of text.
+function compareTable(rows, items, colLabelFor) {
+  return `
+    <div class="table-wrap"><table class="data-table compare-table">
+      <thead><tr><th></th>${items.map(colLabelFor).join("")}</tr></thead>
+      <tbody>
+        ${rows.map(r => `<tr>
+          <td data-label="">${esc11(r.label)}</td>
+          ${items.map(it => `<td data-label="${esc11(r.label)}">${esc11(r.get(it))}</td>`).join("")}
+        </tr>`).join("")}
+      </tbody>
+    </table></div>
+  `;
+}
 
 OH.renderCompare = function renderCompare(segments) {
   const [kind, ...ids] = segments;
@@ -2619,16 +2715,28 @@ OH.renderCompare = function renderCompare(segments) {
     ];
     return `
       <h2>Compare Weapons</h2>
-      <div class="table-wrap"><table class="data-table compare-table">
-        <thead><tr><th></th>${items.map(w => `<th>${OH.link("weapons", w._key, w.name)}</th>`).join("")}</tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td>${esc11(r.label)}</td>${items.map(w => `<td>${esc11(r.get(w))}</td>`).join("")}</tr>`).join("")}
-        </tbody>
-      </table></div>
+      ${compareTable(rows, items, w => `<th>${OH.link("weapons", w._key, w.name)}</th>`)}
       ${OH.backLink("weapons", "Weapons")}
     `;
   }
-  return `<div class="empty-state">Select 2 weapons from the Weapons page to compare. ${OH.backLink("weapons", "Weapons")}</div>`;
+  if (kind === "armor" && ids.length >= 2) {
+    const items = ids.map(OH.findArmorSet).filter(Boolean);
+    if (items.length < 2) return `<div class="empty-state">Couldn't find those armor sets to compare. ${OH.backLink("armor", "Armor")}</div>`;
+    const rows = [
+      { label: "Rarity", get: s => OH.capitalize(s.rarity) },
+      { label: "Pieces", get: s => s.pieces },
+      { label: "Bonus thresholds", get: s => s.bonusCount },
+      { label: "Playstyle", get: s => s.playstyle || "—" },
+      { label: "Best/last bonus", get: s => (s.bonusesByPiece && s.bonusesByPiece.length) ? s.bonusesByPiece[s.bonusesByPiece.length - 1].effect : "Not confirmed" },
+      { label: "Verification", get: s => (s.verification && s.verification.status) || "unverified" }
+    ];
+    return `
+      <h2>Compare Armor</h2>
+      ${compareTable(rows, items, s => `<th>${OH.link("armor", s._key, s.name)}</th>`)}
+      ${OH.backLink("armor", "Armor")}
+    `;
+  }
+  return `<div class="empty-state">Select 2 items from the Weapons or Armor page to compare. ${OH.backLink("weapons", "Weapons")}</div>`;
 };
 
 
@@ -2745,7 +2853,13 @@ OH.renderRegions = function renderRegions() {
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th>Region</th><th>Stronghold</th><th>Biome</th><th>Level Range</th><th>Notes</th></tr></thead>
         <tbody>
-          ${r.manibus.regions.map(a => `<tr><td>${OH.esc(a.region)}</td><td>${OH.esc(a.stronghold)}</td><td>${OH.esc(a.biome)}</td><td>${OH.esc(a.levelRange)}</td><td>${OH.esc(a.notes || "")}</td></tr>`).join("")}
+          ${r.manibus.regions.map(a => `<tr>
+            <td data-label="Region">${OH.esc(a.region)}</td>
+            <td data-label="Stronghold">${OH.esc(a.stronghold)}</td>
+            <td data-label="Biome">${OH.esc(a.biome)}</td>
+            <td data-label="Level Range">${OH.esc(a.levelRange)}</td>
+            <td data-label="Notes">${OH.esc(a.notes || "")}</td>
+          </tr>`).join("")}
         </tbody>
       </table></div>
     </div>
@@ -2793,7 +2907,14 @@ OH.renderDeviants = function renderDeviants() {
     <div class="table-wrap"><table class="data-table">
       <thead><tr><th></th><th>Name</th><th>Category</th><th>Ability</th><th>Location</th><th>PvE/PvP</th></tr></thead>
       <tbody>
-        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0"><td>${OH.favoriteButton("deviants", x._key, x.name)}</td><td>${OH.link("deviants", x._key, x.name)}</td><td><span class="tag">${OH.esc(x.category)}</span></td><td>${OH.esc(x.ability)}</td><td>${x.location ? OH.esc(x.location) : `<span class="intro">Not found</span>`}</td><td>${OH.pvpPveTag(x._pvpPve)}</td></tr>`).join("")}
+        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0">
+          <td data-label="">${OH.favoriteButton("deviants", x._key, x.name)}</td>
+          <td data-label="Name">${OH.link("deviants", x._key, x.name)}</td>
+          <td data-label="Category"><span class="tag">${OH.esc(x.category)}</span></td>
+          <td data-label="Ability">${OH.esc(x.ability)}</td>
+          <td data-label="Location">${x.location ? OH.esc(x.location) : `<span class="intro">Not found</span>`}</td>
+          <td data-label="PvE/PvP">${OH.pvpPveTag(x._pvpPve)}</td>
+        </tr>`).join("")}
       </tbody>
     </table></div>
     ${!items.length ? OH.emptyState(OH.state.query) : ""}
@@ -3113,7 +3234,7 @@ OH.renderSources = function renderSources() {
         <h3>Current vs. Legacy systems, at a glance</h3>
         <div class="table-wrap"><table class="data-table">
           <thead><tr><th>Area</th><th>Current</th><th>Legacy</th></tr></thead>
-          <tbody>${meta.currentVsLegacySystems.map(r => `<tr><td>${OH.esc(r.area)}</td><td>${OH.esc(r.current)}</td><td>${OH.esc(r.legacy)}</td></tr>`).join("")}</tbody>
+          <tbody>${meta.currentVsLegacySystems.map(r => `<tr><td data-label="Area">${OH.esc(r.area)}</td><td data-label="Current">${OH.esc(r.current)}</td><td data-label="Legacy">${OH.esc(r.legacy)}</td></tr>`).join("")}</tbody>
         </table></div>
       </div>
     ` : ""}
@@ -3121,9 +3242,23 @@ OH.renderSources = function renderSources() {
       <h3>Verification legend</h3>
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th></th><th>Meaning</th></tr></thead>
-        <tbody>${(meta.verificationLegend || []).map(l => `<tr><td>${OH.verificationBadge(l.id)}</td><td>${OH.esc(l.meaning)}</td></tr>`).join("")}</tbody>
+        <tbody>${(meta.verificationLegend || []).map(l => `<tr><td data-label="Status">${OH.verificationBadge(l.id)}</td><td data-label="Meaning">${OH.esc(l.meaning)}</td></tr>`).join("")}</tbody>
       </table></div>
     </div>
+    ${OH.state.data.sources ? `
+    <div class="section-block">
+      <h3>Source registry <span class="tag">${OH.state.data.sources.sources.length}</span></h3>
+      <p class="intro">Every source cited anywhere in this database, in one place — each record's "Data verification" section links back to specific entries here rather than re-stating a name/url each time.</p>
+      <div class="table-wrap"><table class="data-table">
+        <thead><tr><th>Source</th><th>Type</th><th>Last checked</th></tr></thead>
+        <tbody>${OH.state.data.sources.sources.map(s => `<tr>
+          <td data-label="Source"><a href="${OH.esc(s.url)}" target="_blank" rel="noopener">${OH.esc(s.name)}</a></td>
+          <td data-label="Type"><span class="tag">${OH.esc(OH.capitalize(s.type))}</span></td>
+          <td data-label="Last checked" class="mono">${OH.esc(s.lastChecked)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </div>
+    ` : ""}
     <div class="section-block">
       <h3>Reference sources used to compile this database</h3>
       <ul class="sources-list">

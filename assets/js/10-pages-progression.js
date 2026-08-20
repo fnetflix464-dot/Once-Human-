@@ -166,7 +166,7 @@ OH.renderArchetypeDetail = function renderArchetypeDetail(key) {
         <h3>Mods</h3>
         <div class="table-wrap"><table class="data-table">
           <thead><tr><th>Mod</th><th>Effect</th></tr></thead>
-          <tbody>${group.mods.map(m => `<tr><td>${OH.link("mods", group._key + "--" + OH.slugify(m.name), m.name)}</td><td>${OH.esc(m.effect)}</td></tr>`).join("")}</tbody>
+          <tbody>${group.mods.map(m => `<tr><td data-label="Mod">${OH.link("mods", group._key + "--" + OH.slugify(m.name), m.name)}</td><td data-label="Effect">${OH.esc(m.effect)}</td></tr>`).join("")}</tbody>
         </table></div>
         <p class="intro">${OH.esc(group.obtainedFrom)}</p>
       </div>` : ""}
@@ -253,7 +253,7 @@ OH.renderMemetics = function renderMemetics() {
           <h3>${OH.esc(BRANCH_LABELS[bkey] || bkey)} <span class="tag">${filtered.length}</span></h3>
           <div class="table-wrap"><table class="data-table">
             <thead><tr><th>Specialization</th><th>Effect</th></tr></thead>
-            <tbody>${filtered.map(x => `<tr><td>${OH.link("memetics", x._key, x.name)}</td><td>${OH.esc(x.effect)}</td></tr>`).join("")}</tbody>
+            <tbody>${filtered.map(x => `<tr><td data-label="Specialization">${OH.link("memetics", x._key, x.name)}</td><td data-label="Effect">${OH.esc(x.effect)}</td></tr>`).join("")}</tbody>
           </table></div>
         </div>
       `;

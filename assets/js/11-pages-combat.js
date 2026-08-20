@@ -160,10 +160,14 @@ OH.renderArmor = function renderArmor() {
     <div class="section-block">
       <h3>Armor Sets <span class="tag">${sets.length}</span></h3>
       ${OH.renderFilterBar("armor", filterConfig, active, null, null)}
+      ${OH.renderCompareBar("armor")}
       <div class="grid">
         ${sets.map(s => `
           ${OH.cardOpen("armor", s._key)}
-            <div class="card-top-row">${OH.favoriteButton("armor", s._key, s.name)}</div>
+            <div class="card-top-row">
+              <input type="checkbox" class="compare-check" data-compare-kind="armor" data-compare-id="${esc11(s._key)}" ${OH.state.compareSelection.some(c => c.kind === "armor" && c.id === s._key) ? "checked" : ""} aria-label="Select ${esc11(s.name)} to compare">
+              ${OH.favoriteButton("armor", s._key, s.name)}
+            </div>
             <h3>${esc11(s.name)}</h3>
             <div class="meta">${OH.rarityDot(s.rarity)}<span class="tag">${esc11(OH.capitalize(s.rarity))}</span><span class="tag">${esc11(s.pieces)}pc</span><span class="tag">${esc11(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
             ${s.bonusesByPiece && s.bonusesByPiece.length ? `<p>${esc11(s.bonusesByPiece[s.bonusesByPiece.length - 1].effect)}</p>` : `<p class="intro mt-xs">Set bonus text not confirmed by available sources — see the note below.</p>`}
@@ -186,7 +190,7 @@ OH.renderArmorSetDetail = function renderArmorSetDetail(key) {
     ${s.bonusesByPiece && s.bonusesByPiece.length ? `
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th>Pieces</th><th>Effect</th></tr></thead>
-        <tbody>${s.bonusesByPiece.map(b => `<tr><td>${esc11(b.pieces)}</td><td>${esc11(b.effect)}</td></tr>`).join("")}</tbody>
+        <tbody>${s.bonusesByPiece.map(b => `<tr><td data-label="Pieces">${esc11(b.pieces)}</td><td data-label="Effect">${esc11(b.effect)}</td></tr>`).join("")}</tbody>
       </table></div>
     ` : `<p class="intro">Set bonus text not confirmed by available sources for this set.</p>`}
     ${s.playstyle ? `<div class="section-block"><h3>Best for</h3><p class="intro intro-tight">${esc11(s.playstyle)}</p></div>` : ""}
@@ -326,17 +330,37 @@ OH.renderModDetail = function renderModDetail(key) {
 /* Compare                                                                 */
 /* ---------------------------------------------------------------------- */
 
+const COMPARE_FINDERS = { weapons: OH.findWeapon, armor: OH.findArmorSet };
+
 OH.renderCompareBar = function renderCompareBar(kind) {
   const sel = OH.state.compareSelection.filter(c => c.kind === kind);
   if (!sel.length) return "";
+  const finder = COMPARE_FINDERS[kind] || OH.findWeapon;
   return `
     <div class="compare-bar">
-      <span>Comparing: ${sel.map(c => esc11((OH.findWeapon(c.id) || {}).name || c.id)).join(" vs ")}</span>
+      <span>Comparing: ${sel.map(c => esc11((finder(c.id) || {}).name || c.id)).join(" vs ")}</span>
       ${sel.length >= 2 ? `<button type="button" class="btn-primary" data-compare-go="${esc11(kind)}">Compare now</button>` : `<span class="intro">Pick one more to compare.</span>`}
       <button type="button" class="filter-clear" data-compare-clear="${esc11(kind)}">Clear</button>
     </div>
   `;
 };
+
+// Renders a compare table with data-label on every cell so the mobile
+// stacked layout (table.data-table td{display:block}) still shows which
+// value belongs to which column instead of an unlabeled stack of text.
+function compareTable(rows, items, colLabelFor) {
+  return `
+    <div class="table-wrap"><table class="data-table compare-table">
+      <thead><tr><th></th>${items.map(colLabelFor).join("")}</tr></thead>
+      <tbody>
+        ${rows.map(r => `<tr>
+          <td data-label="">${esc11(r.label)}</td>
+          ${items.map(it => `<td data-label="${esc11(r.label)}">${esc11(r.get(it))}</td>`).join("")}
+        </tr>`).join("")}
+      </tbody>
+    </table></div>
+  `;
+}
 
 OH.renderCompare = function renderCompare(segments) {
   const [kind, ...ids] = segments;
@@ -355,14 +379,26 @@ OH.renderCompare = function renderCompare(segments) {
     ];
     return `
       <h2>Compare Weapons</h2>
-      <div class="table-wrap"><table class="data-table compare-table">
-        <thead><tr><th></th>${items.map(w => `<th>${OH.link("weapons", w._key, w.name)}</th>`).join("")}</tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td>${esc11(r.label)}</td>${items.map(w => `<td>${esc11(r.get(w))}</td>`).join("")}</tr>`).join("")}
-        </tbody>
-      </table></div>
+      ${compareTable(rows, items, w => `<th>${OH.link("weapons", w._key, w.name)}</th>`)}
       ${OH.backLink("weapons", "Weapons")}
     `;
   }
-  return `<div class="empty-state">Select 2 weapons from the Weapons page to compare. ${OH.backLink("weapons", "Weapons")}</div>`;
+  if (kind === "armor" && ids.length >= 2) {
+    const items = ids.map(OH.findArmorSet).filter(Boolean);
+    if (items.length < 2) return `<div class="empty-state">Couldn't find those armor sets to compare. ${OH.backLink("armor", "Armor")}</div>`;
+    const rows = [
+      { label: "Rarity", get: s => OH.capitalize(s.rarity) },
+      { label: "Pieces", get: s => s.pieces },
+      { label: "Bonus thresholds", get: s => s.bonusCount },
+      { label: "Playstyle", get: s => s.playstyle || "—" },
+      { label: "Best/last bonus", get: s => (s.bonusesByPiece && s.bonusesByPiece.length) ? s.bonusesByPiece[s.bonusesByPiece.length - 1].effect : "Not confirmed" },
+      { label: "Verification", get: s => (s.verification && s.verification.status) || "unverified" }
+    ];
+    return `
+      <h2>Compare Armor</h2>
+      ${compareTable(rows, items, s => `<th>${OH.link("armor", s._key, s.name)}</th>`)}
+      ${OH.backLink("armor", "Armor")}
+    `;
+  }
+  return `<div class="empty-state">Select 2 items from the Weapons or Armor page to compare. ${OH.backLink("weapons", "Weapons")}</div>`;
 };

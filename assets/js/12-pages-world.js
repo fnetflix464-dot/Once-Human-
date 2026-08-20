@@ -110,7 +110,13 @@ OH.renderRegions = function renderRegions() {
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th>Region</th><th>Stronghold</th><th>Biome</th><th>Level Range</th><th>Notes</th></tr></thead>
         <tbody>
-          ${r.manibus.regions.map(a => `<tr><td>${OH.esc(a.region)}</td><td>${OH.esc(a.stronghold)}</td><td>${OH.esc(a.biome)}</td><td>${OH.esc(a.levelRange)}</td><td>${OH.esc(a.notes || "")}</td></tr>`).join("")}
+          ${r.manibus.regions.map(a => `<tr>
+            <td data-label="Region">${OH.esc(a.region)}</td>
+            <td data-label="Stronghold">${OH.esc(a.stronghold)}</td>
+            <td data-label="Biome">${OH.esc(a.biome)}</td>
+            <td data-label="Level Range">${OH.esc(a.levelRange)}</td>
+            <td data-label="Notes">${OH.esc(a.notes || "")}</td>
+          </tr>`).join("")}
         </tbody>
       </table></div>
     </div>
@@ -158,7 +164,14 @@ OH.renderDeviants = function renderDeviants() {
     <div class="table-wrap"><table class="data-table">
       <thead><tr><th></th><th>Name</th><th>Category</th><th>Ability</th><th>Location</th><th>PvE/PvP</th></tr></thead>
       <tbody>
-        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0"><td>${OH.favoriteButton("deviants", x._key, x.name)}</td><td>${OH.link("deviants", x._key, x.name)}</td><td><span class="tag">${OH.esc(x.category)}</span></td><td>${OH.esc(x.ability)}</td><td>${x.location ? OH.esc(x.location) : `<span class="intro">Not found</span>`}</td><td>${OH.pvpPveTag(x._pvpPve)}</td></tr>`).join("")}
+        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0">
+          <td data-label="">${OH.favoriteButton("deviants", x._key, x.name)}</td>
+          <td data-label="Name">${OH.link("deviants", x._key, x.name)}</td>
+          <td data-label="Category"><span class="tag">${OH.esc(x.category)}</span></td>
+          <td data-label="Ability">${OH.esc(x.ability)}</td>
+          <td data-label="Location">${x.location ? OH.esc(x.location) : `<span class="intro">Not found</span>`}</td>
+          <td data-label="PvE/PvP">${OH.pvpPveTag(x._pvpPve)}</td>
+        </tr>`).join("")}
       </tbody>
     </table></div>
     ${!items.length ? OH.emptyState(OH.state.query) : ""}

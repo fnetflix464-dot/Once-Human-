@@ -37,7 +37,7 @@ OH.renderSources = function renderSources() {
         <h3>Current vs. Legacy systems, at a glance</h3>
         <div class="table-wrap"><table class="data-table">
           <thead><tr><th>Area</th><th>Current</th><th>Legacy</th></tr></thead>
-          <tbody>${meta.currentVsLegacySystems.map(r => `<tr><td>${OH.esc(r.area)}</td><td>${OH.esc(r.current)}</td><td>${OH.esc(r.legacy)}</td></tr>`).join("")}</tbody>
+          <tbody>${meta.currentVsLegacySystems.map(r => `<tr><td data-label="Area">${OH.esc(r.area)}</td><td data-label="Current">${OH.esc(r.current)}</td><td data-label="Legacy">${OH.esc(r.legacy)}</td></tr>`).join("")}</tbody>
         </table></div>
       </div>
     ` : ""}
@@ -45,9 +45,23 @@ OH.renderSources = function renderSources() {
       <h3>Verification legend</h3>
       <div class="table-wrap"><table class="data-table">
         <thead><tr><th></th><th>Meaning</th></tr></thead>
-        <tbody>${(meta.verificationLegend || []).map(l => `<tr><td>${OH.verificationBadge(l.id)}</td><td>${OH.esc(l.meaning)}</td></tr>`).join("")}</tbody>
+        <tbody>${(meta.verificationLegend || []).map(l => `<tr><td data-label="Status">${OH.verificationBadge(l.id)}</td><td data-label="Meaning">${OH.esc(l.meaning)}</td></tr>`).join("")}</tbody>
       </table></div>
     </div>
+    ${OH.state.data.sources ? `
+    <div class="section-block">
+      <h3>Source registry <span class="tag">${OH.state.data.sources.sources.length}</span></h3>
+      <p class="intro">Every source cited anywhere in this database, in one place — each record's "Data verification" section links back to specific entries here rather than re-stating a name/url each time.</p>
+      <div class="table-wrap"><table class="data-table">
+        <thead><tr><th>Source</th><th>Type</th><th>Last checked</th></tr></thead>
+        <tbody>${OH.state.data.sources.sources.map(s => `<tr>
+          <td data-label="Source"><a href="${OH.esc(s.url)}" target="_blank" rel="noopener">${OH.esc(s.name)}</a></td>
+          <td data-label="Type"><span class="tag">${OH.esc(OH.capitalize(s.type))}</span></td>
+          <td data-label="Last checked" class="mono">${OH.esc(s.lastChecked)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </div>
+    ` : ""}
     <div class="section-block">
       <h3>Reference sources used to compile this database</h3>
       <ul class="sources-list">

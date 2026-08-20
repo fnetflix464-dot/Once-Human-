@@ -929,6 +929,21 @@ nav.nav-groups {
   }
   table.data-table td:empty { display: none; }
 
+  /* A td carrying data-label shows that label above its value instead of
+     relying on column position (which the stacked mobile layout loses) —
+     an empty data-label="" (used for a compare table's own row-label
+     column) is deliberately skipped so it doesn't print a blank caption. */
+  table.data-table td[data-label]:not([data-label=""])::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-dim);
+    margin-bottom: 2px;
+  }
+
   .compare-table { font-size: 0.8rem; }
   .compare-table th, .compare-table td { padding: 6px; }
 }
