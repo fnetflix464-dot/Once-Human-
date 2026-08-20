@@ -1,0 +1,11 @@
+{
+  "name": "once-human-database",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial, fan-made Once Human companion database — static site, no runtime dependencies.",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "npm run validate && node scripts/build-standalone.js",
+    "prebuild": "npm run validate"
+  }
+}

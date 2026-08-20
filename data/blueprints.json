@@ -70,7 +70,7 @@
     {
       "id": "farming",
       "name": "Farming & Agriculture",
-      "description": "Planter and irrigation blueprints for growing crops (see the Crops & Ranching section).",
+      "description": "Planter and irrigation blueprints for growing crops (see the Crops section).",
       "examples": [
         "Planter Box: Greenhouse Planting",
         "Growshroom (Deviant-assisted auto-planting)"

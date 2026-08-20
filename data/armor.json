@@ -1,11 +1,26 @@
 {
   "overview": "Armor covers 6 body slots — Head, Face, Torso, Legs, Hands and Feet — and its core attributes are Max HP, Damage Reduction, Pollution Resistance and Psi Intensity, on top of a Durability stat that depletes as you take damage (an armor piece breaks and becomes unusable at 0 Durability, though it can be repaired). Wearing multiple pieces from the same named Armor Set grants stacking set bonuses at each piece-count threshold (1/2/3/4, sometimes fewer) — you only get as many thresholds as pieces you have equipped from that set, and you can mix sets to blend partial bonuses from two different sets. Once Human's full armor catalog spans 159 pieces across 20 named sets (per oncehumandb.com).",
   "attributes": [
-    { "name": "Max HP", "description": "Flat or percentage increase to maximum health; scales with rarity and using higher-rarity hides as crafting materials." },
-    { "name": "Damage Reduction", "description": "Percentage reduction to incoming damage; also scales with hide rarity used in crafting." },
-    { "name": "Pollution Resistance", "description": "Reduces the rate you accumulate Pollution/Mental Pollution in irradiated or RaidZone areas." },
-    { "name": "Psi Intensity", "description": "Boosts status-effect (Frost/Burn/Shock etc.) potency for the wearer." },
-    { "name": "Durability", "description": "Depletes as the piece absorbs damage; upgradeable via the Gear Workbench: Customization tech node for +30% Max Durability. Reaches 0 → the piece breaks until repaired." }
+    {
+      "name": "Max HP",
+      "description": "Flat or percentage increase to maximum health; scales with rarity and using higher-rarity hides as crafting materials."
+    },
+    {
+      "name": "Damage Reduction",
+      "description": "Percentage reduction to incoming damage; also scales with hide rarity used in crafting."
+    },
+    {
+      "name": "Pollution Resistance",
+      "description": "Reduces the rate you accumulate Pollution/Mental Pollution in irradiated or RaidZone areas."
+    },
+    {
+      "name": "Psi Intensity",
+      "description": "Boosts status-effect (Frost/Burn/Shock etc.) potency for the wearer."
+    },
+    {
+      "name": "Durability",
+      "description": "Depletes as the piece absorbs damage; upgradeable via the Gear Workbench: Customization tech node for +30% Max Durability. Reaches 0 → the piece breaks until repaired."
+    }
   ],
   "craftingNote": "Armor is crafted at the same Gear Workbench tiers as weapons (see the Stations section) using hides, fabrics and other materials — higher-rarity hides yield better HP/Damage Reduction rolls on the finished piece.",
   "setBonusMechanic": "Set bonuses unlock cumulatively per piece equipped from that set (not a single 2/4/6 breakpoint) — most sets show a distinct effect at 1, 2, 3 and 4 pieces equipped, with the 3rd and 4th piece bonuses usually being the build-defining ones.",
@@ -16,10 +31,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "When HP is above 70%, Weapon DMG +10%." },
-        { "pieces": 2, "effect": "Reload Efficiency +15%." },
-        { "pieces": 3, "effect": "Stay crouched and immobile for 0.5s to enter the Bastille state — Weapon DMG +40% while active. After exiting, sprint is disabled and Stamina consumption +100% for 3s." },
-        { "pieces": 4, "effect": "3s after exiting Bastille state, gain 1 stack of Armor per second (up to 60). Each stack of Armor grants a Shield equal to 1% of max HP while in the Bastille state." }
+        {
+          "pieces": 1,
+          "effect": "When HP is above 70%, Weapon DMG +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Reload Efficiency +15%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Stay crouched and immobile for 0.5s to enter the Bastille state — Weapon DMG +40% while active. After exiting, sprint is disabled and Stamina consumption +100% for 3s."
+        },
+        {
+          "pieces": 4,
+          "effect": "3s after exiting Bastille state, gain 1 stack of Armor per second (up to 60). Each stack of Armor grants a Shield equal to 1% of max HP while in the Bastille state."
+        }
       ],
       "playstyle": "Stationary high-damage turtling."
     },
@@ -29,10 +56,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Max HP +10%." },
-        { "pieces": 2, "effect": "Elemental DMG (Blaze, Frost, Shock, Blast) +8%." },
-        { "pieces": 3, "effect": "Killing an enemy grants Movement Speed +20% for 2s and Elemental DMG +40%, decaying over 8s." },
-        { "pieces": 4, "effect": "Each enemy within 5m grants DMG Reduction +4%, stacking up to 4 times." }
+        {
+          "pieces": 1,
+          "effect": "Max HP +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Elemental DMG (Blaze, Frost, Shock, Blast) +8%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Killing an enemy grants Movement Speed +20% for 2s and Elemental DMG +40%, decaying over 8s."
+        },
+        {
+          "pieces": 4,
+          "effect": "Each enemy within 5m grants DMG Reduction +4%, stacking up to 4 times."
+        }
       ],
       "playstyle": "Elemental/status build sustain and mobility."
     },
@@ -42,10 +81,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Magazine Capacity +10%." },
-        { "pieces": 2, "effect": "Crit Rate +5%." },
-        { "pieces": 3, "effect": "Every 4 Crit shots land grants 1 stack of Lone Shadow (Crit DMG +6% for 20s, up to 8 stacks)." },
-        { "pieces": 4, "effect": "Increases max Lone Shadow stacks to 10. After reloading, Crit Rate +10% for 2s." }
+        {
+          "pieces": 1,
+          "effect": "Magazine Capacity +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Crit Rate +5%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Every 4 Crit shots land grants 1 stack of Lone Shadow (Crit DMG +6% for 20s, up to 8 stacks)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Increases max Lone Shadow stacks to 10. After reloading, Crit Rate +10% for 2s."
+        }
       ],
       "playstyle": "Solo crit-focused DPS."
     },
@@ -55,10 +106,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Reload Efficiency +10%." },
-        { "pieces": 2, "effect": "Weakspot DMG +10%." },
-        { "pieces": 3, "effect": "Hitting the same enemy consecutively grants 1 stack of Archer's Focus (Weakspot DMG +4%, up to 10 stacks; halved on switching targets)." },
-        { "pieces": 4, "effect": "Reloading loads an extra 0.6% ammunition per 1% of the previous magazine's shots that hit a weakspot, up to +30%." }
+        {
+          "pieces": 1,
+          "effect": "Reload Efficiency +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Weakspot DMG +10%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Hitting the same enemy consecutively grants 1 stack of Archer's Focus (Weakspot DMG +4%, up to 10 stacks; halved on switching targets)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Reloading loads an extra 0.6% ammunition per 1% of the previous magazine's shots that hit a weakspot, up to +30%."
+        }
       ],
       "playstyle": "Sustained single-target weakspot damage."
     },
@@ -68,10 +131,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Medicine Cooldown Reduction +20%." },
-        { "pieces": 2, "effect": "While shielded, Weapon DMG and Status DMG +10%." },
-        { "pieces": 3, "effect": "Consumes 6% of current HP on hit to generate a temporary shield worth 6% of Max HP for 30s (0.5s cooldown; doesn't trigger above 60% Shield)." },
-        { "pieces": 4, "effect": "Automatically uses the lowest-grade Treatment item in your backpack when HP drops below 30% (40s cooldown)." }
+        {
+          "pieces": 1,
+          "effect": "Medicine Cooldown Reduction +20%."
+        },
+        {
+          "pieces": 2,
+          "effect": "While shielded, Weapon DMG and Status DMG +10%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Consumes 6% of current HP on hit to generate a temporary shield worth 6% of Max HP for 30s (0.5s cooldown; doesn't trigger above 60% Shield)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Automatically uses the lowest-grade Treatment item in your backpack when HP drops below 30% (40s cooldown)."
+        }
       ],
       "playstyle": "Survivability / self-sustain."
     },
@@ -81,10 +156,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Rolling Stamina cost -20%." },
-        { "pieces": 2, "effect": "Magazine Capacity +15%." },
-        { "pieces": 3, "effect": "Taking damage grants a stack of Powered Armor (DMG Reduction +4% for 10s, up to 6 stacks)." },
-        { "pieces": 4, "effect": "Rolling consumes 3 Powered Armor stacks to trigger a knockback explosion; each enemy hit restores HP +5%, up to 20% (10s cooldown)." }
+        {
+          "pieces": 1,
+          "effect": "Rolling Stamina cost -20%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Magazine Capacity +15%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Taking damage grants a stack of Powered Armor (DMG Reduction +4% for 10s, up to 6 stacks)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Rolling consumes 3 Powered Armor stacks to trigger a knockback explosion; each enemy hit restores HP +5%, up to 20% (10s cooldown)."
+        }
       ],
       "playstyle": "Damage mitigation with an offensive panic button."
     },
@@ -94,10 +181,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Head DMG Reduction +10%." },
-        { "pieces": 2, "effect": "Weakspot DMG +10%." },
-        { "pieces": 3, "effect": "Precise kills grant Bullet Saver (Weakspot DMG +15% for 8s, up to 3 stacks)." },
-        { "pieces": 4, "effect": "Killing an enemy grants Reload Efficiency +20% (plus Fire Rate +10% on a Weakspot kill) until you next reload." }
+        {
+          "pieces": 1,
+          "effect": "Head DMG Reduction +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Weakspot DMG +10%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Precise kills grant Bullet Saver (Weakspot DMG +15% for 8s, up to 3 stacks)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Killing an enemy grants Reload Efficiency +20% (plus Fire Rate +10% on a Weakspot kill) until you next reload."
+        }
       ],
       "playstyle": "Precision weakspot shooting."
     },
@@ -107,25 +206,61 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Cold Resist and Heat Resist +2.5." },
-        { "pieces": 2, "effect": "Dealing Elemental DMG grants a stack of Warm Sensation (Elemental DMG +2% for 2s; triggers once per 0.5s, up to 5 stacks)." },
-        { "pieces": 3, "effect": "Between 10°C and 30°C ambient temperature, gain the Warm status: Elemental DMG +18%." },
-        { "pieces": 4, "effect": "At 5 Warm Sensation stacks you're considered Warm; between 10°C and 30°C, gain an extra Elemental DMG +7%." }
+        {
+          "pieces": 1,
+          "effect": "Cold Resist and Heat Resist +2.5."
+        },
+        {
+          "pieces": 2,
+          "effect": "Dealing Elemental DMG grants a stack of Warm Sensation (Elemental DMG +2% for 2s; triggers once per 0.5s, up to 5 stacks)."
+        },
+        {
+          "pieces": 3,
+          "effect": "Between 10°C and 30°C ambient temperature, gain the Warm status: Elemental DMG +18%."
+        },
+        {
+          "pieces": 4,
+          "effect": "At 5 Warm Sensation stacks you're considered Warm; between 10°C and 30°C, gain an extra Elemental DMG +7%."
+        }
       ],
       "playstyle": "Temperature-dependent elemental damage."
     },
-    { "name": "Blackstone Set (Cold)", "rarity": "legendary", "pieces": 6, "bonusCount": 4, "notes": "Cold-region variant of the Blackstone Set; exact bonus text not independently confirmed but expected to mirror Blackstone Set with a cold-temperature trigger band instead of 10-30°C." },
-    { "name": "Blackstone Set (Heat)", "rarity": "legendary", "pieces": 6, "bonusCount": 4, "notes": "Heat-region variant of the Blackstone Set; exact bonus text not independently confirmed but expected to mirror Blackstone Set with a hot-temperature trigger band instead of 10-30°C." },
+    {
+      "name": "Blackstone Set (Cold)",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "notes": "Cold-region variant of the Blackstone Set. Exact bonus text not independently verified."
+    },
+    {
+      "name": "Blackstone Set (Heat)",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "notes": "Heat-region variant of the Blackstone Set. Exact bonus text not independently verified."
+    },
     {
       "name": "Blast Set",
       "rarity": "rare",
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Heavy Melee DMG +20%." },
-        { "pieces": 2, "effect": "Torso DMG Reduction +12%." },
-        { "pieces": 3, "effect": "A Melee kill grants 5 Prime Energy instantly and +20% DMG on your next Melee attack within 5s." },
-        { "pieces": 4, "effect": "A Melee kill instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)." }
+        {
+          "pieces": 1,
+          "effect": "Heavy Melee DMG +20%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Torso DMG Reduction +12%."
+        },
+        {
+          "pieces": 3,
+          "effect": "A Melee kill grants 5 Prime Energy instantly and +20% DMG on your next Melee attack within 5s."
+        },
+        {
+          "pieces": 4,
+          "effect": "A Melee kill instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)."
+        }
       ],
       "playstyle": "Melee burst and mobility."
     },
@@ -135,10 +270,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Rolling Stamina cost -20%." },
-        { "pieces": 2, "effect": "Crit DMG +12%." },
-        { "pieces": 3, "effect": "Above 90% Stamina, Crit Rate +5% and Crit DMG +20%." },
-        { "pieces": 4, "effect": "Killing an enemy instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)." }
+        {
+          "pieces": 1,
+          "effect": "Rolling Stamina cost -20%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Crit DMG +12%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Above 90% Stamina, Crit Rate +5% and Crit DMG +20%."
+        },
+        {
+          "pieces": 4,
+          "effect": "Killing an enemy instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)."
+        }
       ],
       "playstyle": "Mobile crit build."
     },
@@ -148,8 +295,14 @@
       "pieces": 6,
       "bonusCount": 2,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Jump Height +10%." },
-        { "pieces": 2, "effect": "Magazine Capacity +15%." }
+        {
+          "pieces": 1,
+          "effect": "Jump Height +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Magazine Capacity +15%."
+        }
       ],
       "notes": "Tied to the Gravity Abyss season (patch 2.4.1); only 2 confirmed bonus thresholds found."
     },
@@ -159,23 +312,47 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Gathering Speed +15%." },
-        { "pieces": 2, "effect": "Max Load +20." },
-        { "pieces": 3, "effect": "Above 80 Load, DMG taken -10% and Weapon/Tactical Item DMG +15%." },
-        { "pieces": 4, "effect": "Stamina cost -30% when gliding and rolling." }
+        {
+          "pieces": 1,
+          "effect": "Gathering Speed +15%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Max Load +20."
+        },
+        {
+          "pieces": 3,
+          "effect": "Above 80 Load, DMG taken -10% and Weapon/Tactical Item DMG +15%."
+        },
+        {
+          "pieces": 4,
+          "effect": "Stamina cost -30% when gliding and rolling."
+        }
       ],
       "playstyle": "Farming/gathering efficiency."
     },
     {
       "name": "Rustic Set",
-      "rarity": "uncommon",
+      "rarity": "standard",
       "pieces": 5,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Movement Speed +8%." },
-        { "pieces": 2, "effect": "Melee DMG +15%." },
-        { "pieces": 3, "effect": "HP +600." },
-        { "pieces": 4, "effect": "Gathering Speed +20%." }
+        {
+          "pieces": 1,
+          "effect": "Movement Speed +8%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Melee DMG +15%."
+        },
+        {
+          "pieces": 3,
+          "effect": "HP +600."
+        },
+        {
+          "pieces": 4,
+          "effect": "Gathering Speed +20%."
+        }
       ],
       "notes": "Early/cheap 5-piece set."
     },
@@ -185,10 +362,22 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Max HP +10%." },
-        { "pieces": 2, "effect": "Weapon DMG +8%." },
-        { "pieces": 3, "effect": "Weapon and Tactical Item DMG +20% while not spotted by enemies." },
-        { "pieces": 4, "effect": "Sprint Speed +12% and Stamina Recovery Speed +20% while below 50% HP." }
+        {
+          "pieces": 1,
+          "effect": "Max HP +10%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Weapon DMG +8%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Weapon and Tactical Item DMG +20% while not spotted by enemies."
+        },
+        {
+          "pieces": 4,
+          "effect": "Sprint Speed +12% and Stamina Recovery Speed +20% while below 50% HP."
+        }
       ],
       "playstyle": "Stealth."
     },
@@ -198,24 +387,60 @@
       "pieces": 6,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Status DMG Reduction +15%." },
-        { "pieces": 2, "effect": "Elemental DMG (Blaze, Frost, Shock, Blast) +8%." },
-        { "pieces": 3, "effect": "Each weapon hit grants 1 stack of Deviant Energy (+1% Elemental DMG per stack, up to 20; reloading halves current stacks)." },
-        { "pieces": 4, "effect": "Increases max Deviant Energy stacks by 10; a Weakspot hit grants 2 stacks instead of 1." }
+        {
+          "pieces": 1,
+          "effect": "Status DMG Reduction +15%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Elemental DMG (Blaze, Frost, Shock, Blast) +8%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Each weapon hit grants 1 stack of Deviant Energy (+1% Elemental DMG per stack, up to 20; reloading halves current stacks)."
+        },
+        {
+          "pieces": 4,
+          "effect": "Increases max Deviant Energy stacks by 10; a Weakspot hit grants 2 stacks instead of 1."
+        }
       ],
       "playstyle": "Elemental/status stacking."
     },
-    { "name": "Snow Panther Set", "rarity": "epic", "pieces": 6, "bonusCount": 1, "bonusesByPiece": [{ "pieces": 1, "effect": "Torso DMG Reduction +10%." }], "notes": "Only a single confirmed bonus threshold; likely still in a partial/limited rollout." },
+    {
+      "name": "Snow Panther Set",
+      "rarity": "epic",
+      "pieces": 6,
+      "bonusCount": 1,
+      "bonusesByPiece": [
+        {
+          "pieces": 1,
+          "effect": "Torso DMG Reduction +10%."
+        }
+      ],
+      "notes": "Only one bonus threshold could be independently confirmed; the rest are not verified."
+    },
     {
       "name": "Snowland Rustic Set",
-      "rarity": "uncommon",
+      "rarity": "standard",
       "pieces": 5,
       "bonusCount": 4,
       "bonusesByPiece": [
-        { "pieces": 1, "effect": "Movement Speed +8%." },
-        { "pieces": 2, "effect": "Cold Resist +5." },
-        { "pieces": 3, "effect": "HP +600." },
-        { "pieces": 4, "effect": "Gathering Speed +20%." }
+        {
+          "pieces": 1,
+          "effect": "Movement Speed +8%."
+        },
+        {
+          "pieces": 2,
+          "effect": "Cold Resist +5."
+        },
+        {
+          "pieces": 3,
+          "effect": "HP +600."
+        },
+        {
+          "pieces": 4,
+          "effect": "Gathering Speed +20%."
+        }
       ],
       "notes": "Winter-region Rustic Set variant."
     },
@@ -225,9 +450,18 @@
       "pieces": 6,
       "bonusCount": 3,
       "bonusesByPiece": [
-        { "pieces": 2, "effect": "Movement Speed +8%." },
-        { "pieces": 3, "effect": "Max Load +40." },
-        { "pieces": 4, "effect": "Logging and Mining Speed +25%." }
+        {
+          "pieces": 2,
+          "effect": "Movement Speed +8%."
+        },
+        {
+          "pieces": 3,
+          "effect": "Max Load +40."
+        },
+        {
+          "pieces": 4,
+          "effect": "Logging and Mining Speed +25%."
+        }
       ],
       "notes": "No confirmed 1-piece bonus for this set."
     }

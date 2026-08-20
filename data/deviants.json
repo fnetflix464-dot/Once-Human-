@@ -1,5 +1,5 @@
 {
-  "overview": "Deviants are sentient creatures/objects mutated by Stardust that players can capture and bond with as companions. Each Deviant falls into one of three main purposes — Combat, Territory (utility/gathering), or Crafting (produces materials) — and grants passive or active abilities. Once Human's catalog includes 80+ Deviations (per oncehumandb.com); this database covers 65, including the 4 added by the 'Deviation: Survive, Capture, Preserve' scenario (Whalepup, Soul Summoner, Director Fox — Zapamander is already listed under Bosses/event content) and the 3 time-limited Palworld-collaboration companions; tags like (WoT) note ones introduced in the Way of Winter update and (PvP)/(PvE) note mode-specific abilities.",
+  "overview": "Deviants are sentient creatures/objects mutated by Stardust that players can capture and bond with as companions. Each Deviant falls into one of three main purposes — Combat, Territory (utility/gathering), or Crafting (produces materials) — and grants passive or active abilities. Once Human's catalog includes 80+ Deviations (per oncehumandb.com); this database covers 65, including the 4 added by the 'Deviation: Survive, Capture, Preserve' scenario (Whalepup, Soul Summoner, Director Fox — Zapamander is already listed under Bosses/event content) and the 3 time-limited Palworld-collaboration companions; the '(Way of Winter)' tag notes ones introduced in that seasonal update and (PvP)/(PvE) note mode-specific abilities.",
   "categories": [
     "Combat",
     "Territory",
@@ -39,7 +39,7 @@
       "name": "Buzzy Bee",
       "category": "Territory",
       "ability": "Enhances plant mutation probability during cultivation; can auto-plant crops at a farm.",
-      "crossRef": "Boosts crop mutation odds and can auto-plant — see the Crops & Ranching section.",
+      "crossRef": "Boosts crop mutation odds and can auto-plant — see the Crops section.",
       "location": "Sunbury Farm, Evergreen Vineyard, Brewery Estate",
       "locationVerification": "community"
     },
@@ -147,7 +147,7 @@
       "name": "Growshroom",
       "category": "Territory",
       "ability": "Auto-plants seeds and accelerates crop growth.",
-      "crossRef": "Auto-plants seeds and speeds crop growth — see the Crops & Ranching section.",
+      "crossRef": "Auto-plants seeds and speeds crop growth — see the Crops section.",
       "location": "Wild Mushroom harvesting",
       "locationVerification": "community"
     },
@@ -303,7 +303,7 @@
       "name": "Rain Man",
       "category": "Territory",
       "ability": "Enhances crop vitality and provides irrigation water.",
-      "crossRef": "Irrigates and boosts crop vitality — see the Crops & Ranching section.",
+      "crossRef": "Irrigates and boosts crop vitality — see the Crops section.",
       "location": "Harborside, Greywater Industrial Zone, Unmarked Settlement",
       "locationVerification": "community"
     },

@@ -467,7 +467,7 @@
       "tier": "A",
       "damage": 32,
       "fireRate": 700,
-      "notes": "Signature weapon for Fast Gunner builds; 75-round mag lets players fire roughly 200 rounds before reloading when built around Fast Gunner.",
+      "notes": "Signature weapon for Fast Gunner builds; 75-round mag; community guides report firing roughly 200 rounds before reloading when built around Fast Gunner, though this specific figure hasn't been independently re-measured by this database.",
       "craftingStation": "intermediate-gear-workbench",
       "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
     },
@@ -562,7 +562,7 @@
       "rarity": "legendary",
       "tier": "S",
       "damage": 310,
-      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates. Obtainable exclusively through the Wish Machine.",
+      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtainable from world weapon crates, among other sources.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
     },
@@ -766,7 +766,7 @@
       "name": "ACS12 — Corrosion",
       "type": "shotgun",
       "rarity": "legendary",
-      "notes": "Confirmed unique ability: applies Shock/Power Surge damage rather than a status; centerpiece of the 'Corrosion Power Surge' PvE build (500k+ DPS in optimized setups). Static Shock is the ideal mod for it since the gun doesn't inflict a stacking Power Surge status.",
+      "notes": "Confirmed unique ability: applies Shock/Power Surge damage rather than a status; centerpiece of the 'Corrosion Power Surge' PvE build; some community guides report very high DPS in optimized setups, but no specific figure is independently verified by this database. Static Shock is the ideal mod for it since the gun doesn't inflict a stacking Power Surge status.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "confirmedArchetype": [
