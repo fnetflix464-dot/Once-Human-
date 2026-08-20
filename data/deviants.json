@@ -10,279 +10,387 @@
     {
       "name": "Artisan's Touch",
       "category": "Crafting",
-      "ability": "Instantly repairs the gear with the lowest durability."
+      "ability": "Instantly repairs the gear with the lowest durability.",
+      "location": "Scorcher elite enemy defeat",
+      "locationVerification": "community"
     },
     {
       "name": "Atomic Lighter",
       "category": "Crafting",
-      "ability": "Creates materials for explosive tactical items."
+      "ability": "Creates materials for explosive tactical items.",
+      "location": "Securement Silo – EX1",
+      "locationVerification": "community"
     },
     {
       "name": "Atomic Snail",
       "category": "Crafting",
-      "ability": "Generates components for elixir crafting."
+      "ability": "Generates components for elixir crafting.",
+      "location": "Stardust Advent III crates from Prime Wars",
+      "locationVerification": "community"
     },
     {
       "name": "Butterfly's Emissary",
       "category": "Combat",
-      "ability": "Rushes enemies from range and marks weak points for amplified damage."
+      "ability": "Rushes enemies from range and marks weak points for amplified damage.",
+      "location": "Eve of Evolution tutorial, GAIA Research Center Ruins, or Securement Silo – Alpha",
+      "locationVerification": "community"
     },
     {
       "name": "Buzzy Bee",
       "category": "Territory",
       "ability": "Enhances plant mutation probability during cultivation; can auto-plant crops at a farm.",
-      "crossRef": "Boosts crop mutation odds and can auto-plant — see the Crops & Ranching section."
+      "crossRef": "Boosts crop mutation odds and can auto-plant — see the Crops & Ranching section.",
+      "location": "Sunbury Farm, Evergreen Vineyard, Brewery Estate",
+      "locationVerification": "community"
     },
     {
       "name": "By-The-Wind",
       "category": "Combat",
-      "ability": "Generates gravity lifts for vertical movement and flight."
+      "ability": "Generates gravity lifts for vertical movement and flight.",
+      "location": "Prime War events",
+      "locationVerification": "community"
     },
     {
       "name": "Chefosaurus Rex",
       "category": "Territory",
       "ability": "Boosts effectiveness of food preparation at cooking stations.",
-      "crossRef": "Improves cooking station output — see the Stations section."
+      "crossRef": "Improves cooking station output — see the Stations section.",
+      "location": "There's a Dragon There task or Securement Silo – PHI",
+      "locationVerification": "community"
     },
     {
       "name": "Disco Ball",
       "category": "Crafting",
-      "ability": "Produces materials that extend whim elixir duration."
+      "ability": "Produces materials that extend whim elixir duration.",
+      "location": "Hale's Moving House or Disco Public Crisis events",
+      "locationVerification": "community"
     },
     {
       "name": "Dr. Teddy",
       "category": "Combat",
-      "ability": "Heals allies and revives downed teammates (PvP)."
+      "ability": "Heals allies and revives downed teammates (PvP).",
+      "location": "Securement Silo – THETA",
+      "locationVerification": "community"
     },
     {
       "name": "Dreamcatcher",
       "category": "Crafting",
-      "ability": "Creates components for cobweb trap elixirs."
+      "ability": "Creates components for cobweb trap elixirs.",
+      "location": "Arachsiam at Mirage Monolith",
+      "locationVerification": "community"
     },
     {
       "name": "Electric Eel",
       "category": "Territory",
       "ability": "Increases generator power output capacity.",
-      "crossRef": "Boosts generator capacity — see the Stations and Blueprints sections."
+      "crossRef": "Boosts generator capacity — see the Stations and Blueprints sections.",
+      "location": "Fishing",
+      "locationVerification": "community"
     },
     {
       "name": "Enchanting Void",
       "category": "Combat",
-      "ability": "Amplifies melee damage taken by affected targets (PvE)."
+      "ability": "Amplifies melee damage taken by affected targets (PvE).",
+      "location": "Securement Silo – THETA",
+      "locationVerification": "community"
     },
     {
       "name": "Extradimensional Cat",
       "category": "Territory",
-      "ability": "Accelerates health recovery during rest periods."
+      "ability": "Accelerates health recovery during rest periods.",
+      "location": "Teleportation Towers near Union Strongholds",
+      "locationVerification": "community"
     },
     {
       "name": "Festering Gel",
       "category": "Combat",
-      "ability": "Creates fortifications that block ranged attacks and heal allies."
+      "ability": "Creates fortifications that block ranged attacks and heal allies.",
+      "location": "Monolith of Greed and Treant at Gaia Cliff Monolith",
+      "locationVerification": "community"
     },
     {
       "name": "Fetch-A-Lot Bunny",
       "category": "Territory",
-      "ability": "Automatically harvests shrubs and vegetation."
+      "ability": "Automatically harvests shrubs and vegetation.",
+      "location": "Dracaena at Red Sands, Bald Cypress at Iron River",
+      "locationVerification": "community"
     },
     {
       "name": "Flame Essence",
       "category": "Territory",
-      "ability": "Enhances furnace production efficiency."
+      "ability": "Enhances furnace production efficiency.",
+      "location": "Hearst Industries or Securement Silo – PSI",
+      "locationVerification": "community"
     },
     {
       "name": "Frog the Leaper",
       "category": "Crafting",
-      "ability": "Generates jumping-enhancement elixir materials."
+      "ability": "Generates jumping-enhancement elixir materials.",
+      "location": "Stacked cars at Riverhart Harbor, Rotten Manor",
+      "locationVerification": "community"
     },
     {
       "name": "Gazocchio",
       "category": "Territory/Crafting",
-      "ability": "Guards territory and produces shadow-dispelling items (Way of Winter)."
+      "ability": "Guards territory and produces shadow-dispelling items (Way of Winter).",
+      "location": "Part of the Deviant task from Lowe",
+      "locationVerification": "community"
     },
     {
       "name": "Gingerbread House",
       "category": "Territory",
-      "ability": "Produces materials for object transformation items."
+      "ability": "Produces materials for object transformation items.",
+      "location": "Morphic Crates or Morphic Decoy task",
+      "locationVerification": "community"
     },
     {
       "name": "Growshroom",
       "category": "Territory",
       "ability": "Auto-plants seeds and accelerates crop growth.",
-      "crossRef": "Auto-plants seeds and speeds crop growth — see the Crops & Ranching section."
+      "crossRef": "Auto-plants seeds and speeds crop growth — see the Crops & Ranching section.",
+      "location": "Wild Mushroom harvesting",
+      "locationVerification": "community"
     },
     {
       "name": "Grumpy Bulb",
       "category": "Combat",
-      "ability": "Disrupts enemy hostility, causing them to infight."
+      "ability": "Disrupts enemy hostility, causing them to infight.",
+      "location": "Mature Onion Seed at your base",
+      "locationVerification": "community"
     },
     {
       "name": "H37",
       "category": "Territory",
-      "ability": "Explores settlements and collects loot crate resources."
+      "ability": "Explores settlements and collects loot crate resources.",
+      "location": "Fragments of Memory task or Securement Silo – ALPHA",
+      "locationVerification": "community"
     },
     {
       "name": "Harveseed",
       "category": "Crafting",
-      "ability": "Generates emergency health-restoration elixir materials."
+      "ability": "Generates emergency health-restoration elixir materials.",
+      "location": "Treant at Gaia Cliff Monolith",
+      "locationVerification": "community"
     },
     {
       "name": "Hug-In-A-Bowl",
       "category": "Crafting",
-      "ability": "Produces ingredients for sanity-restoring cuisine."
+      "ability": "Produces ingredients for sanity-restoring cuisine.",
+      "location": "Hug-in-a-Bowl food crafting",
+      "locationVerification": "community"
     },
     {
       "name": "Hydronaut Fish",
       "category": "Territory",
-      "ability": "Gathers seawater and produces fish (Way of Winter)."
+      "ability": "Gathers seawater and produces fish (Way of Winter).",
+      "location": "Deviation: Hydronaut Fish task from Lowe",
+      "locationVerification": "community"
     },
     {
       "name": "Ice Pot",
       "category": "Crafting",
-      "ability": "Creates materials for ice-based tactical items (Way of Winter)."
+      "ability": "Creates materials for ice-based tactical items (Way of Winter).",
+      "location": "Deviation: Ice Pot task from Lowe",
+      "locationVerification": "community"
     },
     {
       "name": "Invincible Sun",
       "category": "Combat",
-      "ability": "Releases blazing energy rays that cause burn damage (Way of Winter)."
+      "ability": "Releases blazing energy rays that cause burn damage (Way of Winter).",
+      "location": "Securement Silo – Delta",
+      "locationVerification": "community"
     },
     {
       "name": "Lethal Rabbit",
       "category": "Territory",
-      "ability": "Hunts animals and extracts resources from corpses."
+      "ability": "Hunts animals and extracts resources from corpses.",
+      "location": "Deadsville, Heart Island, Evergreen",
+      "locationVerification": "community"
     },
     {
       "name": "Logging Beaver",
       "category": "Territory",
       "ability": "Efficiently fells trees and harvests lumber; can occasionally find furniture items.",
-      "crossRef": "Can occasionally turn up furniture blueprints while foraging — see the Blueprints section."
+      "crossRef": "Can occasionally turn up furniture blueprints while foraging — see the Blueprints section.",
+      "location": "Meyer's Market, Iron River, Broken Delta",
+      "locationVerification": "community"
     },
     {
       "name": "Lonewolf's Whisper",
       "category": "Combat",
-      "ability": "Designates targets and spawns clones upon enemy defeat."
+      "ability": "Designates targets and spawns clones upon enemy defeat.",
+      "location": "Shadow Hound in Monolith of Thirst",
+      "locationVerification": "community"
     },
     {
       "name": "Masonic Pyramid",
       "category": "Crafting",
-      "ability": "Guarantees critical hits from stealth; alerts owner to aimed attacks (PvP)."
+      "ability": "Guarantees critical hits from stealth; alerts owner to aimed attacks (PvP).",
+      "location": "Stronghold Conquests in Iron River",
+      "locationVerification": "community"
     },
     {
       "name": "Mini Feaster",
       "category": "Combat",
-      "ability": "Summons tentacles that damage enemies and boost weapon damage."
+      "ability": "Summons tentacles that damage enemies and boost weapon damage.",
+      "location": "Lord of the Quest task or Mist Zone events",
+      "locationVerification": "community"
     },
     {
       "name": "Mini Wonder",
       "category": "Combat",
-      "ability": "Absorbs incoming bullets and provides ally buffs (duration/cooldown rebalanced in patch 3.0.2)."
+      "ability": "Absorbs incoming bullets and provides ally buffs (duration/cooldown rebalanced in patch 3.0.2).",
+      "location": "Other World Traveler task",
+      "locationVerification": "community"
     },
     {
       "name": "Mr. Wish",
       "category": "Combat",
-      "ability": "Rapidly auto-fires a gun and marks targets with enhanced damage (PvP)."
+      "ability": "Rapidly auto-fires a gun and marks targets with enhanced damage (PvP).",
+      "location": "Securement Silo – SIGMA",
+      "locationVerification": "community"
     },
     {
       "name": "Nutcracker",
       "category": "Territory",
-      "ability": "Patrols and defends territory with scaling attack power."
+      "ability": "Patrols and defends territory with scaling attack power.",
+      "location": "Forsaken Monolith after defeating Forsaken Giant (Mensdevoran)",
+      "locationVerification": "community"
     },
     {
       "name": "Orb Lightning",
       "category": "Crafting",
-      "ability": "Enhances turret performance via crafted lightning items."
+      "ability": "Enhances turret performance via crafted lightning items.",
+      "location": "Rosetta Research Institutes, Military Bases",
+      "locationVerification": "community"
     },
     {
       "name": "Paper Doll",
       "category": "Territory",
-      "ability": "Repairs damaged structures and filters during territory maintenance."
+      "ability": "Repairs damaged structures and filters during territory maintenance.",
+      "location": "Various locations across Nalcott",
+      "locationVerification": "community"
     },
     {
       "name": "Party Monkey",
       "category": "Crafting",
-      "ability": "Produces materials and self-repairs, though it attracts monster aggression."
+      "ability": "Produces materials and self-repairs, though it attracts monster aggression.",
+      "location": "Production Facility Public Events",
+      "locationVerification": "community"
     },
     {
       "name": "Polar Jelly",
       "category": "Combat",
-      "ability": "Deals frost damage and reduces enemy movement speed."
+      "ability": "Deals frost damage and reduces enemy movement speed.",
+      "location": "Cargo Scramble events",
+      "locationVerification": "community"
     },
     {
       "name": "Pup Buddy",
       "category": "Crafting",
-      "ability": "Generates weight-capacity-enhancement elixir components."
+      "ability": "Generates weight-capacity-enhancement elixir components.",
+      "location": "Jonathan at Greywater Camp or various locations",
+      "locationVerification": "community"
     },
     {
       "name": "Pyro Dino",
       "category": "Combat",
-      "ability": "Launches AoE blaze attacks with burn potential (fire suppression significantly reduced in patch 3.0.2)."
+      "ability": "Launches AoE blaze attacks with burn potential (fire suppression significantly reduced in patch 3.0.2).",
+      "location": "Securement Silo – PHI",
+      "locationVerification": "community"
     },
     {
       "name": "Rain Man",
       "category": "Territory",
       "ability": "Enhances crop vitality and provides irrigation water.",
-      "crossRef": "Irrigates and boosts crop vitality — see the Crops & Ranching section."
+      "crossRef": "Irrigates and boosts crop vitality — see the Crops & Ranching section.",
+      "location": "Harborside, Greywater Industrial Zone, Unmarked Settlement",
+      "locationVerification": "community"
     },
     {
       "name": "Rebecca",
       "category": "Territory",
-      "ability": "Summons a musician that accelerates deviation power recovery."
+      "ability": "Summons a musician that accelerates deviation power recovery.",
+      "location": "LEA Research Lab final boss",
+      "locationVerification": "community"
     },
     {
       "name": "Shattered Maiden",
       "category": "Combat",
-      "ability": "Fears and freezes enemies during combat."
+      "ability": "Fears and freezes enemies during combat.",
+      "location": "Farmside Fright task or Securement Silo – THETA",
+      "locationVerification": "community"
     },
     {
       "name": "Snapshot",
       "category": "Combat",
-      "ability": "Photographs enemies to increase damage they receive from weapons (Way of Winter)."
+      "ability": "Photographs enemies to increase damage they receive from weapons (Way of Winter).",
+      "location": "Secret Servitor in Tundra Monolith",
+      "locationVerification": "community"
     },
     {
       "name": "Snow Globe",
       "category": "Crafting",
-      "ability": "Produces snowball materials that cause freeze effects (PvE)."
+      "ability": "Produces snowball materials that cause freeze effects (PvE).",
+      "location": "Securement Silo – PSI",
+      "locationVerification": "community"
     },
     {
       "name": "Snowsprite",
       "category": "Combat",
-      "ability": "Summons frost crystals that explode for frost damage (Way of Winter)."
+      "ability": "Summons frost crystals that explode for frost damage (Way of Winter).",
+      "location": "Deviation: Snowsprite task from Lowe",
+      "locationVerification": "community"
     },
     {
       "name": "Space Turner",
       "category": "Crafting",
-      "ability": "Creates teleportation keystones for relocating teammates."
+      "ability": "Creates teleportation keystones for relocating teammates.",
+      "location": "Mystical Crates",
+      "locationVerification": "community"
     },
     {
       "name": "Strange Door",
       "category": "Crafting",
-      "ability": "Generates portal materials enabling fast travel between locations."
+      "ability": "Generates portal materials enabling fast travel between locations.",
+      "location": "Blackfell Region, In The Tall Grass task, Mystical Crates",
+      "locationVerification": "community"
     },
     {
       "name": "Tar Pudding",
       "category": "Territory",
-      "ability": "Extracts crude oil and operates refining facilities (Way of Winter)."
+      "ability": "Extracts crude oil and operates refining facilities (Way of Winter).",
+      "location": "Avalanche Monolith in Vena Fjord",
+      "locationVerification": "community"
     },
     {
       "name": "The Digby Boy",
       "category": "Territory",
       "ability": "Mines ore deposits once activated at high power; strong early-game pick.",
-      "crossRef": "Strong early-game ore gatherer, pairs with gathering-boosting Tech Tree nodes (originally the Memetic system's Gathering branch) — see the Memetics section."
+      "crossRef": "Strong early-game ore gatherer, pairs with gathering-boosting Tech Tree nodes (originally the Memetic system's Gathering branch) — see the Memetics section.",
+      "location": "Deviation Expert task or Silver Ore mining",
+      "locationVerification": "community"
     },
     {
       "name": "Upper World Spawn",
       "category": "Crafting",
-      "ability": "Produces materials for temporary invulnerability items (PvP)."
+      "ability": "Produces materials for temporary invulnerability items (PvP).",
+      "location": "Securement Silo – PSI",
+      "locationVerification": "community"
     },
     {
       "name": "Voodoo Doll",
       "category": "Combat",
-      "ability": "Shares damage between the player and a designated ally or enemy."
+      "ability": "Shares damage between the player and a designated ally or enemy.",
+      "location": "Evergreen Vineyard, Fort Erie, hospitals",
+      "locationVerification": "community"
     },
     {
       "name": "Zeno-Purifier",
       "category": "Combat",
-      "ability": "Teleports to perform melee attacks and grants the player teleportation."
+      "ability": "Teleports to perform melee attacks and grants the player teleportation.",
+      "location": "Defeat 200 enemies task or various chests",
+      "locationVerification": "community"
     },
     {
       "name": "ZapCam",
@@ -297,17 +405,23 @@
     {
       "name": "Berserkosaurus Rex",
       "category": "Territory",
-      "ability": "Increases cooking proficiency at cooking stations (near-identical effect to Chefosaurus Rex; kept as a separate confirmed entry rather than assumed duplicate)."
+      "ability": "Increases cooking proficiency at cooking stations (near-identical effect to Chefosaurus Rex; kept as a separate confirmed entry rather than assumed duplicate).",
+      "location": "Phase 2 of Clash at Blackfell",
+      "locationVerification": "community"
     },
     {
       "name": "Radiant One",
       "category": "Combat",
-      "ability": "Provides aerial floating and a movement speed boost."
+      "ability": "Provides aerial floating and a movement speed boost.",
+      "location": "Phase 3 of The Last Stand of Prismverse's Clash",
+      "locationVerification": "community"
     },
     {
       "name": "Wish Box",
       "category": "Territory",
-      "ability": "Transforms items placed inside it into random new items."
+      "ability": "Transforms items placed inside it into random new items.",
+      "location": "Morphic Crates or Severin VII-S2401",
+      "locationVerification": "community"
     },
     {
       "name": "Whalepup",
@@ -346,5 +460,10 @@
     "placement": "A captured Deviant only provides its ability once placed in an Isolated Securement Unit at your territory — build multiple units to run several Deviants at once.",
     "power": "Each Deviant has a Deviant Power meter that depletes as it works; once empty it goes inactive until it recharges (time, or resources/feed depending on the Deviant).",
     "cookingLink": "Securement Soup and Stardust Italian Soup Can (see the Food & Cooking section) both grant +1 Deviation capture ability level, making wild captures easier while active."
-  }
+  },
+  "locationSource": {
+    "name": "BisectHosting — Once Human Deviations Guide (locations/abilities list)",
+    "url": "https://www.bisecthosting.com/blog/once-human-deviations-locations-abilities-effects-list"
+  },
+  "locationNote": "Location text above is drawn from a community-compiled deviations guide (see locationSource), not this database's own field testing — treat it as a strong lead, not a guarantee, since spawn pools can shift between patches. Deviants without a location field weren't covered by the source used and haven't been independently verified."
 }

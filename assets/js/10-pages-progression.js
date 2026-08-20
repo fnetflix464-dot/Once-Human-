@@ -117,14 +117,23 @@ OH.renderBuildDetail = function renderBuildDetail(key) {
         ${modLinks.length ? `<ul>${modLinks.map(m => `<li>${m}</li>`).join("")}</ul>` : `<p class="intro">Not specified in this build's source notes.</p>`}
       </div>
       <div class="section-block">
-        <h3>Armor</h3>
-        <p class="intro">This database's build notes don't specify a required armor set for this build — see <a href="#armor">Armor</a> for general set-bonus options that fit the role above.</p>
+        <h3>Armor ${b.gearVerification ? OH.verificationBadge(b.gearVerification, { compact: true }) : ""}</h3>
+        ${b.recommendedArmor && b.recommendedArmor.length
+          ? `<ul>${b.recommendedArmor.map(a => `<li>${OH.esc(a)}</li>`).join("")}</ul>`
+          : `<p class="intro">This database's build notes don't specify a required armor set for this build — see <a href="#armor">Armor</a> for general set-bonus options that fit the role above.</p>`}
       </div>
       <div class="section-block">
-        <h3>Food &amp; buffs</h3>
-        <p class="intro">Not specified in this build's source notes — see <a href="#food">Food &amp; Cooking</a> for general buff options.</p>
+        <h3>Food &amp; buffs ${b.gearVerification && b.recommendedFood && b.recommendedFood.length ? OH.verificationBadge(b.gearVerification, { compact: true }) : ""}</h3>
+        ${b.recommendedFood && b.recommendedFood.length
+          ? `<ul>${b.recommendedFood.map(f => {
+              const found = OH.foodRecipeByLooseName(f);
+              return `<li>${found ? OH.link("food", found._key, f) : OH.esc(f)}</li>`;
+            }).join("")}</ul><p class="intro">${OH.esc(b.foodNote || "")}</p>`
+          : `<p class="intro">${b.foodNote ? OH.esc(b.foodNote) : `Not specified in this build's source notes — see <a href="#food">Food &amp; Cooking</a> for general buff options.`}</p>`}
       </div>
     </div>
+
+    ${b.recommendedDeviant ? `<div class="section-block"><h3>Deviant</h3><p class="intro">${OH.esc(b.recommendedDeviant)}</p></div>` : ""}
 
     <div class="section-block">
       <h3>How to obtain the core weapon</h3>
@@ -132,6 +141,7 @@ OH.renderBuildDetail = function renderBuildDetail(key) {
     </div>
 
     ${OH.sourceBlock(null, OH.state.data.meta.lastCompiled, null)}
+    ${b.gearSources && b.gearSources.length ? OH.sourceBlock(null, null, b.gearSources.map(s => s.name)) : ""}
     <p class="intro"><strong>Patch compatibility:</strong> compiled against game version ${OH.esc(OH.state.data.meta.gameVersionAtCompile)}; not independently re-verified against every subsequent patch. Check <a href="#updates">Updates</a> for anything that might have changed this build's weapon effect or mods since.</p>
 
     ${OH.backLink("builds", "Builds & Classes")}

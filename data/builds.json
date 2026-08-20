@@ -25,7 +25,28 @@
         "Shield Breaker",
         "Shrapnel Smash",
         "Shrapnel Souvenir"
-      ]
+      ],
+      "recommendedArmor": [
+        "4pc Lonewolf Set + 1pc Bastille + Beret headpiece (Beret increases how many parts Shrapnel can hit) — a common endgame pick, ~15,000 Starchrom.",
+        "Alternative: 4pc Falcon Set for Crit DMG + 2pc Lonewolf for Crit Rate."
+      ],
+      "recommendedFood": [
+        "Stargazy Pie",
+        "Assorted Canned Fruit",
+        "Canned Meat",
+        "Bone-In Deviated Sausage"
+      ],
+      "gearSources": [
+        {
+          "name": "BlueStacks — Once Human Shrapnel Build and Guide",
+          "url": "https://www.bluestacks.com/blog/game-guides/once-human/ohn-shrapnel-build-en.html"
+        },
+        {
+          "name": "GameRant — Once Human: Best Shrapnel Build",
+          "url": "https://gamerant.com/once-human-best-shrapnel-build/"
+        }
+      ],
+      "gearVerification": "community"
     },
     {
       "id": "power-surge",
@@ -45,7 +66,24 @@
         "Surge Amplifier"
       ],
       "dpsClaimVerification": "community",
-      "dpsClaimNote": "This ~100,000 DPS figure is a community-reported estimate, not a value this database independently measured. Exact weapon/mod combination, calibration level, food/buffs, target (training dummy vs. live boss), and game patch used to produce it are unknown — treat it as directional, not a guarantee."
+      "dpsClaimNote": "This ~100,000 DPS figure is a community-reported estimate, not a value this database independently measured. Exact weapon/mod combination, calibration level, food/buffs, target (training dummy vs. live boss), and game patch used to produce it are unknown — treat it as directional, not a guarantee.",
+      "recommendedArmor": [
+        "Mayfly Goggles (head) — reduces Power Surge's own damage 30% but doubles how many Shock DMG instances proc; the drawback becomes negligible once you stack enough damage buffs.",
+        "Endgame: 4pc Shelterer Set for extra Elemental DMG. Without the MPS7 – Outer Space, an alternative is Gas Mask Hood + Lonewolf Set for a SOCR Outsider variant."
+      ],
+      "recommendedFood": [],
+      "foodNote": "No build-specific food recommendation was found in the guides searched for this build — general Energy Drink consumables (recharge rate) were mentioned but not a specific recipe. See Food & Cooking for general Elemental/Shock-relevant options.",
+      "gearSources": [
+        {
+          "name": "GameLeap — Once Human Best Power Surge Build",
+          "url": "https://www.gameleap.com/articles/once-human-best-power-surge-build"
+        },
+        {
+          "name": "Sportskeeda — Once Human Power Surge build guide: BiS gear, Deviant, and more",
+          "url": "https://sportskeeda.com/mmo/once-human-power-surge-build-guide-bis-gear-deviant"
+        }
+      ],
+      "gearVerification": "community"
     },
     {
       "id": "frost-vortex",
@@ -63,7 +101,28 @@
         "Frosty Blessing",
         "Shattering Ice",
         "Vortex Multiplier"
-      ]
+      ],
+      "recommendedArmor": [
+        "Stealth Walker chest piece + 4pc Shelterer Set + one spare slot (e.g. Heavy Duty for its +10% Max HP 1-piece bonus)."
+      ],
+      "recommendedFood": [
+        "Honey-Glazed Meat",
+        "Mixed Fried Hotdog",
+        "Whimsical Drink"
+      ],
+      "foodNote": "Honey-Glazed Meat adds Crit DMG against enemies affected by Frost Vortex; Mixed Fried Hotdog supports a Bull's Eye secondary; Whimsical Drink gives +30% PSI Intensity (boosts status-effect potency, including Frost).",
+      "recommendedDeviant": "Polar Jelly (Combat Deviant) — frequently cited as important for sustaining this build.",
+      "gearSources": [
+        {
+          "name": "Vortex Gaming — Once Human: Frost Vortex Build Guide (KAM Abyss Glance)",
+          "url": "https://vortexgaming.io/en/postdetail/536866"
+        },
+        {
+          "name": "Sportskeeda — Once Human Frost Vortex build guide: BiS gear, armor, and more",
+          "url": "https://www.sportskeeda.com/mmo/once-human-frost-vortex-build-guide-bis-gear-armor"
+        }
+      ],
+      "gearVerification": "community"
     },
     {
       "id": "bounce",
@@ -79,7 +138,27 @@
         "Bounce Rampage",
         "Super Bullet",
         "Targeted Bounce"
-      ]
+      ],
+      "recommendedArmor": [
+        "Agent Set (Helmet/Face/Gloves/Shoes) for +10% Weakspot DMG plus its stacking Bullet Saver perk (up to +45% Weakspot DMG from precise kills).",
+        "Alternative mix: Agent + Bastille — Bastille Jacket (torso) for +10% Weapon DMG above 70% HP, Hot Dog Shorts (legs) for +2 Bounces."
+      ],
+      "recommendedFood": [
+        "Mixed Fried Hot Dog",
+        "Assorted Canned Fruit"
+      ],
+      "foodNote": "Both recipes boost weakspot damage; guides cite eating both together for a combined weakspot-damage increase of roughly 80%.",
+      "gearSources": [
+        {
+          "name": "Theria Games — Once Human Bounce Build",
+          "url": "https://theriagames.com/guide/once-human-bounce-build/"
+        },
+        {
+          "name": "Game8 — Bounce Build | Once Human",
+          "url": "https://game8.co/games/Once-Human/archives/469252"
+        }
+      ],
+      "gearVerification": "community"
     },
     {
       "id": "fast-gunner-lmg",
@@ -97,7 +176,30 @@
         "Precision Rush",
         "Shoot Out",
         "Shooting Blitz"
-      ]
+      ],
+      "recommendedArmor": [
+        "4pc Lonewolf + 1pc Bastille + Oasis Mask (Wish Machine, ~8,000 Starchrom; +10 max Fast Gunner stacks, +1% damage per stack).",
+        "Alternative: 3pc Bastille for a flat +10% Fire Rate."
+      ],
+      "recommendedFood": [
+        "Assorted Canned Fruit",
+        "Shattered Bread",
+        "Stargazy Pie",
+        "Corn Ale",
+        "Shellfish Meat"
+      ],
+      "foodNote": "Assorted Canned Fruit gives +25% Weakspot DMG above 80% Sanity; Shattered Bread gives +10% Weapon DMG; Stargazy Pie gives +25% Crit DMG; Corn Ale locks Sanity above 80% for 30 minutes to keep the Canned Fruit bonus active; Shellfish Meat adds +5% vulnerability damage for the party.",
+      "gearSources": [
+        {
+          "name": "GameRant — Best Machine Gun Fast Gunner Build In Once Human",
+          "url": "https://gamerant.com/once-human-machine-gun-fast-gunner-build-guide-mods-armor-mg4-predator-lmg-bastille/"
+        },
+        {
+          "name": "Upcomer — Fast Gunner LMG Build for maximum Crit damage in Once Human",
+          "url": "https://upcomer.com/fast-gunner-lmg-build-for-maximum-crit-damage-in-once-human-70k-dps/"
+        }
+      ],
+      "gearVerification": "community"
     }
   ],
   "note": "Builds combine a weapon effect archetype, a weapon, mods and Tech Tree nodes into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."

@@ -152,9 +152,9 @@ OH.renderDeviants = function renderDeviants() {
     <p class="intro">${OH.esc(d.overview)}</p>
     ${OH.renderFilterBar(tab, filterConfig, active, DEVIANT_SORT_CONFIG, OH.state.sort[tab])}
     <div class="table-wrap"><table class="data-table">
-      <thead><tr><th></th><th>Name</th><th>Category</th><th>Ability</th><th>PvE/PvP</th></tr></thead>
+      <thead><tr><th></th><th>Name</th><th>Category</th><th>Ability</th><th>Location</th><th>PvE/PvP</th></tr></thead>
       <tbody>
-        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0"><td>${OH.favoriteButton("deviants", x._key, x.name)}</td><td>${OH.link("deviants", x._key, x.name)}</td><td><span class="tag">${OH.esc(x.category)}</span></td><td>${OH.esc(x.ability)}</td><td>${OH.pvpPveTag(x._pvpPve)}</td></tr>`).join("")}
+        ${items.map(x => `<tr class="card-link row-link" role="link" data-tab="deviants" data-id="${OH.esc(x._key)}" tabindex="0"><td>${OH.favoriteButton("deviants", x._key, x.name)}</td><td>${OH.link("deviants", x._key, x.name)}</td><td><span class="tag">${OH.esc(x.category)}</span></td><td>${OH.esc(x.ability)}</td><td>${x.location ? OH.esc(x.location) : `<span class="intro">Not found</span>`}</td><td>${OH.pvpPveTag(x._pvpPve)}</td></tr>`).join("")}
       </tbody>
     </table></div>
     ${!items.length ? OH.emptyState(OH.state.query) : ""}
@@ -175,6 +175,12 @@ OH.renderDeviantDetail = function renderDeviantDetail(key) {
     <div class="meta detail-meta"><span class="tag">${OH.esc(v.category)}</span>${OH.pvpPveTag(v._pvpPve)}</div>
     <p>${OH.esc(v.ability)}</p>
     ${v.crossRef ? `<p class="intro"><strong>Connects to:</strong> ${OH.esc(v.crossRef)}</p>` : ""}
+    <div class="section-block">
+      <h3>Where to find it ${v.locationVerification ? OH.verificationBadge(v.locationVerification, { compact: true }) : ""}</h3>
+      ${v.location
+        ? `<p class="intro" style="margin-top:0">${OH.esc(v.location)}</p><p class="intro">${OH.esc(OH.state.data.deviants.locationNote || "")}</p>${OH.sourceBlock(null, null, [OH.state.data.deviants.locationSource ? OH.state.data.deviants.locationSource.name : ""].filter(Boolean))}`
+        : `<p class="intro" style="margin-top:0">No specific spawn location was found in the sources checked for this database — see the general capture method below.</p>`}
+    </div>
     <div class="section-block">
       <h3>How to capture it</h3>
       <ul>
@@ -261,6 +267,16 @@ OH.renderCrops = function renderCrops() {
         ${c.deviantHelpers.map(x => `<div class="card"><h3>${OH.esc(x.name)}</h3><p>${OH.esc(x.helps)}</p></div>`).join("")}
       </div>
     </div>
+    ${c.deviatedCrops ? `
+      <div class="section-block">
+        <h3>Deviated Crops ${OH.verificationBadge(c.deviatedCrops.verification, { compact: true })}</h3>
+        <p class="intro" style="margin-top:0">${OH.esc(c.deviatedCrops.overview)}</p>
+        <p><strong>How to increase mutation odds:</strong></p>
+        <ul>${c.deviatedCrops.howToIncrease.map(x => `<li>${OH.esc(x)}</li>`).join("")}</ul>
+        <p class="intro">${OH.esc(c.deviatedCrops.note)}</p>
+        ${OH.sourceBlock(null, null, c.deviatedCrops.sources.map(s => s.name))}
+      </div>
+    ` : ""}
     <p class="intro">Looking for animals instead of plants? See <a href="#ranching">Ranching</a>.</p>
   `;
 };

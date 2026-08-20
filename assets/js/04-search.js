@@ -42,11 +42,11 @@ OH.buildSearchCorpus = function buildSearchCorpus() {
 
   idx.attachmentTypes.forEach(t => push("attachments", t._key, t.name, [t.effect, ...(t.examples || [])], "Accessory Type"));
 
-  idx.builds.forEach(b => push("builds", b._key, b.name, [b.summary, b.role, b.archetype], b.role));
+  idx.builds.forEach(b => push("builds", b._key, b.name, [b.summary, b.role, b.archetype, ...(b.recommendedArmor || []), ...(b.recommendedFood || [])], b.role));
 
   idx.archetypes.forEach(a => push("classes", a._key, a.name, [a.summary, a.role], "Weapon Effect"));
 
-  idx.deviants.forEach(v => push("deviants", v._key, v.name, [v.ability, v.category, v.crossRef], v.category));
+  idx.deviants.forEach(v => push("deviants", v._key, v.name, [v.ability, v.category, v.crossRef, v.location], v.category));
 
   idx.livestock.forEach(l => push("ranching", l._key, l.name, [l.products, l.tier, l.notes], "Ranching"));
 

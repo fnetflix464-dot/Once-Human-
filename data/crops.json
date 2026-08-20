@@ -23,5 +23,20 @@
     { "name": "Buzzy Bee", "helps": "Automatically plants crops and boosts mutation probability." },
     { "name": "Growshroom", "helps": "Auto-plants seeds and accelerates crop growth." },
     { "name": "Rain Man", "helps": "Enhances crop vitality and provides irrigation water." }
-  ]
+  ],
+  "deviatedCrops": {
+    "verification": "confirmed",
+    "overview": "Once Human's crops don't have a season mechanic — any crop maturing has a chance to mutate into a 'Deviated' state instead, recognizable by a pink-purple glow. Deviated crops don't decay (regular harvests eventually spoil) and are required ingredients for a set of higher-value special recipes with stronger buffs than ordinary food.",
+    "howToIncrease": [
+      "Craft and apply Fertilizer – Mutation Boost (costs Fertilizer, Stardust Source, Mushrooms) to a planted crop.",
+      "Improved Compound Fertilizer also raises mutation odds, plus boosts overall yield.",
+      "Place the Growshroom deviant on your territory — it accelerates growth and raises mutation odds.",
+      "Place the Buzzy Bee deviant — it raises mutation odds further while a crop is growing, more effectively at high Deviant Power."
+    ],
+    "sources": [
+      { "name": "GameRant — How To Get Deviated Crops In Once Human", "url": "https://gamerant.com/once-human-how-get-deviated-crops/" },
+      { "name": "TheGamer — How To Get Deviated Crops Using Fertilizers In Once Human", "url": "https://www.thegamer.com/once-human-how-to-get-deviated-crops-guide/" }
+    ],
+    "note": "Sources describe mutation as a chance applied to whichever crop you're growing, not a separate named item — so this database does not list 'Deviated Beets' etc. as distinct catalog entries, and does not filter crops by a deviated/normal or seasonal dimension, since neither is a fixed property of the crop type itself."
+  }
 }
