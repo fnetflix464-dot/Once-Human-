@@ -1,0 +1,41 @@
+{
+  "overview": "Weapon accessories (sights, muzzle devices, grips and magazines) modify a weapon's Stability, Accuracy, Range, Reload Efficiency, Bullet Velocity, Zoom Level, Aiming Speed and Mobility. Over 50 exist across 4 main categories. You only need to purchase or find an accessory once — after that you can equip it on any compatible weapon you own, as many times as you like.",
+  "mechanicNotice": "As of the Jan 21, 2026 accessory rework, every accessory of the same type and rarity now gives identical effects (e.g. every Rare 2x Scope gives the same '2.0x zoom, Accuracy +4%' regardless of which weapon line it dropped for), and the old 3 separate reload stats were merged into one 'Reload Efficiency' stat (a display simplification — actual reload times got faster under the new system, not slower). The same patch removed the separate weapon Calibration feature entirely; already-calibrated weapons kept their stats, but calibration blueprints now activate their bonus automatically during crafting instead of being applied afterward.",
+  "howToObtain": [
+    "Purchase from regional Shop vendors — each Stronghold's vendor (Deadsville, Meyer's Market, Greywater Camp, Tall Grass Inn, Blackfell, etc.) sells a different rotating selection.",
+    "Severin VII, the Morphic Shop vendor, always carries the same fixed stock wherever you find them.",
+    "Found via general world exploration and loot containers."
+  ],
+  "types": [
+    {
+      "id": "sights",
+      "name": "Sights / Optics",
+      "effect": "Improve Zoom Level and Accuracy for aimed shots; higher-magnification optics trade faster target acquisition for effective range.",
+      "examples": ["Reflex Sight", "Sealed Reflex Sight", "Mini Reflex Sight", "Light Reflex Sight", "Holographic Sight", "Tactical Holographic Sight", "Laser Sight", "Small Laser Sight", "Large Laser Sight", "Integrated Laser Sight", "Tactical Laser Sight", "Light Optic", "Mid-Range Optic", "Precision Optic", "Advanced Combat Optic", "Recon Combat Optic", "Precision Rifle Scope", "Tactical Rifle Scope", "Small Infrared"]
+    },
+    {
+      "id": "muzzle",
+      "name": "Muzzle Devices",
+      "effect": "Suppressors reduce noise (and often recoil) for stealth play; brakes and compensators reduce recoil/muzzle climb (Stability) at the cost of noise; flash hiders reduce visible muzzle flash.",
+      "examples": ["Basic Suppressor", "Short Suppressor", "Integrated Suppressor", "Osprey Suppressor", "Multi-Use Shotgun Suppressor", "Compact Brake", "Extended Brake", "Large Brake", "Light Brake", "Small Brake", "Hammer Compensator", "Integrated Compensator", "Small Compensator", "Flash Hider", "Forward Flash Hider", "Integrated Flash Hider", "Tactical Flash Hider", "Compact Flashlight", "Compact Infrared Indicator"]
+    },
+    {
+      "id": "grips",
+      "name": "Grips",
+      "effect": "Improve Stability and Accuracy, generally at a small Mobility cost — the Vertical Grip is a common early pick for rifles.",
+      "examples": ["Vertical Grip", "Tactical Combine Grip", "Cobra Grip", "Triangle Grip", "Front Guard Grip", "Back Guard Grip"]
+    },
+    {
+      "id": "magazines",
+      "name": "Magazines",
+      "effect": "Increase magazine capacity (MAG); 'Extended' variants trade Reload Efficiency for more ammo per mag, while 'Tactical'/'Amended' variants aim for a more balanced capacity/reload trade-off.",
+      "examples": ["Extended Pistol Mag", "Extended Rifle Mag", "Amended Pistol Mag", "Amended Rifle Mag", "Amended SMG Mag", "Amended SR Mag", "Tactical Pistol Mag", "Tactical SMG Mag", "Tactical SR Mag", "Light Rifle Mag", "Weighted SMG Mag", "Calibrated LMG Drum Mag", "Large LMG Drum Mag"]
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "effect": "Miscellaneous attachments for specific playstyles.",
+      "examples": ["Folding Bipod"]
+    }
+  ]
+}

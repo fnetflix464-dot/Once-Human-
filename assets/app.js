@@ -7,6 +7,7 @@ const DATA_FILES = {
   meta: "data/meta.json",
   weapons: "data/weapons.json",
   armor: "data/armor.json",
+  attachments: "data/attachments.json",
   mods: "data/mods.json",
   blueprints: "data/blueprints.json",
   stations: "data/stations.json",
@@ -25,6 +26,7 @@ const TABS = [
   { id: "home", label: "Overview" },
   { id: "weapons", label: "Weapons" },
   { id: "armor", label: "Armor" },
+  { id: "attachments", label: "Attachments" },
   { id: "mods", label: "Mods" },
   { id: "blueprints", label: "Blueprints" },
   { id: "stations", label: "Stations" },
@@ -40,7 +42,7 @@ const TABS = [
 ];
 
 // Tabs whose cards open a dedicated detail page.
-const DETAIL_TABS = new Set(["weapons", "armor", "mods", "blueprints", "stations", "builds", "classes", "memetics", "deviants", "crops", "food", "bosses"]);
+const DETAIL_TABS = new Set(["weapons", "armor", "attachments", "mods", "blueprints", "stations", "builds", "classes", "memetics", "deviants", "crops", "food", "bosses"]);
 
 const ARCHETYPE_GROUP_NAME = {
   shrapnel: "Shrapnel",
@@ -105,6 +107,8 @@ function buildIndexes() {
 
   idx.armorSets = d.armor.sets.map(s => ({ ...s, _key: slugify(s.name) }));
 
+  idx.attachmentTypes = d.attachments.types.map(t => ({ ...t, _key: t.id }));
+
   idx.modGroups = d.mods.groups.map(g => ({ ...g, _key: slugify(g.effect) }));
   idx.mods = [];
   idx.modGroups.forEach(g => {
@@ -147,6 +151,7 @@ function buildIndexes() {
 
 function findWeapon(key) { return idx.weapons.find(w => w._key === key); }
 function findArmorSet(key) { return idx.armorSets.find(s => s._key === key); }
+function findAttachmentType(key) { return idx.attachmentTypes.find(t => t._key === key); }
 function findMod(key) { return idx.mods.find(m => m._key === key); }
 function findModGroup(key) { return idx.modGroups.find(g => g._key === key); }
 function findBlueprintCategory(key) { return idx.blueprintCategories.find(c => c._key === key); }
@@ -279,7 +284,7 @@ function render() {
     panel.innerHTML = renderDetail(state.active, state.detailId);
   } else {
     const renderers = {
-      home: renderHome, weapons: renderWeapons, armor: renderArmor, mods: renderMods, blueprints: renderBlueprints,
+      home: renderHome, weapons: renderWeapons, armor: renderArmor, attachments: renderAttachments, mods: renderMods, blueprints: renderBlueprints,
       stations: renderStations, builds: renderBuilds, memetics: renderMemetics, deviants: renderDeviants,
       crops: renderCrops, food: renderFood, bosses: renderBosses, regions: renderRegions,
       updates: renderUpdates, sources: renderSources
@@ -302,7 +307,7 @@ function wireCardClicks(root) {
 
 function renderDetail(tab, id) {
   const renderers = {
-    weapons: renderWeaponDetail, armor: renderArmorSetDetail, mods: renderModDetail, blueprints: renderBlueprintDetail,
+    weapons: renderWeaponDetail, armor: renderArmorSetDetail, attachments: renderAttachmentTypeDetail, mods: renderModDetail, blueprints: renderBlueprintDetail,
     stations: renderStationDetail, builds: renderBuildDetail, classes: renderArchetypeDetail,
     memetics: renderMemeticDetail, deviants: renderDeviantDetail, crops: renderCropDetail,
     food: renderFoodDetail, bosses: renderBossDetail
@@ -322,6 +327,7 @@ function renderHome() {
   const counts = {
     weapons: idx.weapons.length,
     armorSets: idx.armorSets.length,
+    attachments: idx.attachmentTypes.reduce((a, t) => a + t.examples.length, 0),
     mods: idx.mods.length,
     deviants: idx.deviants.length,
     crops: idx.crops.length + idx.livestock.length,
@@ -339,6 +345,7 @@ function renderHome() {
     <div class="grid">
       ${statCard("Weapons", counts.weapons, "weapons")}
       ${statCard("Armor Sets", counts.armorSets, "armor")}
+      ${statCard("Weapon Accessories", counts.attachments, "attachments")}
       ${statCard("Named Mods", counts.mods, "mods")}
       ${statCard("Deviants & Livestock", counts.deviants, "deviants")}
       ${statCard("Crops & Animals", counts.crops, "crops")}
@@ -501,6 +508,55 @@ function renderArmorSetDetail(key) {
       <p class="intro">${esc(state.data.armor.craftingNote)}</p>
     </div>
     ${backLink("armor", "Armor")}
+  `;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Weapon Accessories / Attachments                                        */
+/* ---------------------------------------------------------------------- */
+
+function renderAttachments() {
+  const a = state.data.attachments;
+  const types = idx.attachmentTypes.filter(t => matchesQuery(t.name + t.effect + t.examples.join(" ")));
+  return `
+    <h2>Weapon Accessories</h2>
+    <p class="intro">${esc(a.overview)}</p>
+    <div class="notice">⚠️ ${esc(a.mechanicNotice)}</div>
+    <div class="section-block">
+      <h3>How to obtain</h3>
+      <ul>${a.howToObtain.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+    </div>
+    <div class="section-block">
+      <h3>Types <span class="tag">${types.length}</span></h3>
+      <div class="grid">
+        ${types.map(t => `
+          ${cardOpen("attachments", t._key)}
+            <h3>${esc(t.name)}</h3>
+            <div class="meta"><span class="tag">${t.examples.length} known</span></div>
+            <p>${esc(t.effect)}</p>
+          </div>
+        `).join("") || emptyState()}
+      </div>
+    </div>
+  `;
+}
+
+function renderAttachmentTypeDetail(key) {
+  const t = findAttachmentType(key);
+  if (!t) return null;
+  return `
+    ${breadcrumb("attachments", "Weapon Accessories", t.name)}
+    <h2>${esc(t.name)}</h2>
+    <p>${esc(t.effect)}</p>
+    <div class="section-block">
+      <h3>Known ${esc(t.name)} <span class="tag">${t.examples.length}</span></h3>
+      <ul>${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul>
+    </div>
+    <div class="section-block">
+      <h3>Mechanic notes</h3>
+      <p class="intro" style="margin-top:0">${esc(state.data.attachments.mechanicNotice)}</p>
+    </div>
+    ${backLink("attachments", "Weapon Accessories")}
   `;
 }
 
