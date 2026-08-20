@@ -17,5 +17,5 @@
     { "id": "management", "name": "Management", "focus": "Survival-oriented upgrades: generators, cooking, temperature control, farming infrastructure." },
     { "id": "building", "name": "Building", "focus": "Improves crafting/production facilities, defensive structures, turrets, traps and territory tools." }
   ],
-  "note": "Every 5 levels starting at level 5, players unlock a Memetic Specialization node offering a choice of 4 randomly generated specializations (one per branch), for up to 10 chosen specializations by level 50. See blueprints.json / builds.json for how these tie into gear and loadouts."
+  "note": "Every 5 levels starting at level 5, players unlock a Memetic Specialization node offering a choice of 4 randomly generated specializations (one per branch), for up to 10 chosen specializations by level 50. See the Blueprints and Builds & Classes sections for how these tie into gear and loadouts."
 }

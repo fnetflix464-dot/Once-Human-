@@ -8,20 +8,31 @@
     "Harvest at 100% growth for the crop plus a chance at bonus seeds or a Deviated (mutated) variant."
   ],
   "crops": [
-    { "name": "Beets", "uses": "Refined into Sugar for Sanity Pills, Stardust Energy Drink, Shattered Bread, Assorted Canned Fruit.", "foundNear": "Waterways near Deadsville and Meyer's Market" },
-    { "name": "Corn", "uses": "Refined into Corn Oil (Shattered Bread, Canned Seafood in Oil); fermented into Corn Ale.", "foundNear": "Grassy/forested areas and farms like Citrus County" },
-    { "name": "Wheat", "uses": "Brewed into Malt Ale; used in Hug-in-a-Bowl and Croquettes.", "foundNear": "Farms and roadsides, e.g. Citrus County" },
-    { "name": "Mushrooms", "uses": "Crafted into Yield Boost and Mutation Boost fertilizers.", "foundNear": "Wooded underbrush in Iron River" },
-    { "name": "Scarlet Calamus", "uses": "Creates Breeding Boost fertilizer to increase seed yield.", "foundNear": "Shallow waterways" },
-    { "name": "Peppercorn", "uses": "Creates Preserved Deviated Chops and Securement Soup.", "foundNear": "Vendor Lacey at Blackfell (limited 3 seeds/week)" },
-    { "name": "Cucumber", "uses": "Fermented into Pickles; Deviated variant used for Safety Sandwich.", "foundNear": "Vendor Zhao Jintan at Meyer's Market (limited 3 seeds/week)" },
-    { "name": "Onions", "uses": "Croquette ingredient; Deviated variant yields Bacon Burger and can attract the Grumpy Bulb deviation.", "foundNear": "Vendor Emma Potter at Tall Grass Inn (limited 3 seeds/week)" },
-    { "name": "Morel", "uses": "Canned Seafood in Oil, Borscht Deluxe, Yuanbao Dumplings.", "foundNear": "Randomly dropped from containers in level 35+ areas" },
-    { "name": "Aloe Vera", "uses": "Signature Ice Brew, Aloe Vera Ointment, Shattered Bread.", "foundNear": "Rare finds in Red Sands and Blackheart regions" }
+    { "id": "beets", "name": "Beets", "uses": "Refined into Sugar for Sanity Pills, Stardust Energy Drink, Shattered Bread, Assorted Canned Fruit.", "foundNear": "Waterways near Deadsville and Meyer's Market", "usedInRecipes": ["Assorted Canned Fruit", "Stardust Energy Drink", "Lunar Gummy", "Ginger Poppers", "Fruity Sanity Capsule"] },
+    { "id": "corn", "name": "Corn", "uses": "Refined into Corn Oil (Shattered Bread, Canned Seafood in Oil); fermented into Corn Ale.", "foundNear": "Grassy/forested areas and farms like Citrus County", "usedInRecipes": ["Corn Soup", "Corn Oil", "Cornbread", "Popcorn", "Stardust Italian Soup Can", "Roasted Vegetables"] },
+    { "id": "wheat", "name": "Wheat", "uses": "Brewed into Malt Ale; used in Hug-in-a-Bowl and Croquettes.", "foundNear": "Farms and roadsides, e.g. Citrus County", "usedInRecipes": ["Bread", "Corn Soup", "Curry and Ride", "Hug-in-a-Bowl", "Croquette", "Safety Sandwich", "Stargazy Pie", "Snow Mushroom Fried Rice"] },
+    { "id": "mushrooms", "name": "Mushrooms", "uses": "Crafted into Yield Boost and Mutation Boost fertilizers.", "foundNear": "Wooded underbrush in Iron River", "usedInRecipes": ["Grilled Mushrooms", "Bone-In Deviated Sausage", "Mixed Fried Hot Dog", "Spectral Canned Mushroom"] },
+    { "id": "scarlet-calamus", "name": "Scarlet Calamus", "uses": "Creates Breeding Boost fertilizer to increase seed yield.", "foundNear": "Shallow waterways", "usedInRecipes": ["Fruit Tea (herb variant)", "Ice Tea (herb variant)", "Securement Soup (herb variant)"] },
+    { "id": "peppercorn", "name": "Peppercorn", "uses": "Creates Preserved Deviated Chops and Securement Soup.", "foundNear": "Vendor Lacey at Blackfell (limited 3 seeds/week)", "usedInRecipes": ["Preserved Deviated Chops", "Securement Soup", "Fish & Chips", "Roulette Dumplings"] },
+    { "id": "cucumber", "name": "Cucumber", "uses": "Fermented into Pickles; Deviated variant used for Safety Sandwich.", "foundNear": "Vendor Zhao Jintan at Meyer's Market (limited 3 seeds/week)", "usedInRecipes": ["Fat-Burning Juice", "Bacon Burger", "Canned Minty Meat", "Signature Ice Brew", "Safety Sandwich"] },
+    { "id": "onions", "name": "Onions", "uses": "Croquette ingredient; Deviated variant yields Bacon Burger and can attract the Grumpy Bulb deviant.", "foundNear": "Vendor Emma Potter at Tall Grass Inn (limited 3 seeds/week)", "usedInRecipes": ["Croquette", "Bacon Burger", "Stardust Italian Soup Can"] },
+    { "id": "morel", "name": "Morel", "uses": "Canned Seafood in Oil, Borscht Deluxe, Yuanbao Dumplings.", "foundNear": "Randomly dropped from containers in level 35+ areas", "usedInRecipes": ["Canned Seafood In Oil", "Borscht Deluxe", "Spectral Canned Mushroom"] },
+    { "id": "aloe-vera", "name": "Aloe Vera", "uses": "Signature Ice Brew, Aloe Vera Ointment, Shattered Bread.", "foundNear": "Rare finds in Red Sands and Blackheart regions", "usedInRecipes": ["Signature Ice Brew", "Crumbly Bread", "Honey Glazed Meat", "Stardust Raspberry Shaved Ice", "Stargazy Pizza"] }
   ],
   "deviantHelpers": [
     { "name": "Buzzy Bee", "helps": "Automatically plants crops and boosts mutation probability." },
     { "name": "Growshroom", "helps": "Auto-plants seeds and accelerates crop growth." },
     { "name": "Rain Man", "helps": "Enhances crop vitality and provides irrigation water." }
+  ],
+  "livestockOverview": "Ranching is a separate system from Deviants: regular animals are captured live, tamed with feed (see the Food & Cooking section → Animal Feeds), and bred at a Youngling Hut once Tameness reaches 80-100%. Animals only produce byproducts (meat, wool, milk, hides) once Tameness is 50%+, and a territory can house a maximum of 6 ranched animals. Breeding 'chances' (how many times an animal can be bred) scale with its rarity tier: S-Tier gets 7, A/B-Tier get 6, C-Tier gets 5.",
+  "livestock": [
+    { "name": "Ram", "tier": "C", "products": "Wool, meat" },
+    { "name": "Rabbit", "tier": "C", "products": "Meat, hide" },
+    { "name": "Deer", "tier": "B", "products": "Meat, milk (female), hide" },
+    { "name": "Bear", "tier": "A", "products": "Meat, hide" },
+    { "name": "Wolf", "tier": "A", "products": "Meat, hide" },
+    { "name": "Capybara", "tier": "B", "products": "Meat, hide", "notes": "Added in the 1.2 update." },
+    { "name": "Flamingo", "tier": "B", "products": "Meat, feathers", "notes": "Added in the 1.2 update." },
+    { "name": "Leopard", "tier": "S", "products": "Meat, hide", "notes": "Added in the 1.2 update; highest breeding-chance tier." }
   ]
 }

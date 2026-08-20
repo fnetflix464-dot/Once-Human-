@@ -12,44 +12,52 @@
       "id": "furniture-decor",
       "name": "Furniture & Decor",
       "description": "Single-use or reusable decorative furniture for territory customization — beds, seating, lighting, storage displays.",
-      "examples": ["Deluxe Storage Crate (64 slots)", "Special Storage Crate (64 slots)", "Bed: A Place to Call Home", "Bed: Heat Preservation"]
+      "examples": ["Deluxe Storage Crate (64 slots)", "Special Storage Crate (64 slots)", "Bed: A Place to Call Home", "Bed: Heat Preservation"],
+      "unlockedBy": "Building-branch memetic specializations (the Building branch)."
     },
     {
       "id": "workstations",
       "name": "Workstations & Production",
       "description": "Crafting facility blueprints that unlock or upgrade production buildings.",
-      "examples": ["Gear Workbench: Customization", "Custom Gear Workbench", "Advanced Stove: Gourmand", "Kitchen Set: Gourmand", "Refining Facility: Smelting", "Robotics Facility: Skilled Mechanician", "Synthesis Bench: Recycle & Reuse"]
+      "examples": ["Gear Workbench: Customization", "Custom Gear Workbench", "Advanced Stove: Gourmand", "Kitchen Set: Gourmand", "Refining Facility: Smelting", "Robotics Facility: Skilled Mechanician", "Synthesis Bench: Recycle & Reuse"],
+      "unlockedBy": "Crafting/Management-branch memetics; see the Stations section for the Gear Workbench and cooking-station tier progression these plug into."
     },
     {
       "id": "power-utility",
       "name": "Power & Utility",
       "description": "Generators and utility structures that support a base.",
-      "examples": ["Generator: Electrical Expert", "Biomass Generator: Sustained Output", "Hydraulic Generator: One with the Tides", "Hydropower Generator", "Deviant Power Generator: Stardust Unleashed", "Water Pump: Underground Pump", "Portable Thermostat"]
+      "examples": ["Generator: Electrical Expert", "Biomass Generator: Sustained Output", "Hydraulic Generator: One with the Tides", "Hydropower Generator", "Deviant Power Generator: Stardust Unleashed", "Water Pump: Underground Pump", "Portable Thermostat"],
+      "unlockedBy": "Management-branch memetic specializations (the Management branch)."
     },
     {
       "id": "defense",
       "name": "Defense — Turrets & Traps",
       "description": "Territory defense structures unlocked via Building memetics.",
-      "examples": ["Rifle Turret: Two Birds One Stone", "Shotgun Turret: Volley Fire", "Gatling Cannon: Power Blast", "Portable MG Turret: Shadow Shift", "Claymore Mine: Frost Trap", "Claymore Mine: Warrior's Resolve", "Flamethrower Trap: Kebob Party", "Flamethrower Trap: Scorching Blast", "Stardust Barrier: Hold the Line"]
+      "examples": ["Rifle Turret: Two Birds One Stone", "Shotgun Turret: Volley Fire", "Gatling Cannon: Power Blast", "Portable MG Turret: Shadow Shift", "Claymore Mine: Frost Trap", "Claymore Mine: Warrior's Resolve", "Flamethrower Trap: Kebob Party", "Flamethrower Trap: Scorching Blast", "Stardust Barrier: Hold the Line"],
+      "unlockedBy": "Building-branch memetic specializations (the Building branch)."
     },
     {
       "id": "farming",
       "name": "Farming & Agriculture",
-      "description": "Planter and irrigation blueprints for growing crops (see crops.json).",
-      "examples": ["Planter Box: Greenhouse Planting", "Growshroom (Deviant-assisted auto-planting)"]
+      "description": "Planter and irrigation blueprints for growing crops (see the Crops & Ranching section).",
+      "examples": ["Planter Box: Greenhouse Planting", "Growshroom (Deviant-assisted auto-planting)"],
+      "unlockedBy": "The Planting memetic (Logistics/Management branch) plus Management-branch upgrades like Planter Box: Greenhouse Planting."
     },
     {
       "id": "structural",
       "name": "Structural — Walls, Roofs, Pillars",
       "description": "Base-building material tiers with durability bonuses from Building memetics.",
-      "examples": ["Wood Structures: Tough Plant", "Stone Structures: Intense Defense", "Basic Defense: Battle-Hardened", "Reinforced Structures"]
+      "examples": ["Wood Structures: Tough Plant", "Stone Structures: Intense Defense", "Basic Defense: Battle-Hardened", "Reinforced Structures"],
+      "unlockedBy": "Building-branch memetic specializations (the Building branch)."
     },
     {
       "id": "drones",
       "name": "Rosetta Drones",
       "description": "Deployable drone blueprints for gathering, combat, exploration and territory support.",
-      "examples": ["Rosetta Gathering Drone", "Rosetta Firepower Drone", "Rosetta Exploration Drone", "Rosetta Territory Drone"]
+      "examples": ["Rosetta Gathering Drone", "Rosetta Firepower Drone", "Rosetta Exploration Drone", "Rosetta Territory Drone"],
+      "unlockedBy": "Building-branch memetic specializations (the Building branch)."
     }
   ],
+  "craftingStations": "See the Stations section for the Gear Workbench, cooking-station and utility-station tiers that many of the blueprints above are crafted at or unlock.",
   "notableConstructionUpdate": "Patch 3.0.2 (July 22, 2026) added flexible snap-point switching for walls, ceilings, roofs, stairs and pillars, giving builders finer control when placing blueprints."
 }

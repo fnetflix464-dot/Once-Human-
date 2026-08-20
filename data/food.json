@@ -1,0 +1,117 @@
+{
+  "overview": "Food and drinks restore Energy, Hydration and Sanity and can grant a temporary buff on top. Most recipes are learned from paper recipe blueprints found in the world (kitchens, settlements) and cooked at a Stove, Electric Stove, or the endgame Kitchen Set / Integrated Kitchen (see the Stations section). Many recipes support swapping in a 'Deviated' (mutated) version of an ingredient for a stronger or different bonus effect.",
+  "categories": [
+    {
+      "name": "Beverages",
+      "recipes": [
+        { "name": "Boiled Water", "ingredients": ["Dirty Water"], "effect": "Basic hydration; safe to drink unlike Dirty Water." },
+        { "name": "Blueberry Juice", "ingredients": ["Blueberry"], "effect": "Energy restoration." },
+        { "name": "Blueberry Soda", "ingredients": ["Blueberry", "Glass"], "effect": "Carbonated refreshment." },
+        { "name": "Orange Juice", "ingredients": ["Orange"], "effect": "Citrus refreshment." },
+        { "name": "Orange Soda", "ingredients": ["Orange", "Glass"], "effect": "Carbonated beverage." },
+        { "name": "Hawthorn Juice", "ingredients": ["Hawthorn Berry"], "effect": "Light refreshment." },
+        { "name": "Corn Soup", "ingredients": ["Corn", "Wheat"], "effect": "Sustenance and hydration." },
+        { "name": "Fat-Burning Juice", "ingredients": ["Banana", "Deviated Cucumber", "Blueberry", "Corn"], "effect": "Weight Watching — causes you to lose character weight." },
+        { "name": "Fruit Tea", "ingredients": ["Coneflower / Sage / Bellflower / Honeysuckle / Scarlet Calamus / Yellow Lotus (herb variants)"], "effect": "Sanity restoration and healing boosts (varies by herb)." },
+        { "name": "Ice Tea", "ingredients": ["Herb variants + Ice Cubes"], "effect": "Swift Sip — Roll Speed +25%, Movement Speed +20%." },
+        { "name": "Sanity Gummy", "ingredients": ["Boiled/Purified Water", "Sugar"], "effect": "Mental stability support." },
+        { "name": "Signature Ice Brew", "ingredients": ["Deviated Aloe Vera", "Cucumber", "Tomato", "Ice Cubes"], "effect": "Freshen Up — Pollution Resist +30%, faster Sanity recovery." },
+        { "name": "Stardust Energy Drink", "ingredients": ["Saffron", "Purified Water", "Sugar", "Aluminum Ingot"], "effect": "Skybound — grants double jump for 30 minutes." },
+        { "name": "Stardust Raspberry Shaved Ice", "ingredients": ["Aloe", "Blueberry", "Hawthorn Berry", "Ice Cubes"], "effect": "Status Enhancement — Continuous Debuff duration +20%." },
+        { "name": "Stardust Tea", "ingredients": ["Deviated herb variants"], "effect": "Full Stomach — extends full Energy/Hydration duration to 2 hours." }
+      ]
+    },
+    {
+      "name": "Main Dishes & Meat Preparations",
+      "recipes": [
+        { "name": "Roasted Meat", "ingredients": ["Meat (any type)"], "effect": "Basic Energy/HP restoration; the earliest cooked food." },
+        { "name": "Assorted Canned Fruit", "ingredients": ["Deviated Beet", "Coconut", "Aluminum"], "effect": "Cool Head — Weakspot DMG +25% while Sanity is above 80%." },
+        { "name": "Bacon Burger", "ingredients": ["Meat (Deer/Beast/Pork/Rabbit/Goat/Bear/etc.)", "Tomato", "Deviated Onion", "Cucumber"], "effect": "One-Hit — Mining/Logging requires only 1 strike for 10 minutes." },
+        { "name": "Bone-In Deviated Sausage", "ingredients": ["Meat", "Deviated Mushroom", "Masala"], "effect": "Boss Scourge — DMG to bosses +15%." },
+        { "name": "Borscht Deluxe", "ingredients": ["Meat", "Morel", "Purified Water"], "effect": "Harvest Blessings — doubles Energy Links from opening Weapon/Gear Crates for 30 minutes. Recipe found at Sutherland Family Orchard, Dayton Wetlands." },
+        { "name": "Canned Lunch Meat", "ingredients": ["Meat", "Aluminum"], "effect": "HP Boost — Max HP +10%." },
+        { "name": "Canned Minty Meat", "ingredients": ["Deviated Mint", "Meat", "Pickled Cucumber", "Aluminum"], "effect": "Frost Boost — Frost DMG +15%." },
+        { "name": "Canned Spicy Rabbit Dices", "ingredients": ["Rabbit Meat", "Polar Pepper", "Aluminum"], "effect": "Overheat — Blaze DMG +15%." },
+        { "name": "Canned Steak", "ingredients": ["Meat", "Salt", "Aluminum"], "effect": "Shrapnel Enhancement — Shrapnel DMG +20%." },
+        { "name": "Canned Seafood In Oil", "ingredients": ["Fish", "Morel", "Corn Oil", "Aluminum Ingot"], "effect": "Stroke of Luck — chance at a 66% / 666% / 6666% yield bonus." },
+        { "name": "Curry and Ride", "ingredients": ["Meat", "Wheat", "Masala"], "effect": "Light as a Feather — Stamina consumption -30%." },
+        { "name": "Fish & Chips", "ingredients": ["Fish", "Deviated Peppercorn", "Potato", "Corn Oil"], "effect": "Grow Muscles (cosmetic weight-gain effect)." },
+        { "name": "Flaming Eggtart", "ingredients": ["Deviated Polar Pepper", "Spikemato", "Egg", "Butter"], "effect": "Hot Hand — Burn DMG +10%." },
+        { "name": "Grilled Fish", "ingredients": ["Fish (any type)"], "effect": "Basic Energy restoration; various secondary effects by fish type." },
+        { "name": "Hearty Meat Stew", "ingredients": ["Deviated Polar Pepper", "Meat", "Masala", "Water"], "effect": "Blaze Boost — Blaze DMG +15%." },
+        { "name": "Honey Glazed Meat", "ingredients": ["Meat", "Deviated Aloe Vera", "Salt", "Purified Water"], "effect": "Chillbreaker — Crit Rate +15% vs enemies affected by Frost Vortex." },
+        { "name": "Hug-in-a-Bowl", "ingredients": ["Salt", "Peppercorn", "Wheat", "Pork", "Cabbage"], "effect": "Comfort meal; sanity-restoring." },
+        { "name": "Mixed Fried Hot Dog", "ingredients": ["Meat", "Deviated Mushroom", "Corn Oil"], "effect": "Enhanced Marking — DMG +20% to enemies affected by The Bull's Eye." },
+        { "name": "Pan-Fried Fish", "ingredients": ["Fish", "Salt"], "effect": "Varies — mining/logging, load, or swim-speed boosts by fish type." },
+        { "name": "Preserved Deviated Chops", "ingredients": ["Meat", "Peppercorn", "Salt"], "effect": "Hunter's Luck — Acid gain +50% when defeating Deviants." },
+        { "name": "Roulette Dumplings", "ingredients": ["Deviated Corn", "Meat", "Wheat", "Peppercorn/Sugar/Lunar Whisper"], "effect": "Veteran Taster — randomly grants one of several bonus effects." },
+        { "name": "Stargazy Pizza", "ingredients": ["Fish", "Deviated Aloe Vera", "Shellfish", "Caviar"], "effect": "Gills — remain underwater indefinitely." }
+      ]
+    },
+    {
+      "name": "Bread & Baked Goods",
+      "recipes": [
+        { "name": "Bread", "ingredients": ["Wheat", "Sugar"], "effect": "Staple carbohydrate." },
+        { "name": "Bread with Jam", "ingredients": ["Hawthorn Berry", "Wheat", "Butter"], "effect": "Sweet and savory snack." },
+        { "name": "Cornbread", "ingredients": ["Corn", "Corn Oil"], "effect": "Grain-based bread." },
+        { "name": "Crumbly Bread", "ingredients": ["Wheat", "Deviated Aloe Vera", "Sugar", "Corn Oil"], "effect": "Weapon Pro — all Weapon DMG +25%." },
+        { "name": "Flatbread", "ingredients": ["Wheat"], "effect": "Simple bread." },
+        { "name": "French Fries", "ingredients": ["Deviated Potato", "Masala", "Cheese"], "effect": "Heavy Gear — Weapon DMG +20% while in Fortress Warfare." },
+        { "name": "Fruity Pancake / Orange Pie", "ingredients": ["Banana", "Apple", "Grapes"], "effect": "EXP from defeating monsters +25%." },
+        { "name": "Fruit Cake", "ingredients": ["Fruit (any)", "Sugar", "Butter"], "effect": "Gradual Healing — recover 50% Sanity and HP over 60s." },
+        { "name": "Ghoul Cookies", "ingredients": ["Cheese", "Deviated Tomato", "Wheat", "Sugar"], "effect": "Camouflage Makeup — invisibility for 3 minutes." },
+        { "name": "Gingerdrop", "ingredients": ["Deviated Sunny Ginger", "Sunny Ginger", "Sugar", "Corn Oil"], "effect": "Enduring Armor — Fortress Warfare duration +5s." },
+        { "name": "Mixed Fruit Pie", "ingredients": ["Fruit (any)", "Sugar", "Cheese"], "effect": "Gradual Healing — recover 50% Sanity and HP over 60s." },
+        { "name": "Popcorn", "ingredients": ["Deviated Corn", "Corn", "Sugar", "Corn Oil"], "effect": "Intense Blast — Unstable Bomber DMG +10%." },
+        { "name": "Pumpkin Porridge", "ingredients": ["Pumpkin", "Wheat"], "effect": "Warming comfort food." },
+        { "name": "Stargazy Pie", "ingredients": ["Deviated Pumpkin", "Deviated Saffron", "Deviated Wheat"], "effect": "Full Stomach — Crit DMG +25%." }
+      ]
+    },
+    {
+      "name": "Soups & Prepared Dishes",
+      "recipes": [
+        { "name": "Butter Matsutake Mushrooms", "ingredients": ["Deviated Snow Fungus", "Snow Fungus", "Butter", "Salt"], "effect": "Status Defense — Status DMG Reduction +8%." },
+        { "name": "Croquette", "ingredients": ["Onion", "Deviated Wheat", "Cheese"], "effect": "Sells to a merchant for 2,000 Energy Link." },
+        { "name": "Fried Vegetables", "ingredients": ["Cabbage", "Masala"], "effect": "Light vegetable side dish." },
+        { "name": "Grilled Mushrooms", "ingredients": ["Mushroom"], "effect": "Simple preparation." },
+        { "name": "Safety Sandwich", "ingredients": ["Wheat", "Deviated Cucumber", "Butter", "Corn Oil", "Salt"], "effect": "Resilience — DMG from other players -20% (PvP)." },
+        { "name": "Securement Soup", "ingredients": ["Herb variant", "Deviated Peppercorn", "Masala", "Pickle"], "effect": "Securement Sublimation — Deviation capture ability level +1." },
+        { "name": "Shellfish Meat", "ingredients": ["Shellfish", "Sugar", "Purified Water"], "effect": "Weakening Hex — hitting enemies grants Vulnerability +5%." },
+        { "name": "Snow Mushroom Fried Rice", "ingredients": ["Deviated Snow Fungus", "Wheat", "Egg"], "effect": "Status Resistance — Status DMG resistance +5%." },
+        { "name": "Sparkling Pumpkin Soup", "ingredients": ["Deviated Mint", "Pumpkin", "Seaweed", "Water"], "effect": "Power Surge DMG +10%." },
+        { "name": "Spectral Canned Mushroom", "ingredients": ["Mushroom", "Deviated Morel", "Purified Water", "Aluminum Ingot"], "effect": "Blinding the Light — emits a blinding light, stunning nearby monsters for 3s." },
+        { "name": "Stardust Italian Soup Can", "ingredients": ["Deviated Corn", "Onion", "Aluminum"], "effect": "Secured Control — Deviation capture ability level +1." },
+        { "name": "Stardust Mushroom Soup", "ingredients": ["Deviated Mushroom", "Sugar", "Purified Water"], "effect": "Inexhaustible Stamina — Max Stamina +20%, Stamina Recovery +30%." },
+        { "name": "Stardust Pumpkin Salad", "ingredients": ["Deviated Pumpkin", "Salt", "Butter"], "effect": "Lucky Crit — Crit DMG +15%." },
+        { "name": "Stardust Pumpkin Soup", "ingredients": ["Deviated Pumpkin", "Purified Water", "Ice Cube"], "effect": "Load Boost — Max Load +50%." },
+        { "name": "Stardust Ratatouille", "ingredients": ["Deviated Cabbage", "Salt", "Corn Oil"], "effect": "Swiftfooted — Movement Speed +20%." }
+      ]
+    },
+    {
+      "name": "Side Dishes, Snacks & Ingredients",
+      "recipes": [
+        { "name": "Butter", "ingredients": ["Goat / Deer / Cow Milk"], "effect": "Cooking ingredient and spread." },
+        { "name": "Caviar", "ingredients": ["Roe"], "effect": "Luxury cooking ingredient (unlocked via Integrated Kitchen)." },
+        { "name": "Corn Oil", "ingredients": ["Corn"], "effect": "Cooking oil." },
+        { "name": "Salt", "ingredients": ["Sea Water"], "effect": "Essential seasoning." },
+        { "name": "Dried Fruits", "ingredients": ["Blueberry / Orange / Hawthorn"], "effect": "Shelf-stable snack." },
+        { "name": "Ginger Poppers", "ingredients": ["Deviated Sunny Ginger", "Beet", "Egg", "Sugar"], "effect": "Shrapnel Enhancement — Shrapnel DMG +10%." },
+        { "name": "Lunar Gummy", "ingredients": ["Deviated Beet", "Purified Water", "Sugar", "Lunar Whisper"], "effect": "Odd Illusion — shield equal to 60% max HP." },
+        { "name": "Miracle Tea", "ingredients": ["Herb variant", "Deviated Saffron", "Sugar", "Purified Water"], "effect": "Reinvigoration — all recovery effects +10%." },
+        { "name": "Roasted Vegetables", "ingredients": ["Cabbage / Corn / Potato / Pumpkin"], "effect": "Simple side dish." },
+        { "name": "Fruity Sanity Capsule", "ingredients": ["Deviated Beet", "Purified Water", "Sugar"], "effect": "Pollution Resist +20%." }
+      ]
+    },
+    {
+      "name": "Animal Feeds",
+      "recipes": [
+        { "name": "Body Boost Feed", "ingredients": ["Purified Water", "Stardust Source", "Deviated Saffron", "Deviated Morel"], "effect": "Specially prepared feed for ranched livestock." },
+        { "name": "Grain Concentrate Feed", "ingredients": ["Corn or Wheat"], "effect": "General livestock nutrition." },
+        { "name": "Herbal Green Feed", "ingredients": ["Herb variant"], "effect": "Animal feed made from herbs." },
+        { "name": "Meat Pellet Feed", "ingredients": ["Meat (any type)"], "effect": "Animal protein source." },
+        { "name": "Mixed Grain Feed", "ingredients": ["Corn or Wheat", "Lunar Whisper"], "effect": "Livestock gain 20% Tameness after eating it." },
+        { "name": "Mixed Herb Feed", "ingredients": ["Herb variant", "Lunar Whisper"], "effect": "Livestock gain 20% Tameness after eating it." }
+      ]
+    }
+  ]
+}

@@ -1,19 +1,23 @@
 # Once Human Database
 
-A static, searchable reference database for **Once Human** (Starry Studio / NetEase) covering:
+An interactive, searchable reference database for **Once Human** (Starry Studio / NetEase) covering:
 
-- **Weapons** — weapon types, rarity tiers, top-tier/legendary picks
-- **Mods** — weapon effect mods (Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare, Marked)
-- **Blueprints** — how the blueprint system works and the main construction/furniture/defense categories
-- **Builds & Classes** — Once Human's weapon-effect archetypes (its closest equivalent to "classes") plus named meta loadouts
-- **Memetics** — the full Gathering / Crafting / Management / Building specialization system
-- **Deviants (Animals)** — companion creatures, their category and abilities
-- **Crops** — farming system and notable crops with uses
-- **Bosses** — the Great Ones plus seasonal/event bosses
+- **Weapons** (62) — every weapon family across all 9 categories, with rarity, stats, and a dedicated page per weapon
+- **Mods** (41 named) — weapon-effect mods (Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare, Marked), each with its own page and drop sources
+- **Blueprints** — the blueprint system plus construction/furniture/defense categories, each with a detail page listing unlock paths
+- **Stations** — every crafting/cooking station (Gear Workbench tiers, Stove tiers, etc.) with unlock requirements and materials
+- **Builds & Classes** — Once Human's weapon-effect archetypes (its closest equivalent to "classes") plus named meta loadouts, each cross-linked to its mods and weapons
+- **Memetics** — the full Gathering / Crafting / Management / Building specialization system (105 specializations)
+- **Deviants (Animals)** — 56 companion creatures with capture method, placement and cross-links to what they help you farm/cook/build
+- **Crops & Ranching** — farming system, 10 crops, and livestock/breeding
+- **Food & Cooking** — 80+ recipes with ingredients (linked back to crops), buff effects, and which station cooks them
+- **Bosses** — the Great Ones plus seasonal/event bosses, each with fight mechanics and drops
 - **Regions** — Manibus strongholds and other notable areas/scenarios
 - **Updates** — patch history through the current live version
 
-It's a plain HTML/CSS/JS site (no build step, no framework) backed by JSON data files, so it can be hosted anywhere that serves static files (GitHub Pages, Netlify, a simple `python3 -m http.server`, etc).
+Every item across those categories has its own page — click a weapon, mod, deviant, crop, boss, blueprint, build, memetic or recipe and it opens a detail view with where to get it, how to craft it, what mods/food/blueprints it connects to, plus a breadcrumb and back link. Pages are deep-linkable (`#weapons/compound-bow`, `#deviants/mini-wonder`, etc.) so you can share a direct link to any single item.
+
+It's a plain HTML/CSS/JS site (no build step, no framework, no client-side router library — just `location.hash`) backed by JSON data files, so it can be hosted anywhere that serves static files (GitHub Pages, Netlify, a simple `python3 -m http.server`, etc).
 
 ## Running locally
 
@@ -33,10 +37,14 @@ npx serve .
 ## Project structure
 
 ```
-index.html          Page shell, tab bar, search box
-assets/style.css     Styling (dark theme)
-assets/app.js        Loads /data/*.json and renders each tab, plus global search
-data/*.json          The actual database — one file per category
+index.html               Page shell, tab bar, search box
+assets/style.css         Styling (light/dark, follows system theme)
+assets/app.js            Loads /data/*.json, builds cross-reference indexes, and
+                          renders a hash-router (#tab or #tab/item) with a list
+                          view + a detail page per item for every category
+data/*.json              The actual database — one file per category
+scripts/build-standalone.js   Bundles everything into dist/standalone.html
+dist/standalone.html     Single-file build — open directly, no server needed
 ```
 
 ## Data & sources

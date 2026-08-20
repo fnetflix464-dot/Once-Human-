@@ -1,5 +1,5 @@
 {
-  "overview": "Full Memetic Specialization list by branch. Every 5 levels from level 5 onward, players choose 1 of 4 randomly offered specializations (one per branch) — up to 10 total by level 50. Many specializations directly grant a blueprint (see blueprints.json).",
+  "overview": "Full Memetic Specialization list by branch. Every 5 levels from level 5 onward, players choose 1 of 4 randomly offered specializations (one per branch) — up to 10 total by level 50. Many specializations directly grant a blueprint (see the Blueprints section).",
   "branches": {
     "gathering": [
       { "name": "Activated Carbon Filter", "effect": "30% chance of obtaining a portion of Boiled or Pure Water when collecting water." },

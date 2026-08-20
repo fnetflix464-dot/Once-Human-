@@ -46,5 +46,5 @@
       "suggestedMods": ["Cowboy", "Double Gunner", "Fast Refurbish", "Lasting Fortification", "Precision Rush", "Shoot Out", "Shooting Blitz"]
     }
   ],
-  "note": "Builds combine a weapon effect archetype, weapon(s), mods and memetic specializations into a cohesive loadout. See classes.json for archetype summaries and mods.json for full mod effect details."
+  "note": "Builds combine a weapon effect archetype, weapon(s), mods and memetic specializations into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."
 }
