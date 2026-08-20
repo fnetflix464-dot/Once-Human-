@@ -2,14 +2,15 @@
 
 An interactive, searchable reference database for **Once Human** (Starry Studio / NetEase) covering:
 
-- **Weapons** (67) — every weapon family across all 9 categories, with rarity, stats, and a dedicated page per weapon
-- **Armor** (20 sets) — slots, attributes (HP/Damage Reduction/Pollution Resist/Psi Intensity/Durability), and set bonuses where confirmed
+- **Weapons** (72) — every weapon family across all 9 categories, with rarity, stats, and a dedicated page per weapon
+- **Armor** (20 sets) — slots, attributes (HP/Damage Reduction/Pollution Resist/Psi Intensity/Durability), and a full per-piece-count bonus breakdown for every set
+- **Weapon Accessories** (~50) — sights, muzzle devices, grips and magazines across 4 types, with effects and how to obtain them
 - **Mods** (41 named) — weapon-effect mods (Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare, Marked), each with its own page and drop sources
 - **Blueprints** — the blueprint system plus construction/furniture/defense categories, each with a detail page listing unlock paths
 - **Stations** — every crafting/cooking station (Gear Workbench tiers, Stove tiers, etc.) with unlock requirements and materials
 - **Builds & Classes** — Once Human's weapon-effect archetypes (its closest equivalent to "classes") plus named meta loadouts, each cross-linked to its mods and weapons
-- **Memetics** — the full Gathering / Crafting / Management / Building specialization system (105 specializations)
-- **Deviants (Animals)** — 56 companion creatures with capture method, placement and cross-links to what they help you farm/cook/build
+- **Memetics** — the full Gathering / Crafting / Management / Building specialization system (105 specializations) — a legacy system superseded by the current Tech Tree, both explained
+- **Deviants (Animals)** — 65 companion creatures with capture method, placement and cross-links to what they help you farm/cook/build
 - **Crops & Ranching** — farming system, 10 crops, and livestock/breeding
 - **Food & Cooking** — 80+ recipes with ingredients (linked back to crops), buff effects, and which station cooks them
 - **Bosses** — the Great Ones plus seasonal/event bosses, each with fight mechanics and drops

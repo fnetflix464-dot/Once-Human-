@@ -101,7 +101,7 @@
       "type": "pistol",
       "rarity": "legendary",
       "tier": "A",
-      "notes": "One of the higher-ranked legendary pistols.",
+      "notes": "Confirmed unique ability: critical hits count double, and killing an enemy boosts blast damage by 30% for 12 seconds. One of the higher-ranked legendary pistols.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -141,27 +141,30 @@
       "type": "pistol",
       "rarity": "legendary",
       "tier": "B",
-      "damage": 170,
-      "notes": "Legendary pistol, solid backup-slot option.",
+      "damage": 262,
+      "notes": "Confirmed base stats: 262 DMG, 145 RPM, 5-round magazine. Legendary pistol, solid backup-slot option.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
         "marked",
         "power-surge"
-      ]
+      ],
+      "fireRate": 145
     },
     {
       "id": "r500-hammerhead-shark",
       "name": "R500 — Hammerhead Shark",
       "type": "pistol",
-      "rarity": "legendary",
+      "rarity": "epic",
       "notes": "Named R500 variant.",
-      "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "craftingStation": "intermediate-gear-workbench",
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
       "commonArchetypes": [
         "marked",
         "power-surge"
-      ]
+      ],
+      "damage": 235,
+      "fireRate": 145
     },
     {
       "id": "mps5",
@@ -507,7 +510,7 @@
       "name": "AWS.338 — Black Panther",
       "type": "sniper-rifle",
       "rarity": "legendary",
-      "notes": "Named AWS.338 variant.",
+      "notes": "Confirmed unique ability: aiming for 3 seconds triggers Fortress Warfare, creating a 2m-radius zone that grants allies Heavy Armor for 5s and +20% Weapon DMG.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -656,12 +659,12 @@
     },
     {
       "id": "wrath-of-hades",
-      "name": "Wrath Of Hades",
+      "name": "MG4 — Wrath Of Hades",
       "type": "lmg",
       "rarity": "legendary",
       "damage": 44,
       "fireRate": 700,
-      "notes": "75-round magazine legendary LMG.",
+      "notes": "Named legendary MG4 variant; 75-round magazine.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -978,7 +981,72 @@
         "shrapnel",
         "unstable-bomber"
       ]
+    },
+    {
+      "id": "m416-silent-anabasis",
+      "name": "M416 — Silent Anabasis",
+      "type": "assault-rifle",
+      "rarity": "legendary",
+      "tier": "A",
+      "notes": "Rated the best weapon added in the Way of Winter update.",
+      "craftingStation": "advanced-gear-workbench",
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "commonArchetypes": [
+        "power-surge",
+        "fast-gunner"
+      ]
+    },
+    {
+      "id": "m416-autumn-equinox",
+      "name": "M416 — Autumn Equinox",
+      "type": "assault-rifle",
+      "rarity": "epic",
+      "notes": "Named M416 variant introduced in the Way of Winter update.",
+      "craftingStation": "intermediate-gear-workbench",
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "commonArchetypes": [
+        "power-surge",
+        "fast-gunner"
+      ]
+    },
+    {
+      "id": "m416-scorched-earth",
+      "name": "M416 — Scorched Earth",
+      "type": "assault-rifle",
+      "rarity": "epic",
+      "notes": "Named M416 variant introduced in the Way of Winter update.",
+      "craftingStation": "intermediate-gear-workbench",
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "commonArchetypes": [
+        "power-surge",
+        "fast-gunner"
+      ]
+    },
+    {
+      "id": "kvd-icebreaker",
+      "name": "KVD — Icebreaker",
+      "type": "lmg",
+      "rarity": "legendary",
+      "notes": "Named legendary KVD variant.",
+      "craftingStation": "advanced-gear-workbench",
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "commonArchetypes": [
+        "fast-gunner",
+        "power-surge"
+      ]
+    },
+    {
+      "id": "acs12-corrosion",
+      "name": "ACS12 — Corrosion",
+      "type": "shotgun",
+      "rarity": "legendary",
+      "notes": "Confirmed unique ability: applies Shock/Power Surge damage rather than a status; centerpiece of the 'Corrosion Power Surge' PvE build (500k+ DPS in optimized setups). Static Shock is the ideal mod for it since the gun doesn't inflict a stacking Power Surge status.",
+      "craftingStation": "advanced-gear-workbench",
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "commonArchetypes": [
+        "power-surge"
+      ]
     }
   ],
-  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (67 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead."
+  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (72 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead."
 }
