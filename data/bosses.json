@@ -12,12 +12,35 @@
         "status": "community",
         "sourceIds": [
           "fandom-wiki",
-          "pcgamesn-bosses"
+          "pcgamesn-bosses",
+          "gamerant-ravenous-hunter"
         ],
         "lastVerified": "2026-08-19",
         "verifiedPatch": "3.0.3",
-        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
-      }
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed. Phase/weak-point breakdown added from a dedicated boss-fight guide; still community-sourced, not an official strategy document."
+      },
+      "weakPoints": [
+        "Gelatinous head",
+        "Right arm / Minigun mount (destroying it severs the arm and stuns the boss)"
+      ],
+      "phases": [
+        {
+          "phase": "Phase 1 — Gatling Gun",
+          "description": "Take cover from Gatling fire and destroy the gun; it overheats periodically, opening a damage window. At ~1/3 health it becomes immune and teleports away."
+        },
+        {
+          "phase": "Spawner interlude",
+          "description": "Destroy two Spawners (east and west of the arena) producing Gnawers, while dodging rockets, to force the boss back."
+        },
+        {
+          "phase": "Phase 2 — Minigun return",
+          "description": "The boss reappears with its Minigun; use the brief re-entry window and thrown Explosive Barrels to burst it down."
+        },
+        {
+          "phase": "Phase 3 — Rocket Launcher",
+          "description": "The boss switches to a Rocket Launcher with Missile Cluster homing-rocket attacks; save consumables/Deviant abilities for this phase."
+        }
+      ]
     },
     {
       "id": "treant",
@@ -30,12 +53,26 @@
         "status": "community",
         "sourceIds": [
           "fandom-wiki",
-          "pcgamesn-bosses"
+          "pcgamesn-bosses",
+          "gamesradar-treant"
         ],
         "lastVerified": "2026-08-19",
         "verifiedPatch": "3.0.3",
-        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
-      }
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed. Phase/weak-point breakdown added from a dedicated boss-fight guide; still community-sourced, not an official strategy document."
+      },
+      "weakPoints": [
+        "The glowing red 'woman' figure fused into its back/head — doubles damage when hit"
+      ],
+      "phases": [
+        {
+          "phase": "Invulnerability phase",
+          "description": "Three vines with glowing red weak spots must be destroyed before the boss can take damage at all."
+        },
+        {
+          "phase": "Damage window (~120s)",
+          "description": "Once all three vines are down, the boss is vulnerable for roughly two minutes before the vines regrow and the loop restarts. Cyst Seeds spawn during this window and can be broken for a temporary attack-negating safety dome."
+        }
+      ]
     },
     {
       "id": "arachsiam",
@@ -48,12 +85,27 @@
         "status": "community",
         "sourceIds": [
           "fandom-wiki",
-          "pcgamesn-bosses"
+          "pcgamesn-bosses",
+          "thegamer-arachsiam"
         ],
         "lastVerified": "2026-08-19",
         "verifiedPatch": "3.0.3",
-        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
-      }
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed. Phase/weak-point breakdown added from a dedicated boss-fight guide; still community-sourced, not an official strategy document."
+      },
+      "weakPoints": [
+        "Possessed woman's head",
+        "Purple bulges on the spider's back (legs take reduced damage)"
+      ],
+      "phases": [
+        {
+          "phase": "Phase 1 — Mobile assault",
+          "description": "The boss moves quickly around the arena; sustained-DPS or sniper weapons work best while kiting."
+        },
+        {
+          "phase": "Phase 2 — Mist immunity",
+          "description": "At roughly 60-70% health the boss climbs the arena's central stone and releases a damage-immune mist, spawning glowing purple spider eggs outside the arena that must be destroyed to break the immunity."
+        }
+      ]
     },
     {
       "id": "rabizex",
@@ -66,12 +118,35 @@
         "status": "community",
         "sourceIds": [
           "fandom-wiki",
-          "pcgamesn-bosses"
+          "pcgamesn-bosses",
+          "gamewitted-rabizex"
         ],
         "lastVerified": "2026-08-19",
         "verifiedPatch": "3.0.3",
-        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
-      }
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed. Phase/weak-point breakdown added from a dedicated boss-fight guide; still community-sourced, not an official strategy document."
+      },
+      "weakPoints": [
+        "Head (exposed once the first health bar depletes)",
+        "Shoulders (appear after the head is first exposed)"
+      ],
+      "phases": [
+        {
+          "phase": "Phase 1 — No clear weak point",
+          "description": "The boss shows no obvious weak point at full health; focus general damage while dodging its ranged Stardust attacks and the hard-to-avoid 'Oblivion' dive attack."
+        },
+        {
+          "phase": "Phase 2 — Head exposed",
+          "description": "Once the first health bar is depleted, a true head sticks out as a critical weak point, followed by weak points on the shoulders."
+        },
+        {
+          "phase": "Invulnerability interlude",
+          "description": "The boss periodically shields itself; destroying scattered dark-matter spheres breaks the shield."
+        },
+        {
+          "phase": "Enraged phase",
+          "description": "At low health the boss enters a frenzied state with stronger attacks, but its head becomes a consistently exposed weak spot."
+        }
+      ]
     },
     {
       "id": "mensdevoran",
@@ -84,12 +159,32 @@
         "status": "community",
         "sourceIds": [
           "fandom-wiki",
-          "pcgamesn-bosses"
+          "pcgamesn-bosses",
+          "gamerant-forsaken-giant"
         ],
         "lastVerified": "2026-08-19",
         "verifiedPatch": "3.0.3",
-        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
-      }
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed. Phase/weak-point breakdown added from a dedicated boss-fight guide; still community-sourced, not an official strategy document."
+      },
+      "weakPoints": [
+        "Face",
+        "Right palm",
+        "Left palm",
+        "Belly",
+        "Left biceps",
+        "Right biceps — a single glowing weak point rotates between these locations"
+      ],
+      "phases": [
+        {
+          "phase": "Phase 1 — Body weak points",
+          "description": "The glowing weak point rotates across face/palms/belly/biceps as the boss uses Slam, Sweep, and a crying Tears attack (each telegraphed by a glow before it lands)."
+        },
+        {
+          "phase": "Phase 2 — Hands + adds",
+          "description": "The weak point shifts to the hands only, the boss becomes more aggressive, and it summons Elite minions to distract the player(s)."
+        }
+      ],
+      "arenaNote": "Each of the arena's floor sections can absorb 3 hits from the boss's attacks before breaking and shrinking the arena — spreading out where its attacks land avoids this."
     }
   ],
   "seasonalAndEventBosses": [

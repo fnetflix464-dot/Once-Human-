@@ -438,6 +438,22 @@ OH.renderBossDetail = function renderBossDetail(key) {
       <h3>Fight mechanics</h3>
       <p class="intro intro-tight">${OH.esc(b.mechanics)}</p>
     </div>
+    ${b.weakPoints && b.weakPoints.length ? `
+      <div class="section-block">
+        <h3>Weak points</h3>
+        <ul>${b.weakPoints.map(w => `<li>${OH.esc(w)}</li>`).join("")}</ul>
+      </div>
+    ` : ""}
+    ${b.phases && b.phases.length ? `
+      <div class="section-block">
+        <h3>Fight phases</h3>
+        <div class="table-wrap"><table class="data-table">
+          <thead><tr><th>Phase</th><th>What happens</th></tr></thead>
+          <tbody>${b.phases.map(p => `<tr><td data-label="Phase">${OH.esc(p.phase)}</td><td data-label="What happens">${OH.esc(p.description)}</td></tr>`).join("")}</tbody>
+        </table></div>
+        ${b.arenaNote ? `<p class="intro">${OH.esc(b.arenaNote)}</p>` : ""}
+      </div>
+    ` : ""}
     <div class="section-block">
       <h3>Drops</h3>
       <p class="intro intro-tight">${OH.esc(b.drops)}</p>

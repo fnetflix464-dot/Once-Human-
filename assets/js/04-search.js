@@ -57,7 +57,10 @@ OH.buildSearchCorpus = function buildSearchCorpus() {
 
   idx.foodRecipes.forEach(r => push("food", r._key, r.name, [r.effect, ...(r.ingredients || []), r.category], r.category));
 
-  idx.bosses.forEach(b => push("bosses", b._key, b.name, [b.mechanics, b.context, b.drops, b.location], b._kind === "greatOne" ? "Great One" : b.type));
+  idx.bosses.forEach(b => push("bosses", b._key, b.name, [
+    b.mechanics, b.context, b.drops, b.location,
+    ...(b.weakPoints || []), ...(b.phases || []).map(p => p.phase + " " + p.description)
+  ], b._kind === "greatOne" ? "Great One" : b.type));
 
   idx.blueprintCategories.forEach(c => push("blueprints", c._key, c.name, [c.description, ...(c.examples || [])], "Blueprint Category"));
 

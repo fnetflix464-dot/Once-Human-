@@ -1,38 +1,236 @@
 {
   "_comment": "Canonical source registry. Every source URL used anywhere in this database has exactly one entry here with a stable id — data records reference it by id (in a verification.sourceIds array) instead of inlining name/url again. type: 'official' = Starry Studio/NetEase-published; 'database' = a continuously-updated third-party aggregator pulling from game files; 'wiki' = community-maintained wiki; 'community' = a guide/blog/video by an individual creator or outlet.",
   "sources": [
-    { "id": "official-news", "name": "Once Human Official Site — News & Patch Notes", "url": "https://www.oncehuman.game/news/", "type": "official", "lastChecked": "2026-08-20" },
-    { "id": "official-devblog-tech-1", "name": "Official Dev Blog — Tech System Optimization", "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html", "type": "official", "lastChecked": "2026-08-19" },
-    { "id": "official-devblog-tech-2", "name": "Official Dev Blog — Tech System Optimizations (iterative)", "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html", "type": "official", "lastChecked": "2026-08-19" },
-    { "id": "official-update-2.3.6", "name": "Version 2.3.6 Update Announcement", "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html", "type": "official", "lastChecked": "2026-08-19" },
-    { "id": "official-devblog-accessories", "name": "Official Dev Blog — Comprehensive Optimization of Calibration & Accessories", "url": "https://www.oncehuman.game/news/devBlog/20260113/40781_1281545.html", "type": "official", "lastChecked": "2026-08-20" },
-
-    { "id": "fandom-wiki", "name": "Once Human Wiki (Fandom)", "url": "https://once-human.fandom.com/", "type": "wiki", "lastChecked": "2026-08-19" },
-    { "id": "oncehumanwiki", "name": "Once Human Wiki (oncehumanwiki.com)", "url": "https://oncehumanwiki.com/", "type": "wiki", "lastChecked": "2026-08-19" },
-    { "id": "game8-wiki", "name": "Game8 Once Human Wiki", "url": "https://game8.co/games/Once-Human", "type": "wiki", "lastChecked": "2026-08-19" },
-
-    { "id": "oncehumandb", "name": "Once Human Database (oncehumandb.com)", "url": "https://www.oncehumandb.com/", "type": "database", "lastChecked": "2026-08-19" },
-    { "id": "steamdb-patchnotes", "name": "SteamDB Patch Notes", "url": "https://steamdb.info/app/2139460/patchnotes/", "type": "database", "lastChecked": "2026-08-19" },
-
-    { "id": "gamingwithdaopa", "name": "GamingWithDaOpa Once Human Guides", "url": "https://gamingwithdaopa.ellatha.com/once-human/", "type": "community", "lastChecked": "2026-08-19" },
-    { "id": "dexerto-weapons-tierlist", "name": "Dexerto Weapons Tier List", "url": "https://www.dexerto.com/gaming/once-human-weapons-tier-list-best-guns-ranked-2823827/", "type": "community", "lastChecked": "2026-08-19" },
-    { "id": "pcgamesn-bosses", "name": "PCGamesN Bosses Guide", "url": "https://www.pcgamesn.com/once-human/bosses", "type": "community", "lastChecked": "2026-08-19" },
-    { "id": "screenrant-crops", "name": "ScreenRant Best Crops Guide", "url": "https://screenrant.com/once-human-best-crops-to-grow/", "type": "community", "lastChecked": "2026-08-19" },
-    { "id": "pcinvasion-builds", "name": "PC Invasion Best Builds Guide", "url": "https://www.pcinvasion.com/best-once-human-builds-for-pve-and-pvp-shrapnel-power-surge-frost-vortex-and-more/", "type": "community", "lastChecked": "2026-08-19" },
-
-    { "id": "bluestacks-shrapnel", "name": "BlueStacks — Once Human Shrapnel Build and Guide", "url": "https://www.bluestacks.com/blog/game-guides/once-human/ohn-shrapnel-build-en.html", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "gamerant-shrapnel", "name": "GameRant — Once Human: Best Shrapnel Build", "url": "https://gamerant.com/once-human-best-shrapnel-build/", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "gameleap-power-surge", "name": "GameLeap — Once Human Best Power Surge Build", "url": "https://www.gameleap.com/articles/once-human-best-power-surge-build", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "sportskeeda-power-surge", "name": "Sportskeeda — Once Human Power Surge build guide: BiS gear, Deviant, and more", "url": "https://sportskeeda.com/mmo/once-human-power-surge-build-guide-bis-gear-deviant", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "vortexgaming-frost-vortex", "name": "Vortex Gaming — Once Human: Frost Vortex Build Guide (KAM Abyss Glance)", "url": "https://vortexgaming.io/en/postdetail/536866", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "sportskeeda-frost-vortex", "name": "Sportskeeda — Once Human Frost Vortex build guide: BiS gear, armor, and more", "url": "https://www.sportskeeda.com/mmo/once-human-frost-vortex-build-guide-bis-gear-armor", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "theriagames-bounce", "name": "Theria Games — Once Human Bounce Build", "url": "https://theriagames.com/guide/once-human-bounce-build/", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "game8-bounce", "name": "Game8 — Bounce Build | Once Human", "url": "https://game8.co/games/Once-Human/archives/469252", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "gamerant-fast-gunner", "name": "GameRant — Best Machine Gun Fast Gunner Build In Once Human", "url": "https://gamerant.com/once-human-machine-gun-fast-gunner-build-guide-mods-armor-mg4-predator-lmg-bastille/", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "upcomer-fast-gunner", "name": "Upcomer — Fast Gunner LMG Build for maximum Crit damage in Once Human", "url": "https://upcomer.com/fast-gunner-lmg-build-for-maximum-crit-damage-in-once-human-70k-dps/", "type": "community", "lastChecked": "2026-08-20" },
-
-    { "id": "bisecthosting-deviations", "name": "BisectHosting — Once Human Deviations Guide (locations/abilities list)", "url": "https://www.bisecthosting.com/blog/once-human-deviations-locations-abilities-effects-list", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "gamerant-deviated-crops", "name": "GameRant — How To Get Deviated Crops In Once Human", "url": "https://gamerant.com/once-human-how-get-deviated-crops/", "type": "community", "lastChecked": "2026-08-20" },
-    { "id": "thegamer-deviated-crops", "name": "TheGamer — How To Get Deviated Crops Using Fertilizers In Once Human", "url": "https://www.thegamer.com/once-human-how-to-get-deviated-crops-guide/", "type": "community", "lastChecked": "2026-08-20" }
+    {
+      "id": "official-news",
+      "name": "Once Human Official Site — News & Patch Notes",
+      "url": "https://www.oncehuman.game/news/",
+      "type": "official",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "official-devblog-tech-1",
+      "name": "Official Dev Blog — Tech System Optimization",
+      "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html",
+      "type": "official",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "official-devblog-tech-2",
+      "name": "Official Dev Blog — Tech System Optimizations (iterative)",
+      "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html",
+      "type": "official",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "official-update-2.3.6",
+      "name": "Version 2.3.6 Update Announcement",
+      "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html",
+      "type": "official",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "official-devblog-accessories",
+      "name": "Official Dev Blog — Comprehensive Optimization of Calibration & Accessories",
+      "url": "https://www.oncehuman.game/news/devBlog/20260113/40781_1281545.html",
+      "type": "official",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "fandom-wiki",
+      "name": "Once Human Wiki (Fandom)",
+      "url": "https://once-human.fandom.com/",
+      "type": "wiki",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "oncehumanwiki",
+      "name": "Once Human Wiki (oncehumanwiki.com)",
+      "url": "https://oncehumanwiki.com/",
+      "type": "wiki",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "game8-wiki",
+      "name": "Game8 Once Human Wiki",
+      "url": "https://game8.co/games/Once-Human",
+      "type": "wiki",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "oncehumandb",
+      "name": "Once Human Database (oncehumandb.com)",
+      "url": "https://www.oncehumandb.com/",
+      "type": "database",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "steamdb-patchnotes",
+      "name": "SteamDB Patch Notes",
+      "url": "https://steamdb.info/app/2139460/patchnotes/",
+      "type": "database",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "gamingwithdaopa",
+      "name": "GamingWithDaOpa Once Human Guides",
+      "url": "https://gamingwithdaopa.ellatha.com/once-human/",
+      "type": "community",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "dexerto-weapons-tierlist",
+      "name": "Dexerto Weapons Tier List",
+      "url": "https://www.dexerto.com/gaming/once-human-weapons-tier-list-best-guns-ranked-2823827/",
+      "type": "community",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "pcgamesn-bosses",
+      "name": "PCGamesN Bosses Guide",
+      "url": "https://www.pcgamesn.com/once-human/bosses",
+      "type": "community",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "screenrant-crops",
+      "name": "ScreenRant Best Crops Guide",
+      "url": "https://screenrant.com/once-human-best-crops-to-grow/",
+      "type": "community",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "pcinvasion-builds",
+      "name": "PC Invasion Best Builds Guide",
+      "url": "https://www.pcinvasion.com/best-once-human-builds-for-pve-and-pvp-shrapnel-power-surge-frost-vortex-and-more/",
+      "type": "community",
+      "lastChecked": "2026-08-19"
+    },
+    {
+      "id": "bluestacks-shrapnel",
+      "name": "BlueStacks — Once Human Shrapnel Build and Guide",
+      "url": "https://www.bluestacks.com/blog/game-guides/once-human/ohn-shrapnel-build-en.html",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamerant-shrapnel",
+      "name": "GameRant — Once Human: Best Shrapnel Build",
+      "url": "https://gamerant.com/once-human-best-shrapnel-build/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gameleap-power-surge",
+      "name": "GameLeap — Once Human Best Power Surge Build",
+      "url": "https://www.gameleap.com/articles/once-human-best-power-surge-build",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "sportskeeda-power-surge",
+      "name": "Sportskeeda — Once Human Power Surge build guide: BiS gear, Deviant, and more",
+      "url": "https://sportskeeda.com/mmo/once-human-power-surge-build-guide-bis-gear-deviant",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "vortexgaming-frost-vortex",
+      "name": "Vortex Gaming — Once Human: Frost Vortex Build Guide (KAM Abyss Glance)",
+      "url": "https://vortexgaming.io/en/postdetail/536866",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "sportskeeda-frost-vortex",
+      "name": "Sportskeeda — Once Human Frost Vortex build guide: BiS gear, armor, and more",
+      "url": "https://www.sportskeeda.com/mmo/once-human-frost-vortex-build-guide-bis-gear-armor",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "theriagames-bounce",
+      "name": "Theria Games — Once Human Bounce Build",
+      "url": "https://theriagames.com/guide/once-human-bounce-build/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "game8-bounce",
+      "name": "Game8 — Bounce Build | Once Human",
+      "url": "https://game8.co/games/Once-Human/archives/469252",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamerant-fast-gunner",
+      "name": "GameRant — Best Machine Gun Fast Gunner Build In Once Human",
+      "url": "https://gamerant.com/once-human-machine-gun-fast-gunner-build-guide-mods-armor-mg4-predator-lmg-bastille/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "upcomer-fast-gunner",
+      "name": "Upcomer — Fast Gunner LMG Build for maximum Crit damage in Once Human",
+      "url": "https://upcomer.com/fast-gunner-lmg-build-for-maximum-crit-damage-in-once-human-70k-dps/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "bisecthosting-deviations",
+      "name": "BisectHosting — Once Human Deviations Guide (locations/abilities list)",
+      "url": "https://www.bisecthosting.com/blog/once-human-deviations-locations-abilities-effects-list",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamerant-deviated-crops",
+      "name": "GameRant — How To Get Deviated Crops In Once Human",
+      "url": "https://gamerant.com/once-human-how-get-deviated-crops/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "thegamer-deviated-crops",
+      "name": "TheGamer — How To Get Deviated Crops Using Fertilizers In Once Human",
+      "url": "https://www.thegamer.com/once-human-how-to-get-deviated-crops-guide/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamerant-ravenous-hunter",
+      "name": "GameRant — Once Human: How To Beat Ravenous Hunter Boss",
+      "url": "https://gamerant.com/once-human-ravenous-hunter-boss-fight-guide/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamesradar-treant",
+      "name": "GamesRadar+ — How to beat the Once Human Treant boss",
+      "url": "https://www.gamesradar.com/games/survival/once-human-treant-boss/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "thegamer-arachsiam",
+      "name": "TheGamer — Once Human: Arachsiam Boss Guide",
+      "url": "https://www.thegamer.com/once-human-arachsiam-boss-strategy/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamewitted-rabizex",
+      "name": "GameWitted — How to Defeat Rabizex in Once Human",
+      "url": "https://www.gamewitted.com/gaming/how-to-defeat-rabizex-in-once-human",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    },
+    {
+      "id": "gamerant-forsaken-giant",
+      "name": "GameRant — How To Beat The Forsaken Giant in Once Human",
+      "url": "https://gamerant.com/once-human-the-forsaken-giant-boss-fight-guide-how-to-beat/",
+      "type": "community",
+      "lastChecked": "2026-08-20"
+    }
   ]
 }
