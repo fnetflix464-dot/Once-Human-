@@ -1,0 +1,70 @@
+{
+  "status": "current",
+  "lastVerified": "2026-08-20",
+  "overview": "The Tech Tree is Once Human's current progression system for unlocking crafting facilities, structures, gear formulas and passive bonuses. It replaced the old Memetic Specialization system entirely in the Tech System overhaul (patch 2.3.6, April 8, 2026) — see the Memetics (Legacy) page for what it replaced and why the two systems shouldn't be confused.",
+  "sources": [
+    { "name": "Official Dev Blog — Tech System Optimization", "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html" },
+    { "name": "Official Dev Blog — Tech System Optimizations (iterative)", "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html" },
+    { "name": "Version 2.3.6 Update Announcement", "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html" }
+  ],
+  "unlockMethods": [
+    {
+      "id": "allocation",
+      "name": "Tech Tree Allocation",
+      "verification": "confirmed",
+      "description": "Spend Tech Points on tree nodes. Points are earned by leveling up, repeatedly researching facilities/items, exploring mysterious chests, or defeating Elite enemies — not by character level alone."
+    },
+    {
+      "id": "reverse-engineering",
+      "name": "Reverse Engineering",
+      "verification": "confirmed",
+      "description": "Use a research bench to unlock a formula directly by placing a collected cultural artifact into it — no Tech Points spent."
+    },
+    {
+      "id": "tech-invention",
+      "name": "Tech Invention",
+      "verification": "confirmed",
+      "description": "Experiment with material combinations at a research bench for a variable chance to unlock a formula."
+    }
+  ],
+  "branches": [
+    {
+      "id": "survival",
+      "name": "Survival",
+      "verification": "confirmed",
+      "focus": "Basic functionality and sustenance — cooking, temperature, health/stamina utility.",
+      "likelyLegacyOverlap": ["management"],
+      "nodes": []
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "verification": "confirmed",
+      "focus": "Crafting capacity and material processing — workbenches, refining, gathering tools.",
+      "likelyLegacyOverlap": ["crafting", "gathering"],
+      "nodes": []
+    },
+    {
+      "id": "combat",
+      "name": "Combat",
+      "verification": "confirmed",
+      "focus": "Fighting capability and enemy engagement — turrets, traps, combat gadgets.",
+      "likelyLegacyOverlap": ["building"],
+      "nodes": []
+    },
+    {
+      "id": "building",
+      "name": "Building",
+      "verification": "confirmed",
+      "focus": "Base construction and territory expansion — structures, drones, storage.",
+      "likelyLegacyOverlap": ["building"],
+      "nodes": []
+    }
+  ],
+  "nodeDataStatus": "unverified",
+  "nodeDataNote": "This database does not have an independently verified per-node list (name, exact Tech Point cost, prerequisite, branch placement) for the current Tech Tree — that level of detail wasn't available in the sources used to compile it. The Legacy Memetics page lists ~105 real node names and effects from the old system, most of which are believed to still exist in some form under the new branches above, but this database has not re-verified which of the 4 current branches each one now lives in or what it now costs. Treat the Legacy Memetics content as a reference for *what a node does*, not for *where it currently lives or what it currently costs*.",
+  "materialSimplification": {
+    "verification": "confirmed",
+    "description": "The same April 2026 overhaul simplified crafting materials: most fabric types collapsed into a single Cotton Fabric, parts into Standard Parts, and plastics into All-Purpose Plastic. Rare metal crystals are no longer mandatory for gear crafting. Five intermediate-tier crafting facilities were removed outright (Intermediate Supplies Workbench, Intermediate Weapons Bench, Intermediate Garage, Small Synthesis Bench, Intermediate Stove) with their formulas folded into the corresponding Advanced-tier facility, whose unlock was moved earlier in the tree specifically so players reach full crafting capability sooner."
+  }
+}

@@ -1,9 +1,23 @@
 {
   "siteName": "Once Human Database",
-  "description": "A community reference database for Once Human — weapons, mods, blueprints, builds, memetic specializations, deviants, crops, bosses, regions, and patch history.",
+  "tagline": "A companion tool for Once Human — not just a wiki.",
+  "description": "A curated, cross-linked reference and decision-making tool for Once Human — weapons, armor, mods, builds, the Tech Tree, deviants, ranching, crops, food, and bosses.",
   "lastCompiled": "2026-08-19",
   "gameVersionAtCompile": "3.0.3",
   "disclaimer": "Once Human is developed and published by Starry Studio / NetEase. This is an unofficial, fan-made reference site compiled from publicly available wikis, official patch notes, and community guides. Data reflects the game state as of the compile date above and may drift as the game continues to receive updates — see the Updates page for the latest patch history and check the linked sources for anything time-sensitive.",
+  "completenessNote": "This is a curated reference, not an exhaustive database. Once Human's live in-game catalog is larger than what's listed here in several categories — for example, oncehumandb.com (a continuously-updated third-party database pulling from game files) tracks 126+ weapons, 159 armor pieces and 773 mod combinations, mostly through named legendary/epic skin variants of the base items already listed here. This site does not claim to enumerate every one of those — where a count from oncehumandb.com is shown, it is labeled as 'live in-game total (third-party)' and kept separate from 'covered here' so the two are never confused.",
+  "verificationLegend": [
+    { "id": "confirmed", "symbol": "✓", "label": "Confirmed", "color": "confirmed", "meaning": "Independently verified against an official source (patch notes, dev blog) or cross-checked across multiple independent community sources that agree." },
+    { "id": "partial", "symbol": "⚠", "label": "Partially confirmed", "color": "partial", "meaning": "The core fact is sourced, but a specific detail (an exact number, a secondary effect) could not be independently re-verified." },
+    { "id": "community", "symbol": "◐", "label": "Community reported", "color": "community", "meaning": "Reported consistently by community guides/wikis, but not found in an official source." },
+    { "id": "unverified", "symbol": "!", "label": "Unverified", "color": "unverified", "meaning": "A plausible detail included for completeness, but not independently confirmed by any source used to compile this database. Treat with caution." },
+    { "id": "legacy", "symbol": "⧗", "label": "Legacy / Historical", "color": "legacy", "meaning": "Describes a system or mechanic that existed in a past version of the game and has since been changed or removed. Kept for reference only — do not use for current gameplay decisions." }
+  ],
+  "currentVsLegacySystems": [
+    { "topic": "Progression / unlocks", "current": "Tech Tree (Survival / Production / Combat / Building) — see the Tech Tree page", "legacy": "Memetic Specialization (Gathering / Crafting / Management / Building, Cradle, Cipher + Meme Points) — removed April 8, 2026 (patch 2.3.6); see the Memetics (Legacy) page" },
+    { "topic": "Mod acquisition", "current": "Fixed sub-attributes (levels 1-17), Shiny mods past Lv.17, targeted Shop redemption (Mod Dust + Energy Links) alongside drops — since Jan 21, 2026", "legacy": "Fully random sub-attributes, drop-only acquisition — pre-Jan 2026" },
+    { "topic": "Weapon accessories", "current": "Uniform bonus per type+rarity, single 'Reload Efficiency' stat — since Jan 21, 2026", "legacy": "Per-weapon-line variance, 3 separate reload stats, separate Calibration feature — pre-Jan 2026 (Calibration removed outright, not merely changed)" }
+  ],
   "sources": [
     { "name": "Once Human Official Site — News & Patch Notes", "url": "https://www.oncehuman.game/news/" },
     { "name": "Once Human Wiki (Fandom)", "url": "https://once-human.fandom.com/" },

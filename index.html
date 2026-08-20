@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Once Human Database</title>
-<meta name="description" content="Unofficial community database for Once Human — weapons, mods, blueprints, builds, memetics, deviants, crops, bosses, regions and patch history.">
+<meta name="description" content="Unofficial community database for Once Human — weapons, mods, blueprints, builds, tech tree, deviants, ranching, crops, bosses, regions and patch history.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +12,47 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="header-inner">
-    <div class="brand">
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <a class="brand" href="#home">
       <h1>Once Human Database</h1>
       <span class="version-pill" id="version-pill">v—</span>
-    </div>
+    </a>
     <div class="search-box">
-      <input type="search" id="global-search" placeholder="Search everything… (weapons, mods, deviants, bosses…)" autocomplete="off">
+      <label class="sr-only" for="global-search">Search the database</label>
+      <input type="search" id="global-search" placeholder="Search everything… (weapons, mods, deviants, bosses…)"
+             autocomplete="off" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+      <div class="search-results" id="search-results" hidden></div>
     </div>
   </div>
-  <nav class="tabs" id="tabs"></nav>
+  <nav class="nav-groups" id="nav-groups" aria-label="Main navigation"></nav>
 </header>
+
+<div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+<nav class="mobile-drawer" id="mobile-drawer" aria-label="Main navigation" hidden></nav>
 
 <main id="main"></main>
 
 <footer class="site-footer" id="footer">Loading…</footer>
 
-<script src="assets/app.js"></script>
+<script src="assets/js/01-utils.js"></script>
+<script src="assets/js/02-constants.js"></script>
+<script src="assets/js/03-store.js"></script>
+<script src="assets/js/04-search.js"></script>
+<script src="assets/js/05-router.js"></script>
+<script src="assets/js/06-components.js"></script>
+<script src="assets/js/07-favorites.js"></script>
+<script src="assets/js/08-filters.js"></script>
+<script src="assets/js/09-pages-home.js"></script>
+<script src="assets/js/10-pages-progression.js"></script>
+<script src="assets/js/11-pages-combat.js"></script>
+<script src="assets/js/12-pages-world.js"></script>
+<script src="assets/js/13-pages-info.js"></script>
+<script src="assets/js/14-main.js"></script>
 </body>
 </html>

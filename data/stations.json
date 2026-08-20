@@ -1,12 +1,13 @@
 {
   "overview": "Crafting stations gate what tier of gear, food or blueprint you can produce. Most stations upgrade through 2-4 tiers.",
-  "techSystemNotice": "IMPORTANT MECHANIC CHANGE: the unlock descriptions below originally cited the old Memetic system's Cradle screen and Cipher/Meme Point currency. That system was removed in the Tech System overhaul (patch 2.3.6, April 8, 2026) — stations are now unlocked through the Tech Tree instead (Tech Points from leveling/research/exploration/Elite kills, Reverse Engineering of cultural artifacts, or Tech Invention at a research bench; see the Builds & Classes tab). This database has not independently re-verified the exact current Tech Tree node/cost for each station below, so treat unlock details as approximate pre-overhaul context, not current costs. Separately, that same patch removed five intermediate-tier facilities outright — Intermediate Supplies Workbench, Intermediate Weapons Bench, Intermediate Garage, Small Synthesis Bench, and Intermediate Stove — folding their crafting formulas into the corresponding Advanced-tier facility and moving that facility's unlock earlier in the tree. The 'Electric Stove' entry below may correspond to the now-removed Intermediate Stove; its recipes are likely reachable straight from an Advanced Stove / Kitchen Set today. Crafting materials were also simplified game-wide around the same update: most fabric types collapsed into a single Cotton Fabric, parts into Standard Parts, and plastics into All-Purpose Plastic, and rare metal crystals are no longer a mandatory gear-crafting ingredient — so treat the specific material lists below as illustrative rather than exact current recipes.",
+  "techSystemNotice": "IMPORTANT MECHANIC CHANGE: the unlock descriptions below originally cited the old Memetic system's Cradle screen and Cipher/Meme Point currency. That system was removed in the Tech System overhaul (patch 2.3.6, April 8, 2026) — stations are now unlocked through the Tech Tree instead (Tech Points from leveling/research/exploration/Elite kills, Reverse Engineering of cultural artifacts, or Tech Invention at a research bench; see the Tech Tree page). This database has not independently re-verified the exact current Tech Tree node/cost for each station below, so treat unlock details as approximate pre-overhaul context, not current costs. Separately, that same patch removed five intermediate-tier facilities outright — Intermediate Supplies Workbench, Intermediate Weapons Bench, Intermediate Garage, Small Synthesis Bench, and Intermediate Stove — folding their crafting formulas into the corresponding Advanced-tier facility and moving that facility's unlock earlier in the tree. The 'Electric Stove' entry below may correspond to the now-removed Intermediate Stove; its recipes are likely reachable straight from an Advanced Stove / Kitchen Set today. Crafting materials were also simplified game-wide around the same update: most fabric types collapsed into a single Cotton Fabric, parts into Standard Parts, and plastics into All-Purpose Plastic, and rare metal crystals are no longer a mandatory gear-crafting ingredient — so treat the specific material lists below as illustrative rather than exact current recipes.",
   "weaponAndGearStations": [
     {
       "id": "gear-workbench",
       "name": "Gear Workbench",
       "tier": "I-II",
       "unlock": "Early Tech Tree node (Production branch, expected). Pre-overhaul this required unlocking 'Essential Tools' then the Gear Workbench line in the old Memetics menu.",
+      "unlockVerification": "unverified",
       "materials": ["Copper Ingots", "Standard Parts", "Cotton Fabric", "Adhesives"],
       "produces": "Tier I-II weapons and armor (given the blueprint + materials)."
     },
@@ -15,6 +16,7 @@
       "name": "Intermediate Gear Workbench",
       "tier": "III-IV",
       "unlock": "Not confirmed among the facilities removed in the April 2026 overhaul, so likely still exists as a Production-branch Tech Tree node — exact placement unconfirmed.",
+      "unlockVerification": "unverified",
       "produces": "Tier III-IV weapons and armor."
     },
     {
@@ -22,6 +24,7 @@
       "name": "Advanced Gear Workbench",
       "tier": "V (max)",
       "unlock": "A Production-branch Tech Tree node; the April 2026 overhaul moved advanced-facility unlocks earlier in the tree specifically so players reach full crafting capability sooner. Exact current Tech Point cost unconfirmed.",
+      "unlockVerification": "partial",
       "materials": ["Tungsten Ingots"],
       "produces": "Tier V weapons and armor (top tier), plus all lower tiers."
     },
@@ -30,6 +33,7 @@
       "name": "Designer's Workstation",
       "tier": "Utility",
       "unlock": "Building-branch Tech Tree node (approximate).",
+      "unlockVerification": "unverified",
       "produces": "Disassembles unwanted/duplicate blueprints into Formula Blueprint Fragments, redeemable for new blueprints."
     }
   ],
@@ -38,6 +42,7 @@
       "id": "stove",
       "name": "Stove",
       "tier": "I (basic)",
+      "unlockVerification": "confirmed",
       "produces": "Basic dishes (Roasted Meat, Grilled Fish, breads, simple soups)."
     },
     {
@@ -45,12 +50,14 @@
       "name": "Electric Stove",
       "tier": "II",
       "unlock": "Likely superseded: 'Intermediate Stove' was one of five facilities removed outright in the April 2026 Tech System overhaul, with its recipes folded into the Advanced Stove. If this station is still distinct from that, its current Tech Tree unlock path (Survival branch, expected) is unconfirmed.",
+      "unlockVerification": "unverified",
       "produces": "Advanced recipes, including Sanity Gummies."
     },
     {
       "id": "refrigerator",
       "name": "Refrigerator",
       "tier": "Utility",
+      "unlockVerification": "confirmed",
       "produces": "Extends food shelf life; required for certain legendary recipes."
     },
     {
@@ -58,12 +65,13 @@
       "name": "Integrated Kitchen / Kitchen Set",
       "tier": "IV (max)",
       "unlock": "A Survival/Production-branch Tech Tree node (approximate) — the best cooking station in the game. Exact current unlock cost unconfirmed post-overhaul.",
+      "unlockVerification": "unverified",
       "produces": "The best cooking station in the game — unlocks Caviar and Butter as ingredients plus the Kitchen Set blueprint (which unlocks the Advanced Stove and further recipes)."
     }
   ],
   "otherStations": [
-    { "id": "planter-box", "name": "Planter Box", "produces": "Grows crops from seeds — see the Crops & Ranching section.", "upgrade": "A Tech Tree node (Production/Survival branch, expected) increases growth speed/yield per temperature degree." },
-    { "id": "isolated-securement-unit", "name": "Isolated Securement Unit", "produces": "Houses a captured Deviant so its ability becomes active — see the Deviants section." },
-    { "id": "youngling-hut", "name": "Youngling Hut", "produces": "Where bred livestock offspring grow up — see the Crops & Ranching section." }
+    { "id": "planter-box", "name": "Planter Box", "produces": "Grows crops from seeds — see the Crops section.", "upgrade": "A Tech Tree node (Production/Survival branch, expected) increases growth speed/yield per temperature degree.", "unlockVerification": "unverified" },
+    { "id": "isolated-securement-unit", "name": "Isolated Securement Unit", "produces": "Houses a captured Deviant so its ability becomes active — see the Deviants section.", "unlockVerification": "confirmed" },
+    { "id": "youngling-hut", "name": "Youngling Hut", "produces": "Where bred livestock offspring grow up — see the Ranching section.", "unlockVerification": "confirmed" }
   ]
 }

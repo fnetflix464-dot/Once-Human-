@@ -1,7 +1,7 @@
 {
-  "overview": "Farming is unlocked via the 'Planting' Memetic Specialization in the Logistics/Management tree. Seeds are obtained by harvesting wild plants (or from growing your own crop). Plant seeds in loamy soil or a Planter Box, water with Boiled or Pure Water (Dirty Water lowers crop Vitality), and provide light — Irrigation Systems and Grow Lights can automate this. Harvest by interacting once growth reaches 100%. Deviated (mutated) Crops can drop from regular ones and are used in special high-value recipes.",
+  "overview": "Farming lets you grow crops for cooking and crafting. Seeds are obtained by harvesting wild plants (or from growing your own crop). Plant seeds in loamy soil or a Planter Box, water with Boiled or Pure Water (Dirty Water lowers crop Vitality), and provide light — Irrigation Systems and Grow Lights can automate this. Harvest by interacting once growth reaches 100%. Deviated (mutated) Crops can drop from regular ones and are used in special high-value recipes.",
   "howToFarm": [
-    "Unlock the Planting memetic specialization.",
+    "Unlock planting/farming capability via the Tech Tree (Survival/Production branch) — the ability to plant was previously gated behind the old Memetic system's 'Planting' specialization; see the Memetics (Legacy) page for that historical mechanic. This database has not independently re-verified the exact current Tech Tree node.",
     "Gather seeds from wild plants or from harvested crops.",
     "Plant in loamy soil or a Planter Box.",
     "Water with Boiled/Pure Water and ensure adequate light.",
@@ -23,16 +23,5 @@
     { "name": "Buzzy Bee", "helps": "Automatically plants crops and boosts mutation probability." },
     { "name": "Growshroom", "helps": "Auto-plants seeds and accelerates crop growth." },
     { "name": "Rain Man", "helps": "Enhances crop vitality and provides irrigation water." }
-  ],
-  "livestockOverview": "Ranching is a separate system from Deviants: regular animals are captured live, tamed with feed (see the Food & Cooking section → Animal Feeds), and bred at a Youngling Hut once Tameness reaches 80-100%. Animals only produce byproducts (meat, wool, milk, hides) once Tameness is 50%+, and a territory can house a maximum of 6 ranched animals. Each animal has a limited number of Breeding Chances (how many times it can produce offspring) that scale with its rarity tier — higher grades (A/S) generally get more chances and better odds at desirable offspring traits, but the exact number per tier wasn't independently re-confirmed for this database, so treat any specific figure you see elsewhere as more reliable than a number here.",
-  "livestock": [
-    { "name": "Ram", "tier": "C", "products": "Wool, meat" },
-    { "name": "Rabbit", "tier": "C", "products": "Meat, hide" },
-    { "name": "Deer", "tier": "B", "products": "Meat, milk (female), hide" },
-    { "name": "Bear", "tier": "A", "products": "Meat, hide" },
-    { "name": "Wolf", "tier": "A", "products": "Meat, hide" },
-    { "name": "Capybara", "tier": "B", "products": "Meat, hide", "notes": "Added in the 1.2 update." },
-    { "name": "Flamingo", "tier": "B", "products": "Meat, feathers", "notes": "Added in the 1.2 update." },
-    { "name": "Leopard", "tier": "S", "products": "Meat, hide", "notes": "Added in the 1.2 update; highest breeding-chance tier." }
   ]
 }

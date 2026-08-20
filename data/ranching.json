@@ -1,0 +1,15 @@
+{
+  "overview": "Ranching is a separate system from Deviants and from crop Farming: regular animals are captured live, tamed with feed (see Food & Cooking → Animal Feeds), and bred at a Youngling Hut once Tameness reaches 80-100%. Animals only produce byproducts (meat, wool, milk, hides) once Tameness is 50%+, and a territory can house a maximum of 6 ranched animals.",
+  "breedingNote": "Each animal has a limited number of Breeding Chances (how many times it can produce offspring) that scale with its rarity tier — higher grades (A/S) generally get more chances and better odds at desirable offspring traits, but the exact number per tier wasn't independently re-confirmed for this database, so treat any specific figure you see elsewhere as more reliable than a number here.",
+  "breedingNoteVerification": "unverified",
+  "animals": [
+    { "name": "Ram", "tier": "C", "products": "Wool, meat" },
+    { "name": "Rabbit", "tier": "C", "products": "Meat, hide" },
+    { "name": "Deer", "tier": "B", "products": "Meat, milk (female), hide" },
+    { "name": "Bear", "tier": "A", "products": "Meat, hide" },
+    { "name": "Wolf", "tier": "A", "products": "Meat, hide" },
+    { "name": "Capybara", "tier": "B", "products": "Meat, hide", "notes": "Added in the 1.2 update." },
+    { "name": "Flamingo", "tier": "B", "products": "Meat, feathers", "notes": "Added in the 1.2 update." },
+    { "name": "Leopard", "tier": "S", "products": "Meat, hide", "notes": "Added in the 1.2 update; highest breeding-chance tier." }
+  ]
+}

@@ -8,19 +8,44 @@
       "role": "PvE — Boss Killer",
       "summary": "Once Human's premier build for destroying the Great Ones and general PvE. Bullets fragment to tear through multiple body parts; can be specced for crit, weakspot hits, or a no-reload playstyle. Aim for a Shrapnel proc chance near 50% (about 1 in every 2 shots).",
       "primaryWeapon": "socr-last-valor",
-      "secondaryWeapons": ["de50-wildfire", "recurve-crossbow"],
-      "keyStats": ["Crit DMG", "Weapon DMG", "Max HP", "Magazine Capacity", "Weakspot DMG"],
-      "suggestedMods": ["Obliterate", "Shatter Them All", "Shield Breaker", "Shrapnel Smash", "Shrapnel Souvenir"]
+      "secondaryWeapons": [
+        "de50-wildfire",
+        "recurve-crossbow"
+      ],
+      "keyStats": [
+        "Crit DMG",
+        "Weapon DMG",
+        "Max HP",
+        "Magazine Capacity",
+        "Weakspot DMG"
+      ],
+      "suggestedMods": [
+        "Obliterate",
+        "Shatter Them All",
+        "Shield Breaker",
+        "Shrapnel Smash",
+        "Shrapnel Souvenir"
+      ]
     },
     {
       "id": "power-surge",
       "name": "Power Surge Build",
       "archetype": "power-surge",
       "role": "PvE — Sustained DPS",
-      "summary": "Dump full magazines into enemies to trigger bursts of Electric/Shock damage that stack on top of regular weapon damage with no real downside. A well-optimized version can top out around 100,000 DPS without external buffs.",
+      "summary": "Dump full magazines into enemies to trigger bursts of Electric/Shock damage that stack on top of regular weapon damage with no real downside. Community reports of a well-optimized version topping out around 100,000 DPS circulate widely.",
       "primaryWeapon": "mps7-outer-space",
-      "secondaryWeapons": ["recurve-crossbow", "de50-wildfire"],
-      "suggestedMods": ["Shock Diffusion", "Shock Rampage", "Static Shock", "Surge Amplifier"]
+      "secondaryWeapons": [
+        "recurve-crossbow",
+        "de50-wildfire"
+      ],
+      "suggestedMods": [
+        "Shock Diffusion",
+        "Shock Rampage",
+        "Static Shock",
+        "Surge Amplifier"
+      ],
+      "dpsClaimVerification": "community",
+      "dpsClaimNote": "This ~100,000 DPS figure is a community-reported estimate, not a value this database independently measured. Exact weapon/mod combination, calibration level, food/buffs, target (training dummy vs. live boss), and game patch used to produce it are unknown — treat it as directional, not a guarantee."
     },
     {
       "id": "frost-vortex",
@@ -29,9 +54,16 @@
       "role": "PvE — Boss Sustain",
       "summary": "Excellent against big boss enemies — the vortex feeds you health while draining theirs, making it a strong solo/duo boss-clearing build.",
       "primaryWeapon": "kam-abyss-glance",
-      "secondaryWeapons": ["de50-wildfire"],
+      "secondaryWeapons": [
+        "de50-wildfire"
+      ],
       "meleeOption": "frozen-northern-pike",
-      "suggestedMods": ["Cryo Blast", "Frosty Blessing", "Shattering Ice", "Vortex Multiplier"]
+      "suggestedMods": [
+        "Cryo Blast",
+        "Frosty Blessing",
+        "Shattering Ice",
+        "Vortex Multiplier"
+      ]
     },
     {
       "id": "bounce",
@@ -40,18 +72,32 @@
       "role": "PvE — Crowd Damage",
       "summary": "An underrated build where projectiles ricochet between enemies; damage gets absurd in tight corridors or dense groups of mobs.",
       "primaryWeapon": "hamr-brahminy",
-      "secondaryWeapons": ["de50-wildfire"],
-      "suggestedMods": ["Bounce Rampage", "Super Bullet", "Targeted Bounce"]
+      "secondaryWeapons": [
+        "de50-wildfire"
+      ],
+      "suggestedMods": [
+        "Bounce Rampage",
+        "Super Bullet",
+        "Targeted Bounce"
+      ]
     },
     {
       "id": "fast-gunner-lmg",
       "name": "Fast Gunner LMG Build",
       "archetype": "fast-gunner",
       "role": "PvE/PvP — Sustained Fire",
-      "summary": "Buffs a gun's damage and fire rate the longer you shoot. Best on high-magazine LMGs — a properly built MG4 Predator can unload roughly 200 rounds before needing to reload.",
+      "summary": "Buffs a gun's damage and fire rate the longer you shoot. Best on high-magazine LMGs — a properly built MG4 Predator is reported to unload roughly 200 rounds before needing to reload (community-reported figure, not independently re-measured for this database).",
       "primaryWeapon": "mg4-predator",
       "secondaryWeapons": [],
-      "suggestedMods": ["Cowboy", "Double Gunner", "Fast Refurbish", "Lasting Fortification", "Precision Rush", "Shoot Out", "Shooting Blitz"]
+      "suggestedMods": [
+        "Cowboy",
+        "Double Gunner",
+        "Fast Refurbish",
+        "Lasting Fortification",
+        "Precision Rush",
+        "Shoot Out",
+        "Shooting Blitz"
+      ]
     }
   ],
   "note": "Builds combine a weapon effect archetype, a weapon, mods and Tech Tree nodes into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."

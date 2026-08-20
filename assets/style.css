@@ -405,6 +405,14 @@ footer.site-footer {
 
 .hidden { display: none !important; }
 
+/* Small reusable spacing utilities — used instead of one-off inline styles
+   for the handful of margin tweaks that recur across detail pages. */
+.detail-meta { margin-bottom: 10px; }
+.intro-tight { margin-top: 0; }
+.mt-lg { margin-top: 16px; }
+.mt-xs { margin: 4px 0 0; }
+.mb-sm { margin-bottom: 6px; }
+
 .empty-state {
   color: var(--text-dim);
   padding: 30px;
@@ -416,4 +424,508 @@ footer.site-footer {
   .header-inner { flex-direction: column; align-items: flex-start; }
   .search-box input { min-width: 0; width: 100%; }
   .sources-list { columns: 1; }
+}
+
+/* ======================================================================
+   Accessibility basics
+   ====================================================================== */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 10px 16px;
+  z-index: 100;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius) 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ======================================================================
+   Header brand link, menu toggle
+   ====================================================================== */
+
+a.brand, a.brand:hover {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* ======================================================================
+   Grouped navigation (desktop dropdowns)
+   ====================================================================== */
+
+nav.nav-groups {
+  max-width: var(--maxw);
+  margin: 14px auto 0;
+  display: flex;
+  gap: 4px;
+  padding-bottom: 10px;
+}
+
+.nav-group { position: relative; }
+
+.nav-group-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-dim);
+  padding: 9px 14px 10px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nav-group-btn:hover, .nav-group-btn.is-active-group { color: var(--accent); background: var(--card); }
+.nav-group-btn::after { content: " ▾"; font-size: 0.7em; opacity: 0.7; }
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: 0 0 var(--radius) var(--radius);
+  min-width: 200px;
+  z-index: 30;
+  flex-direction: column;
+  padding: 6px 0;
+}
+.nav-group-btn[aria-expanded="true"] + .nav-dropdown { display: flex; }
+
+.nav-item {
+  display: block;
+  padding: 8px 16px;
+  color: var(--text);
+  font-size: 0.86rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-item:hover { background: var(--bg-alt); text-decoration: none; color: var(--accent); }
+.nav-item[aria-current="page"] { color: var(--accent); font-weight: 600; }
+
+/* ======================================================================
+   Mobile drawer
+   ====================================================================== */
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 39;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: min(84vw, 320px);
+  background: var(--bg-alt);
+  border-right: 1px solid var(--border);
+  z-index: 40;
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+.drawer-close {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.drawer-home { padding: 12px 16px; font-weight: 600; border-bottom: 1px solid var(--border-soft); }
+.drawer-group { padding: 10px 0; border-bottom: 1px solid var(--border-soft); }
+.drawer-group-label {
+  padding: 6px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+.mobile-drawer .nav-item { padding: 10px 16px; }
+
+@media (max-width: 860px) {
+  .menu-toggle { display: inline-flex; align-items: center; }
+  nav.nav-groups { display: none; }
+}
+@media (min-width: 861px) {
+  .drawer-backdrop, .mobile-drawer { display: none !important; }
+}
+
+/* ======================================================================
+   Global search results dropdown
+   ====================================================================== */
+
+.search-box { position: relative; }
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: min(420px, 92vw);
+  max-height: 70vh;
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: var(--radius);
+  z-index: 50;
+  padding: 6px 0;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.search-group { padding: 4px 0; }
+.search-group + .search-group { border-top: 1px solid var(--border-soft); }
+.search-group-label {
+  padding: 6px 14px 2px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+.search-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 14px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+.search-result:hover, .search-result:focus-visible { background: var(--bg-alt); text-decoration: none; }
+.search-result-sub { color: var(--text-dim); font-size: 0.76rem; white-space: nowrap; }
+.search-empty { padding: 14px; color: var(--text-dim); font-style: italic; font-size: 0.86rem; }
+
+/* ======================================================================
+   Filter / sort bar
+   ====================================================================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 14px 0;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.filter-field select {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  text-transform: none;
+  min-width: 140px;
+}
+
+.filter-clear {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  border-radius: var(--radius);
+  padding: 7px 12px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  height: fit-content;
+}
+.filter-clear:hover { color: var(--danger); border-color: var(--danger); }
+
+/* ======================================================================
+   Cards: top row (icon/checkbox/favorite), rarity, PvE/PvP, obtain badges
+   ====================================================================== */
+
+.card-top-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.card-top-row h3 { margin: 0; }
+.card-top-row .fav-btn { margin-left: auto; }
+
+.stat-card { cursor: pointer; text-align: left; width: 100%; }
+.stat-value { font-size: 1.8rem; color: var(--accent-2); margin: 0; }
+
+.fav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.fav-btn.is-fav { color: var(--accent-soft); }
+.fav-btn:hover { color: var(--accent); }
+
+.type-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.rarity-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--text-dim);
+}
+.rarity-dot.rarity-standard { background: #9a9a9a; }
+.rarity-dot.rarity-rare { background: #5b9bd5; }
+.rarity-dot.rarity-epic { background: #b06fd6; }
+.rarity-dot.rarity-legendary { background: var(--accent-soft); }
+
+.tag-pvp-pve { color: var(--accent-2); border-color: var(--accent-2); }
+.tag-pvp-pvp { color: var(--danger); border-color: var(--danger); }
+.tag-pvp-both { color: var(--accent-soft); border-color: var(--accent-soft); }
+.tag-pvp-unspecified { opacity: 0.7; }
+
+.tag-obtain { color: var(--accent-2); }
+
+.tag-change-new { color: var(--accent-2); border-color: var(--accent-2); }
+.tag-change-changed { color: var(--accent-soft); border-color: var(--accent-soft); }
+.tag-change-removed { color: var(--danger); border-color: var(--danger); }
+.tag-change-fixed { color: var(--text-dim); }
+
+.compare-check { margin: 0; }
+
+/* ======================================================================
+   Verification / legacy badges
+   ====================================================================== */
+
+.v-badge {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 1px 7px;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  border: 1px solid currentColor;
+}
+.v-confirmed { color: var(--accent-2); }
+.v-partial { color: var(--accent-soft); }
+.v-community { color: #b06fd6; }
+.v-unverified { color: var(--danger); }
+.v-legacy { color: var(--text-dim); }
+
+.notice-legacy {
+  border-left-color: var(--text-dim);
+  opacity: 0.92;
+}
+
+.source-block {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-size: 0.82rem;
+}
+.source-row { display: flex; gap: 8px; align-items: center; padding: 2px 0; flex-wrap: wrap; }
+.source-label { color: var(--text-dim); font-family: var(--font-mono); text-transform: uppercase; font-size: 0.7rem; min-width: 90px; }
+
+/* ======================================================================
+   Detail page head (title + favorite), loadout grid, compare table
+   ====================================================================== */
+
+.detail-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.detail-head h2 { margin: 0; border: none; padding: 0; }
+
+.loadout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px 24px;
+}
+.loadout-grid .section-block { margin-top: 20px; }
+
+.compare-table th:first-child, .compare-table td:first-child {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.compare-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--bg-alt);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 0.86rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius);
+  padding: 7px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+.btn-primary:hover { background: var(--accent-soft); }
+
+/* ======================================================================
+   Home page: quick tools, hero, stats
+   ====================================================================== */
+
+.hero-title { border: none; margin-bottom: 4px; font-size: 1.7rem; }
+.hero-tagline { font-size: 1rem; }
+.hero-search-hint { margin-top: 10px; font-size: 0.85rem; color: var(--text-dim); }
+
+.quick-tools-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+
+.quick-tool {
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.quick-tool-icon { font-size: 1.6rem; }
+.quick-tool h3 { margin: 2px 0 0; }
+.quick-tool p { color: var(--text-dim); font-size: 0.82rem; margin: 0; }
+
+.stats-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+/* ======================================================================
+   Build Finder goal buttons
+   ====================================================================== */
+
+.goal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.goal-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 9px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.goal-btn:hover { border-color: var(--accent); }
+.goal-btn.is-active { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+/* ======================================================================
+   Mobile: cards over giant tables, single-column grids, drawer nav
+   ====================================================================== */
+
+@media (max-width: 700px) {
+  main { padding: 18px 14px 50px; }
+  .grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; align-items: stretch; }
+  .filter-field select { min-width: 0; width: 100%; }
+
+  table.data-table thead { display: none; }
+  table.data-table, table.data-table tbody, table.data-table tr, table.data-table td {
+    display: block;
+    width: 100%;
+  }
+  table.data-table tr {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    padding: 8px 10px;
+  }
+  table.data-table td {
+    border-bottom: none;
+    padding: 4px 0;
+  }
+  table.data-table td:empty { display: none; }
+
+  .compare-table { font-size: 0.8rem; }
+  .compare-table th, .compare-table td { padding: 6px; }
 }

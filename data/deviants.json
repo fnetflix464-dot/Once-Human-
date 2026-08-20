@@ -342,7 +342,7 @@
   ],
   "captureMethod": {
     "wildCapture": "Spot a Deviant as a floating orb containing the creature in the world; interact (F) to attempt capture. Each failed attempt raises your success chance, but the Deviant escapes after 3 failed tries.",
-    "bindingCapsule": "Alternatively, craft a Binding Capsule (unlocked in the Memetics menu under Logistics) to capture a Deviant more reliably.",
+    "bindingCapsule": "Alternatively, craft a Binding Capsule to capture a Deviant more reliably (previously unlocked via the old Memetics menu under Logistics; this recipe now lives somewhere in the current Tech Tree / crafting menus — this database has not independently re-verified its exact current location).",
     "placement": "A captured Deviant only provides its ability once placed in an Isolated Securement Unit at your territory — build multiple units to run several Deviants at once.",
     "power": "Each Deviant has a Deviant Power meter that depletes as it works; once empty it goes inactive until it recharges (time, or resources/feed depending on the Deviant).",
     "cookingLink": "Securement Soup and Stardust Italian Soup Can (see the Food & Cooking section) both grant +1 Deviation capture ability level, making wild captures easier while active."
