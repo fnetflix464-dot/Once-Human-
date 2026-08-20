@@ -3,7 +3,7 @@
     "version": "3.0.3",
     "date": "2026-08-05",
     "title": "Block Adventure & Console Launch Prep",
-    "note": "As of compile date 2026-08-19 this is the live version; a 3.0.3 bug-fix pass landed Aug 18, and a Shop-adjustments dev blog + Fair Play ban report (232 accounts, Aug 7-13) were also posted Aug 19. Check the official news page (linked in the Sources section) for anything newer."
+    "note": "As of compile date 2026-08-19/20 this is the live version; a 3.0.3 bug-fix pass landed Aug 18, the Aug 12 patch added the Summer Echoes furniture pack (Golden Shore Pool), and a Shop-adjustments dev blog + Fair Play ban report (232 accounts, Aug 7-13) were posted Aug 19. A refund-feedback window for Summer Echoes closes Aug 19 09:00 PT with compensation by Aug 21. Two things are scheduled next: a new update on Aug 24, 4:00 PM PT, and the console (PlayStation/Xbox) launch on Aug 25, 10:00 AM PT with cross-platform account linking to carry over PC/mobile progress. Check the official news page (linked in the Sources section) for whatever landed after this was compiled."
   },
   "history": [
     {
@@ -51,11 +51,33 @@
       "highlights": [
         "Weapon Customization system: freely customize weapon stats and mix-and-match dozens of newly designed weapon traits."
       ]
+    },
+    {
+      "version": "2.3.6",
+      "date": "2026-04-08",
+      "highlights": [
+        "MAJOR MECHANIC CHANGE — Tech System overhaul: the entire Memetic Specialization system (level-gated, choose-1-of-4-every-5-levels, Cradle/Cipher/Meme Points) was removed and replaced by a single Tech Tree with four branches — Survival, Production, Combat, Building.",
+        "New unlock methods: Tech Tree Allocation (Tech Points from leveling, facility research, chest exploration, defeating Elites), Reverse Engineering (unlock a formula from a collected cultural artifact at a research bench), and Tech Invention (experiment with material combinations at a research bench for a variable success rate).",
+        "Product/material simplification: most fabric types collapsed into Cotton Fabric, parts into Standard Parts, plastics into All-Purpose Plastic; rare metal crystals no longer mandatory for gear crafting.",
+        "Removed 5 intermediate-tier crafting facilities (Intermediate Supplies Workbench, Intermediate Weapons Bench, Intermediate Garage, Small Synthesis Bench, Intermediate Stove) and folded their formulas into the corresponding Advanced-tier facility, moving that facility's unlock earlier in the tree.",
+        "New terraforming feature for Eternaland; refined the mod recovery period to 7 days (see the 2026-01-21 mod system entry below)."
+      ]
+    },
+    {
+      "version": "n/a (dev blog + live change)",
+      "date": "2026-01-21",
+      "highlights": [
+        "MAJOR MECHANIC CHANGE — Mod System Overhaul: mods gained fixed sub-attributes (no more random rolls); a mod's level (1-17) is now the sum of its sub-attribute levels, and past Lv. 17 players chase 'Shiny' variants (same sub-attributes, stronger main attribute) instead of re-rolling.",
+        "Added targeted mod acquisition: redeem Mod Dust + Energy Links at the Shop for a Random Mod Crate targeting a specific level range, alongside the existing dungeon/game-mode drop sources.",
+        "Compensation crates (e.g. Shiny Mod Selection Crate) issued to players with many Lv. 17 mods from the old system."
+      ]
     }
   ],
   "majorContentEras": [
     { "name": "Launch / Evolution's Call", "notes": "Base game and the Manibus region." },
     { "name": "Way of Winter", "notes": "Winter-themed seasonal Visional World." },
+    { "name": "Mod System Overhaul", "notes": "Fixed sub-attributes + targeted acquisition replacing the old random-roll mod system, live from Jan 21, 2026." },
+    { "name": "Tech System Overhaul", "notes": "Replaced the old Memetic Specialization system with a single 4-branch Tech Tree (Survival/Production/Combat/Building), patch 2.3.6, April 8, 2026 — see the notice on the Builds & Classes and Memetics tabs." },
     { "name": "Gravity Abyss (Visional Wheel S4)", "notes": "Zero-gravity seasonal content, patch 2.4.1." },
     { "name": "Pixel-Style Strange World", "notes": "Block Island / Wish Island blocky pixel-art world, tied to the 3.0.x patch line and the Block Adventure event." }
   ]

@@ -1,34 +1,35 @@
 {
-  "overview": "Crafting stations gate what tier of gear, food or blueprint you can produce. Most stations upgrade through 2-4 tiers, each unlocked via a Memetic Specialization purchased in the Cradle (the memetic tree) using Cipher + Meme Points, then built once you have the listed materials.",
+  "overview": "Crafting stations gate what tier of gear, food or blueprint you can produce. Most stations upgrade through 2-4 tiers.",
+  "techSystemNotice": "IMPORTANT MECHANIC CHANGE: the unlock descriptions below originally cited the old Memetic system's Cradle screen and Cipher/Meme Point currency. That system was removed in the Tech System overhaul (patch 2.3.6, April 8, 2026) — stations are now unlocked through the Tech Tree instead (Tech Points from leveling/research/exploration/Elite kills, Reverse Engineering of cultural artifacts, or Tech Invention at a research bench; see the Builds & Classes tab). This database has not independently re-verified the exact current Tech Tree node/cost for each station below, so treat unlock details as approximate pre-overhaul context, not current costs. Separately, that same patch removed five intermediate-tier facilities outright — Intermediate Supplies Workbench, Intermediate Weapons Bench, Intermediate Garage, Small Synthesis Bench, and Intermediate Stove — folding their crafting formulas into the corresponding Advanced-tier facility and moving that facility's unlock earlier in the tree. The 'Electric Stove' entry below may correspond to the now-removed Intermediate Stove; its recipes are likely reachable straight from an Advanced Stove / Kitchen Set today. Crafting materials were also simplified game-wide around the same update: most fabric types collapsed into a single Cotton Fabric, parts into Standard Parts, and plastics into All-Purpose Plastic, and rare metal crystals are no longer a mandatory gear-crafting ingredient — so treat the specific material lists below as illustrative rather than exact current recipes.",
   "weaponAndGearStations": [
     {
       "id": "gear-workbench",
       "name": "Gear Workbench",
       "tier": "I-II",
-      "unlock": "Unlock 'Essential Tools' then the Gear Workbench branch in the Memetics menu.",
-      "materials": ["30 Copper Ingots", "10 Metal Scraps", "10 Shabby Fabrics", "5 Adhesives"],
+      "unlock": "Early Tech Tree node (Production branch, expected). Pre-overhaul this required unlocking 'Essential Tools' then the Gear Workbench line in the old Memetics menu.",
+      "materials": ["Copper Ingots", "Standard Parts", "Cotton Fabric", "Adhesives"],
       "produces": "Tier I-II weapons and armor (given the blueprint + materials)."
     },
     {
       "id": "intermediate-gear-workbench",
       "name": "Intermediate Gear Workbench",
       "tier": "III-IV",
-      "unlock": "Upgrade memetic purchased after the base Gear Workbench line.",
+      "unlock": "Not confirmed among the facilities removed in the April 2026 overhaul, so likely still exists as a Production-branch Tech Tree node — exact placement unconfirmed.",
       "produces": "Tier III-IV weapons and armor."
     },
     {
       "id": "advanced-gear-workbench",
       "name": "Advanced Gear Workbench",
       "tier": "V (max)",
-      "unlock": "Requires Symbiosis level VIII; purchase via the Cradle, Crafting page '05 Enlightenment' (7 Cipher, 2000 Meme Points).",
-      "materials": ["25 Tungsten Ingots"],
+      "unlock": "A Production-branch Tech Tree node; the April 2026 overhaul moved advanced-facility unlocks earlier in the tree specifically so players reach full crafting capability sooner. Exact current Tech Point cost unconfirmed.",
+      "materials": ["Tungsten Ingots"],
       "produces": "Tier V weapons and armor (top tier), plus all lower tiers."
     },
     {
       "id": "designers-workstation",
       "name": "Designer's Workstation",
       "tier": "Utility",
-      "unlock": "Building branch of the Memetic menu.",
+      "unlock": "Building-branch Tech Tree node (approximate).",
       "produces": "Disassembles unwanted/duplicate blueprints into Formula Blueprint Fragments, redeemable for new blueprints."
     }
   ],
@@ -43,7 +44,7 @@
       "id": "electric-stove",
       "name": "Electric Stove",
       "tier": "II",
-      "unlock": "Unlock Dishes I, Air-Drying and Dishes II first, then the Electric Stove memetic via the Cradle, Logistics page '03 Ascendance' at Symbiosis level IV (3 Cipher, 200 Meme Points).",
+      "unlock": "Likely superseded: 'Intermediate Stove' was one of five facilities removed outright in the April 2026 Tech System overhaul, with its recipes folded into the Advanced Stove. If this station is still distinct from that, its current Tech Tree unlock path (Survival branch, expected) is unconfirmed.",
       "produces": "Advanced recipes, including Sanity Gummies."
     },
     {
@@ -56,12 +57,12 @@
       "id": "integrated-kitchen",
       "name": "Integrated Kitchen / Kitchen Set",
       "tier": "IV (max)",
-      "unlock": "Requires the Refrigeration memetic first, then Integrated Kitchen via the Cradle, Logistics category tier 4 (5 Cipher, 700 Meme Points).",
+      "unlock": "A Survival/Production-branch Tech Tree node (approximate) — the best cooking station in the game. Exact current unlock cost unconfirmed post-overhaul.",
       "produces": "The best cooking station in the game — unlocks Caviar and Butter as ingredients plus the Kitchen Set blueprint (which unlocks the Advanced Stove and further recipes)."
     }
   ],
   "otherStations": [
-    { "id": "planter-box", "name": "Planter Box", "produces": "Grows crops from seeds — see the Crops & Ranching section.", "upgrade": "Planter Box: Greenhouse Planting memetic increases growth speed/yield per temperature degree." },
+    { "id": "planter-box", "name": "Planter Box", "produces": "Grows crops from seeds — see the Crops & Ranching section.", "upgrade": "A Tech Tree node (Production/Survival branch, expected) increases growth speed/yield per temperature degree." },
     { "id": "isolated-securement-unit", "name": "Isolated Securement Unit", "produces": "Houses a captured Deviant so its ability becomes active — see the Deviants section." },
     { "id": "youngling-hut", "name": "Youngling Hut", "produces": "Where bred livestock offspring grow up — see the Crops & Ranching section." }
   ]

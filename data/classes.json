@@ -1,5 +1,6 @@
 {
-  "overview": "Once Human has no fixed 'class' system — instead your playstyle is defined by which Weapon Effect (the combat archetype tied to your weapons/mods) and Memetic Specialization branch you build around. These act as the closest equivalent to classes.",
+  "overview": "Once Human has no fixed 'class' system — instead your playstyle is defined by which Weapon Effect (the combat archetype tied to your weapons/mods) and Tech Tree branch you build around. These act as the closest equivalent to classes.",
+  "techSystemNotice": "IMPORTANT MECHANIC CHANGE: the old 'Memetic Specialization' system described below (and in the Memetics tab) was completely removed in the Tech System overhaul (patch 2.3.6, April 8, 2026). There is no more separate specialization menu, no more level-gated 'choose 1 of 4 every 5 levels', and no more Cradle/Cipher/Meme Point currency. Those effects were folded into a single Tech Tree with four branches — Survival, Production, Combat and Building — unlocked via three methods: (1) Tech Tree Allocation, spending Tech Points earned from leveling up, researching facilities/items, exploring chests, or defeating Elites; (2) Reverse Engineering, using a research bench to unlock a formula directly from a collected cultural artifact; (3) Tech Invention, experimenting with material combinations at the research bench for a variable success rate. The Gathering/Crafting/Management/Building groupings below (and in Memetics) are this database's original functional categorization of what each node does — they are NOT the current official Tech Tree branch names, and this database has not independently verified which of the four current branches each individual node now lives in. Treat the node names and effects as still broadly accurate content, but check the in-game Tech Tree for the current branch placement and unlock cost of any specific one.",
   "weaponEffectArchetypes": [
     { "id": "shrapnel", "name": "Shrapnel", "role": "PvE burst / boss killer", "summary": "Bullets fragment for extra per-part damage; considered a top pick for melting the Great Ones and general PvE." },
     { "id": "power-surge", "name": "Power Surge", "role": "Sustained DPS", "summary": "Dump full magazines to build stacking Electric/Shock damage; capable of ~100,000 DPS in optimized PvE builds." },
@@ -11,11 +12,17 @@
     { "id": "fortress-warfare", "name": "Fortress Warfare", "role": "Territory / group defense", "summary": "Buffs tied to structures and holding ground, strengthened by nearby teammates." },
     { "id": "marked", "name": "Marked / Bull's Eye", "role": "Team support / debuff", "summary": "Marks targets to amplify incoming damage from the whole team." }
   ],
-  "memeticBranches": [
-    { "id": "gathering", "name": "Gathering", "focus": "Improves the yield of materials collected in the wild (ore, wood, water, crystals)." },
-    { "id": "crafting", "name": "Crafting", "focus": "Upgrades workbenches and unlocks new craftable items, weapons and gadgets." },
-    { "id": "management", "name": "Management", "focus": "Survival-oriented upgrades: generators, cooking, temperature control, farming infrastructure." },
-    { "id": "building", "name": "Building", "focus": "Improves crafting/production facilities, defensive structures, turrets, traps and territory tools." }
+  "currentTechBranches": [
+    { "id": "survival", "name": "Survival", "focus": "Basic functionality and sustenance — the current official Tech Tree branch (post April 2026)." },
+    { "id": "production", "name": "Production", "focus": "Crafting capacity and material processing — the current official Tech Tree branch (post April 2026)." },
+    { "id": "combat", "name": "Combat", "focus": "Fighting capabilities and enemy engagement — the current official Tech Tree branch (post April 2026)." },
+    { "id": "building", "name": "Building", "focus": "Base construction and expansion — the current official Tech Tree branch (post April 2026)." }
   ],
-  "note": "Every 5 levels starting at level 5, players unlock a Memetic Specialization node offering a choice of 4 randomly generated specializations (one per branch), for up to 10 chosen specializations by level 50. See the Blueprints and Builds & Classes sections for how these tie into gear and loadouts."
+  "memeticBranches": [
+    { "id": "gathering", "name": "Gathering", "focus": "Improves the yield of materials collected in the wild (ore, wood, water, crystals). Legacy grouping, superseded by the Tech Tree — see the notice above." },
+    { "id": "crafting", "name": "Crafting", "focus": "Upgrades workbenches and unlocks new craftable items, weapons and gadgets. Legacy grouping, superseded by the Tech Tree — see the notice above." },
+    { "id": "management", "name": "Management", "focus": "Survival-oriented upgrades: generators, cooking, temperature control, farming infrastructure. Legacy grouping, superseded by the Tech Tree — see the notice above." },
+    { "id": "building", "name": "Building", "focus": "Improves crafting/production facilities, defensive structures, turrets, traps and territory tools. Legacy grouping, superseded by the Tech Tree — see the notice above." }
+  ],
+  "note": "The four groupings above (Gathering/Crafting/Management/Building) are this database's original functional categorization, kept so the specific node effects stay browsable — but as the notice above explains, as of April 8, 2026 the actual in-game system is a single Tech Tree with different branch names (Survival/Production/Combat/Building, listed just above) unlocked through Tech Points, Reverse Engineering and Tech Invention rather than character-level gating. See the Blueprints and Builds & Classes sections for how these tie into gear and loadouts."
 }

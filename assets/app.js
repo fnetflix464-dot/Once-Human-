@@ -447,6 +447,8 @@ function renderMods() {
     <h2>Mods</h2>
     <p class="intro">${esc(m.overview)}</p>
     <div class="section-block">
+      <h3>How the mod system works right now</h3>
+      <p class="intro" style="margin-top:0">${esc(m.modSystemMechanics)}</p>
       <h3>How mods are farmed</h3>
       <ul>${m.howToFarm.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
     </div>
@@ -496,6 +498,7 @@ function renderBlueprints() {
   return `
     <h2>Blueprints</h2>
     <p class="intro">${esc(b.overview)}</p>
+    <div class="notice">⚠️ ${esc(b.techSystemNotice)}</div>
     <div class="section-block">
       <h3>How to obtain blueprints</h3>
       <ul>${b.howToObtain.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
@@ -545,6 +548,7 @@ function renderStations() {
   return `
     <h2>Crafting &amp; Cooking Stations</h2>
     <p class="intro">${esc(s.overview)}</p>
+    <div class="notice">⚠️ ${esc(s.techSystemNotice)}</div>
     ${groups.map(g => {
       const gi = items.filter(x => x._group === g);
       if (!gi.length) return "";
@@ -583,6 +587,7 @@ function renderBuilds() {
   return `
     <h2>Builds &amp; Classes</h2>
     <p class="intro">${esc(classes.overview)}</p>
+    <div class="notice">⚠️ ${esc(classes.techSystemNotice)}</div>
     <div class="section-block">
       <h3>Weapon Effect Archetypes ("Classes")</h3>
       <div class="grid">
@@ -596,7 +601,15 @@ function renderBuilds() {
       </div>
     </div>
     <div class="section-block">
-      <h3>Memetic Branches</h3>
+      <h3>Current Tech Tree Branches <span class="tag">live system</span></h3>
+      <div class="grid">
+        ${classes.currentTechBranches.map(b => `
+          <div class="card"><h3>${esc(b.name)}</h3><p>${esc(b.focus)}</p></div>
+        `).join("")}
+      </div>
+    </div>
+    <div class="section-block">
+      <h3>Legacy Memetic Branches <span class="tag">superseded — see notice above</span></h3>
       <div class="grid">
         ${classes.memeticBranches.map(b => `
           <div class="card" style="cursor:pointer" onclick="window.__ohNav('memetics')"><h3>${esc(b.name)}</h3><p>${esc(b.focus)}</p></div>
@@ -667,8 +680,9 @@ function renderMemetics() {
   const branches = state.data.memetics.branches;
   const branchLabels = { gathering: "Gathering", crafting: "Crafting", management: "Management", building: "Building" };
   return `
-    <h2>Memetic Specializations</h2>
+    <h2>Memetic Specializations <span class="tag">legacy system, see notice</span></h2>
     <p class="intro">${esc(state.data.memetics.overview)}</p>
+    <div class="notice">⚠️ This was replaced by a single Tech Tree (Survival / Production / Combat / Building) in patch 2.3.6 (April 8, 2026). Full explanation on the ${link("builds", "", "Builds & Classes")} tab.</div>
     ${Object.entries(branches).map(([bkey, list]) => {
       const filtered = list.filter(x => matchesQuery(x.name + x.effect)).map(x => ({ ...x, _key: slugify(bkey) + "--" + slugify(x.name) }));
       if (!filtered.length) return "";

@@ -1,6 +1,7 @@
 {
-  "overview": "Weapon and armor mods grant a core effect plus randomized stat attributes; the number of attributes scales with the mod's rarity tier. Once Human's full mod pool spans 773 combinations (per oncehumandb.com) across weapon effects like Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked (Bull's Eye). Below is a curated list of named mods grouped by the weapon effect / archetype they support.",
+  "overview": "Weapon and armor mods grant a core effect plus a set of sub-attributes across weapon effects like Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked (Bull's Eye). Once Human's full mod pool spans 773 combinations (per oncehumandb.com). Below is a curated list of named mods grouped by the weapon effect / archetype they support.",
   "totalKnownInGame": 773,
+  "modSystemMechanics": "The mod system was overhauled on Jan 21, 2026 and refined again in the April 8, 2026 Tech System patch (2.3.6) — the version most guides written before early 2026 describe (pure random drops, random sub-attributes) is out of date. Under the current system: a mod's level (1-17) is the sum of its individual sub-attribute levels, and those sub-attributes are now fixed per mod rather than randomized, so progress is predictable instead of a random re-roll grind. Past Lv. 17, players chase 'Shiny' variants of a mod — same sub-attributes, stronger main attribute. Acquisition mixes random and targeted: mods still drop from dungeons and game modes (higher difficulty = better odds at high-level mods), and separately, the Shop lets you redeem Mod Dust + Energy Links for a Random Mod Crate targeting a specific level range — so you can grind toward a mod tier deliberately instead of relying purely on drops.",
   "groups": [
     {
       "effect": "Shrapnel",
@@ -27,7 +28,7 @@
           "effect": "When Shrapnel hits a Weakspot, reloads 1 bullet from reserves."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches."
+      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
     },
     {
       "effect": "Power Surge",
@@ -50,7 +51,7 @@
           "effect": "Power Surge damage grants up to 4 stacks of +5% for 3 seconds."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     },
     {
       "effect": "Frost Vortex",
@@ -73,7 +74,7 @@
           "effect": "Maximum Frost Vortexes +1, Frost Vortex DMG +10%."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     },
     {
       "effect": "Burn",
@@ -96,7 +97,7 @@
           "effect": "Increases maximum Burn stacks by 2 but reduces duration by 20%."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: the Ravenous Hunter at the Monolith of Greed (Dayton Wetlands). Also found in general Weapon Crates."
+      "obtainedFrom": "Confirmed boss drop: the Ravenous Hunter at the Monolith of Greed (Dayton Wetlands). Also found in general Weapon Crates. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
     },
     {
       "effect": "Unstable Bomber",
@@ -123,7 +124,7 @@
           "effect": "Unstable Bomber damage increases 5% per trigger, stackable 6x."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     },
     {
       "effect": "Fast Gunner",
@@ -158,7 +159,7 @@
           "effect": "Fast Gunner duration +4 seconds, Weapon DMG +15% during activation."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     },
     {
       "effect": "Bounce",
@@ -181,7 +182,7 @@
           "effect": "Bounce is 300% more likely to hit a Weakspot."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches."
+      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
     },
     {
       "effect": "Fortress Warfare",
@@ -204,7 +205,7 @@
           "effect": "Fortress Warfare damage bonus increases with nearby players, up to 40%."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     },
     {
       "effect": "Marked / Bull's Eye",
@@ -227,13 +228,13 @@
           "effect": "Increases Bull's Eye Vulnerability effect by 8%."
         }
       ],
-      "obtainedFrom": "Weapon Crates, Gear Crates and Silo caches. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
     }
   ],
   "howToFarm": [
+    "Dungeons and game modes — mods drop directly from completing them, with higher difficulty giving better odds at high-level mods.",
     "Monolith bosses (the Great Ones) sometimes favor a specific weapon-effect mod on death — confirmed for Ravenous Hunter (Burn) and Rabizex (Shrapnel/Bounce); see the Bosses section.",
-    "Weapon Crates and Gear Crates found throughout the world (often behind Strongholds or guarded areas) — the most common general source for any mod.",
-    "Silos — dedicated loot dungeons that reward mod caches on completion.",
-    "The Designer's Workstation — disassemble unwanted/duplicate mods for Formula Blueprint Fragments, redeemable toward specific mods."
+    "Shop → redeem Mod Dust + Energy Links for a Random Mod Crate targeting a specific level range — the game's 'targeted acquisition' path introduced in the Jan 21, 2026 mod system overhaul, so you're not purely at the mercy of random drops.",
+    "Mods now level via fixed sub-attributes (1-17 total); past Lv. 17 the chase becomes finding a 'Shiny' variant with a stronger main attribute instead of re-rolling sub-attributes."
   ]
 }
