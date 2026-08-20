@@ -104,10 +104,7 @@
       "notes": "Confirmed unique ability: critical hits count double, and killing an enemy boosts blast damage by 30% for 12 seconds. One of the higher-ranked legendary pistols.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "commonArchetypes": [
-        "marked",
-        "power-surge"
-      ]
+      "archetypeNote": "This weapon's proc is a standalone crit/blast-damage effect, not one of the 9 general weapon-effect archetypes tracked in Builds & Classes."
     },
     {
       "id": "r500",
@@ -310,9 +307,8 @@
       "notes": "Confirmed unique ability: on hit, deals Weapon DMG of 50% Attack to a random unhit body part (a built-in Shrapnel-style effect) — a top-tier legendary assault rifle.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "commonArchetypes": [
-        "power-surge",
-        "fast-gunner"
+      "confirmedArchetype": [
+        "shrapnel"
       ]
     },
     {
@@ -513,9 +509,8 @@
       "notes": "Confirmed unique ability: aiming for 3 seconds triggers Fortress Warfare, creating a 2m-radius zone that grants allies Heavy Armor for 5s and +20% Weapon DMG.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "commonArchetypes": [
-        "frost-vortex",
-        "shrapnel"
+      "confirmedArchetype": [
+        "fortress-warfare"
       ]
     },
     {
@@ -736,8 +731,7 @@
       "notes": "Epic-tier; Blueprint Fragment Type: Huntsman. Landing a Weakspot hit applies The Bull's Eye debuff (+8% damage taken) and grants +15% Crit Rate on all weapons.",
       "craftingStation": "intermediate-gear-workbench",
       "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
-      "commonArchetypes": [
-        "shrapnel",
+      "confirmedArchetype": [
         "marked"
       ]
     },
@@ -1043,10 +1037,11 @@
       "notes": "Confirmed unique ability: applies Shock/Power Surge damage rather than a status; centerpiece of the 'Corrosion Power Surge' PvE build (500k+ DPS in optimized setups). Static Shock is the ideal mod for it since the gun doesn't inflict a stacking Power Surge status.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "commonArchetypes": [
+      "confirmedArchetype": [
         "power-surge"
       ]
     }
   ],
-  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (72 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead."
+  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (72 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead.",
+  "archetypeFieldNotice": "Two different things get shown under 'weapon effects' on a weapon's page. confirmedArchetype means the weapon's own kit is independently confirmed to trigger that specific effect (e.g. SOCR - The Last Valor's built-in Shrapnel-style proc). commonArchetypes is a general, weapon-TYPE-level suggestion (e.g. 'LMGs commonly run Fast Gunner') — it is NOT a per-weapon fact, and should not be read as 'this specific weapon does this effect'. A handful of named weapons carry a confirmedArchetype instead of (or overriding) the generic type suggestion once their real kit was independently verified; if a weapon has neither, its specific weapon effect isn't confirmed by the sources used to compile this database."
 }

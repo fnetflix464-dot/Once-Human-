@@ -169,7 +169,9 @@ function findModGroupByArchetype(archetypeId) {
   return name ? idx.modGroups.find(g => g.effect === name) : null;
 }
 function weaponsByArchetype(archetypeId) {
-  return idx.weapons.filter(w => (w.commonArchetypes || []).includes(archetypeId));
+  return idx.weapons
+    .filter(w => (w.confirmedArchetype || []).includes(archetypeId) || (w.commonArchetypes || []).includes(archetypeId))
+    .map(w => ({ ...w, _confirmed: (w.confirmedArchetype || []).includes(archetypeId) }));
 }
 function buildsByArchetype(archetypeId) {
   return idx.builds.filter(b => b.archetype === archetypeId);
@@ -410,7 +412,7 @@ function renderWeaponDetail(key) {
   if (!w) return null;
   const station = findStation(w.craftingStation);
   const builds = buildsByWeapon(w._key);
-  const archetypeCards = (w.commonArchetypes || []).map(aid => {
+  const archetypeCard = aid => {
     const arch = findArchetype(aid);
     const group = findModGroupByArchetype(aid);
     if (!arch) return "";
@@ -421,7 +423,9 @@ function renderWeaponDetail(key) {
         <p>${esc(arch.summary)}</p>
         ${group ? `<p><strong>Mods to run:</strong></p><ul>${group.mods.slice(0, 5).map(m => `<li>${link("mods", slugify(group.effect) + "--" + slugify(m.name), m.name)} — ${esc(m.effect)}</li>`).join("")}</ul>` : ""}
       </div>`;
-  }).join("");
+  };
+  const confirmedCards = (w.confirmedArchetype || []).map(archetypeCard).join("");
+  const genericCards = (w.confirmedArchetype ? [] : (w.commonArchetypes || [])).map(archetypeCard).join("");
 
   return `
     ${breadcrumb("weapons", "Weapons", w.name)}
@@ -433,6 +437,7 @@ function renderWeaponDetail(key) {
     </div>
     ${w.damage ? `<p><strong>Damage:</strong> ${esc(w.damage)}${w.fireRate ? ` &middot; <strong>Fire rate:</strong> ${esc(w.fireRate)} RPM` : ""}</p>` : ""}
     <p>${esc(w.notes || "")}</p>
+    ${w.archetypeNote ? `<p class="intro">${esc(w.archetypeNote)}</p>` : ""}
 
     <div class="section-block">
       <h3>Where to get it &amp; how to craft it</h3>
@@ -440,7 +445,8 @@ function renderWeaponDetail(key) {
       ${station ? `<div class="card"><h3>${link("stations", station._key, station.name)}</h3><div class="meta"><span class="tag">Tier ${esc(station.tier)}</span></div>${station.unlock ? `<p>${esc(station.unlock)}</p>` : ""}${station.materials ? `<p><strong>Materials:</strong> ${station.materials.map(esc).join(", ")}</p>` : ""}<p>${esc(station.produces)}</p></div>` : ""}
     </div>
 
-    ${archetypeCards ? `<div class="section-block"><h3>Recommended weapon effects &amp; mods</h3><div class="grid">${archetypeCards}</div></div>` : ""}
+    ${confirmedCards ? `<div class="section-block"><h3>Confirmed built-in weapon effect</h3><p class="intro" style="margin-top:0">This specific weapon's own kit is independently confirmed to trigger this effect.</p><div class="grid">${confirmedCards}</div></div>` : ""}
+    ${genericCards ? `<div class="section-block"><h3>Commonly paired weapon effects &amp; mods</h3><p class="intro" style="margin-top:0">A general suggestion based on this weapon's <em>type</em> (${esc(labelForType(w.type, state.data.weapons.weaponTypes))}) — not a confirmed fact about this specific weapon.</p><div class="grid">${genericCards}</div></div>` : ""}
 
     ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc(b.role)}</span></div><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
 
@@ -609,7 +615,7 @@ function renderModDetail(key) {
       <h3>Where to get it</h3>
       <p class="intro" style="margin-top:0">${esc(mod.groupObtainedFrom)}</p>
     </div>
-    ${weapons.length ? `<div class="section-block"><h3>Pairs well with</h3><div class="grid">${weapons.map(w => `<div class="card"><h3>${link("weapons", w._key, w.name)}</h3><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
+    ${weapons.length ? `<div class="section-block"><h3>Pairs well with</h3><p class="intro" style="margin-top:0">"Confirmed" means this weapon's own kit is independently verified to use this effect; otherwise it's a general suggestion based on the weapon's type.</p><div class="grid">${weapons.map(w => `<div class="card"><h3>${link("weapons", w._key, w.name)}</h3><div class="meta"><span class="tag">${w._confirmed ? "Confirmed" : "General suggestion"}</span></div><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
     ${backLink("mods", "Mods")}
   `;
 }
@@ -792,7 +798,7 @@ function renderArchetypeDetail(key) {
     <div class="meta" style="margin-bottom:10px"><span class="tag">${esc(a.role)}</span></div>
     <p>${esc(a.summary)}</p>
     ${group ? `<div class="section-block"><h3>Mods</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>Mod</th><th>Effect</th></tr></thead><tbody>${group.mods.map(m => `<tr><td>${link("mods", group._key + "--" + slugify(m.name), m.name)}</td><td>${esc(m.effect)}</td></tr>`).join("")}</tbody></table></div><p class="intro">${esc(group.obtainedFrom)}</p></div>` : ""}
-    ${weapons.length ? `<div class="section-block"><h3>Commonly paired weapons</h3><div class="grid">${weapons.map(w => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
+    ${weapons.length ? `<div class="section-block"><h3>Commonly paired weapons</h3><p class="intro" style="margin-top:0">"Confirmed" means this weapon's own kit is independently verified to use this effect; otherwise it's a general suggestion based on the weapon's type.</p><div class="grid">${weapons.map(w => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><div class="meta"><span class="tag">${w._confirmed ? "Confirmed" : "General suggestion"}</span></div><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
     ${builds.length ? `<div class="section-block"><h3>Named builds using this</h3><div class="grid">${builds.map(b => `${cardOpen("builds", b._key)}<h3>${esc(b.name)}</h3><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
     ${backLink("builds", "Builds & Classes")}
   `;
