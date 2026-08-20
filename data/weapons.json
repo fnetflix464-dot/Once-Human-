@@ -5,10 +5,10 @@
     { "id": "assault-rifle", "name": "Assault Rifle", "description": "Balanced mid-range weapons, the most versatile weapon class." },
     { "id": "shotgun", "name": "Shotgun", "description": "Multi-pellet, high burst-damage weapons for close range." },
     { "id": "sniper-rifle", "name": "Sniper Rifle", "description": "High single-shot damage, long range, weakspot-focused." },
-    { "id": "lmg", "name": "Light Machine Gun (LMG)", "description": "Large magazines and sustained fire, pairs well with Fast Gunner effect." },
+    { "id": "lmg", "name": "Light Machine Gun (LMG)", "description": "Large magazines and sustained fire, pairs well with the Fast Gunner effect." },
     { "id": "bow", "name": "Bow / Crossbow", "description": "Silent, high per-shot damage ranged weapons, often crit-focused." },
-    { "id": "heavy", "name": "Heavy Weapon", "description": "Grenade launchers, gatling guns and other explosive/AoE weapons." },
-    { "id": "melee", "name": "Melee Weapon", "description": "Close-quarters weapons such as batons, blades and hammers." }
+    { "id": "heavy", "name": "Heavy Weapon", "description": "Grenade/rocket launchers and other explosive/AoE weapons." },
+    { "id": "melee", "name": "Melee Weapon", "description": "Close-quarters weapons such as batons, blades, axes and pikes." }
   ],
   "rarities": [
     { "id": "standard", "name": "Standard", "color": "Grey/Green" },
@@ -17,106 +17,76 @@
     { "id": "legendary", "name": "Legendary", "color": "Gold" }
   ],
   "weapons": [
-    {
-      "id": "compound-bow",
-      "name": "Compound Bow",
-      "type": "bow",
-      "rarity": "epic",
-      "tier": "S",
-      "damage": 310,
-      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates."
-    },
-    {
-      "id": "kvd-boom-boom",
-      "name": "KVD — Boom! Boom!",
-      "type": "lmg",
-      "rarity": "legendary",
-      "tier": "S",
-      "damage": 44,
-      "fireRate": 500,
-      "notes": "Legendary LMG variant; sustained explosive-leaning damage, considered a top pick alongside Compound Bow."
-    },
-    {
-      "id": "aws338-bingo",
-      "name": "AWS.338 — Bingo",
-      "type": "sniper-rifle",
-      "rarity": "legendary",
-      "tier": "A",
-      "damage": 316,
-      "notes": "Legendary sniper rifle, very high per-shot damage for weakspot hunting."
-    },
-    {
-      "id": "kam-abyss-glance",
-      "name": "KAM — Abyss Glance",
-      "type": "assault-rifle",
-      "rarity": "legendary",
-      "tier": "A",
-      "damage": 39,
-      "fireRate": 600,
-      "notes": "Legendary assault rifle, balanced damage and fire rate."
-    },
-    {
-      "id": "db12-raining-cash",
-      "name": "DB12 — Raining Cash",
-      "type": "shotgun",
-      "rarity": "legendary",
-      "tier": "A",
-      "damage": "55x5 pellets",
-      "notes": "Legendary shotgun, strong burst close-range damage."
-    },
-    {
-      "id": "r500-memento",
-      "name": "R500 — Memento",
-      "type": "pistol",
-      "rarity": "legendary",
-      "tier": "B",
-      "damage": 170,
-      "notes": "Legendary pistol, solid backup-slot option."
-    },
-    {
-      "id": "kvsbr-little-jaws",
-      "name": "KV-SBR — Little Jaws",
-      "type": "smg",
-      "rarity": "legendary",
-      "tier": "B",
-      "damage": 29,
-      "fireRate": 1000,
-      "notes": "Legendary SMG with very high fire rate for close-range fights."
-    },
-    {
-      "id": "mgl",
-      "name": "MGL",
-      "type": "heavy",
-      "rarity": "epic",
-      "tier": "B",
-      "damage": 277,
-      "notes": "Grenade launcher, strong against grouped enemies and structures."
-    },
-    {
-      "id": "stun-baton",
-      "name": "Stun Baton",
-      "type": "melee",
-      "rarity": "rare",
-      "tier": "C",
-      "damage": 182,
-      "notes": "Melee option with crowd-control utility via stun."
-    },
-    {
-      "id": "mg4-predator",
-      "name": "MG4 — Predator",
-      "type": "lmg",
-      "rarity": "epic",
-      "tier": "A",
-      "notes": "Signature weapon for Fast Gunner builds; large magazine lets players fire roughly 200 rounds before reloading when built around the Fast Gunner weapon effect."
-    },
-    {
-      "id": "sn700-finale",
-      "name": "SN700 — Finale",
-      "type": "sniper-rifle",
-      "rarity": "legendary",
-      "tier": "A",
-      "notes": "Reverb-stacking legendary sniper; rebalanced in patch 3.0.2 (reverb stacks reduced to 4, damage scaling adjusted)."
-    }
+    { "id": "de50", "name": "DE.50", "type": "pistol", "rarity": "rare", "notes": "Base pistol chassis that named legendary variants are built from." },
+    { "id": "de50-wildfire", "name": "DE.50 — Wildfire", "type": "pistol", "rarity": "legendary", "notes": "Named legendary DE.50 variant." },
+    { "id": "de50-jaws", "name": "DE.50 — Jaws", "type": "pistol", "rarity": "legendary", "tier": "A", "notes": "One of the higher-ranked legendary pistols." },
+    { "id": "r500", "name": "R500", "type": "pistol", "rarity": "rare", "notes": "Base pistol chassis that named legendary variants are built from." },
+    { "id": "r500-hunter", "name": "R500 — Hunter", "type": "pistol", "rarity": "epic", "notes": "Named R500 variant." },
+    { "id": "r500-memento", "name": "R500 — Memento", "type": "pistol", "rarity": "legendary", "tier": "B", "damage": 170, "notes": "Legendary pistol, solid backup-slot option." },
+    { "id": "r500-hammerhead-shark", "name": "R500 — Hammerhead Shark", "type": "pistol", "rarity": "legendary", "notes": "Named R500 variant." },
+
+    { "id": "mps5", "name": "MPS5", "type": "smg", "rarity": "rare", "notes": "Base SMG chassis." },
+    { "id": "mps5-blue-tiger", "name": "MPS5 — Blue Tiger", "type": "smg", "rarity": "epic", "notes": "Named MPS5 variant." },
+    { "id": "mps5-kumawink", "name": "MPS5 — Kumawink", "type": "smg", "rarity": "epic", "notes": "Named MPS5 variant." },
+    { "id": "mps7", "name": "MPS7", "type": "smg", "rarity": "rare", "notes": "Base SMG chassis." },
+    { "id": "mps7-div-evo", "name": "MPS7 — Div-Evo", "type": "smg", "rarity": "epic", "notes": "Named MPS7 variant." },
+    { "id": "mps7-outer-space", "name": "MPS7 — Outer Space", "type": "smg", "rarity": "legendary", "tier": "S", "notes": "Top-tier legendary SMG." },
+    { "id": "kvsbr", "name": "KV-SBR", "type": "smg", "rarity": "rare", "notes": "Base SMG chassis." },
+    { "id": "kvsbr-little-jaws", "name": "KV-SBR — Little Jaws", "type": "smg", "rarity": "legendary", "tier": "B", "damage": 29, "fireRate": 1000, "notes": "Legendary SMG with a very high fire rate for close-range fights." },
+    { "id": "kvsbr-icy-rain", "name": "KV-SBR — Icy Rain", "type": "smg", "rarity": "legendary", "tier": "B", "notes": "Named KV-SBR variant." },
+
+    { "id": "socr", "name": "SOCR", "type": "assault-rifle", "rarity": "rare", "notes": "Base assault rifle chassis." },
+    { "id": "socr-last-valor", "name": "SOCR — The Last Valor", "type": "assault-rifle", "rarity": "legendary", "tier": "S", "notes": "Top-tier legendary assault rifle." },
+    { "id": "socr-outsider", "name": "SOCR — Outsider", "type": "assault-rifle", "rarity": "legendary", "tier": "B", "notes": "High damage with decent fire rate and magazine size." },
+    { "id": "kam", "name": "KAM", "type": "assault-rifle", "rarity": "rare", "notes": "Base assault rifle chassis." },
+    { "id": "kam-crank", "name": "KAM — Crank", "type": "assault-rifle", "rarity": "epic", "notes": "Moderate fire-rate KAM variant." },
+    { "id": "kam-abyss-glance", "name": "KAM — Abyss Glance", "type": "assault-rifle", "rarity": "legendary", "tier": "A", "damage": 39, "fireRate": 600, "notes": "Legendary assault rifle, balanced damage and fire rate." },
+    { "id": "m416", "name": "M416", "type": "assault-rifle", "rarity": "rare", "notes": "Standard assault rifle." },
+    { "id": "aug", "name": "AUG", "type": "assault-rifle", "rarity": "rare", "notes": "Standard assault rifle." },
+    { "id": "aug-electron-cloud", "name": "AUG — Electron Cloud", "type": "assault-rifle", "rarity": "epic", "notes": "Named AUG variant; flexibility adjusted in patch 2.4.1's balance pass." },
+
+    { "id": "db12", "name": "DB12", "type": "shotgun", "rarity": "rare", "notes": "Base shotgun chassis." },
+    { "id": "db12-backfire", "name": "DB12 — Backfire", "type": "shotgun", "rarity": "epic", "notes": "Named DB12 variant." },
+    { "id": "db12-raining-cash", "name": "DB12 — Raining Cash", "type": "shotgun", "rarity": "legendary", "tier": "A", "damage": "55x5 pellets", "notes": "Legendary shotgun, strong burst close-range damage." },
+    { "id": "dbsg-doombringer", "name": "DBSG — Doombringer", "type": "shotgun", "rarity": "legendary", "notes": "Named legendary shotgun." },
+    { "id": "s870-sandstorm", "name": "S870 — Sandstorm", "type": "shotgun", "rarity": "epic", "notes": "Named shotgun variant." },
+
+    { "id": "aws338", "name": "AWS.338", "type": "sniper-rifle", "rarity": "rare", "notes": "Base sniper rifle chassis; the community also references a legendary variant of this line as 'Bullseye' or 'Bingo' depending on the source/version." },
+    { "id": "aws338-bingo", "name": "AWS.338 — Bingo", "type": "sniper-rifle", "rarity": "legendary", "tier": "A", "damage": 316, "notes": "Legendary sniper rifle, very high per-shot damage for weakspot hunting." },
+    { "id": "aws338-black-panther", "name": "AWS.338 — Black Panther", "type": "sniper-rifle", "rarity": "legendary", "notes": "Named AWS.338 variant." },
+    { "id": "sn700", "name": "SN700", "type": "sniper-rifle", "rarity": "rare", "notes": "Accessible early-game sniper rifle chassis." },
+    { "id": "sn700-finale", "name": "SN700 — Finale", "type": "sniper-rifle", "rarity": "legendary", "tier": "A", "notes": "Reverb-stacking legendary sniper; rebalanced in patch 3.0.2 (reverb stacks reduced to 4, damage scaling adjusted)." },
+    { "id": "sn700-gulped-lore", "name": "SN700 — Gulped Lore", "type": "sniper-rifle", "rarity": "epic", "notes": "Named SN700 variant, useful vs. bosses." },
+    { "id": "hamr", "name": "HAMR", "type": "sniper-rifle", "rarity": "rare", "notes": "Base sniper rifle chassis." },
+    { "id": "hamr-brahminy", "name": "HAMR — Brahminy", "type": "sniper-rifle", "rarity": "legendary", "notes": "Named HAMR variant." },
+    { "id": "hamr-crumble", "name": "HAMR — Crumble", "type": "sniper-rifle", "rarity": "epic", "notes": "Named HAMR variant, boss-oriented." },
+
+    { "id": "mg4", "name": "MG4", "type": "lmg", "rarity": "rare", "damage": 25, "fireRate": 700, "notes": "Base LMG, 75-round magazine." },
+    { "id": "mg4-predator", "name": "MG4 — Predator", "type": "lmg", "rarity": "epic", "tier": "A", "damage": 32, "fireRate": 700, "notes": "Signature weapon for Fast Gunner builds; 75-round mag lets players fire roughly 200 rounds before reloading when built around Fast Gunner." },
+    { "id": "kvd", "name": "KVD", "type": "lmg", "rarity": "rare", "notes": "Base LMG chassis." },
+    { "id": "kvd-boom-boom", "name": "KVD — Boom! Boom!", "type": "lmg", "rarity": "legendary", "tier": "S", "damage": 44, "fireRate": 500, "notes": "100-round magazine; considered one of the two strongest weapons in the game." },
+    { "id": "wrath-of-hades", "name": "Wrath Of Hades", "type": "lmg", "rarity": "legendary", "damage": 44, "fireRate": 700, "notes": "75-round magazine legendary LMG." },
+    { "id": "mr-squid", "name": "Mr. Squid", "type": "lmg", "rarity": "legendary", "damage": 44, "fireRate": 700, "notes": "75-round magazine legendary LMG." },
+    { "id": "aurora-fort", "name": "Aurora Fort", "type": "lmg", "rarity": "legendary", "damage": "98/shot", "fireRate": 700, "notes": "90-round magazine, very high per-shot damage for an LMG." },
+
+    { "id": "rustic-crossbow", "name": "Rustic Crossbow", "type": "bow", "rarity": "standard", "notes": "The first weapon crafted during the tutorial; no unique abilities." },
+    { "id": "recurve-bow", "name": "Recurve Bow", "type": "bow", "rarity": "rare", "notes": "Early bow option." },
+    { "id": "recurve-crossbow", "name": "Recurve Crossbow", "type": "bow", "rarity": "epic", "notes": "Applies the 'Bull's Eye' debuff when hitting a weakspot." },
+    { "id": "compound-bow", "name": "Compound Bow", "type": "bow", "rarity": "legendary", "tier": "S", "damage": 310, "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates." },
+    { "id": "recursive-crossbow", "name": "Recursive Crossbow", "type": "bow", "rarity": "legendary", "tier": "S", "notes": "Unique aux-weapon utility: can increase crit rate of all weapons by 30% for 10 seconds." },
+
+    { "id": "stun-baton", "name": "Stun Baton", "type": "melee", "rarity": "rare", "tier": "C", "damage": 182, "notes": "80% chance to inflict the Power Surge status effect with light strikes/impacts; strong crowd-control pick." },
+    { "id": "long-axe", "name": "Long Axe", "type": "melee", "rarity": "legendary", "notes": "Considered the top-ranked melee weapon in community guides." },
+    { "id": "frozen-northern-pike", "name": "Frozen Northern Pike", "type": "melee", "rarity": "legendary", "notes": "Heavy attacks freeze the primary target and generate a Frost Vortex." },
+    { "id": "fabled-masamune", "name": "The Fabled Masamune", "type": "melee", "rarity": "legendary", "notes": "Grants +3% Crit Damage (up to +120%) for every 1% of durability above 50% — rewards keeping it well-maintained." },
+    { "id": "scourge", "name": "Scourge", "type": "melee", "rarity": "epic", "notes": "Named melee weapon." },
+    { "id": "kukri", "name": "Kukri", "type": "melee", "rarity": "rare", "notes": "Named melee weapon." },
+    { "id": "torch", "name": "Torch", "type": "melee", "rarity": "standard", "notes": "Early/utility melee weapon, doubles as a light source." },
+    { "id": "wrench", "name": "Wrench", "type": "melee", "rarity": "standard", "notes": "Early/utility melee weapon." },
+    { "id": "camping-knife", "name": "Camping Knife", "type": "melee", "rarity": "standard", "notes": "Early/utility melee weapon." },
+
+    { "id": "mgl", "name": "MGL", "type": "heavy", "rarity": "epic", "damage": 277, "tier": "B", "notes": "Grenade launcher, strong against grouped enemies and structures." },
+    { "id": "rpg7", "name": "RPG7 Rocket Launcher", "type": "heavy", "rarity": "epic", "notes": "Heavy artillery, high single-target/structure damage." }
   ],
-  "note": "Once Human's full arsenal spans 126+ weapons across these 9 categories (per oncehumandb.com). The list above covers the current top-tier / legendary picks and community tier-list standouts rather than the full catalog."
+  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries. Turret/emplacement 'heavy weapons' like Gatling Cannons and plasma-round turrets are catalogued under Blueprints → Defense instead, since they're placed structures rather than carried weapons."
 }

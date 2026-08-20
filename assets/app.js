@@ -40,6 +40,12 @@ function esc(s) {
 }
 
 async function loadAll() {
+  // Standalone/preview builds may embed the data directly on window.__OH_DATA
+  // (see build-artifact.js) so the page works without a fetch()-capable server.
+  if (window.__OH_DATA) {
+    state.data = window.__OH_DATA;
+    return;
+  }
   const entries = Object.entries(DATA_FILES);
   const results = await Promise.all(entries.map(async ([key, path]) => {
     const res = await fetch(path);
