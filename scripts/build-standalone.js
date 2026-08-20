@@ -55,7 +55,7 @@ ${css}
       <label class="sr-only" for="global-search">Search the database</label>
       <input type="search" id="global-search" placeholder="Search everything… (weapons, mods, deviants, bosses…)"
              autocomplete="off" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
-      <div class="search-results" id="search-results" hidden></div>
+      <div class="search-results" id="search-results" role="listbox" aria-label="Search results" hidden></div>
     </div>
   </div>
   <nav class="nav-groups" id="nav-groups" aria-label="Main navigation"></nav>

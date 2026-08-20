@@ -652,7 +652,8 @@ nav.nav-groups {
   text-decoration: none;
   font-size: 0.88rem;
 }
-.search-result:hover, .search-result:focus-visible { background: var(--bg-alt); text-decoration: none; }
+.search-result:hover, .search-result:focus-visible, .search-result.is-active { background: var(--bg-alt); text-decoration: none; }
+.search-result.is-active { outline: 1px solid var(--accent); outline-offset: -1px; }
 .search-result-sub { color: var(--text-dim); font-size: 0.76rem; white-space: nowrap; }
 .search-empty { padding: 14px; color: var(--text-dim); font-style: italic; font-size: 0.86rem; }
 

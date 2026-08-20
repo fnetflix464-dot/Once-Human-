@@ -68,15 +68,25 @@ function wireNavChrome() {
   const menuToggle = document.getElementById("menu-toggle");
   const drawer = document.getElementById("mobile-drawer");
   const backdrop = document.getElementById("drawer-backdrop");
+  let lastFocusBeforeDrawer = null;
+
+  function drawerFocusables() {
+    return Array.from(drawer.querySelectorAll("a, button")).filter(el => el.offsetParent !== null);
+  }
   function openDrawer() {
+    lastFocusBeforeDrawer = document.activeElement;
     drawer.hidden = false;
     backdrop.hidden = false;
     menuToggle.setAttribute("aria-expanded", "true");
+    const focusables = drawerFocusables();
+    if (focusables.length) focusables[0].focus();
   }
   function closeDrawer() {
     drawer.hidden = true;
     backdrop.hidden = true;
     menuToggle.setAttribute("aria-expanded", "false");
+    if (lastFocusBeforeDrawer && document.body.contains(lastFocusBeforeDrawer)) lastFocusBeforeDrawer.focus();
+    else menuToggle.focus();
   }
   if (menuToggle) {
     menuToggle.addEventListener("click", () => {
@@ -88,6 +98,18 @@ function wireNavChrome() {
     drawer.addEventListener("click", e => {
       if (e.target.id === "drawer-close" || e.target.closest("a.nav-item")) closeDrawer();
     });
+    // Escape closes the drawer; Tab/Shift+Tab wrap focus inside it while open
+    // (a simple focus trap) so keyboard users never tab "through" it into
+    // the page content sitting behind it.
+    drawer.addEventListener("keydown", e => {
+      if (e.key === "Escape") { e.preventDefault(); closeDrawer(); return; }
+      if (e.key !== "Tab") return;
+      const focusables = drawerFocusables();
+      if (!focusables.length) return;
+      const first = focusables[0], last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
   }
 }
 
@@ -96,21 +118,52 @@ function wireNavChrome() {
 /* ---------------------------------------------------------------------- */
 
 let searchCorpus = [];
+let searchActiveIndex = -1; // index into the flat list of currently-rendered .search-result options
+
+function closeSearch() {
+  const box = document.getElementById("search-results");
+  const input = document.getElementById("global-search");
+  box.hidden = true;
+  input.setAttribute("aria-expanded", "false");
+  input.removeAttribute("aria-activedescendant");
+  searchActiveIndex = -1;
+}
+
+function searchOptionEls() {
+  return Array.from(document.querySelectorAll("#search-results .search-result"));
+}
+
+function setActiveSearchOption(index) {
+  const opts = searchOptionEls();
+  if (!opts.length) return;
+  const input = document.getElementById("global-search");
+  const clamped = (index + opts.length) % opts.length;
+  opts.forEach((el, i) => {
+    const isActive = i === clamped;
+    el.setAttribute("aria-selected", isActive ? "true" : "false");
+    el.classList.toggle("is-active", isActive);
+  });
+  searchActiveIndex = clamped;
+  input.setAttribute("aria-activedescendant", opts[clamped].id);
+  opts[clamped].scrollIntoView({ block: "nearest" });
+}
 
 function renderSearchResults(query) {
   const box = document.getElementById("search-results");
   const input = document.getElementById("global-search");
-  if (!query.trim()) { box.hidden = true; box.innerHTML = ""; input.setAttribute("aria-expanded", "false"); return; }
+  if (!query.trim()) { closeSearch(); box.innerHTML = ""; return; }
   const results = OH.searchCorpus(searchCorpus, query);
   const grouped = OH.groupSearchResults(results, 5);
+  searchActiveIndex = -1;
+  let optIndex = 0;
   if (!grouped.length) {
     box.innerHTML = `<div class="search-empty">No matches for &ldquo;${OH.esc(query)}&rdquo;.</div>`;
   } else {
     box.innerHTML = grouped.map(cat => `
-      <div class="search-group">
+      <div class="search-group" role="group" aria-label="${OH.esc(cat.label)}">
         <div class="search-group-label">${OH.esc(cat.label)}${cat.total > cat.results.length ? ` <span class="tag">${cat.total}</span>` : ""}</div>
         ${cat.results.map(r => `
-          <a class="search-result" href="#${OH.esc(cat.tab)}/${encodeURIComponent(r.id)}">
+          <a class="search-result" id="search-opt-${optIndex++}" role="option" aria-selected="false" href="#${OH.esc(cat.tab)}/${encodeURIComponent(r.id)}">
             <span class="search-result-title">${OH.esc(r.title)}</span>
             ${r.subtitle ? `<span class="search-result-sub">${OH.esc(r.subtitle)}</span>` : ""}
           </a>
@@ -129,13 +182,21 @@ function wireSearch() {
   input.addEventListener("input", debounced);
   input.addEventListener("focus", () => { if (input.value.trim()) renderSearchResults(input.value); });
   input.addEventListener("keydown", e => {
-    if (e.key === "Escape") { box.hidden = true; input.setAttribute("aria-expanded", "false"); }
+    const opts = searchOptionEls();
+    if (e.key === "Escape") { closeSearch(); return; }
+    if (!opts.length || box.hidden) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); setActiveSearchOption(searchActiveIndex + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setActiveSearchOption(searchActiveIndex - 1); }
+    else if (e.key === "Enter" && searchActiveIndex >= 0) {
+      e.preventDefault();
+      opts[searchActiveIndex].click();
+    }
   });
   document.addEventListener("click", e => {
-    if (!e.target.closest(".search-box")) { box.hidden = true; input.setAttribute("aria-expanded", "false"); }
+    if (!e.target.closest(".search-box")) closeSearch();
   });
   box.addEventListener("click", e => {
-    if (e.target.closest(".search-result")) { box.hidden = true; input.value = ""; }
+    if (e.target.closest(".search-result")) { closeSearch(); input.value = ""; }
   });
 }
 
