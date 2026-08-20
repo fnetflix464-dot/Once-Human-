@@ -87,7 +87,7 @@
       "name": "DE.50 — Wildfire",
       "type": "pistol",
       "rarity": "legendary",
-      "notes": "Named legendary DE.50 variant.",
+      "notes": "Confirmed unique ability: 60% chance to mark targets with the Bull's Eye debuff on hit. The go-to secondary weapon across multiple build guides (Shrapnel, Power Surge, Frost Vortex, Bounce) for its marking utility.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -234,7 +234,7 @@
       "type": "smg",
       "rarity": "legendary",
       "tier": "S",
-      "notes": "Top-tier legendary SMG.",
+      "notes": "Confirmed centerpiece of the Power Surge Build — an SMG with a very high trigger rate for stacking Power Surge procs.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -359,7 +359,7 @@
       "tier": "A",
       "damage": 39,
       "fireRate": 600,
-      "notes": "Legendary assault rifle, balanced damage and fire rate.",
+      "notes": "Confirmed centerpiece of the Frost Vortex Build. Legendary assault rifle, balanced damage and fire rate.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -571,7 +571,7 @@
       "name": "HAMR — Brahminy",
       "type": "sniper-rifle",
       "rarity": "legendary",
-      "notes": "Named HAMR variant.",
+      "notes": "Confirmed centerpiece of the Bounce Build — 80% chance to trigger Bounce on Weakspot hits.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -797,7 +797,7 @@
       "name": "Frozen Northern Pike",
       "type": "melee",
       "rarity": "legendary",
-      "notes": "Heavy attacks freeze the primary target and generate a Frost Vortex.",
+      "notes": "Confirmed melee option for the Frost Vortex Build: heavy attacks freeze the primary target and auto-generate a Frost Vortex once every 4 seconds.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [

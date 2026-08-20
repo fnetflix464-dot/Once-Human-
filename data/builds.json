@@ -1,12 +1,15 @@
 {
+  "mechanicNote": "Weapon effects (Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare, Marked) are granted by the mod you equip as a weapon's core-effect slot, and most can go on almost any weapon in that mod's compatible slot — they are not locked to one gun. A small number of named legendary weapons additionally have their own confirmed built-in special ability (see each weapon's own page). The 'primary weapon' below is the community-recommended pick that best exploits a given build's playstyle (fire rate, magazine size, trigger rate, etc.) — not the only weapon that can run it.",
   "builds": [
     {
       "id": "shrapnel-crit",
       "name": "Shrapnel Crit Build",
       "archetype": "shrapnel",
       "role": "PvE — Boss Killer",
-      "summary": "Once Human's premier build for destroying the Great Ones and general PvE. Bullets fragment to tear through multiple body parts; can be specced for crit, weakspot hits, or a no-reload playstyle.",
-      "suggestedWeapons": ["compound-bow", "kvd-boom-boom"],
+      "summary": "Once Human's premier build for destroying the Great Ones and general PvE. Bullets fragment to tear through multiple body parts; can be specced for crit, weakspot hits, or a no-reload playstyle. Aim for a Shrapnel proc chance near 50% (about 1 in every 2 shots).",
+      "primaryWeapon": "socr-last-valor",
+      "secondaryWeapons": ["de50-wildfire", "recurve-crossbow"],
+      "keyStats": ["Crit DMG", "Weapon DMG", "Max HP", "Magazine Capacity", "Weakspot DMG"],
       "suggestedMods": ["Obliterate", "Shatter Them All", "Shield Breaker", "Shrapnel Smash", "Shrapnel Souvenir"]
     },
     {
@@ -14,8 +17,9 @@
       "name": "Power Surge Build",
       "archetype": "power-surge",
       "role": "PvE — Sustained DPS",
-      "summary": "Dump full magazines into enemies to trigger bursts of Electric damage. A well-optimized version can top out around 100,000 DPS without external buffs.",
-      "suggestedWeapons": ["kam-abyss-glance"],
+      "summary": "Dump full magazines into enemies to trigger bursts of Electric/Shock damage that stack on top of regular weapon damage with no real downside. A well-optimized version can top out around 100,000 DPS without external buffs.",
+      "primaryWeapon": "mps7-outer-space",
+      "secondaryWeapons": ["recurve-crossbow", "de50-wildfire"],
       "suggestedMods": ["Shock Diffusion", "Shock Rampage", "Static Shock", "Surge Amplifier"]
     },
     {
@@ -24,7 +28,9 @@
       "archetype": "frost-vortex",
       "role": "PvE — Boss Sustain",
       "summary": "Excellent against big boss enemies — the vortex feeds you health while draining theirs, making it a strong solo/duo boss-clearing build.",
-      "suggestedWeapons": ["aws338-bingo"],
+      "primaryWeapon": "kam-abyss-glance",
+      "secondaryWeapons": ["de50-wildfire"],
+      "meleeOption": "frozen-northern-pike",
       "suggestedMods": ["Cryo Blast", "Frosty Blessing", "Shattering Ice", "Vortex Multiplier"]
     },
     {
@@ -33,7 +39,8 @@
       "archetype": "bounce",
       "role": "PvE — Crowd Damage",
       "summary": "An underrated build where projectiles ricochet between enemies; damage gets absurd in tight corridors or dense groups of mobs.",
-      "suggestedWeapons": ["kvsbr-little-jaws"],
+      "primaryWeapon": "hamr-brahminy",
+      "secondaryWeapons": ["de50-wildfire"],
       "suggestedMods": ["Bounce Rampage", "Super Bullet", "Targeted Bounce"]
     },
     {
@@ -42,9 +49,10 @@
       "archetype": "fast-gunner",
       "role": "PvE/PvP — Sustained Fire",
       "summary": "Buffs a gun's damage and fire rate the longer you shoot. Best on high-magazine LMGs — a properly built MG4 Predator can unload roughly 200 rounds before needing to reload.",
-      "suggestedWeapons": ["mg4-predator"],
+      "primaryWeapon": "mg4-predator",
+      "secondaryWeapons": [],
       "suggestedMods": ["Cowboy", "Double Gunner", "Fast Refurbish", "Lasting Fortification", "Precision Rush", "Shoot Out", "Shooting Blitz"]
     }
   ],
-  "note": "Builds combine a weapon effect archetype, weapon(s), mods and memetic specializations into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."
+  "note": "Builds combine a weapon effect archetype, a weapon, mods and Tech Tree nodes into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."
 }

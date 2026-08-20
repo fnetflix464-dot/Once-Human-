@@ -177,7 +177,9 @@ function buildsByArchetype(archetypeId) {
   return idx.builds.filter(b => b.archetype === archetypeId);
 }
 function buildsByWeapon(weaponKey) {
-  return idx.builds.filter(b => (b.suggestedWeapons || []).includes(weaponKey));
+  return idx.builds
+    .filter(b => b.primaryWeapon === weaponKey || (b.secondaryWeapons || []).includes(weaponKey) || b.meleeOption === weaponKey)
+    .map(b => ({ ...b, _role: b.primaryWeapon === weaponKey ? "Primary weapon" : b.meleeOption === weaponKey ? "Melee option" : "Secondary weapon" }));
 }
 function foodRecipeByLooseName(name) {
   const base = String(name).replace(/\s*\([^)]*\)\s*$/, "").trim();
@@ -448,7 +450,7 @@ function renderWeaponDetail(key) {
     ${confirmedCards ? `<div class="section-block"><h3>Confirmed built-in weapon effect</h3><p class="intro" style="margin-top:0">This specific weapon's own kit is independently confirmed to trigger this effect.</p><div class="grid">${confirmedCards}</div></div>` : ""}
     ${genericCards ? `<div class="section-block"><h3>Commonly paired weapon effects &amp; mods</h3><p class="intro" style="margin-top:0">A general suggestion based on this weapon's <em>type</em> (${esc(labelForType(w.type, state.data.weapons.weaponTypes))}) — not a confirmed fact about this specific weapon.</p><div class="grid">${genericCards}</div></div>` : ""}
 
-    ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc(b.role)}</span></div><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
+    ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc(b._role)}</span><span class="tag">${esc(b.role)}</span></div><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
 
     ${backLink("weapons", "Weapons")}
   `;
@@ -719,6 +721,7 @@ function renderBuilds() {
   return `
     <h2>Builds &amp; Classes</h2>
     <p class="intro">${esc(classes.overview)}</p>
+    <p class="intro">${esc(state.data.builds.mechanicNote)}</p>
     <div class="notice">⚠️ ${esc(classes.techSystemNotice)}</div>
     <div class="section-block">
       <h3>Weapon Effect Archetypes ("Classes")</h3>
@@ -768,16 +771,25 @@ function renderBuildDetail(key) {
   const b = findBuild(key);
   if (!b) return null;
   const arch = findArchetype(b.archetype);
-  const weapons = (b.suggestedWeapons || []).map(findWeapon).filter(Boolean);
+  const primary = b.primaryWeapon ? findWeapon(b.primaryWeapon) : null;
+  const secondaries = (b.secondaryWeapons || []).map(findWeapon).filter(Boolean);
+  const melee = b.meleeOption ? findWeapon(b.meleeOption) : null;
+  const weaponCard = (w, roleLabel) => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><div class="meta"><span class="tag">${esc(roleLabel)}</span></div><p>${esc(w.notes || "")}</p></div>`;
   return `
     ${breadcrumb("builds", "Builds & Classes", b.name)}
     <h2>${esc(b.name)}</h2>
     <div class="meta" style="margin-bottom:10px"><span class="tag">${esc(b.role)}</span>${arch ? `<span class="tag">${link("classes", arch._key, arch.name)}</span>` : ""}</div>
     <p>${esc(b.summary)}</p>
     <div class="section-block">
-      <h3>Suggested weapons</h3>
-      <div class="grid">${weapons.map(w => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><p>${esc(w.notes || "")}</p></div>`).join("") || "<p class='intro'>None listed.</p>"}</div>
+      <h3>Weapons</h3>
+      <div class="grid">
+        ${primary ? weaponCard(primary, "Primary weapon") : ""}
+        ${secondaries.map(w => weaponCard(w, "Secondary weapon")).join("")}
+        ${melee ? weaponCard(melee, "Melee option") : ""}
+        ${!primary && !secondaries.length && !melee ? "<p class='intro'>None listed.</p>" : ""}
+      </div>
     </div>
+    ${b.keyStats ? `<div class="section-block"><h3>Key stats to prioritize</h3><ul>${b.keyStats.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
     <div class="section-block">
       <h3>Suggested mods</h3>
       <ul>${(b.suggestedMods || []).map(m => `<li>${esc(m)}</li>`).join("")}</ul>
