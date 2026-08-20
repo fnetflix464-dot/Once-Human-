@@ -24,7 +24,7 @@
     { "name": "Growshroom", "helps": "Auto-plants seeds and accelerates crop growth." },
     { "name": "Rain Man", "helps": "Enhances crop vitality and provides irrigation water." }
   ],
-  "livestockOverview": "Ranching is a separate system from Deviants: regular animals are captured live, tamed with feed (see the Food & Cooking section → Animal Feeds), and bred at a Youngling Hut once Tameness reaches 80-100%. Animals only produce byproducts (meat, wool, milk, hides) once Tameness is 50%+, and a territory can house a maximum of 6 ranched animals. Breeding 'chances' (how many times an animal can be bred) scale with its rarity tier: S-Tier gets 7, A/B-Tier get 6, C-Tier gets 5.",
+  "livestockOverview": "Ranching is a separate system from Deviants: regular animals are captured live, tamed with feed (see the Food & Cooking section → Animal Feeds), and bred at a Youngling Hut once Tameness reaches 80-100%. Animals only produce byproducts (meat, wool, milk, hides) once Tameness is 50%+, and a territory can house a maximum of 6 ranched animals. Each animal has a limited number of Breeding Chances (how many times it can produce offspring) that scale with its rarity tier — higher grades (A/S) generally get more chances and better odds at desirable offspring traits, but the exact number per tier wasn't independently re-confirmed for this database, so treat any specific figure you see elsewhere as more reliable than a number here.",
   "livestock": [
     { "name": "Ram", "tier": "C", "products": "Wool, meat" },
     { "name": "Rabbit", "tier": "C", "products": "Meat, hide" },

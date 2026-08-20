@@ -169,9 +169,10 @@ function findModGroupByArchetype(archetypeId) {
   return name ? idx.modGroups.find(g => g.effect === name) : null;
 }
 function weaponsByArchetype(archetypeId) {
-  return idx.weapons
-    .filter(w => (w.confirmedArchetype || []).includes(archetypeId) || (w.commonArchetypes || []).includes(archetypeId))
-    .map(w => ({ ...w, _confirmed: (w.confirmedArchetype || []).includes(archetypeId) }));
+  // Only weapons with an independently-confirmed built-in effect match here —
+  // there is no unsourced "commonly paired by type" fallback (see
+  // weapons.json's archetypeFieldNotice for why that was removed).
+  return idx.weapons.filter(w => (w.confirmedArchetype || []).includes(archetypeId));
 }
 function buildsByArchetype(archetypeId) {
   return idx.builds.filter(b => b.archetype === archetypeId);
@@ -427,7 +428,6 @@ function renderWeaponDetail(key) {
       </div>`;
   };
   const confirmedCards = (w.confirmedArchetype || []).map(archetypeCard).join("");
-  const genericCards = (w.confirmedArchetype ? [] : (w.commonArchetypes || [])).map(archetypeCard).join("");
 
   return `
     ${breadcrumb("weapons", "Weapons", w.name)}
@@ -447,8 +447,9 @@ function renderWeaponDetail(key) {
       ${station ? `<div class="card"><h3>${link("stations", station._key, station.name)}</h3><div class="meta"><span class="tag">Tier ${esc(station.tier)}</span></div>${station.unlock ? `<p>${esc(station.unlock)}</p>` : ""}${station.materials ? `<p><strong>Materials:</strong> ${station.materials.map(esc).join(", ")}</p>` : ""}<p>${esc(station.produces)}</p></div>` : ""}
     </div>
 
-    ${confirmedCards ? `<div class="section-block"><h3>Confirmed built-in weapon effect</h3><p class="intro" style="margin-top:0">This specific weapon's own kit is independently confirmed to trigger this effect.</p><div class="grid">${confirmedCards}</div></div>` : ""}
-    ${genericCards ? `<div class="section-block"><h3>Commonly paired weapon effects &amp; mods</h3><p class="intro" style="margin-top:0">A general suggestion based on this weapon's <em>type</em> (${esc(labelForType(w.type, state.data.weapons.weaponTypes))}) — not a confirmed fact about this specific weapon.</p><div class="grid">${genericCards}</div></div>` : ""}
+    ${confirmedCards
+      ? `<div class="section-block"><h3>Confirmed built-in weapon effect</h3><p class="intro" style="margin-top:0">This specific weapon's own kit is independently confirmed to trigger this effect.</p><div class="grid">${confirmedCards}</div></div>`
+      : `<div class="section-block"><h3>Weapon effects</h3><p class="intro" style="margin-top:0">This weapon has no confirmed intrinsic weapon effect. In Once Human, effects like Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked come from whichever core-effect mod you equip — most mods fit most weapons in that slot. Browse the ${link("mods", "", "Mods section")} to pick one, or the ${link("builds", "", "Builds & Classes section")} for full named loadouts.</p></div>`}
 
     ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc(b._role)}</span><span class="tag">${esc(b.role)}</span></div><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
 
@@ -617,7 +618,7 @@ function renderModDetail(key) {
       <h3>Where to get it</h3>
       <p class="intro" style="margin-top:0">${esc(mod.groupObtainedFrom)}</p>
     </div>
-    ${weapons.length ? `<div class="section-block"><h3>Pairs well with</h3><p class="intro" style="margin-top:0">"Confirmed" means this weapon's own kit is independently verified to use this effect; otherwise it's a general suggestion based on the weapon's type.</p><div class="grid">${weapons.map(w => `<div class="card"><h3>${link("weapons", w._key, w.name)}</h3><div class="meta"><span class="tag">${w._confirmed ? "Confirmed" : "General suggestion"}</span></div><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
+    ${weapons.length ? `<div class="section-block"><h3>Weapons with this confirmed built-in effect</h3><div class="grid">${weapons.map(w => `<div class="card"><h3>${link("weapons", w._key, w.name)}</h3><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
     ${backLink("mods", "Mods")}
   `;
 }
@@ -810,7 +811,7 @@ function renderArchetypeDetail(key) {
     <div class="meta" style="margin-bottom:10px"><span class="tag">${esc(a.role)}</span></div>
     <p>${esc(a.summary)}</p>
     ${group ? `<div class="section-block"><h3>Mods</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>Mod</th><th>Effect</th></tr></thead><tbody>${group.mods.map(m => `<tr><td>${link("mods", group._key + "--" + slugify(m.name), m.name)}</td><td>${esc(m.effect)}</td></tr>`).join("")}</tbody></table></div><p class="intro">${esc(group.obtainedFrom)}</p></div>` : ""}
-    ${weapons.length ? `<div class="section-block"><h3>Commonly paired weapons</h3><p class="intro" style="margin-top:0">"Confirmed" means this weapon's own kit is independently verified to use this effect; otherwise it's a general suggestion based on the weapon's type.</p><div class="grid">${weapons.map(w => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><div class="meta"><span class="tag">${w._confirmed ? "Confirmed" : "General suggestion"}</span></div><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
+    ${weapons.length ? `<div class="section-block"><h3>Weapons with this confirmed built-in effect</h3><div class="grid">${weapons.map(w => `${cardOpen("weapons", w._key)}<h3>${esc(w.name)}</h3><p>${esc(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
     ${builds.length ? `<div class="section-block"><h3>Named builds using this</h3><div class="grid">${builds.map(b => `${cardOpen("builds", b._key)}<h3>${esc(b.name)}</h3><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
     ${backLink("builds", "Builds & Classes")}
   `;
@@ -1115,17 +1116,11 @@ function renderRegions() {
     <div class="section-block">
       <h3>${esc(r.manibus.name)}</h3>
       <div class="table-wrap"><table class="data-table">
-        <thead><tr><th>Stronghold</th><th>Biome</th><th>Level Range</th><th>Notes</th></tr></thead>
+        <thead><tr><th>Region</th><th>Stronghold</th><th>Biome</th><th>Level Range</th><th>Notes</th></tr></thead>
         <tbody>
-          ${r.manibus.areas.map(a => `<tr><td>${esc(a.stronghold)}</td><td>${esc(a.biome)}</td><td>${esc(a.levelRange)}</td><td>${esc(a.notes || "")}</td></tr>`).join("")}
+          ${r.manibus.regions.map(a => `<tr><td>${esc(a.region)}</td><td>${esc(a.stronghold)}</td><td>${esc(a.biome)}</td><td>${esc(a.levelRange)}</td><td>${esc(a.notes || "")}</td></tr>`).join("")}
         </tbody>
       </table></div>
-    </div>
-    <div class="section-block">
-      <h3>Other Notable Areas</h3>
-      <div class="grid">
-        ${r.otherNotableAreas.map(a => `<div class="card"><h3>${esc(a.name)}</h3><p>${esc(a.notes)}</p></div>`).join("")}
-      </div>
     </div>
     <div class="section-block">
       <h3>Special Worlds &amp; Scenarios</h3>

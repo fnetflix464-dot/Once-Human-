@@ -1,27 +1,22 @@
 {
-  "overview": "Once Human's world (Nalcott) is divided into major regions, each centered on a Stronghold and gated by recommended enemy level. Later seasons add separate Visional Worlds / Strange Worlds layered on top of the base map.",
+  "overview": "Once Human's base map, Nalcott, is covered by the Manibus scenario (aka Evolution's Call) — not a single region itself, but an umbrella containing 6 regions, each centered on one Stronghold/settlement and gated by a recommended enemy level. Later seasons add separate Visional Worlds / Strange Worlds layered on top of this base map.",
   "manibus": {
     "name": "Manibus (Evolution's Call)",
-    "areas": [
-      { "stronghold": "Deadsville", "biome": "Swampland & farmland", "levelRange": "1-10", "notes": "Starting area after the prologue." },
-      { "stronghold": "Meyer's Market", "biome": "Fishing town, industrial area, forest", "levelRange": "6-10" },
-      { "stronghold": "Greywater Camp", "biome": "River and cliffs", "levelRange": "20-30" },
-      { "stronghold": "Tall Grass Inn", "biome": "Forest and mountains (bears)", "levelRange": "30-40", "notes": "The largest area." },
-      { "stronghold": "Blackfell", "biome": "Desert city with military bases", "levelRange": "40+", "notes": "Final Stronghold of the region." }
+    "regions": [
+      { "region": "Dayton Wetlands", "stronghold": "Deadsville", "biome": "Swampland & farmland", "levelRange": "1-10", "notes": "Starting area after the prologue." },
+      { "region": "Broken Delta", "stronghold": "Meyer's Market", "biome": "Fishing town, industrial area, flooded/unstable terrain", "levelRange": "6-10", "notes": "Home to the Gaia Cliff Monolith and the Treant boss." },
+      { "region": "Iron River", "stronghold": "Greywater Camp", "biome": "River and cliffs, contaminated post-apocalyptic landscape", "levelRange": "20-30", "notes": "Home to the Mirage Monolith and the Arachsiam boss." },
+      { "region": "Chalk Peak", "stronghold": "Tall Grass Inn", "biome": "Forest and mountains (bears)", "levelRange": "30-40", "notes": "The largest area; home to the Monolith of Thirst and the Rabizex boss. Terrain adjusted nearby in patch 2.4.1." },
+      { "region": "Red Sands", "stronghold": "Blackfell", "biome": "Desert city with military bases", "levelRange": "40-50", "notes": "Home to the Forsaken Monolith and Mensdevoran; enemies here run up to level 50." },
+      { "region": "Blackheart", "stronghold": "Not independently confirmed by available sources", "biome": "Northernmost region of Eastern Nalcott", "levelRange": "Highest-level area besides the LEA Research Lab", "notes": "Only 2 settlements; a rare plant-gathering region." }
     ]
   },
-  "otherNotableAreas": [
-    { "name": "Broken Delta", "notes": "Home to the Gaia Cliff Monolith and the Treant boss." },
-    { "name": "Iron River", "notes": "Home to the Mirage Monolith and the Arachsiam boss." },
-    { "name": "Chalk Peak", "notes": "Home to the Monolith of Thirst and the Rabizex boss; terrain adjusted near here in patch 2.4.1." },
-    { "name": "Red Sands", "notes": "Home to the Forsaken Monolith and Mensdevoran." },
-    { "name": "Blackheart", "notes": "Rare plant-gathering region." }
-  ],
   "specialWorldsAndScenarios": [
     { "name": "Way of Winter", "type": "Seasonal Visional World", "notes": "Added winter-themed Deviants (tagged WoT in this database) and mechanics." },
     { "name": "Gravity Abyss (Visional Wheel S4)", "type": "Seasonal Visional World", "notes": "Zero-gravity combat across floating islands; home of the Riftwalker boss. Added in patch 2.4.1." },
     { "name": "Pixel-Style Strange World / Block Island / Wish Island", "type": "Strange World event", "notes": "A blocky, pixel-art version of Nalcott; setting for the Block Adventure event in patch 3.0.3." },
     { "name": "Eternaland", "type": "Endgame Scenario", "notes": "Endgame scenario/mode referenced alongside Endless Dream and Evolution's Call." },
     { "name": "Endless Dream", "type": "PvE Scenario" }
-  ]
+  ],
+  "correctionNote": "An earlier version of this file wrongly nested Meyer's Market, Tall Grass Inn and Blackfell as flat 'areas' under one combined Manibus region, while separately listing Broken Delta, Iron River, Chalk Peak and Red Sands as unrelated 'other areas' — without noticing those are the actual regions those same strongholds belong to. Fixed by pairing each region with its real stronghold, sourced against the Once Human Fandom wiki and community area guides."
 }
