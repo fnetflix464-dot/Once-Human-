@@ -304,7 +304,7 @@
       "type": "assault-rifle",
       "rarity": "legendary",
       "tier": "S",
-      "notes": "Top-tier legendary assault rifle.",
+      "notes": "Confirmed unique ability: on hit, deals Weapon DMG of 50% Attack to a random unhit body part (a built-in Shrapnel-style effect) — a top-tier legendary assault rifle.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -730,7 +730,7 @@
       "name": "Recurve Crossbow",
       "type": "bow",
       "rarity": "epic",
-      "notes": "Applies the 'Bull's Eye' debuff when hitting a weakspot.",
+      "notes": "Epic-tier; Blueprint Fragment Type: Huntsman. Landing a Weakspot hit applies The Bull's Eye debuff (+8% damage taken) and grants +15% Crit Rate on all weapons.",
       "craftingStation": "intermediate-gear-workbench",
       "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
       "commonArchetypes": [
@@ -745,7 +745,7 @@
       "rarity": "legendary",
       "tier": "S",
       "damage": 310,
-      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates.",
+      "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtained from world weapon crates. Obtainable exclusively through the Wish Machine.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "commonArchetypes": [
@@ -913,7 +913,72 @@
         "unstable-bomber",
         "fortress-warfare"
       ]
+    },
+    {
+      "id": "dbsg",
+      "name": "DBSG",
+      "type": "shotgun",
+      "rarity": "rare",
+      "notes": "Base double-barrel shotgun chassis.",
+      "craftingStation": "gear-workbench",
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "commonArchetypes": [
+        "shrapnel",
+        "unstable-bomber"
+      ]
+    },
+    {
+      "id": "old-huntsman",
+      "name": "Old Huntsman",
+      "type": "shotgun",
+      "rarity": "standard",
+      "notes": "Near-identical stats to the DBSG chassis it's based on; an early low-investment pick.",
+      "craftingStation": "gear-workbench",
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "commonArchetypes": [
+        "shrapnel",
+        "unstable-bomber"
+      ]
+    },
+    {
+      "id": "dbsg-dual-fury",
+      "name": "DBSG — Dual Fury",
+      "type": "shotgun",
+      "rarity": "epic",
+      "notes": "Double-barreled with the usual trade-offs of that layout: slow reload, short range, but heavy burst.",
+      "craftingStation": "intermediate-gear-workbench",
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "commonArchetypes": [
+        "shrapnel",
+        "unstable-bomber"
+      ]
+    },
+    {
+      "id": "acs12",
+      "name": "ACS12",
+      "type": "shotgun",
+      "rarity": "rare",
+      "notes": "Base shotgun chassis.",
+      "craftingStation": "gear-workbench",
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "commonArchetypes": [
+        "shrapnel",
+        "unstable-bomber"
+      ]
+    },
+    {
+      "id": "acs12-netherworld",
+      "name": "ACS12 — Netherworld",
+      "type": "shotgun",
+      "rarity": "legendary",
+      "notes": "Named legendary ACS12 variant.",
+      "craftingStation": "advanced-gear-workbench",
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "commonArchetypes": [
+        "shrapnel",
+        "unstable-bomber"
+      ]
     }
   ],
-  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries. Turret/emplacement 'heavy weapons' like Gatling Cannons and plasma-round turrets are catalogued under Blueprints → Defense instead, since they're placed structures rather than carried weapons."
+  "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (67 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead."
 }

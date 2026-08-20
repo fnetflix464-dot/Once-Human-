@@ -6,6 +6,7 @@
 const DATA_FILES = {
   meta: "data/meta.json",
   weapons: "data/weapons.json",
+  armor: "data/armor.json",
   mods: "data/mods.json",
   blueprints: "data/blueprints.json",
   stations: "data/stations.json",
@@ -23,6 +24,7 @@ const DATA_FILES = {
 const TABS = [
   { id: "home", label: "Overview" },
   { id: "weapons", label: "Weapons" },
+  { id: "armor", label: "Armor" },
   { id: "mods", label: "Mods" },
   { id: "blueprints", label: "Blueprints" },
   { id: "stations", label: "Stations" },
@@ -38,7 +40,7 @@ const TABS = [
 ];
 
 // Tabs whose cards open a dedicated detail page.
-const DETAIL_TABS = new Set(["weapons", "mods", "blueprints", "stations", "builds", "classes", "memetics", "deviants", "crops", "food", "bosses"]);
+const DETAIL_TABS = new Set(["weapons", "armor", "mods", "blueprints", "stations", "builds", "classes", "memetics", "deviants", "crops", "food", "bosses"]);
 
 const ARCHETYPE_GROUP_NAME = {
   shrapnel: "Shrapnel",
@@ -101,6 +103,8 @@ function buildIndexes() {
   idx.weapons = d.weapons.weapons.map(w => ({ ...w, _key: keyFor(w) }));
   idx.weaponTypeById = Object.fromEntries(d.weapons.weaponTypes.map(t => [t.id, t]));
 
+  idx.armorSets = d.armor.sets.map(s => ({ ...s, _key: slugify(s.name) }));
+
   idx.modGroups = d.mods.groups.map(g => ({ ...g, _key: slugify(g.effect) }));
   idx.mods = [];
   idx.modGroups.forEach(g => {
@@ -142,6 +146,7 @@ function buildIndexes() {
 }
 
 function findWeapon(key) { return idx.weapons.find(w => w._key === key); }
+function findArmorSet(key) { return idx.armorSets.find(s => s._key === key); }
 function findMod(key) { return idx.mods.find(m => m._key === key); }
 function findModGroup(key) { return idx.modGroups.find(g => g._key === key); }
 function findBlueprintCategory(key) { return idx.blueprintCategories.find(c => c._key === key); }
@@ -274,7 +279,7 @@ function render() {
     panel.innerHTML = renderDetail(state.active, state.detailId);
   } else {
     const renderers = {
-      home: renderHome, weapons: renderWeapons, mods: renderMods, blueprints: renderBlueprints,
+      home: renderHome, weapons: renderWeapons, armor: renderArmor, mods: renderMods, blueprints: renderBlueprints,
       stations: renderStations, builds: renderBuilds, memetics: renderMemetics, deviants: renderDeviants,
       crops: renderCrops, food: renderFood, bosses: renderBosses, regions: renderRegions,
       updates: renderUpdates, sources: renderSources
@@ -297,7 +302,7 @@ function wireCardClicks(root) {
 
 function renderDetail(tab, id) {
   const renderers = {
-    weapons: renderWeaponDetail, mods: renderModDetail, blueprints: renderBlueprintDetail,
+    weapons: renderWeaponDetail, armor: renderArmorSetDetail, mods: renderModDetail, blueprints: renderBlueprintDetail,
     stations: renderStationDetail, builds: renderBuildDetail, classes: renderArchetypeDetail,
     memetics: renderMemeticDetail, deviants: renderDeviantDetail, crops: renderCropDetail,
     food: renderFoodDetail, bosses: renderBossDetail
@@ -316,6 +321,7 @@ function renderHome() {
   const meta = state.data.meta;
   const counts = {
     weapons: idx.weapons.length,
+    armorSets: idx.armorSets.length,
     mods: idx.mods.length,
     deviants: idx.deviants.length,
     crops: idx.crops.length + idx.livestock.length,
@@ -332,6 +338,7 @@ function renderHome() {
     </div>
     <div class="grid">
       ${statCard("Weapons", counts.weapons, "weapons")}
+      ${statCard("Armor Sets", counts.armorSets, "armor")}
       ${statCard("Named Mods", counts.mods, "mods")}
       ${statCard("Deviants & Livestock", counts.deviants, "deviants")}
       ${statCard("Crops & Animals", counts.crops, "crops")}
@@ -431,6 +438,58 @@ function renderWeaponDetail(key) {
     ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc(b.role)}</span></div><p>${esc(b.summary)}</p></div>`).join("")}</div></div>` : ""}
 
     ${backLink("weapons", "Weapons")}
+  `;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Armor                                                                   */
+/* ---------------------------------------------------------------------- */
+
+function renderArmor() {
+  const a = state.data.armor;
+  const sets = idx.armorSets.filter(s => matchesQuery(s.name + (s.bonus || "") + (s.playstyle || "")));
+  return `
+    <h2>Armor</h2>
+    <p class="intro">${esc(a.overview)}</p>
+    <div class="section-block">
+      <h3>Attributes</h3>
+      <div class="grid">
+        ${a.attributes.map(x => `<div class="card"><h3>${esc(x.name)}</h3><p>${esc(x.description)}</p></div>`).join("")}
+      </div>
+      <p class="intro">${esc(a.craftingNote)}</p>
+    </div>
+    <div class="section-block">
+      <h3>Armor Sets <span class="tag">${sets.length}</span></h3>
+      <div class="grid">
+        ${sets.map(s => `
+          ${cardOpen("armor", s._key)}
+            <h3>${esc(s.name)}</h3>
+            <div class="meta"><span class="tag tier-${s.rarity === "legendary" ? "S" : ""}">${esc(capitalize(s.rarity))}</span><span class="tag">${esc(s.pieces)}pc</span><span class="tag">${esc(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
+            ${s.bonus ? `<p>${esc(s.bonus)}</p>` : `<p class="intro" style="margin:4px 0 0">Set bonus text not confirmed by available sources — see the note below.</p>`}
+          </div>
+        `).join("") || emptyState()}
+      </div>
+      <p class="intro" style="margin-top:14px">${esc(a.note)}</p>
+    </div>
+  `;
+}
+
+function renderArmorSetDetail(key) {
+  const s = findArmorSet(key);
+  if (!s) return null;
+  return `
+    ${breadcrumb("armor", "Armor", s.name)}
+    <h2>${esc(s.name)}</h2>
+    <div class="meta" style="margin-bottom:10px"><span class="tag">${esc(capitalize(s.rarity))}</span><span class="tag">${esc(s.pieces)} pieces</span><span class="tag">${esc(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
+    ${s.bonus ? `<p>${esc(s.bonus)}</p>` : `<p class="intro">Set bonus text not confirmed by available sources for this set.</p>`}
+    ${s.playstyle ? `<div class="section-block"><h3>Best for</h3><p class="intro" style="margin-top:0">${esc(s.playstyle)}</p></div>` : ""}
+    ${s.notes ? `<p class="intro">${esc(s.notes)}</p>` : ""}
+    <div class="section-block">
+      <h3>Attributes on this armor</h3>
+      <ul>${state.data.armor.attributes.map(x => `<li><strong>${esc(x.name)}:</strong> ${esc(x.description)}</li>`).join("")}</ul>
+      <p class="intro">${esc(state.data.armor.craftingNote)}</p>
+    </div>
+    ${backLink("armor", "Armor")}
   `;
 }
 

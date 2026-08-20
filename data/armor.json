@@ -1,0 +1,76 @@
+{
+  "overview": "Armor covers 6 body slots — Head, Face, Torso, Legs, Hands and Feet — and its core attributes are Max HP, Damage Reduction, Pollution Resistance and Psi Intensity, on top of a Durability stat that depletes as you take damage (an armor piece breaks and becomes unusable at 0 Durability, though it can be repaired). Wearing multiple pieces from the same named Armor Set grants stacking set bonuses at 2/4/6-piece thresholds that differ per set. Once Human's full armor catalog spans 159 pieces across 20 named sets (per oncehumandb.com).",
+  "attributes": [
+    { "name": "Max HP", "description": "Flat or percentage increase to maximum health; scales with rarity and using higher-rarity hides as crafting materials." },
+    { "name": "Damage Reduction", "description": "Percentage reduction to incoming damage; also scales with hide rarity used in crafting." },
+    { "name": "Pollution Resistance", "description": "Reduces the rate you accumulate Pollution/Mental Pollution in irradiated or RaidZone areas." },
+    { "name": "Psi Intensity", "description": "Boosts status-effect (Frost/Burn/Shock etc.) potency for the wearer." },
+    { "name": "Durability", "description": "Depletes as the piece absorbs damage; upgradeable via the Gear Workbench: Customization tech node for +30% Max Durability. Reaches 0 → the piece breaks until repaired." }
+  ],
+  "craftingNote": "Armor is crafted at the same Gear Workbench tiers as weapons (see the Stations section) using hides, fabrics and other materials — higher-rarity hides yield better HP/Damage Reduction rolls on the finished piece.",
+  "sets": [
+    {
+      "name": "Bastille Set",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "+10% Weapon DMG while HP is above 70%, +15% Reload Efficiency. Crouching for 0.5s enters a Bastille state for +40% Weapon DMG, at the cost of disabled sprint and doubled stamina cost for 3s after leaving it. The 4-piece bonus stacks Armor after exiting Bastille (1/sec, up to 60), each stack converting to a 1% max-HP shield on re-entering Bastille.",
+      "playstyle": "Stationary high-damage turtling."
+    },
+    {
+      "name": "Heavy Duty Set",
+      "rarity": "epic",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "+10% Max HP, +8% Elemental DMG. Kills grant +20% Movement Speed for 2s and +40% Elemental DMG that decays over 8s.",
+      "playstyle": "Elemental/status build sustain and mobility."
+    },
+    {
+      "name": "Lonewolf Set",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "Every 2 crits stack 'Lone Shadow' (+6% Crit DMG per stack, up to 10 stacks = +60% Crit DMG). Landing a kill grants +8% Crit Rate for 2 seconds.",
+      "playstyle": "Solo crit-focused DPS."
+    },
+    {
+      "name": "Renegade Set",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "Hitting the same enemy repeatedly stacks 'Archer's Focus' (+4% Weakspot DMG per stack, up to 10). Reloading refunds 0.6% of the magazine per percentage of weakspot hits from the previous magazine, up to +30%.",
+      "playstyle": "Sustained single-target weakspot damage."
+    },
+    {
+      "name": "Savior Set",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "Reduces Activator/medicine cooldowns; at 3 pieces, automatically uses an Activator when needed; at 4 pieces, gains increased agility and defense after using an Activator.",
+      "playstyle": "Survivability / self-sustain."
+    },
+    {
+      "name": "Stormweaver Set",
+      "rarity": "legendary",
+      "pieces": 6,
+      "bonusCount": 4,
+      "bonus": "Taking damage builds 'Powered Armor' stacks (+4% DMG Reduction each, up to 6 = 24%); rolling consumes 3 stacks to trigger an explosion that knocks back nearby enemies and heals you.",
+      "playstyle": "Damage mitigation with an offensive panic button."
+    },
+    { "name": "Agent Set", "rarity": "epic", "pieces": 6, "bonusCount": 4 },
+    { "name": "Blackstone Set", "rarity": "legendary", "pieces": 6, "bonusCount": 4 },
+    { "name": "Blackstone Set (Cold)", "rarity": "legendary", "pieces": 6, "bonusCount": 4, "notes": "Cold-region variant of the Blackstone Set." },
+    { "name": "Blackstone Set (Heat)", "rarity": "legendary", "pieces": 6, "bonusCount": 4, "notes": "Heat-region variant of the Blackstone Set." },
+    { "name": "Blast Set", "rarity": "rare", "pieces": 6, "bonusCount": 4 },
+    { "name": "Falcon Set", "rarity": "epic", "pieces": 6, "bonusCount": 4 },
+    { "name": "Gravity Tide Set", "rarity": "legendary", "pieces": 6, "bonusCount": 2, "notes": "Tied to the Gravity Abyss season (patch 2.4.1)." },
+    { "name": "Raid Set", "rarity": "rare", "pieces": 6, "bonusCount": 4 },
+    { "name": "Rustic Set", "rarity": "uncommon", "pieces": 5, "bonusCount": 4, "notes": "Early/cheap 5-piece set." },
+    { "name": "Scout Set", "rarity": "rare", "pieces": 6, "bonusCount": 4 },
+    { "name": "Shelterer Set", "rarity": "legendary", "pieces": 6, "bonusCount": 4 },
+    { "name": "Snow Panther Set", "rarity": "epic", "pieces": 6, "bonusCount": 1 },
+    { "name": "Snowland Rustic Set", "rarity": "uncommon", "pieces": 5, "bonusCount": 4, "notes": "Winter-region Rustic Set variant." },
+    { "name": "Treacherous Tides Set", "rarity": "legendary", "pieces": 6, "bonusCount": 3 }
+  ],
+  "note": "The full bonus text for the last 14 sets above wasn't confirmed by the sources used to compile this database — piece count and rarity are confirmed (per oncehumandb.com), but check oncehumandb.com/armor-sets or the in-game Codex for their exact set-bonus wording."
+}

@@ -2,7 +2,8 @@
 
 An interactive, searchable reference database for **Once Human** (Starry Studio / NetEase) covering:
 
-- **Weapons** (62) — every weapon family across all 9 categories, with rarity, stats, and a dedicated page per weapon
+- **Weapons** (67) — every weapon family across all 9 categories, with rarity, stats, and a dedicated page per weapon
+- **Armor** (20 sets) — slots, attributes (HP/Damage Reduction/Pollution Resist/Psi Intensity/Durability), and set bonuses where confirmed
 - **Mods** (41 named) — weapon-effect mods (Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare, Marked), each with its own page and drop sources
 - **Blueprints** — the blueprint system plus construction/furniture/defense categories, each with a detail page listing unlock paths
 - **Stations** — every crafting/cooking station (Gear Workbench tiers, Stove tiers, etc.) with unlock requirements and materials
