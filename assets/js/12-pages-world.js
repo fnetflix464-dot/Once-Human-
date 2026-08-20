@@ -88,6 +88,10 @@ OH.renderStationDetail = function renderStationDetail(key) {
     ${s.unlock ? `<p><strong>Unlock:</strong> ${OH.esc(s.unlock)}</p>` : ""}
     ${s.materials ? `<p><strong>Materials to build:</strong> ${s.materials.map(OH.esc).join(", ")}</p>` : ""}
     <p><strong>Produces:</strong> ${OH.esc(s.produces || "")}</p>
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(s.verification)}
+    </div>
     ${OH.backLink("stations", "Stations")}
   `;
 };
@@ -190,6 +194,10 @@ OH.renderDeviantDetail = function renderDeviantDetail(key) {
         <li>${OH.esc(cm.power)}</li>
       </ul>
       <p class="intro">${OH.esc(cm.cookingLink)}</p>
+    </div>
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(v.abilityVerification)}
     </div>
     ${OH.backLink("deviants", "Deviants")}
   `;
@@ -405,6 +413,7 @@ OH.renderBossDetail = function renderBossDetail(key) {
       <div class="meta detail-meta"><span class="tag">${OH.esc(b.type)}</span></div>
       <p>${OH.esc(b.context)}</p>
       <div class="section-block"><h3>Drops</h3><p class="intro intro-tight">${OH.esc(b.drops)}</p></div>
+      <div class="section-block"><h3>Data verification</h3>${OH.verificationObjectBlock(b.verification)}</div>
       ${OH.backLink("bosses", "Bosses")}
     `;
   }
@@ -419,6 +428,10 @@ OH.renderBossDetail = function renderBossDetail(key) {
     <div class="section-block">
       <h3>Drops</h3>
       <p class="intro intro-tight">${OH.esc(b.drops)}</p>
+    </div>
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(b.verification)}
     </div>
     ${OH.backLink("bosses", "Bosses")}
   `;

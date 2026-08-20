@@ -140,9 +140,11 @@ OH.renderBuildDetail = function renderBuildDetail(key) {
       ${primary ? OH.obtainBadges(primary._obtainMethods) : `<p class="intro">No primary weapon listed.</p>`}
     </div>
 
-    ${OH.sourceBlock(null, OH.state.data.meta.lastCompiled, null)}
-    ${b.gearSources && b.gearSources.length ? OH.sourceBlock(null, null, b.gearSources.map(s => s.name)) : ""}
-    <p class="intro"><strong>Patch compatibility:</strong> compiled against game version ${OH.esc(OH.state.data.meta.gameVersionAtCompile)}; not independently re-verified against every subsequent patch. Check <a href="#updates">Updates</a> for anything that might have changed this build's weapon effect or mods since.</p>
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(b.verification)}
+      <p class="intro"><strong>Patch compatibility:</strong> compiled against game version ${OH.esc(OH.state.data.meta.gameVersionAtCompile)}; not independently re-verified against every subsequent patch. Check <a href="#updates">Updates</a> for anything that might have changed this build's weapon effect or mods since.</p>
+    </div>
 
     ${OH.backLink("builds", "Builds & Classes")}
   `;

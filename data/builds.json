@@ -46,7 +46,17 @@
           "url": "https://gamerant.com/once-human-best-shrapnel-build/"
         }
       ],
-      "gearVerification": "community"
+      "gearVerification": "community",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "bluestacks-shrapnel",
+          "gamerant-shrapnel"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Armor/food/deviant recommendations traced to named community build guides (see sourceIds)."
+      }
     },
     {
       "id": "power-surge",
@@ -83,7 +93,17 @@
           "url": "https://sportskeeda.com/mmo/once-human-power-surge-build-guide-bis-gear-deviant"
         }
       ],
-      "gearVerification": "community"
+      "gearVerification": "community",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "gameleap-power-surge",
+          "sportskeeda-power-surge"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Armor/food/deviant recommendations traced to named community build guides (see sourceIds)."
+      }
     },
     {
       "id": "frost-vortex",
@@ -122,7 +142,17 @@
           "url": "https://www.sportskeeda.com/mmo/once-human-frost-vortex-build-guide-bis-gear-armor"
         }
       ],
-      "gearVerification": "community"
+      "gearVerification": "community",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "vortexgaming-frost-vortex",
+          "sportskeeda-frost-vortex"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Armor/food/deviant recommendations traced to named community build guides (see sourceIds)."
+      }
     },
     {
       "id": "bounce",
@@ -158,7 +188,17 @@
           "url": "https://game8.co/games/Once-Human/archives/469252"
         }
       ],
-      "gearVerification": "community"
+      "gearVerification": "community",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "theriagames-bounce",
+          "game8-bounce"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Armor/food/deviant recommendations traced to named community build guides (see sourceIds)."
+      }
     },
     {
       "id": "fast-gunner-lmg",
@@ -199,7 +239,17 @@
           "url": "https://upcomer.com/fast-gunner-lmg-build-for-maximum-crit-damage-in-once-human-70k-dps/"
         }
       ],
-      "gearVerification": "community"
+      "gearVerification": "community",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "gamerant-fast-gunner",
+          "upcomer-fast-gunner"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Armor/food/deviant recommendations traced to named community build guides (see sourceIds)."
+      }
     }
   ],
   "note": "Builds combine a weapon effect archetype, a weapon, mods and Tech Tree nodes into a cohesive loadout. See the Builds & Classes section for archetype summaries and the Mods section for full mod effect details."

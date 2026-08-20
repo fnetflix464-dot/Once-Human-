@@ -48,7 +48,16 @@
           "effect": "3s after exiting Bastille state, gain 1 stack of Armor per second (up to 60). Each stack of Armor grants a Shield equal to 1% of max HP while in the Bastille state."
         }
       ],
-      "playstyle": "Stationary high-damage turtling."
+      "playstyle": "Stationary high-damage turtling.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Heavy Duty Set",
@@ -73,7 +82,16 @@
           "effect": "Each enemy within 5m grants DMG Reduction +4%, stacking up to 4 times."
         }
       ],
-      "playstyle": "Elemental/status build sustain and mobility."
+      "playstyle": "Elemental/status build sustain and mobility.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Lonewolf Set",
@@ -98,7 +116,16 @@
           "effect": "Increases max Lone Shadow stacks to 10. After reloading, Crit Rate +10% for 2s."
         }
       ],
-      "playstyle": "Solo crit-focused DPS."
+      "playstyle": "Solo crit-focused DPS.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Renegade Set",
@@ -123,7 +150,16 @@
           "effect": "Reloading loads an extra 0.6% ammunition per 1% of the previous magazine's shots that hit a weakspot, up to +30%."
         }
       ],
-      "playstyle": "Sustained single-target weakspot damage."
+      "playstyle": "Sustained single-target weakspot damage.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Savior Set",
@@ -148,7 +184,16 @@
           "effect": "Automatically uses the lowest-grade Treatment item in your backpack when HP drops below 30% (40s cooldown)."
         }
       ],
-      "playstyle": "Survivability / self-sustain."
+      "playstyle": "Survivability / self-sustain.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Stormweaver Set",
@@ -173,7 +218,16 @@
           "effect": "Rolling consumes 3 Powered Armor stacks to trigger a knockback explosion; each enemy hit restores HP +5%, up to 20% (10s cooldown)."
         }
       ],
-      "playstyle": "Damage mitigation with an offensive panic button."
+      "playstyle": "Damage mitigation with an offensive panic button.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Agent Set",
@@ -198,7 +252,16 @@
           "effect": "Killing an enemy grants Reload Efficiency +20% (plus Fire Rate +10% on a Weakspot kill) until you next reload."
         }
       ],
-      "playstyle": "Precision weakspot shooting."
+      "playstyle": "Precision weakspot shooting.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Blackstone Set",
@@ -223,21 +286,48 @@
           "effect": "At 5 Warm Sensation stacks you're considered Warm; between 10°C and 30°C, gain an extra Elemental DMG +7%."
         }
       ],
-      "playstyle": "Temperature-dependent elemental damage."
+      "playstyle": "Temperature-dependent elemental damage.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Blackstone Set (Cold)",
       "rarity": "legendary",
       "pieces": 6,
       "bonusCount": 4,
-      "notes": "Cold-region variant of the Blackstone Set. Exact bonus text not independently verified."
+      "notes": "Cold-region variant of the Blackstone Set. Exact bonus text not independently verified.",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Bonus text could not be independently confirmed."
+      }
     },
     {
       "name": "Blackstone Set (Heat)",
       "rarity": "legendary",
       "pieces": 6,
       "bonusCount": 4,
-      "notes": "Heat-region variant of the Blackstone Set. Exact bonus text not independently verified."
+      "notes": "Heat-region variant of the Blackstone Set. Exact bonus text not independently verified.",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Bonus text could not be independently confirmed."
+      }
     },
     {
       "name": "Blast Set",
@@ -262,7 +352,16 @@
           "effect": "A Melee kill instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)."
         }
       ],
-      "playstyle": "Melee burst and mobility."
+      "playstyle": "Melee burst and mobility.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Falcon Set",
@@ -287,7 +386,16 @@
           "effect": "Killing an enemy instantly restores 30 Stamina and grants Movement Speed +20% for 2s (3s cooldown)."
         }
       ],
-      "playstyle": "Mobile crit build."
+      "playstyle": "Mobile crit build.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Gravity Tide Set",
@@ -304,7 +412,16 @@
           "effect": "Magazine Capacity +15%."
         }
       ],
-      "notes": "Tied to the Gravity Abyss season (patch 2.4.1); only 2 confirmed bonus thresholds found."
+      "notes": "Tied to the Gravity Abyss season (patch 2.4.1); only 2 confirmed bonus thresholds found.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Raid Set",
@@ -329,7 +446,16 @@
           "effect": "Stamina cost -30% when gliding and rolling."
         }
       ],
-      "playstyle": "Farming/gathering efficiency."
+      "playstyle": "Farming/gathering efficiency.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Rustic Set",
@@ -354,7 +480,16 @@
           "effect": "Gathering Speed +20%."
         }
       ],
-      "notes": "Early/cheap 5-piece set."
+      "notes": "Early/cheap 5-piece set.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Scout Set",
@@ -379,7 +514,16 @@
           "effect": "Sprint Speed +12% and Stamina Recovery Speed +20% while below 50% HP."
         }
       ],
-      "playstyle": "Stealth."
+      "playstyle": "Stealth.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Shelterer Set",
@@ -404,7 +548,16 @@
           "effect": "Increases max Deviant Energy stacks by 10; a Weakspot hit grants 2 stacks instead of 1."
         }
       ],
-      "playstyle": "Elemental/status stacking."
+      "playstyle": "Elemental/status stacking.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Snow Panther Set",
@@ -417,7 +570,16 @@
           "effect": "Torso DMG Reduction +10%."
         }
       ],
-      "notes": "Only one bonus threshold could be independently confirmed; the rest are not verified."
+      "notes": "Only one bonus threshold could be independently confirmed; the rest are not verified.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Snowland Rustic Set",
@@ -442,7 +604,16 @@
           "effect": "Gathering Speed +20%."
         }
       ],
-      "notes": "Winter-region Rustic Set variant."
+      "notes": "Winter-region Rustic Set variant.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     },
     {
       "name": "Treacherous Tides Set",
@@ -463,7 +634,16 @@
           "effect": "Logging and Mining Speed +25%."
         }
       ],
-      "notes": "No confirmed 1-piece bonus for this set."
+      "notes": "No confirmed 1-piece bonus for this set.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Per-piece bonus text per oncehumandb.com."
+      }
     }
   ],
   "note": "All 20 sets now have sourced bonus text (per-piece breakdowns from oncehumandb.com), except Blackstone Set (Cold) and (Heat), whose exact wording wasn't independently found — they're seasonal/regional reskins of the base Blackstone Set and likely follow the same structure with a different temperature band."

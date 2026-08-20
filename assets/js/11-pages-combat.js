@@ -117,6 +117,11 @@ OH.renderWeaponDetail = function renderWeaponDetail(key) {
 
     ${builds.length ? `<div class="section-block"><h3>Used in builds</h3><div class="grid">${builds.map(b => `<div class="card"><h3>${OH.link("builds", b._key, b.name)}</h3><div class="meta"><span class="tag">${esc11(b._role)}</span><span class="tag">${esc11(b.role)}</span></div><p>${esc11(b.summary)}</p></div>`).join("")}</div></div>` : ""}
 
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(w.verification)}
+    </div>
+
     ${OH.backLink("weapons", "Weapons")}
   `;
 };
@@ -190,6 +195,10 @@ OH.renderArmorSetDetail = function renderArmorSetDetail(key) {
       <h3>Attributes on this armor</h3>
       <ul>${OH.state.data.armor.attributes.map(x => `<li><strong>${esc11(x.name)}:</strong> ${esc11(x.description)}</li>`).join("")}</ul>
       <p class="intro">${esc11(OH.state.data.armor.craftingNote)}</p>
+    </div>
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(s.verification)}
     </div>
     ${OH.backLink("armor", "Armor")}
   `;
@@ -305,6 +314,10 @@ OH.renderModDetail = function renderModDetail(key) {
       <p class="intro intro-tight">${esc11(mod.groupObtainedFrom)}</p>
     </div>
     ${weapons.length ? `<div class="section-block"><h3>Weapons with this confirmed built-in effect</h3><div class="grid">${weapons.map(w => `<div class="card"><h3>${OH.link("weapons", w._key, w.name)}</h3><p>${esc11(w.notes || "")}</p></div>`).join("")}</div></div>` : ""}
+    <div class="section-block">
+      <h3>Data verification</h3>
+      ${OH.verificationObjectBlock(group ? group.effectVerification : null)}
+    </div>
     ${OH.backLink("mods", "Mods")}
   `;
 };

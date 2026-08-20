@@ -44,6 +44,7 @@ const food = loadJson("food.json");
 const bosses = loadJson("bosses.json");
 const regions = loadJson("regions.json");
 const updates = loadJson("updates.json");
+const sources = loadJson("sources.json");
 
 if (errors.length) {
   // Can't do any further structural checks if a file failed to parse at all.
@@ -82,6 +83,24 @@ function checkVerification(status, where) {
   }
 }
 
+// Validates the shared {status, sourceIds, lastVerified, verifiedPatch, notes?}
+// shape used across weapons/armor/mods/bosses/stations/builds/deviants: status
+// must be a legend id, every sourceId must resolve to a real sources.json
+// entry, and the two date/patch fields must be present (even if their value
+// is honestly "unverified"-flavored — the point is the shape is never
+// silently missing pieces on a record that claims to have it at all).
+const validSourceIds = new Set((sources && sources.sources || []).map(s => s.id));
+function checkVerificationObject(obj, where) {
+  if (!obj) return;
+  checkVerification(obj.status, where);
+  if (!Array.isArray(obj.sourceIds)) fail(`${where}: verification.sourceIds must be an array`);
+  else obj.sourceIds.forEach(id => {
+    if (!validSourceIds.has(id)) fail(`${where}: verification.sourceIds references unknown source id "${id}"`);
+  });
+  if (!obj.lastVerified) fail(`${where}: verification missing lastVerified`);
+  if (!obj.verifiedPatch) fail(`${where}: verification missing verifiedPatch`);
+}
+
 /* ---------------------------------------------------------------------- */
 /* Weapons                                                                 */
 /* ---------------------------------------------------------------------- */
@@ -101,6 +120,7 @@ weapons.weapons.forEach((w, i) => {
       fail(`weapons.${w.id}.confirmedArchetype references unknown archetype "${aid}"`);
     }
   });
+  checkVerificationObject(w.verification, `weapons.${w.id}.verification`);
 });
 const validWeaponTypeIds = new Set((weapons.weaponTypes || []).map(t => t.id));
 weapons.weapons.forEach(w => {
@@ -113,6 +133,7 @@ weapons.weapons.forEach(w => {
 armor.sets.forEach((s, i) => {
   if (!s.name) fail(`armor.sets[${i}] missing "name"`);
   checkRarity(s, `armor.${s.name}`);
+  checkVerificationObject(s.verification, `armor.${s.name}.verification`);
 });
 
 /* ---------------------------------------------------------------------- */
@@ -126,6 +147,7 @@ mods.groups.forEach(g => {
     if (seenModNames.has(m.name)) fail(`Duplicate mod name "${m.name}" within group "${g.effect}"`);
     seenModNames.add(m.name);
   });
+  checkVerificationObject(g.effectVerification, `mods.${g.effect}.effectVerification`);
 });
 
 /* ---------------------------------------------------------------------- */
@@ -154,6 +176,7 @@ builds.builds.forEach(b => {
     if (!allModNames.has(name)) warn(`builds.${b.id}.suggestedMods references mod "${name}" not found in mods.json (may be a legacy/renamed mod)`);
   });
   (b.gearSources || []).forEach(s => checkUrl(s.url, `builds.${b.id}.gearSources`));
+  checkVerificationObject(b.verification, `builds.${b.id}.verification`);
 });
 
 /* ---------------------------------------------------------------------- */
@@ -172,6 +195,7 @@ deviants.deviants.forEach((v, i) => {
     }
   }
   checkVerification(v.locationVerification, `deviants.${v.name}.locationVerification`);
+  checkVerificationObject(v.abilityVerification, `deviants.${v.name}.abilityVerification`);
 });
 if (deviants.locationSource) checkUrl(deviants.locationSource.url, "deviants.locationSource");
 
@@ -181,6 +205,7 @@ if (deviants.locationSource) checkUrl(deviants.locationSource.url, "deviants.loc
 [...bosses.greatOnes, ...bosses.seasonalAndEventBosses].forEach((b, i) => {
   if (!b.name) fail(`bosses entry [${i}] missing "name"`);
   if (bosses.greatOnes.includes(b) && !b.location) fail(`bosses.${b.name} (Great One) missing "location"`);
+  checkVerificationObject(b.verification, `bosses.${b.name}.verification`);
 });
 
 /* ---------------------------------------------------------------------- */
@@ -188,13 +213,20 @@ if (deviants.locationSource) checkUrl(deviants.locationSource.url, "deviants.loc
 /* ---------------------------------------------------------------------- */
 [...stations.weaponAndGearStations, ...stations.cookingStations, ...stations.otherStations].forEach(s => {
   checkVerification(s.unlockVerification, `stations.${s.id}.unlockVerification`);
+  checkVerificationObject(s.verification, `stations.${s.id}.verification`);
 });
 
 /* ---------------------------------------------------------------------- */
 /* Techtree — verification values                                         */
 /* ---------------------------------------------------------------------- */
-(techtree.unlockMethods || []).forEach(m => checkVerification(m.verification, `techtree.unlockMethods.${m.id}`));
-(techtree.branches || []).forEach(b => checkVerification(b.verification, `techtree.branches.${b.id}`));
+(techtree.unlockMethods || []).forEach(m => {
+  checkVerification(m.verification, `techtree.unlockMethods.${m.id}`);
+  (m.sourceIds || []).forEach(id => { if (!validSourceIds.has(id)) fail(`techtree.unlockMethods.${m.id}.sourceIds references unknown source id "${id}"`); });
+});
+(techtree.branches || []).forEach(b => {
+  checkVerification(b.verification, `techtree.branches.${b.id}`);
+  (b.sourceIds || []).forEach(id => { if (!validSourceIds.has(id)) fail(`techtree.branches.${b.id}.sourceIds references unknown source id "${id}"`); });
+});
 checkVerification(techtree.nodeDataStatus, "techtree.nodeDataStatus");
 (techtree.sources || []).forEach(s => checkUrl(s.url, "techtree.sources"));
 
@@ -216,6 +248,21 @@ if (crops.deviatedCrops) {
 if (!meta.currentGameVersion) fail("meta.json missing currentGameVersion");
 if (!meta.lastVerifiedDate) fail("meta.json missing lastVerifiedDate");
 if (!meta.verificationLegend || !meta.verificationLegend.length) fail("meta.json missing verificationLegend");
+
+/* ---------------------------------------------------------------------- */
+/* sources.json — the registry itself                                     */
+/* ---------------------------------------------------------------------- */
+if (!sources || !sources.sources || !sources.sources.length) {
+  fail("sources.json missing or empty — every verification.sourceIds reference depends on this file");
+} else {
+  const VALID_SOURCE_TYPES = new Set(["official", "database", "wiki", "community"]);
+  checkDuplicateIds(sources.sources, "id", "sources");
+  sources.sources.forEach(s => {
+    checkUrl(s.url, `sources.${s.id}`);
+    if (!VALID_SOURCE_TYPES.has(s.type)) fail(`sources.${s.id} has invalid type "${s.type}" — must be one of: ${[...VALID_SOURCE_TYPES].join(", ")}`);
+    if (!s.lastChecked) fail(`sources.${s.id} missing lastChecked`);
+  });
+}
 
 /* ---------------------------------------------------------------------- */
 /* Report                                                                  */

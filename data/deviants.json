@@ -12,28 +12,68 @@
       "category": "Crafting",
       "ability": "Instantly repairs the gear with the lowest durability.",
       "location": "Scorcher elite enemy defeat",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Atomic Lighter",
       "category": "Crafting",
       "ability": "Creates materials for explosive tactical items.",
       "location": "Securement Silo – EX1",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Atomic Snail",
       "category": "Crafting",
       "ability": "Generates components for elixir crafting.",
       "location": "Stardust Advent III crates from Prime Wars",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Butterfly's Emissary",
       "category": "Combat",
       "ability": "Rushes enemies from range and marks weak points for amplified damage.",
       "location": "Eve of Evolution tutorial, GAIA Research Center Ruins, or Securement Silo – Alpha",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Buzzy Bee",
@@ -41,14 +81,34 @@
       "ability": "Enhances plant mutation probability during cultivation; can auto-plant crops at a farm.",
       "crossRef": "Boosts crop mutation odds and can auto-plant — see the Crops section.",
       "location": "Sunbury Farm, Evergreen Vineyard, Brewery Estate",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "By-The-Wind",
       "category": "Combat",
       "ability": "Generates gravity lifts for vertical movement and flight.",
       "location": "Prime War events",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Chefosaurus Rex",
@@ -56,28 +116,68 @@
       "ability": "Boosts effectiveness of food preparation at cooking stations.",
       "crossRef": "Improves cooking station output — see the Stations section.",
       "location": "There's a Dragon There task or Securement Silo – PHI",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Disco Ball",
       "category": "Crafting",
       "ability": "Produces materials that extend whim elixir duration.",
       "location": "Hale's Moving House or Disco Public Crisis events",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Dr. Teddy",
       "category": "Combat",
       "ability": "Heals allies and revives downed teammates (PvP).",
       "location": "Securement Silo – THETA",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Dreamcatcher",
       "category": "Crafting",
       "ability": "Creates components for cobweb trap elixirs.",
       "location": "Arachsiam at Mirage Monolith",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Electric Eel",
@@ -85,63 +185,153 @@
       "ability": "Increases generator power output capacity.",
       "crossRef": "Boosts generator capacity — see the Stations and Blueprints sections.",
       "location": "Fishing",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Enchanting Void",
       "category": "Combat",
       "ability": "Amplifies melee damage taken by affected targets (PvE).",
       "location": "Securement Silo – THETA",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Extradimensional Cat",
       "category": "Territory",
       "ability": "Accelerates health recovery during rest periods.",
       "location": "Teleportation Towers near Union Strongholds",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Festering Gel",
       "category": "Combat",
       "ability": "Creates fortifications that block ranged attacks and heal allies.",
       "location": "Monolith of Greed and Treant at Gaia Cliff Monolith",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Fetch-A-Lot Bunny",
       "category": "Territory",
       "ability": "Automatically harvests shrubs and vegetation.",
       "location": "Dracaena at Red Sands, Bald Cypress at Iron River",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Flame Essence",
       "category": "Territory",
       "ability": "Enhances furnace production efficiency.",
       "location": "Hearst Industries or Securement Silo – PSI",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Frog the Leaper",
       "category": "Crafting",
       "ability": "Generates jumping-enhancement elixir materials.",
       "location": "Stacked cars at Riverhart Harbor, Rotten Manor",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Gazocchio",
       "category": "Territory/Crafting",
       "ability": "Guards territory and produces shadow-dispelling items (Way of Winter).",
       "location": "Part of the Deviant task from Lowe",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Gingerbread House",
       "category": "Territory",
       "ability": "Produces materials for object transformation items.",
       "location": "Morphic Crates or Morphic Decoy task",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Growshroom",
@@ -149,63 +339,153 @@
       "ability": "Auto-plants seeds and accelerates crop growth.",
       "crossRef": "Auto-plants seeds and speeds crop growth — see the Crops section.",
       "location": "Wild Mushroom harvesting",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Grumpy Bulb",
       "category": "Combat",
       "ability": "Disrupts enemy hostility, causing them to infight.",
       "location": "Mature Onion Seed at your base",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "H37",
       "category": "Territory",
       "ability": "Explores settlements and collects loot crate resources.",
       "location": "Fragments of Memory task or Securement Silo – ALPHA",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Harveseed",
       "category": "Crafting",
       "ability": "Generates emergency health-restoration elixir materials.",
       "location": "Treant at Gaia Cliff Monolith",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Hug-In-A-Bowl",
       "category": "Crafting",
       "ability": "Produces ingredients for sanity-restoring cuisine.",
       "location": "Hug-in-a-Bowl food crafting",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Hydronaut Fish",
       "category": "Territory",
       "ability": "Gathers seawater and produces fish (Way of Winter).",
       "location": "Deviation: Hydronaut Fish task from Lowe",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Ice Pot",
       "category": "Crafting",
       "ability": "Creates materials for ice-based tactical items (Way of Winter).",
       "location": "Deviation: Ice Pot task from Lowe",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Invincible Sun",
       "category": "Combat",
       "ability": "Releases blazing energy rays that cause burn damage (Way of Winter).",
       "location": "Securement Silo – Delta",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Lethal Rabbit",
       "category": "Territory",
       "ability": "Hunts animals and extracts resources from corpses.",
       "location": "Deadsville, Heart Island, Evergreen",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Logging Beaver",
@@ -213,91 +493,221 @@
       "ability": "Efficiently fells trees and harvests lumber; can occasionally find furniture items.",
       "crossRef": "Can occasionally turn up furniture blueprints while foraging — see the Blueprints section.",
       "location": "Meyer's Market, Iron River, Broken Delta",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Lonewolf's Whisper",
       "category": "Combat",
       "ability": "Designates targets and spawns clones upon enemy defeat.",
       "location": "Shadow Hound in Monolith of Thirst",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Masonic Pyramid",
       "category": "Crafting",
       "ability": "Guarantees critical hits from stealth; alerts owner to aimed attacks (PvP).",
       "location": "Stronghold Conquests in Iron River",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Mini Feaster",
       "category": "Combat",
       "ability": "Summons tentacles that damage enemies and boost weapon damage.",
       "location": "Lord of the Quest task or Mist Zone events",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Mini Wonder",
       "category": "Combat",
       "ability": "Absorbs incoming bullets and provides ally buffs (duration/cooldown rebalanced in patch 3.0.2).",
       "location": "Other World Traveler task",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Mr. Wish",
       "category": "Combat",
       "ability": "Rapidly auto-fires a gun and marks targets with enhanced damage (PvP).",
       "location": "Securement Silo – SIGMA",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Nutcracker",
       "category": "Territory",
       "ability": "Patrols and defends territory with scaling attack power.",
       "location": "Forsaken Monolith after defeating Forsaken Giant (Mensdevoran)",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Orb Lightning",
       "category": "Crafting",
       "ability": "Enhances turret performance via crafted lightning items.",
       "location": "Rosetta Research Institutes, Military Bases",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Paper Doll",
       "category": "Territory",
       "ability": "Repairs damaged structures and filters during territory maintenance.",
       "location": "Various locations across Nalcott",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Party Monkey",
       "category": "Crafting",
       "ability": "Produces materials and self-repairs, though it attracts monster aggression.",
       "location": "Production Facility Public Events",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Polar Jelly",
       "category": "Combat",
       "ability": "Deals frost damage and reduces enemy movement speed.",
       "location": "Cargo Scramble events",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Pup Buddy",
       "category": "Crafting",
       "ability": "Generates weight-capacity-enhancement elixir components.",
       "location": "Jonathan at Greywater Camp or various locations",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Pyro Dino",
       "category": "Combat",
       "ability": "Launches AoE blaze attacks with burn potential (fire suppression significantly reduced in patch 3.0.2).",
       "location": "Securement Silo – PHI",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Rain Man",
@@ -305,63 +715,153 @@
       "ability": "Enhances crop vitality and provides irrigation water.",
       "crossRef": "Irrigates and boosts crop vitality — see the Crops section.",
       "location": "Harborside, Greywater Industrial Zone, Unmarked Settlement",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Rebecca",
       "category": "Territory",
       "ability": "Summons a musician that accelerates deviation power recovery.",
       "location": "LEA Research Lab final boss",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Shattered Maiden",
       "category": "Combat",
       "ability": "Fears and freezes enemies during combat.",
       "location": "Farmside Fright task or Securement Silo – THETA",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Snapshot",
       "category": "Combat",
       "ability": "Photographs enemies to increase damage they receive from weapons (Way of Winter).",
       "location": "Secret Servitor in Tundra Monolith",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Snow Globe",
       "category": "Crafting",
       "ability": "Produces snowball materials that cause freeze effects (PvE).",
       "location": "Securement Silo – PSI",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Snowsprite",
       "category": "Combat",
       "ability": "Summons frost crystals that explode for frost damage (Way of Winter).",
       "location": "Deviation: Snowsprite task from Lowe",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Space Turner",
       "category": "Crafting",
       "ability": "Creates teleportation keystones for relocating teammates.",
       "location": "Mystical Crates",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Strange Door",
       "category": "Crafting",
       "ability": "Generates portal materials enabling fast travel between locations.",
       "location": "Blackfell Region, In The Tall Grass task, Mystical Crates",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Tar Pudding",
       "category": "Territory",
       "ability": "Extracts crude oil and operates refining facilities (Way of Winter).",
       "location": "Avalanche Monolith in Vena Fjord",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "The Digby Boy",
@@ -369,89 +869,239 @@
       "ability": "Mines ore deposits once activated at high power; strong early-game pick.",
       "crossRef": "Strong early-game ore gatherer, pairs with gathering-boosting Tech Tree nodes (originally the Memetic system's Gathering branch) — see the Memetics section.",
       "location": "Deviation Expert task or Silver Ore mining",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Upper World Spawn",
       "category": "Crafting",
       "ability": "Produces materials for temporary invulnerability items (PvP).",
       "location": "Securement Silo – PSI",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Voodoo Doll",
       "category": "Combat",
       "ability": "Shares damage between the player and a designated ally or enemy.",
       "location": "Evergreen Vineyard, Fort Erie, hospitals",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Zeno-Purifier",
       "category": "Combat",
       "ability": "Teleports to perform melee attacks and grants the player teleportation.",
       "location": "Defeat 200 enemies task or various chests",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "ZapCam",
       "category": "Territory",
-      "ability": "Scans an area for enemies/loot (duration and range extended, cooldown increased in patch 3.0.2)."
+      "ability": "Scans an area for enemies/loot (duration and range extended, cooldown increased in patch 3.0.2).",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Zapamander",
       "category": "Combat",
-      "ability": "Morphed Deviation earnable from the Block Adventure event (patch 3.0.3)."
+      "ability": "Morphed Deviation earnable from the Block Adventure event (patch 3.0.3).",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Berserkosaurus Rex",
       "category": "Territory",
       "ability": "Increases cooking proficiency at cooking stations (near-identical effect to Chefosaurus Rex; kept as a separate confirmed entry rather than assumed duplicate).",
       "location": "Phase 2 of Clash at Blackfell",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Radiant One",
       "category": "Combat",
       "ability": "Provides aerial floating and a movement speed boost.",
       "location": "Phase 3 of The Last Stand of Prismverse's Clash",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Wish Box",
       "category": "Territory",
       "ability": "Transforms items placed inside it into random new items.",
       "location": "Morphic Crates or Severin VII-S2401",
-      "locationVerification": "community"
+      "locationVerification": "community",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Whalepup",
       "category": "Combat",
-      "ability": "Converts the battlefield into an underwater zone: both you and Whalepup deal increased damage, and enemies hit by its water currents are immobilized. Drops from the Chagas Weevil secret-room boss in Securement Silo Theta (Hard mode or higher)."
+      "ability": "Converts the battlefield into an underwater zone: both you and Whalepup deal increased damage, and enemies hit by its water currents are immobilized. Drops from the Chagas Weevil secret-room boss in Securement Silo Theta (Hard mode or higher).",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Soul Summoner",
       "category": "Combat",
-      "ability": "Summons a phantom firebird that deals massive damage. Drops from the final boss of Securement Silo EX1."
+      "ability": "Summons a phantom firebird that deals massive damage. Drops from the final boss of Securement Silo EX1.",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Director Fox",
       "category": "Territory",
-      "ability": "Taming Expert: boosts territory animals' Tameness and Maturity Growth Speed (stacks up to 100% with multiple Director Foxes). Placed in a Securement Unit, gives ranched animals a chance to produce twin offspring when breeding (consumes 1 Fine Meat). High drop chance from bosses in Iron River Lower Reaches and Securement Silo PSI."
+      "ability": "Taming Expert: boosts territory animals' Tameness and Maturity Growth Speed (stacks up to 100% with multiple Director Foxes). Placed in a Securement Unit, gives ranched animals a chance to produce twin offspring when breeding (consumes 1 Fine Meat). High drop chance from bosses in Iron River Lower Reaches and Securement Silo PSI.",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Cattiva",
       "category": "Crossover",
-      "ability": "Palworld collaboration companion. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date."
+      "ability": "Palworld collaboration companion. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date.",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Chillet",
       "category": "Crossover",
-      "ability": "Palworld collaboration companion. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date."
+      "ability": "Palworld collaboration companion. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date.",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     },
     {
       "name": "Chillet Ignis",
       "category": "Crossover",
-      "ability": "Palworld collaboration companion; fire-themed variant of Chillet. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date."
+      "ability": "Palworld collaboration companion; fire-themed variant of Chillet. Specific in-game ability not confirmed by available sources. Obtained via the Companion Check-In Event (Oct 30, 2025 - Jan 21, 2026) — this was a limited-time crossover and may no longer be obtainable as of this database's compile date.",
+      "abilityVerification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Ability description per community wikis; not independently confirmed against an official source."
+      }
     }
   ],
   "captureMethod": {

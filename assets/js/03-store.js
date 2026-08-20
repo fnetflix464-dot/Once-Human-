@@ -3,6 +3,7 @@ window.OH = window.OH || {};
 
 OH.DATA_FILES = {
   meta: "data/meta.json",
+  sources: "data/sources.json",
   weapons: "data/weapons.json",
   armor: "data/armor.json",
   attachments: "data/attachments.json",
@@ -205,4 +206,17 @@ OH.foodRecipeByLooseName = function (name) {
 OH.cropByIngredientName = function (ingredient) {
   const clean = String(ingredient).replace(/^Deviated\s+/i, "").replace(/\s*\(.*\)$/, "").trim().toLowerCase();
   return OH.idx.crops.find(c => clean.includes(c.name.toLowerCase()) || c.name.toLowerCase().includes(clean));
+};
+
+// --- source registry -------------------------------------------------------
+// data/sources.json is the single place a URL/name/type is ever written down;
+// every record's `verification.sourceIds` just points into it by id, so a
+// record never re-states a source's name/url (which would drift if that
+// source's entry ever changed).
+OH.findSource = function findSource(id) {
+  const list = (OH.state.data.sources && OH.state.data.sources.sources) || [];
+  return list.find(s => s.id === id);
+};
+OH.resolveSourceIds = function resolveSourceIds(ids) {
+  return (ids || []).map(OH.findSource).filter(Boolean);
 };

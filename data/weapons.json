@@ -76,7 +76,17 @@
       "rarity": "rare",
       "notes": "Base pistol chassis that named legendary variants are built from.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "de50-wildfire",
@@ -85,7 +95,17 @@
       "rarity": "legendary",
       "notes": "Confirmed unique ability: 60% chance to mark targets with the Bull's Eye debuff on hit. The go-to secondary weapon across multiple build guides (Shrapnel, Power Surge, Frost Vortex, Bounce) for its marking utility.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "de50-jaws",
@@ -96,7 +116,17 @@
       "notes": "Confirmed unique ability: critical hits count double, and killing an enemy boosts blast damage by 30% for 12 seconds. One of the higher-ranked legendary pistols.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "archetypeNote": "This weapon's proc is a standalone crit/blast-damage effect, not one of the 9 general weapon-effect archetypes tracked in Builds & Classes."
+      "archetypeNote": "This weapon's proc is a standalone crit/blast-damage effect, not one of the 9 general weapon-effect archetypes tracked in Builds & Classes.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "r500",
@@ -105,7 +135,17 @@
       "rarity": "rare",
       "notes": "Base pistol chassis that named legendary variants are built from.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "r500-hunter",
@@ -114,7 +154,17 @@
       "rarity": "epic",
       "notes": "Named R500 variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "r500-memento",
@@ -126,7 +176,16 @@
       "notes": "Confirmed base stats: 262 DMG, 145 RPM, 5-round magazine. Legendary pistol, solid backup-slot option.",
       "craftingStation": "advanced-gear-workbench",
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
-      "fireRate": 145
+      "fireRate": 145,
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "r500-hammerhead-shark",
@@ -137,7 +196,16 @@
       "craftingStation": "intermediate-gear-workbench",
       "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
       "damage": 235,
-      "fireRate": 145
+      "fireRate": 145,
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "mps5",
@@ -146,7 +214,17 @@
       "rarity": "rare",
       "notes": "Base SMG chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mps5-blue-tiger",
@@ -155,7 +233,17 @@
       "rarity": "epic",
       "notes": "Named MPS5 variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mps5-kumawink",
@@ -164,7 +252,17 @@
       "rarity": "epic",
       "notes": "Named MPS5 variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mps7",
@@ -173,7 +271,17 @@
       "rarity": "rare",
       "notes": "Base SMG chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mps7-div-evo",
@@ -182,7 +290,17 @@
       "rarity": "epic",
       "notes": "Named MPS7 variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mps7-outer-space",
@@ -192,7 +310,17 @@
       "tier": "S",
       "notes": "Confirmed centerpiece of the Power Surge Build — an SMG with a very high trigger rate for stacking Power Surge procs.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kvsbr",
@@ -201,7 +329,17 @@
       "rarity": "rare",
       "notes": "Base SMG chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kvsbr-little-jaws",
@@ -213,7 +351,16 @@
       "fireRate": 1000,
       "notes": "Legendary SMG with a very high fire rate for close-range fights.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "kvsbr-icy-rain",
@@ -223,7 +370,17 @@
       "tier": "B",
       "notes": "Named KV-SBR variant.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "socr",
@@ -232,7 +389,17 @@
       "rarity": "rare",
       "notes": "Base assault rifle chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "socr-last-valor",
@@ -245,7 +412,17 @@
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "confirmedArchetype": [
         "shrapnel"
-      ]
+      ],
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "This weapon's own built-in effect is independently confirmed across multiple sources."
+      }
     },
     {
       "id": "socr-outsider",
@@ -255,7 +432,17 @@
       "tier": "B",
       "notes": "High damage with decent fire rate and magazine size.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kam",
@@ -264,7 +451,17 @@
       "rarity": "rare",
       "notes": "Base assault rifle chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kam-crank",
@@ -273,7 +470,17 @@
       "rarity": "epic",
       "notes": "Moderate fire-rate KAM variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kam-abyss-glance",
@@ -285,7 +492,16 @@
       "fireRate": 600,
       "notes": "Confirmed centerpiece of the Frost Vortex Build. Legendary assault rifle, balanced damage and fire rate.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "m416",
@@ -294,7 +510,17 @@
       "rarity": "rare",
       "notes": "Standard assault rifle.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "aug",
@@ -303,7 +529,17 @@
       "rarity": "rare",
       "notes": "Standard assault rifle.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "aug-electron-cloud",
@@ -312,7 +548,17 @@
       "rarity": "epic",
       "notes": "Named AUG variant; flexibility adjusted in patch 2.4.1's balance pass.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "db12",
@@ -321,7 +567,17 @@
       "rarity": "rare",
       "notes": "Base shotgun chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "db12-backfire",
@@ -330,7 +586,17 @@
       "rarity": "epic",
       "notes": "Named DB12 variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "db12-raining-cash",
@@ -341,7 +607,16 @@
       "damage": "55x5 pellets",
       "notes": "Legendary shotgun, strong burst close-range damage.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "dbsg-doombringer",
@@ -350,7 +625,17 @@
       "rarity": "legendary",
       "notes": "Named legendary shotgun.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "s870-sandstorm",
@@ -359,7 +644,17 @@
       "rarity": "epic",
       "notes": "Named shotgun variant.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "aws338",
@@ -368,7 +663,17 @@
       "rarity": "rare",
       "notes": "Base sniper rifle chassis; the community also references a legendary variant of this line as 'Bullseye' or 'Bingo' depending on the source/version.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "aws338-bingo",
@@ -379,7 +684,16 @@
       "damage": 316,
       "notes": "Legendary sniper rifle, very high per-shot damage for weakspot hunting.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "aws338-black-panther",
@@ -391,7 +705,17 @@
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "confirmedArchetype": [
         "fortress-warfare"
-      ]
+      ],
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "This weapon's own built-in effect is independently confirmed across multiple sources."
+      }
     },
     {
       "id": "sn700",
@@ -400,7 +724,17 @@
       "rarity": "rare",
       "notes": "Accessible early-game sniper rifle chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "sn700-finale",
@@ -410,7 +744,17 @@
       "tier": "A",
       "notes": "Reverb-stacking legendary sniper; rebalanced in patch 3.0.2 (reverb stacks reduced to 4, damage scaling adjusted).",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "sn700-gulped-lore",
@@ -419,7 +763,17 @@
       "rarity": "epic",
       "notes": "Named SN700 variant, useful vs. bosses.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "hamr",
@@ -428,7 +782,17 @@
       "rarity": "rare",
       "notes": "Base sniper rifle chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "hamr-brahminy",
@@ -437,7 +801,17 @@
       "rarity": "legendary",
       "notes": "Confirmed centerpiece of the Bounce Build — 80% chance to trigger Bounce on Weakspot hits.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "hamr-crumble",
@@ -446,7 +820,17 @@
       "rarity": "epic",
       "notes": "Named HAMR variant, boss-oriented.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mg4",
@@ -457,7 +841,16 @@
       "fireRate": 700,
       "notes": "Base LMG, 75-round magazine.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "mg4-predator",
@@ -469,7 +862,16 @@
       "fireRate": 700,
       "notes": "Signature weapon for Fast Gunner builds; 75-round mag; community guides report firing roughly 200 rounds before reloading when built around Fast Gunner, though this specific figure hasn't been independently re-measured by this database.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "kvd",
@@ -478,7 +880,17 @@
       "rarity": "rare",
       "notes": "Base LMG chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kvd-boom-boom",
@@ -490,7 +902,16 @@
       "fireRate": 500,
       "notes": "100-round magazine; considered one of the two strongest weapons in the game.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "wrath-of-hades",
@@ -501,7 +922,16 @@
       "fireRate": 700,
       "notes": "Named legendary MG4 variant; 75-round magazine.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "mr-squid",
@@ -512,7 +942,16 @@
       "fireRate": 700,
       "notes": "75-round magazine legendary LMG.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "aurora-fort",
@@ -523,7 +962,16 @@
       "fireRate": 700,
       "notes": "90-round magazine, very high per-shot damage for an LMG.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "rustic-crossbow",
@@ -532,7 +980,17 @@
       "rarity": "standard",
       "notes": "The first weapon crafted during the tutorial; no unique abilities.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly."
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "recurve-bow",
@@ -541,7 +999,17 @@
       "rarity": "rare",
       "notes": "Early bow option.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "recurve-crossbow",
@@ -553,7 +1021,17 @@
       "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
       "confirmedArchetype": [
         "marked"
-      ]
+      ],
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "This weapon's own built-in effect is independently confirmed across multiple sources."
+      }
     },
     {
       "id": "compound-bow",
@@ -564,7 +1042,16 @@
       "damage": 310,
       "notes": "Top-tier PvE burst weapon; excellent weakspot/crit damage, silent shots. Obtainable from world weapon crates, among other sources.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "recursive-crossbow",
@@ -574,7 +1061,17 @@
       "tier": "S",
       "notes": "Unique aux-weapon utility: can increase crit rate of all weapons by 30% for 10 seconds.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "stun-baton",
@@ -585,7 +1082,16 @@
       "damage": 182,
       "notes": "80% chance to inflict the Power Surge status effect with light strikes/impacts; strong crowd-control pick.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "long-axe",
@@ -594,7 +1100,17 @@
       "rarity": "legendary",
       "notes": "Considered the top-ranked melee weapon in community guides.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "frozen-northern-pike",
@@ -603,7 +1119,17 @@
       "rarity": "legendary",
       "notes": "Confirmed melee option for the Frost Vortex Build: heavy attacks freeze the primary target and auto-generate a Frost Vortex once every 4 seconds.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "fabled-masamune",
@@ -612,7 +1138,17 @@
       "rarity": "legendary",
       "notes": "Grants +3% Crit Damage (up to +120%) for every 1% of durability above 50% — rewards keeping it well-maintained.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "scourge",
@@ -621,7 +1157,17 @@
       "rarity": "epic",
       "notes": "Named melee weapon.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kukri",
@@ -630,7 +1176,17 @@
       "rarity": "rare",
       "notes": "Named melee weapon.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "torch",
@@ -639,7 +1195,17 @@
       "rarity": "standard",
       "notes": "Early/utility melee weapon, doubles as a light source.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly."
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "wrench",
@@ -648,7 +1214,17 @@
       "rarity": "standard",
       "notes": "Early/utility melee weapon.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly."
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "camping-knife",
@@ -657,7 +1233,17 @@
       "rarity": "standard",
       "notes": "Early/utility melee weapon.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly."
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "mgl",
@@ -668,7 +1254,16 @@
       "tier": "B",
       "notes": "Grenade launcher, strong against grouped enemies and structures.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Numeric stats per oncehumandb.com; not independently re-verified against an official stat sheet."
+      }
     },
     {
       "id": "rpg7",
@@ -677,7 +1272,17 @@
       "rarity": "epic",
       "notes": "Heavy artillery, high single-target/structure damage.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "dbsg",
@@ -686,7 +1291,17 @@
       "rarity": "rare",
       "notes": "Base double-barrel shotgun chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "old-huntsman",
@@ -695,7 +1310,17 @@
       "rarity": "standard",
       "notes": "Near-identical stats to the DBSG chassis it's based on; an early low-investment pick.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly."
+      "acquisition": "Craftable from the start at a basic Gear Workbench once you've picked up its blueprint (common world/container drops), or looted directly.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "dbsg-dual-fury",
@@ -704,7 +1329,17 @@
       "rarity": "epic",
       "notes": "Double-barreled with the usual trade-offs of that layout: slow reload, short range, but heavy burst.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "acs12",
@@ -713,7 +1348,17 @@
       "rarity": "rare",
       "notes": "Base shotgun chassis.",
       "craftingStation": "gear-workbench",
-      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies."
+      "acquisition": "Craft at a Gear Workbench (Tier I-II) once you have its blueprint; blueprints for this tier drop commonly from containers and low-level enemies.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "acs12-netherworld",
@@ -722,7 +1367,17 @@
       "rarity": "legendary",
       "notes": "Named legendary ACS12 variant.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate (look for Rift Anchor icons on the map), via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "m416-silent-anabasis",
@@ -732,7 +1387,17 @@
       "tier": "A",
       "notes": "Rated the best weapon added in the Way of Winter update.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "m416-autumn-equinox",
@@ -741,7 +1406,17 @@
       "rarity": "epic",
       "notes": "Named M416 variant introduced in the Way of Winter update.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "m416-scorched-earth",
@@ -750,7 +1425,17 @@
       "rarity": "epic",
       "notes": "Named M416 variant introduced in the Way of Winter update.",
       "craftingStation": "intermediate-gear-workbench",
-      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase."
+      "acquisition": "Craft at an Intermediate Gear Workbench (Tier III-IV); its blueprint is a rarer container/Settlement drop or a Shop purchase.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "kvd-icebreaker",
@@ -759,7 +1444,17 @@
       "rarity": "legendary",
       "notes": "Named legendary KVD variant.",
       "craftingStation": "advanced-gear-workbench",
-      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward."
+      "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki",
+          "game8-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Existence, type and rarity cross-checked; no detailed stats independently verified."
+      }
     },
     {
       "id": "acs12-corrosion",
@@ -771,9 +1466,20 @@
       "acquisition": "Craft at the (max-tier) Advanced Gear Workbench, or find it directly in a Mystical Crate, via the Wish Machine (costs Starchrom), or as a seasonal/Settlement objective reward.",
       "confirmedArchetype": [
         "power-surge"
-      ]
+      ],
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "fandom-wiki",
+          "oncehumandb"
+        ],
+        "lastVerified": "2026-08-20",
+        "verifiedPatch": "3.0.3",
+        "notes": "This weapon's own built-in effect is independently confirmed across multiple sources."
+      }
     }
   ],
   "note": "Once Human's full arsenal spans 126+ individual weapons (per oncehumandb.com) once every named legendary variant of each base chassis (DE.50, R500, MPS5/7, KV-SBR, SOCR, KAM, DB12/DBSG/ACS12, AWS.338, SN700, HAMR, MG4, KVD, etc.) is counted separately. The list above (72 entries) is a broad, sourced cross-section across all 9 weapon categories and every rarity tier — base chassis plus their notable named variants — rather than a literal enumeration of all 126+ entries; most of the gap is additional named legendary/epic skins of the same chassis already listed. One category is NOT under-represented by omission: Heavy Weapons genuinely only has a couple of carried options (MGL, RPG7 Rocket Launcher) in the live game — Gatling Cannons and plasma-round turrets are deployable structures, not carried weapons, so they are catalogued under Blueprints → Defense instead.",
-  "archetypeFieldNotice": "Only a handful of named weapons carry a confirmedArchetype field: it means that specific weapon's own kit is independently confirmed to trigger that weapon-effect (e.g. SOCR - The Last Valor's built-in Shrapnel-style proc). Most weapons in Once Human don't have an intrinsic weapon effect at all -- Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked are granted by whichever core-effect mod you equip, and most mods fit most weapons in that slot. An earlier version of this database guessed a 'commonly paired' weapon effect for every weapon based on its category (e.g. 'pistols pair with Marked') -- that guess wasn't sourced and was removed after it was found to contradict a specific weapon's own confirmed ability. If a weapon has no confirmedArchetype, its specific weapon-effect synergy isn't confirmed by the sources used to compile this database -- browse the Mods section directly to pick one instead."
+  "archetypeFieldNotice": "Only a handful of named weapons carry a confirmedArchetype field: it means that specific weapon's own kit is independently confirmed to trigger that weapon-effect (e.g. SOCR - The Last Valor's built-in Shrapnel-style proc). Most weapons in Once Human don't have an intrinsic weapon effect at all -- Shrapnel, Power Surge, Frost Vortex, Bounce, Fast Gunner, Burn, Unstable Bomber, Fortress Warfare and Marked are granted by whichever core-effect mod you equip, and most mods fit most weapons in that slot. An earlier version of this database guessed a 'commonly paired' weapon effect for every weapon based on its category (e.g. 'pistols pair with Marked') -- that guess wasn't sourced and was removed after it was found to contradict a specific weapon's own confirmed ability. If a weapon has no confirmedArchetype, its specific weapon-effect synergy isn't confirmed by the sources used to compile this database -- browse the Mods section directly to pick one instead.",
+  "verificationRuleNotice": "Each weapon's `verification` field is assigned by a documented rule, not hand-guessed per weapon: confirmedArchetype present -> confirmed (the weapon's own kit is independently confirmed to trigger that effect); damage or fireRate present -> community (numeric stats traced to oncehumandb.com, not an official stat sheet); otherwise -> partial (existence/type/rarity only, no deeper stats verified)."
 }

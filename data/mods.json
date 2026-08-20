@@ -28,7 +28,17 @@
           "effect": "When Shrapnel hits a Weakspot, reloads 1 bullet from reserves."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
+      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate.",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; this group's boss drop source is independently confirmed (see obtainedFrom)."
+      }
     },
     {
       "effect": "Power Surge",
@@ -51,7 +61,17 @@
           "effect": "Power Surge damage grants up to 4 stacks of +5% for 3 seconds."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     },
     {
       "effect": "Frost Vortex",
@@ -74,7 +94,17 @@
           "effect": "Maximum Frost Vortexes +1, Frost Vortex DMG +10%."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     },
     {
       "effect": "Burn",
@@ -97,7 +127,17 @@
           "effect": "Increases maximum Burn stacks by 2 but reduces duration by 20%."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: the Ravenous Hunter at the Monolith of Greed (Dayton Wetlands). Also found in general Weapon Crates. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
+      "obtainedFrom": "Confirmed boss drop: the Ravenous Hunter at the Monolith of Greed (Dayton Wetlands). Also found in general Weapon Crates. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate.",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; this group's boss drop source is independently confirmed (see obtainedFrom)."
+      }
     },
     {
       "effect": "Unstable Bomber",
@@ -124,7 +164,17 @@
           "effect": "Unstable Bomber damage increases 5% per trigger, stackable 6x."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     },
     {
       "effect": "Fast Gunner",
@@ -159,7 +209,17 @@
           "effect": "Fast Gunner duration +4 seconds, Weapon DMG +15% during activation."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     },
     {
       "effect": "Bounce",
@@ -182,7 +242,17 @@
           "effect": "Bounce is 300% more likely to hit a Weakspot."
         }
       ],
-      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate."
+      "obtainedFrom": "Confirmed boss drop: Rabizex at the Monolith of Thirst (Chalk Peak). Also found in general Weapon Crates and Silo caches. Also obtainable in a targeted way via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate.",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; this group's boss drop source is independently confirmed (see obtainedFrom)."
+      }
     },
     {
       "effect": "Fortress Warfare",
@@ -205,7 +275,17 @@
           "effect": "Fortress Warfare damage bonus increases with nearby players, up to 40%."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     },
     {
       "effect": "Marked / Bull's Eye",
@@ -228,7 +308,17 @@
           "effect": "Increases Bull's Eye Vulnerability effect by 8%."
         }
       ],
-      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)"
+      "obtainedFrom": "Dungeons and game modes (higher difficulty = better odds at high-level copies), or targeted via the Shop by redeeming Mod Dust + Energy Links for a Random Mod Crate. (No specific boss source confirmed by available sources.)",
+      "effectVerification": {
+        "status": "community",
+        "sourceIds": [
+          "oncehumandb",
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mod effect percentages per community sources; no specific boss drop source is confirmed for this group (see obtainedFrom)."
+      }
     }
   ],
   "howToFarm": [

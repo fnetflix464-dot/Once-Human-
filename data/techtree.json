@@ -3,28 +3,52 @@
   "lastVerified": "2026-08-20",
   "overview": "The Tech Tree is Once Human's current progression system for unlocking crafting facilities, structures, gear formulas and passive bonuses. It replaced the old Memetic Specialization system entirely in the Tech System overhaul (patch 2.3.6, April 8, 2026) — see the Memetics (Legacy) page for what it replaced and why the two systems shouldn't be confused.",
   "sources": [
-    { "name": "Official Dev Blog — Tech System Optimization", "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html" },
-    { "name": "Official Dev Blog — Tech System Optimizations (iterative)", "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html" },
-    { "name": "Version 2.3.6 Update Announcement", "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html" }
+    {
+      "name": "Official Dev Blog — Tech System Optimization",
+      "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html"
+    },
+    {
+      "name": "Official Dev Blog — Tech System Optimizations (iterative)",
+      "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html"
+    },
+    {
+      "name": "Version 2.3.6 Update Announcement",
+      "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html"
+    }
   ],
   "unlockMethods": [
     {
       "id": "allocation",
       "name": "Tech Tree Allocation",
       "verification": "confirmed",
-      "description": "Spend Tech Points on tree nodes. Points are earned by leveling up, repeatedly researching facilities/items, exploring mysterious chests, or defeating Elite enemies — not by character level alone."
+      "description": "Spend Tech Points on tree nodes. Points are earned by leveling up, repeatedly researching facilities/items, exploring mysterious chests, or defeating Elite enemies — not by character level alone.",
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     },
     {
       "id": "reverse-engineering",
       "name": "Reverse Engineering",
       "verification": "confirmed",
-      "description": "Use a research bench to unlock a formula directly by placing a collected cultural artifact into it — no Tech Points spent."
+      "description": "Use a research bench to unlock a formula directly by placing a collected cultural artifact into it — no Tech Points spent.",
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     },
     {
       "id": "tech-invention",
       "name": "Tech Invention",
       "verification": "confirmed",
-      "description": "Experiment with material combinations at a research bench for a variable chance to unlock a formula."
+      "description": "Experiment with material combinations at a research bench for a variable chance to unlock a formula.",
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     }
   ],
   "branches": [
@@ -33,32 +57,61 @@
       "name": "Survival",
       "verification": "confirmed",
       "focus": "Basic functionality and sustenance — cooking, temperature, health/stamina utility.",
-      "likelyLegacyOverlap": ["management"],
-      "nodes": []
+      "likelyLegacyOverlap": [
+        "management"
+      ],
+      "nodes": [],
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     },
     {
       "id": "production",
       "name": "Production",
       "verification": "confirmed",
       "focus": "Crafting capacity and material processing — workbenches, refining, gathering tools.",
-      "likelyLegacyOverlap": ["crafting", "gathering"],
-      "nodes": []
+      "likelyLegacyOverlap": [
+        "crafting",
+        "gathering"
+      ],
+      "nodes": [],
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     },
     {
       "id": "combat",
       "name": "Combat",
       "verification": "confirmed",
       "focus": "Fighting capability and enemy engagement — turrets, traps, combat gadgets.",
-      "likelyLegacyOverlap": ["building"],
-      "nodes": []
+      "likelyLegacyOverlap": [
+        "building"
+      ],
+      "nodes": [],
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     },
     {
       "id": "building",
       "name": "Building",
       "verification": "confirmed",
       "focus": "Base construction and territory expansion — structures, drones, storage.",
-      "likelyLegacyOverlap": ["building"],
-      "nodes": []
+      "likelyLegacyOverlap": [
+        "building"
+      ],
+      "nodes": [],
+      "sourceIds": [
+        "official-devblog-tech-1",
+        "official-devblog-tech-2",
+        "official-update-2.3.6"
+      ]
     }
   ],
   "nodeDataStatus": "unverified",

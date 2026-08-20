@@ -800,6 +800,8 @@ nav.nav-groups {
 }
 .source-row { display: flex; gap: 8px; align-items: center; padding: 2px 0; flex-wrap: wrap; }
 .source-label { color: var(--text-dim); font-family: var(--font-mono); text-transform: uppercase; font-size: 0.7rem; min-width: 90px; }
+.source-row a.tag { color: var(--accent-2); }
+.source-notes { display: block; color: var(--text-dim); font-style: italic; padding-top: 4px; }
 
 /* ======================================================================
    Detail page head (title + favorite), loadout grid, compare table

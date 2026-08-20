@@ -7,7 +7,17 @@
       "level": 10,
       "location": "Monolith of Greed, Dayton Wetlands",
       "mechanics": "Destroy its Gatling weapon to disable its shield, then stun it and hit the yellow head weak spot.",
-      "drops": "Burn-effect weapon mods (confirmed), plus early-game crafting materials and blueprint fragments."
+      "drops": "Burn-effect weapon mods (confirmed), plus early-game crafting materials and blueprint fragments.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "pcgamesn-bosses"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
+      }
     },
     {
       "id": "treant",
@@ -15,7 +25,17 @@
       "level": 20,
       "location": "Gaia Cliff Monolith, Broken Delta",
       "mechanics": "Destroy the surrounding vines first, target the female humanoid figure on its back, and dodge laser beams that telegraph with a red light.",
-      "drops": "Wood/plant-themed crafting materials and blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)"
+      "drops": "Wood/plant-themed crafting materials and blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "pcgamesn-bosses"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
+      }
     },
     {
       "id": "arachsiam",
@@ -23,7 +43,17 @@
       "level": 30,
       "location": "Mirage Monolith, Iron River",
       "mechanics": "Avoid web-cocoon and rush attacks; focus the purple pustules on its back for maximum damage.",
-      "drops": "Mid-tier crafting materials and blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)"
+      "drops": "Mid-tier crafting materials and blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "pcgamesn-bosses"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
+      }
     },
     {
       "id": "rabizex",
@@ -31,7 +61,17 @@
       "level": 40,
       "location": "Monolith of Thirst, Chalk Peak",
       "mechanics": "Keep distance, use powerful weapons on its weak points, and prioritize evasion since its movements are hard to predict up close.",
-      "drops": "Shrapnel and Bounce-effect weapon mods (confirmed), plus mid-to-late-tier crafting materials and blueprint fragments."
+      "drops": "Shrapnel and Bounce-effect weapon mods (confirmed), plus mid-to-late-tier crafting materials and blueprint fragments.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "pcgamesn-bosses"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
+      }
     },
     {
       "id": "mensdevoran",
@@ -39,7 +79,17 @@
       "level": 60,
       "location": "Forsaken Monolith, Red Sands",
       "mechanics": "Jump over hand-slam shockwaves, stay close to its body to dodge sweeping arm attacks, and target glowing weak spots as they appear.",
-      "drops": "Endgame crafting materials and Advanced Gear Workbench blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)"
+      "drops": "Endgame crafting materials and Advanced Gear Workbench blueprint fragments. (Its specific weapon-effect mod drop isn't confirmed by available sources.)",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki",
+          "pcgamesn-bosses"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Mechanics and location per community guides; its weapon-effect mod drop is independently confirmed."
+      }
     }
   ],
   "seasonalAndEventBosses": [
@@ -48,14 +98,32 @@
       "name": "Riftwalker",
       "type": "Seasonal Aerial Boss",
       "context": "Visional Wheel S4: Gravity Abyss (patch 2.4.1) — a massive aerial Deviant fought across zero-gravity floating islands.",
-      "drops": "Abyssal Cores (epic/legendary/mythic), Abyssal Essence, and the Aero/Downstar mods."
+      "drops": "Abyssal Cores (epic/legendary/mythic), Abyssal Essence, and the Aero/Downstar mods.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Seasonal/event context per community + in-game announcement text."
+      }
     },
     {
       "id": "block-wanderer",
       "name": "Block Wanderer",
       "type": "Limited-time Event Boss",
       "context": "Block Adventure event on Wish Island (patch 3.0.3, Aug 5–23 2026) — defeat blocky creatures and challenge this boss for morphed Deviation rewards.",
-      "drops": "Morphed Deviations (Zapamander, Nutcracker and Dr. Teddy variants) plus Block Adventure event currency."
+      "drops": "Morphed Deviations (Zapamander, Nutcracker and Dr. Teddy variants) plus Block Adventure event currency.",
+      "verification": {
+        "status": "community",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Seasonal/event context per community + in-game announcement text."
+      }
     }
   ],
   "note": "Great Ones drop core weapon-effect mod sets (confirmed for Ravenous Hunter → Burn and Rabizex → Shrapnel/Bounce) alongside crafting materials and blueprint fragments — cross-reference the Mods section for what each weapon effect actually does. Drop tables for Treant, Arachsiam and Mensdevoran weren't available in the sources used to compile this database."

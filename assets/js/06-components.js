@@ -47,6 +47,25 @@ OH.notice = function notice(text) {
   return `<div class="notice">⚠️ ${esc(text)}</div>`;
 };
 
+// Renders the unified {status, sourceIds, lastVerified, verifiedPatch, notes}
+// verification object used across weapons/armor/mods/bosses/stations/builds/
+// deviants — resolves sourceIds into clickable links via data/sources.json
+// instead of the plain source-name tags OH.sourceBlock uses for older,
+// looser {name,url} arrays.
+OH.verificationObjectBlock = function verificationObjectBlock(v) {
+  if (!v) return "";
+  const parts = [];
+  parts.push(`<div class="source-row"><span class="source-label">Status</span> ${OH.verificationBadge(v.status)}</div>`);
+  if (v.verifiedPatch) parts.push(`<div class="source-row"><span class="source-label">Verified against</span> <span class="mono">v${esc(v.verifiedPatch)}</span></div>`);
+  if (v.lastVerified) parts.push(`<div class="source-row"><span class="source-label">Last verified</span> <span class="mono">${esc(v.lastVerified)}</span></div>`);
+  const resolved = OH.resolveSourceIds(v.sourceIds);
+  if (resolved.length) {
+    parts.push(`<div class="source-row"><span class="source-label">Sources</span> ${resolved.map(s => `<a class="tag" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" ")}</div>`);
+  }
+  if (v.notes) parts.push(`<div class="source-row source-notes">${esc(v.notes)}</div>`);
+  return `<div class="source-block">${parts.join("")}</div>`;
+};
+
 OH.sourceBlock = function sourceBlock(status, lastVerified, sources) {
   const parts = [];
   if (status) parts.push(`<div class="source-row"><span class="source-label">Status</span> ${OH.verificationBadge(status)}</div>`);

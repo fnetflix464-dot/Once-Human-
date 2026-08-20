@@ -8,8 +8,22 @@
       "tier": "I-II",
       "unlock": "Early Tech Tree node (Production branch, expected). Pre-overhaul this required unlocking 'Essential Tools' then the Gear Workbench line in the old Memetics menu.",
       "unlockVerification": "unverified",
-      "materials": ["Copper Ingots", "Standard Parts", "Cotton Fabric", "Adhesives"],
-      "produces": "Tier I-II weapons and armor (given the blueprint + materials)."
+      "materials": [
+        "Copper Ingots",
+        "Standard Parts",
+        "Cotton Fabric",
+        "Adhesives"
+      ],
+      "produces": "Tier I-II weapons and armor (given the blueprint + materials).",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     },
     {
       "id": "intermediate-gear-workbench",
@@ -17,7 +31,16 @@
       "tier": "III-IV",
       "unlock": "Not confirmed among the facilities removed in the April 2026 overhaul, so likely still exists as a Production-branch Tech Tree node — exact placement unconfirmed.",
       "unlockVerification": "unverified",
-      "produces": "Tier III-IV weapons and armor."
+      "produces": "Tier III-IV weapons and armor.",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     },
     {
       "id": "advanced-gear-workbench",
@@ -25,8 +48,19 @@
       "tier": "V (max)",
       "unlock": "A Production-branch Tech Tree node; the April 2026 overhaul moved advanced-facility unlocks earlier in the tree specifically so players reach full crafting capability sooner. Exact current Tech Point cost unconfirmed.",
       "unlockVerification": "partial",
-      "materials": ["Tungsten Ingots"],
-      "produces": "Tier V weapons and armor (top tier), plus all lower tiers."
+      "materials": [
+        "Tungsten Ingots"
+      ],
+      "produces": "Tier V weapons and armor (top tier), plus all lower tiers.",
+      "verification": {
+        "status": "partial",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     },
     {
       "id": "designers-workstation",
@@ -34,7 +68,16 @@
       "tier": "Utility",
       "unlock": "Building-branch Tech Tree node (approximate).",
       "unlockVerification": "unverified",
-      "produces": "Disassembles unwanted/duplicate blueprints into Formula Blueprint Fragments, redeemable for new blueprints."
+      "produces": "Disassembles unwanted/duplicate blueprints into Formula Blueprint Fragments, redeemable for new blueprints.",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     }
   ],
   "cookingStations": [
@@ -43,7 +86,15 @@
       "name": "Stove",
       "tier": "I (basic)",
       "unlockVerification": "confirmed",
-      "produces": "Basic dishes (Roasted Meat, Grilled Fish, breads, simple soups)."
+      "produces": "Basic dishes (Roasted Meat, Grilled Fish, breads, simple soups).",
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "official-update-2.3.6"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3"
+      }
     },
     {
       "id": "electric-stove",
@@ -51,14 +102,31 @@
       "tier": "II",
       "unlock": "Likely superseded: 'Intermediate Stove' was one of five facilities removed outright in the April 2026 Tech System overhaul, with its recipes folded into the Advanced Stove. If this station is still distinct from that, its current Tech Tree unlock path (Survival branch, expected) is unconfirmed.",
       "unlockVerification": "unverified",
-      "produces": "Advanced recipes, including Sanity Gummies."
+      "produces": "Advanced recipes, including Sanity Gummies.",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     },
     {
       "id": "refrigerator",
       "name": "Refrigerator",
       "tier": "Utility",
       "unlockVerification": "confirmed",
-      "produces": "Extends food shelf life; required for certain legendary recipes."
+      "produces": "Extends food shelf life; required for certain legendary recipes.",
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "official-update-2.3.6"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3"
+      }
     },
     {
       "id": "integrated-kitchen",
@@ -66,12 +134,62 @@
       "tier": "IV (max)",
       "unlock": "A Survival/Production-branch Tech Tree node (approximate) — the best cooking station in the game. Exact current unlock cost unconfirmed post-overhaul.",
       "unlockVerification": "unverified",
-      "produces": "The best cooking station in the game — unlocks Caviar and Butter as ingredients plus the Kitchen Set blueprint (which unlocks the Advanced Stove and further recipes)."
+      "produces": "The best cooking station in the game — unlocks Caviar and Butter as ingredients plus the Kitchen Set blueprint (which unlocks the Advanced Stove and further recipes).",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
     }
   ],
   "otherStations": [
-    { "id": "planter-box", "name": "Planter Box", "produces": "Grows crops from seeds — see the Crops section.", "upgrade": "A Tech Tree node (Production/Survival branch, expected) increases growth speed/yield per temperature degree.", "unlockVerification": "unverified" },
-    { "id": "isolated-securement-unit", "name": "Isolated Securement Unit", "produces": "Houses a captured Deviant so its ability becomes active — see the Deviants section.", "unlockVerification": "confirmed" },
-    { "id": "youngling-hut", "name": "Youngling Hut", "produces": "Where bred livestock offspring grow up — see the Ranching section.", "unlockVerification": "confirmed" }
+    {
+      "id": "planter-box",
+      "name": "Planter Box",
+      "produces": "Grows crops from seeds — see the Crops section.",
+      "upgrade": "A Tech Tree node (Production/Survival branch, expected) increases growth speed/yield per temperature degree.",
+      "unlockVerification": "unverified",
+      "verification": {
+        "status": "unverified",
+        "sourceIds": [
+          "fandom-wiki"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3",
+        "notes": "Current Tech Tree unlock branch/cost not independently re-verified post-overhaul."
+      }
+    },
+    {
+      "id": "isolated-securement-unit",
+      "name": "Isolated Securement Unit",
+      "produces": "Houses a captured Deviant so its ability becomes active — see the Deviants section.",
+      "unlockVerification": "confirmed",
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "official-update-2.3.6"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3"
+      }
+    },
+    {
+      "id": "youngling-hut",
+      "name": "Youngling Hut",
+      "produces": "Where bred livestock offspring grow up — see the Ranching section.",
+      "unlockVerification": "confirmed",
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "official-update-2.3.6"
+        ],
+        "lastVerified": "2026-08-19",
+        "verifiedPatch": "3.0.3"
+      }
+    }
   ]
 }
