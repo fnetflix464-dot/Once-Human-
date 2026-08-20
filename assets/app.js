@@ -445,9 +445,14 @@ function renderWeaponDetail(key) {
 /* Armor                                                                   */
 /* ---------------------------------------------------------------------- */
 
+function armorBonusSummary(s) {
+  if (!s.bonusesByPiece || !s.bonusesByPiece.length) return "";
+  return s.bonusesByPiece.map(b => `${b.pieces}pc: ${b.effect}`).join(" ");
+}
+
 function renderArmor() {
   const a = state.data.armor;
-  const sets = idx.armorSets.filter(s => matchesQuery(s.name + (s.bonus || "") + (s.playstyle || "")));
+  const sets = idx.armorSets.filter(s => matchesQuery(s.name + armorBonusSummary(s) + (s.playstyle || "")));
   return `
     <h2>Armor</h2>
     <p class="intro">${esc(a.overview)}</p>
@@ -457,6 +462,7 @@ function renderArmor() {
         ${a.attributes.map(x => `<div class="card"><h3>${esc(x.name)}</h3><p>${esc(x.description)}</p></div>`).join("")}
       </div>
       <p class="intro">${esc(a.craftingNote)}</p>
+      <p class="intro">${esc(a.setBonusMechanic)}</p>
     </div>
     <div class="section-block">
       <h3>Armor Sets <span class="tag">${sets.length}</span></h3>
@@ -465,7 +471,7 @@ function renderArmor() {
           ${cardOpen("armor", s._key)}
             <h3>${esc(s.name)}</h3>
             <div class="meta"><span class="tag tier-${s.rarity === "legendary" ? "S" : ""}">${esc(capitalize(s.rarity))}</span><span class="tag">${esc(s.pieces)}pc</span><span class="tag">${esc(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
-            ${s.bonus ? `<p>${esc(s.bonus)}</p>` : `<p class="intro" style="margin:4px 0 0">Set bonus text not confirmed by available sources — see the note below.</p>`}
+            ${s.bonusesByPiece && s.bonusesByPiece.length ? `<p>${esc(s.bonusesByPiece[s.bonusesByPiece.length - 1].effect)}</p>` : `<p class="intro" style="margin:4px 0 0">Set bonus text not confirmed by available sources — see the note below.</p>`}
           </div>
         `).join("") || emptyState()}
       </div>
@@ -481,7 +487,12 @@ function renderArmorSetDetail(key) {
     ${breadcrumb("armor", "Armor", s.name)}
     <h2>${esc(s.name)}</h2>
     <div class="meta" style="margin-bottom:10px"><span class="tag">${esc(capitalize(s.rarity))}</span><span class="tag">${esc(s.pieces)} pieces</span><span class="tag">${esc(s.bonusCount)} bonus${s.bonusCount === 1 ? "" : "es"}</span></div>
-    ${s.bonus ? `<p>${esc(s.bonus)}</p>` : `<p class="intro">Set bonus text not confirmed by available sources for this set.</p>`}
+    ${s.bonusesByPiece && s.bonusesByPiece.length ? `
+      <div class="table-wrap"><table class="data-table">
+        <thead><tr><th>Pieces</th><th>Effect</th></tr></thead>
+        <tbody>${s.bonusesByPiece.map(b => `<tr><td>${esc(b.pieces)}</td><td>${esc(b.effect)}</td></tr>`).join("")}</tbody>
+      </table></div>
+    ` : `<p class="intro">Set bonus text not confirmed by available sources for this set.</p>`}
     ${s.playstyle ? `<div class="section-block"><h3>Best for</h3><p class="intro" style="margin-top:0">${esc(s.playstyle)}</p></div>` : ""}
     ${s.notes ? `<p class="intro">${esc(s.notes)}</p>` : ""}
     <div class="section-block">
