@@ -11,31 +11,167 @@
       "id": "sights",
       "name": "Sights / Optics",
       "effect": "Improve Zoom Level and Accuracy for aimed shots; higher-magnification optics trade faster target acquisition for effective range.",
-      "examples": ["Reflex Sight", "Sealed Reflex Sight", "Mini Reflex Sight", "Light Reflex Sight", "Holographic Sight", "Tactical Holographic Sight", "Laser Sight", "Small Laser Sight", "Large Laser Sight", "Integrated Laser Sight", "Tactical Laser Sight", "Light Optic", "Mid-Range Optic", "Precision Optic", "Advanced Combat Optic", "Recon Combat Optic", "Precision Rifle Scope", "Tactical Rifle Scope", "Small Infrared"]
+      "examples": [
+        "Reflex Sight",
+        "Sealed Reflex Sight",
+        "Mini Reflex Sight",
+        "Light Reflex Sight",
+        "Holographic Sight",
+        "Tactical Holographic Sight",
+        "Laser Sight",
+        "Small Laser Sight",
+        "Large Laser Sight",
+        "Integrated Laser Sight",
+        "Tactical Laser Sight",
+        "Light Optic",
+        "Mid-Range Optic",
+        "Precision Optic",
+        "Advanced Combat Optic",
+        "Recon Combat Optic",
+        "Precision Rifle Scope",
+        "Tactical Rifle Scope",
+        "Small Infrared"
+      ],
+      "rarityStatPattern": {
+        "verification": {
+          "status": "confirmed",
+          "sourceIds": [
+            "official-devblog-accessories"
+          ],
+          "lastVerified": "2026-08-20",
+          "verifiedPatch": "3.0.3",
+          "notes": "From the official Jan 13, 2026 dev blog on the accessory rework. These numbers are confirmed official stat patterns for the '2x Scope' and '6x Scope' accessory classes the blog describes — which of this list's named items (e.g. Precision Rifle Scope, Tactical Rifle Scope) corresponds to which magnification class has not been independently confirmed, so treat this as the confirmed shape of the system rather than a per-named-item lookup."
+        },
+        "examples": [
+          {
+            "variant": "2x Scope",
+            "rare": "2.0× zoom, +4% Accuracy",
+            "epic": "2.0× zoom, +6% Accuracy, +15% Aiming Speed",
+            "legendary": "2.0× zoom, +6% Accuracy, +20% Mobility, +20% Aiming Speed"
+          },
+          {
+            "variant": "6x Scope",
+            "rare": "6.0× zoom, +4% Accuracy",
+            "epic": "6.0× zoom, +8% Accuracy",
+            "legendary": "6.0× zoom, +12% Accuracy, +5% Stability"
+          }
+        ]
+      }
     },
     {
       "id": "muzzle",
       "name": "Muzzle Devices",
       "effect": "Suppressors reduce noise (and often recoil) for stealth play; brakes and compensators reduce recoil/muzzle climb (Stability) at the cost of noise; flash hiders reduce visible muzzle flash.",
-      "examples": ["Basic Suppressor", "Short Suppressor", "Integrated Suppressor", "Osprey Suppressor", "Multi-Use Shotgun Suppressor", "Compact Brake", "Extended Brake", "Large Brake", "Light Brake", "Small Brake", "Hammer Compensator", "Integrated Compensator", "Small Compensator", "Flash Hider", "Forward Flash Hider", "Integrated Flash Hider", "Tactical Flash Hider", "Compact Flashlight", "Compact Infrared Indicator"]
+      "examples": [
+        "Basic Suppressor",
+        "Short Suppressor",
+        "Integrated Suppressor",
+        "Osprey Suppressor",
+        "Multi-Use Shotgun Suppressor",
+        "Compact Brake",
+        "Extended Brake",
+        "Large Brake",
+        "Light Brake",
+        "Small Brake",
+        "Hammer Compensator",
+        "Integrated Compensator",
+        "Small Compensator",
+        "Flash Hider",
+        "Forward Flash Hider",
+        "Integrated Flash Hider",
+        "Tactical Flash Hider",
+        "Compact Flashlight",
+        "Compact Infrared Indicator"
+      ],
+      "rarityStatPattern": {
+        "verification": {
+          "status": "confirmed",
+          "sourceIds": [
+            "official-devblog-accessories"
+          ],
+          "lastVerified": "2026-08-20",
+          "verifiedPatch": "3.0.3",
+          "notes": "From the official Jan 13, 2026 dev blog. Flash Hider stats attach directly to this list's 'Flash Hider' entry (exact name match); Brake and Suppressor stat patterns are confirmed for those accessory classes generally but this list's specific Brake/Suppressor tier names (Compact/Extended/Large/Light/Small Brake, Basic/Short/Integrated/Osprey Suppressor) have not been individually matched to a specific rarity tier."
+        },
+        "examples": [
+          {
+            "variant": "Flash Hider",
+            "rare": "+10% Stability",
+            "epic": "+16% Stability",
+            "legendary": "+22% Stability, +10% Bullet Velocity"
+          },
+          {
+            "variant": "Brake",
+            "rare": "+10% Accuracy",
+            "epic": "+16% Accuracy",
+            "legendary": "+22% Accuracy, +10% Bullet Velocity"
+          },
+          {
+            "variant": "Suppressor",
+            "rare": "+10% Range, -12% Stability",
+            "epic": "+15% Range, -12% Stability",
+            "legendary": "+20% Range, +10% Bullet Velocity, -12% Stability"
+          }
+        ]
+      }
     },
     {
       "id": "grips",
       "name": "Grips",
       "effect": "Improve Stability and Accuracy, generally at a small Mobility cost — the Vertical Grip is a common early pick for rifles.",
-      "examples": ["Vertical Grip", "Tactical Combine Grip", "Cobra Grip", "Triangle Grip", "Front Guard Grip", "Back Guard Grip"]
+      "examples": [
+        "Vertical Grip",
+        "Tactical Combine Grip",
+        "Cobra Grip",
+        "Triangle Grip",
+        "Front Guard Grip",
+        "Back Guard Grip"
+      ]
     },
     {
       "id": "magazines",
       "name": "Magazines",
       "effect": "Increase magazine capacity (MAG); 'Extended' variants trade Reload Efficiency for more ammo per mag, while 'Tactical'/'Amended' variants aim for a more balanced capacity/reload trade-off.",
-      "examples": ["Extended Pistol Mag", "Extended Rifle Mag", "Amended Pistol Mag", "Amended Rifle Mag", "Amended SMG Mag", "Amended SR Mag", "Tactical Pistol Mag", "Tactical SMG Mag", "Tactical SR Mag", "Light Rifle Mag", "Weighted SMG Mag", "Calibrated LMG Drum Mag", "Large LMG Drum Mag"]
+      "examples": [
+        "Extended Pistol Mag",
+        "Extended Rifle Mag",
+        "Amended Pistol Mag",
+        "Amended Rifle Mag",
+        "Amended SMG Mag",
+        "Amended SR Mag",
+        "Tactical Pistol Mag",
+        "Tactical SMG Mag",
+        "Tactical SR Mag",
+        "Light Rifle Mag",
+        "Weighted SMG Mag",
+        "Calibrated LMG Drum Mag",
+        "Large LMG Drum Mag"
+      ],
+      "confirmedStats": {
+        "verification": {
+          "status": "confirmed",
+          "sourceIds": [
+            "official-devblog-accessories"
+          ],
+          "lastVerified": "2026-08-20",
+          "verifiedPatch": "3.0.3",
+          "notes": "Exact stats confirmed by the official Jan 13, 2026 dev blog for these 4 specific named magazines. The other magazine names in this list follow the same Extended/Tactical/Amended pattern (capacity-for-reload trade-off vs. balanced) but their exact numbers were not given in that post."
+        },
+        "byName": {
+          "Tactical Pistol Mag": "+16% Reload Efficiency, +8% Accuracy, +10% Mobility",
+          "Extended Rifle Mag": "+10 Capacity, -9% Reload Efficiency",
+          "Tactical SR Mag": "+15% Reload Efficiency, +8% Accuracy, +10% Mobility",
+          "Large LMG Drum Mag": "+20 Capacity, -14% Reload Efficiency"
+        }
+      }
     },
     {
       "id": "other",
       "name": "Other",
       "effect": "Miscellaneous attachments for specific playstyles.",
-      "examples": ["Folding Bipod"]
+      "examples": [
+        "Folding Bipod"
+      ]
     }
   ]
 }

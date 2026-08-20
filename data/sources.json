@@ -5,6 +5,7 @@
     { "id": "official-devblog-tech-1", "name": "Official Dev Blog — Tech System Optimization", "url": "https://www.oncehuman.game/news/devBlog/20260302/40781_1288924.html", "type": "official", "lastChecked": "2026-08-19" },
     { "id": "official-devblog-tech-2", "name": "Official Dev Blog — Tech System Optimizations (iterative)", "url": "https://www.oncehuman.game/news/devBlog/20260319/40781_1291998.html", "type": "official", "lastChecked": "2026-08-19" },
     { "id": "official-update-2.3.6", "name": "Version 2.3.6 Update Announcement", "url": "https://www.oncehuman.game/news/update/20260408/40780_1295195.html", "type": "official", "lastChecked": "2026-08-19" },
+    { "id": "official-devblog-accessories", "name": "Official Dev Blog — Comprehensive Optimization of Calibration & Accessories", "url": "https://www.oncehuman.game/news/devBlog/20260113/40781_1281545.html", "type": "official", "lastChecked": "2026-08-20" },
 
     { "id": "fandom-wiki", "name": "Once Human Wiki (Fandom)", "url": "https://once-human.fandom.com/", "type": "wiki", "lastChecked": "2026-08-19" },
     { "id": "oncehumanwiki", "name": "Once Human Wiki (oncehumanwiki.com)", "url": "https://oncehumanwiki.com/", "type": "wiki", "lastChecked": "2026-08-19" },

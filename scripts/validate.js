@@ -137,6 +137,19 @@ armor.sets.forEach((s, i) => {
 });
 
 /* ---------------------------------------------------------------------- */
+/* Attachments                                                             */
+/* ---------------------------------------------------------------------- */
+attachments.types.forEach(t => {
+  if (t.confirmedStats) {
+    checkVerificationObject(t.confirmedStats.verification, `attachments.${t.id}.confirmedStats.verification`);
+    Object.keys(t.confirmedStats.byName).forEach(name => {
+      if (!t.examples.includes(name)) fail(`attachments.${t.id}.confirmedStats.byName references "${name}" which isn't in this type's examples list`);
+    });
+  }
+  if (t.rarityStatPattern) checkVerificationObject(t.rarityStatPattern.verification, `attachments.${t.id}.rarityStatPattern.verification`);
+});
+
+/* ---------------------------------------------------------------------- */
 /* Mods                                                                    */
 /* ---------------------------------------------------------------------- */
 const archetypeIds = new Set(classes.weaponEffectArchetypes.map(a => a.id));

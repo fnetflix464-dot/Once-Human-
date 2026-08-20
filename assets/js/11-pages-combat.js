@@ -247,8 +247,29 @@ OH.renderAttachmentTypeDetail = function renderAttachmentTypeDetail(key) {
     <p>${esc11(t.effect)}</p>
     <div class="section-block">
       <h3>Known ${esc11(t.name)} <span class="tag">${t.examples.length}</span></h3>
-      <ul>${t.examples.map(e => `<li>${esc11(e)}</li>`).join("")}</ul>
+      ${t.confirmedStats ? `
+        <div class="table-wrap"><table class="data-table">
+          <thead><tr><th>Name</th><th>Confirmed stats</th></tr></thead>
+          <tbody>${t.examples.map(e => `<tr><td data-label="Name">${esc11(e)}</td><td data-label="Confirmed stats">${t.confirmedStats.byName[e] ? esc11(t.confirmedStats.byName[e]) : `<span class="intro">Not independently confirmed</span>`}</td></tr>`).join("")}</tbody>
+        </table></div>
+        ${OH.verificationObjectBlock(t.confirmedStats.verification)}
+      ` : `<ul>${t.examples.map(e => `<li>${esc11(e)}</li>`).join("")}</ul>`}
     </div>
+    ${t.rarityStatPattern ? `
+      <div class="section-block">
+        <h3>Confirmed stat pattern by rarity ${OH.verificationBadge(t.rarityStatPattern.verification.status, { compact: true })}</h3>
+        <div class="table-wrap"><table class="data-table">
+          <thead><tr><th>Variant</th><th>Rare</th><th>Epic</th><th>Legendary</th></tr></thead>
+          <tbody>${t.rarityStatPattern.examples.map(x => `<tr>
+            <td data-label="Variant">${esc11(x.variant)}</td>
+            <td data-label="Rare">${esc11(x.rare)}</td>
+            <td data-label="Epic">${esc11(x.epic)}</td>
+            <td data-label="Legendary">${esc11(x.legendary)}</td>
+          </tr>`).join("")}</tbody>
+        </table></div>
+        ${OH.verificationObjectBlock(t.rarityStatPattern.verification)}
+      </div>
+    ` : ""}
     <div class="section-block">
       <h3>Mechanic notes</h3>
       <p class="intro intro-tight">${esc11(OH.state.data.attachments.mechanicNotice)}</p>
