@@ -270,6 +270,25 @@ OH.renderAttachmentTypeDetail = function renderAttachmentTypeDetail(key) {
         ${OH.verificationObjectBlock(t.rarityStatPattern.verification)}
       </div>
     ` : ""}
+    ${t.communityAcquisition ? `
+      <div class="section-block">
+        <h3>Where to get them ${OH.verificationBadge(t.communityAcquisition.verification.status, { compact: true })}</h3>
+        <div class="table-wrap"><table class="data-table">
+          <thead><tr><th>Name</th><th>Region</th><th>Weapon compatibility</th></tr></thead>
+          <tbody>${t.examples.filter(e => t.communityAcquisition.byName[e]).map(e => {
+            const a = t.communityAcquisition.byName[e];
+            const extra = [a.conflictNote, a.sourceNote, a.corroboratedNote].filter(Boolean)
+              .map(n => `<div class="intro intro-tight">${esc11(n)}</div>`).join("");
+            return `<tr>
+              <td data-label="Name">${esc11(e)}${extra}</td>
+              <td data-label="Region">${esc11(a.region)}</td>
+              <td data-label="Weapon compatibility">${a.compatibility ? esc11(a.compatibility) : `<span class="intro">Not given</span>`}</td>
+            </tr>`;
+          }).join("")}</tbody>
+        </table></div>
+        ${OH.verificationObjectBlock(t.communityAcquisition.verification)}
+      </div>
+    ` : ""}
     <div class="section-block">
       <h3>Mechanic notes</h3>
       <p class="intro intro-tight">${esc11(OH.state.data.attachments.mechanicNotice)}</p>

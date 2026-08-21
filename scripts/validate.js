@@ -147,6 +147,14 @@ attachments.types.forEach(t => {
     });
   }
   if (t.rarityStatPattern) checkVerificationObject(t.rarityStatPattern.verification, `attachments.${t.id}.rarityStatPattern.verification`);
+  if (t.communityAcquisition) {
+    checkVerificationObject(t.communityAcquisition.verification, `attachments.${t.id}.communityAcquisition.verification`);
+    Object.keys(t.communityAcquisition.byName).forEach(name => {
+      if (!t.examples.includes(name)) fail(`attachments.${t.id}.communityAcquisition.byName references "${name}" which isn't in this type's examples list`);
+      const entry = t.communityAcquisition.byName[name];
+      if (!entry.region) fail(`attachments.${t.id}.communityAcquisition.byName["${name}"] is missing "region"`);
+    });
+  }
 });
 
 /* ---------------------------------------------------------------------- */

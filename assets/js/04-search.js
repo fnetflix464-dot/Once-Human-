@@ -43,7 +43,10 @@ OH.buildSearchCorpus = function buildSearchCorpus() {
 
   idx.mods.forEach(m => push("mods", m._key, m.name, [m.effect, m.groupEffect, m.groupObtainedFrom], m.groupEffect));
 
-  idx.attachmentTypes.forEach(t => push("attachments", t._key, t.name, [t.effect, ...(t.examples || [])], "Accessory Type"));
+  idx.attachmentTypes.forEach(t => {
+    const regions = t.communityAcquisition ? Object.values(t.communityAcquisition.byName).map(a => a.region) : [];
+    push("attachments", t._key, t.name, [t.effect, ...(t.examples || []), ...regions], "Accessory Type");
+  });
 
   idx.builds.forEach(b => push("builds", b._key, b.name, [b.summary, b.role, b.archetype, ...(b.recommendedArmor || []), ...(b.recommendedFood || [])], b.role));
 

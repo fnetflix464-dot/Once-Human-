@@ -56,6 +56,36 @@
             "legendary": "6.0× zoom, +12% Accuracy, +5% Stability"
           }
         ]
+      },
+      "communityAcquisition": {
+        "verification": {
+          "status": "community",
+          "sourceIds": ["hardcoregamer-accessories"],
+          "lastVerified": "2026-08-21",
+          "verifiedPatch": "3.0.3",
+          "notes": "Region-of-acquisition data from a single third-party comprehensive accessory listing, not the official dev blog. That source also labels each item with a 'Fine/Excellent/Legendary' tier; those labels are deliberately NOT reproduced here — this database's confirmed rarity scale for accessories is Rare/Epic/Legendary (per the official dev blog stat patterns above, which show no Standard tier for accessories), and while 'Fine/Excellent/Legendary' may just be that source's own casual wording for the same three tiers, that mapping hasn't been independently confirmed, so only region (and weapon compatibility, where the source gave it) is carried over."
+        },
+        "byName": {
+          "Reflex Sight": { "region": "Iron River" },
+          "Sealed Reflex Sight": { "region": "Chalk Peak" },
+          "Mini Reflex Sight": { "region": "Broken Delta" },
+          "Light Reflex Sight": { "region": "Broken Delta" },
+          "Holographic Sight": { "region": "Dayton Wetlands" },
+          "Tactical Holographic Sight": { "region": "Blackheart Region" },
+          "Laser Sight": { "region": "Chalk Peak" },
+          "Small Laser Sight": { "region": "Chalk Peak" },
+          "Large Laser Sight": { "region": "Iron River" },
+          "Integrated Laser Sight": { "region": "Lone Wolf Wastes" },
+          "Tactical Laser Sight": { "region": "Lone Wolf Wastes", "compatibility": "Shotgun, SMG, AR, SR, LMG" },
+          "Light Optic": { "region": "Iron River" },
+          "Mid-Range Optic": { "region": "Broken Delta" },
+          "Precision Optic": { "region": "Lone Wolf Wastes" },
+          "Advanced Combat Optic": { "region": "Chalk Peak" },
+          "Recon Combat Optic": { "region": "Broken Delta" },
+          "Precision Rifle Scope": { "region": "Lone Wolf Wastes" },
+          "Tactical Rifle Scope": { "region": "Lone Wolf Wastes", "sourceNote": "Source page spells this 'Tacticle Rifle Scope', almost certainly a typo for this list's 'Tactical Rifle Scope'." },
+          "Small Infrared": { "region": "Broken Delta" }
+        }
       }
     },
     {
@@ -113,6 +143,36 @@
             "legendary": "+20% Range, +10% Bullet Velocity, -12% Stability"
           }
         ]
+      },
+      "communityAcquisition": {
+        "verification": {
+          "status": "community",
+          "sourceIds": ["hardcoregamer-accessories"],
+          "lastVerified": "2026-08-21",
+          "verifiedPatch": "3.0.3",
+          "notes": "Region-of-acquisition data from a single third-party comprehensive accessory listing, not the official dev blog. See the sights type's communityAcquisition note for why this source's 'Fine/Excellent/Legendary' tier labels are not reproduced here."
+        },
+        "byName": {
+          "Basic Suppressor": { "region": "Dayton Wetlands", "compatibility": "Pistol, Rifle, + a third weapon class the source's text left illegible" },
+          "Short Suppressor": { "region": "Iron River" },
+          "Integrated Suppressor": { "region": "Lone Wolf Wastes", "compatibility": "AR, Sniper Rifle" },
+          "Osprey Suppressor": { "region": "Broken Delta" },
+          "Multi-Use Shotgun Suppressor": { "region": "Lone Wolf Wastes" },
+          "Compact Brake": { "region": "Dayton Wetlands" },
+          "Extended Brake": { "region": "Lone Wolf Wastes", "compatibility": "Shotgun, AR, LMG" },
+          "Large Brake": { "region": "Lone Wolf Wastes", "compatibility": "AR, SR, LMG" },
+          "Light Brake": { "region": "Iron River" },
+          "Small Brake": { "region": "Broken Delta" },
+          "Hammer Compensator": { "region": "Lone Wolf Wastes", "compatibility": "AR, LMG" },
+          "Integrated Compensator": { "region": "Iron River" },
+          "Small Compensator": { "region": "Chalk Peak" },
+          "Flash Hider": { "region": "Dayton Wetlands" },
+          "Forward Flash Hider": { "region": "Blackheart Region" },
+          "Integrated Flash Hider": { "region": "Chalk Peak" },
+          "Tactical Flash Hider": { "region": "Broken Delta" },
+          "Compact Flashlight": { "region": "Broken Delta" },
+          "Compact Infrared Indicator": { "region": "Blackheart Region" }
+        }
       }
     },
     {
@@ -126,7 +186,27 @@
         "Triangle Grip",
         "Front Guard Grip",
         "Back Guard Grip"
-      ]
+      ],
+      "communityAcquisition": {
+        "verification": {
+          "status": "community",
+          "sourceIds": ["hardcoregamer-accessories", "wikily-items"],
+          "lastVerified": "2026-08-21",
+          "verifiedPatch": "3.0.3",
+          "notes": "Region-of-acquisition data from a third-party comprehensive accessory listing, cross-checked against a direct wikily.gg item-page fetch for Vertical Grip. See the sights type's communityAcquisition note for why the source's 'Fine/Excellent/Legendary' tier labels are not reproduced here."
+        },
+        "byName": {
+          "Vertical Grip": {
+            "region": "Dayton Wetlands",
+            "conflictNote": "A direct wikily.gg item-page fetch instead described this item's unlock as a Broken Delta exploration reward ('Broken Delta Northwest Riddle Spot — The Creeper'). The two community sources disagree on region and neither is official, so treat both as unconfirmed rather than picking one as fact."
+          },
+          "Tactical Combine Grip": { "region": "Blackheart Region" },
+          "Cobra Grip": { "region": "Broken Delta" },
+          "Triangle Grip": { "region": "Chalk Peak" },
+          "Front Guard Grip": { "region": "Broken Delta" },
+          "Back Guard Grip": { "region": "Iron River" }
+        }
+      }
     },
     {
       "id": "magazines",
@@ -163,6 +243,30 @@
           "Tactical SR Mag": "+15% Reload Efficiency, +8% Accuracy, +10% Mobility",
           "Large LMG Drum Mag": "+20 Capacity, -14% Reload Efficiency"
         }
+      },
+      "communityAcquisition": {
+        "verification": {
+          "status": "community",
+          "sourceIds": ["hardcoregamer-accessories", "wikily-items"],
+          "lastVerified": "2026-08-21",
+          "verifiedPatch": "3.0.3",
+          "notes": "Region-of-acquisition data from a third-party comprehensive accessory listing, cross-checked against a direct wikily.gg item-page fetch for Tactical SMG Mag (which corroborated the region, see that entry's corroboratedNote). See the sights type's communityAcquisition note for why the source's 'Fine/Excellent/Legendary' tier labels are not reproduced here."
+        },
+        "byName": {
+          "Extended Pistol Mag": { "region": "Blackheart Region", "compatibility": "Pistol" },
+          "Extended Rifle Mag": { "region": "Lone Wolf Wastes" },
+          "Amended Pistol Mag": { "region": "Dayton Wetlands", "compatibility": "Pistol" },
+          "Amended Rifle Mag": { "region": "Dayton Wetlands" },
+          "Amended SMG Mag": { "region": "Dayton Wetlands" },
+          "Amended SR Mag": { "region": "Chalk Peak" },
+          "Tactical Pistol Mag": { "region": "Iron River", "compatibility": "Pistol" },
+          "Tactical SMG Mag": { "region": "Iron River", "compatibility": "SMG", "corroboratedNote": "Independently corroborated by a direct wikily.gg fetch of this item's page, which lists its unlock as an exploration reward in Southeast Iron River." },
+          "Tactical SR Mag": { "region": "Blackheart Region", "compatibility": "SR" },
+          "Light Rifle Mag": { "region": "Chalk Peak" },
+          "Weighted SMG Mag": { "region": "Blackheart Region", "compatibility": "SMG" },
+          "Calibrated LMG Drum Mag": { "region": "Chalk Peak" },
+          "Large LMG Drum Mag": { "region": "Blackheart Region" }
+        }
       }
     },
     {
@@ -171,7 +275,19 @@
       "effect": "Miscellaneous attachments for specific playstyles.",
       "examples": [
         "Folding Bipod"
-      ]
+      ],
+      "communityAcquisition": {
+        "verification": {
+          "status": "community",
+          "sourceIds": ["hardcoregamer-accessories"],
+          "lastVerified": "2026-08-21",
+          "verifiedPatch": "3.0.3",
+          "notes": "Region-of-acquisition data from a single third-party comprehensive accessory listing, not the official dev blog. See the sights type's communityAcquisition note for why the source's 'Fine/Excellent/Legendary' tier labels are not reproduced here."
+        },
+        "byName": {
+          "Folding Bipod": { "region": "Dayton Wetlands" }
+        }
+      }
     }
   ]
 }
